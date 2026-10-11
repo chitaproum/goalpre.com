@@ -158743,5 +158743,81 @@
       "expA": 1.02145289534919,
       "expTotal": 3.188477984080757
     }
+  },
+  "1645450": {
+    "savedAt": "2026-10-11T16:28:13.798750+00:00",
+    "kickoffUtc": "2026-10-20T23:00:00+00:00",
+    "home": "Independiente Petrolero",
+    "away": "Aurora",
+    "league": "Copa de la División Profesional · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36724440730486635,
+      "pDraw": 0.24864689008968072,
+      "pAway": 0.3841087026054529,
+      "pOver": 0.5496510886118512,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.422254934520254,
+      "expA": 1.4599623365632242,
+      "expTotal": 2.882217271083478
+    }
+  },
+  "1645451": {
+    "savedAt": "2026-10-11T16:28:13.798750+00:00",
+    "kickoffUtc": "2026-10-21T19:00:00+00:00",
+    "home": "Always Ready",
+    "away": "The Strongest",
+    "league": "Copa de la División Profesional · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2888429493134548,
+      "pDraw": 0.1862315744514253,
+      "pAway": 0.52492547623512,
+      "pOver": 0.824732095360513,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.937564615081082,
+      "expA": 2.6036267587322404,
+      "expTotal": 4.541191373813322
+    }
+  },
+  "1645452": {
+    "savedAt": "2026-10-11T16:28:13.798750+00:00",
+    "kickoffUtc": "2026-10-21T22:30:00+00:00",
+    "home": "Real Potosí",
+    "away": "Bolívar",
+    "league": "Copa de la División Profesional · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2961283178643233,
+      "pDraw": 0.22837857036211748,
+      "pAway": 0.4754931117735592,
+      "pOver": 0.6229302340443099,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3962482551190256,
+      "expA": 1.8207828209003702,
+      "expTotal": 3.2170310760193956
+    }
+  },
+  "1645453": {
+    "savedAt": "2026-10-11T16:28:13.798750+00:00",
+    "kickoffUtc": "2026-10-22T00:30:00+00:00",
+    "home": "Oriente Petrolero",
+    "away": "Nacional Potosí",
+    "league": "Copa de la División Profesional · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24382241543264596,
+      "pDraw": 0.2178509448279764,
+      "pAway": 0.5383266397393777,
+      "pOver": 0.6299633467333646,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2720049554651045,
+      "expA": 1.981016183442442,
+      "expTotal": 3.2530211389075463
+    }
   }
 }
