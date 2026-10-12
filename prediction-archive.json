@@ -159978,5 +159978,214 @@
       "expA": 1.3837017009674317,
       "expTotal": 2.5670110286539884
     }
+  },
+  "1533790": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-15T10:00:00+00:00",
+    "home": "Hwacheon KSPO W",
+    "away": "Gumi Sportstoto W",
+    "league": "WK-League · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.65987339276112,
+      "pDraw": 0.233626854294925,
+      "pAway": 0.10649975294395495,
+      "pOver": 0.36270270803771937,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6531051391771905,
+      "expA": 0.49382997465896,
+      "expTotal": 2.1469351138361503
+    }
+  },
+  "1597463": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-17T14:00:00+00:00",
+    "home": "Gosport Borough",
+    "away": "Basingstoke Town",
+    "league": "Non League Premier - Southern South · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.433861991444479,
+      "pDraw": 0.2314218825480198,
+      "pAway": 0.3347161260075011,
+      "pOver": 0.6263878751511581,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.733696109811132,
+      "expA": 1.49957968127533,
+      "expTotal": 3.233275791086462
+    }
+  },
+  "1645508": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-18T20:00:00+00:00",
+    "home": "Maringá",
+    "away": "Ferroviária",
+    "league": "Serie C · Brazil",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36591519836164366,
+      "pDraw": 0.2548752573225514,
+      "pAway": 0.3792095443158051,
+      "pOver": 0.521023968065043,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3659625933879642,
+      "expA": 1.3951198324261345,
+      "expTotal": 2.7610824258140987
+    }
+  },
+  "1645518": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-24T19:00:00+00:00",
+    "home": "Gualberto Villarroel SJ",
+    "away": "Blooming",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.22714022539246584,
+      "pDraw": 0.2416803296242,
+      "pAway": 0.5311794449833342,
+      "pOver": 0.5058973748474576,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.01345235027512,
+      "expA": 1.6861422902118601,
+      "expTotal": 2.69959464048698
+    }
+  },
+  "1645519": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-24T21:15:00+00:00",
+    "home": "San Antonio Bulo Bulo",
+    "away": "Real Potosí",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.15446834470633936,
+      "pDraw": 0.24300658777370387,
+      "pAway": 0.6025250675199567,
+      "pOver": 0.41078915891366,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.688631398210717,
+      "expA": 1.6383155941673044,
+      "expTotal": 2.3269469923780215
+    }
+  },
+  "1645520": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-24T23:30:00+00:00",
+    "home": "Independiente Petrolero",
+    "away": "ABB",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4918547039477484,
+      "pDraw": 0.20767481884844305,
+      "pAway": 0.3004704772038086,
+      "pOver": 0.7287002719276559,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.14416820650949,
+      "expA": 1.653413721878152,
+      "expTotal": 3.797581928387642
+    }
+  },
+  "1645521": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-25T19:00:00+00:00",
+    "home": "Always Ready",
+    "away": "Real Oruro",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8635683992832296,
+      "pDraw": 0.08643291027948935,
+      "pAway": 0.04999869043728107,
+      "pOver": 0.8001371235785716,
+      "scoreH": 3,
+      "scoreA": 0,
+      "expH": 3.695566562471384,
+      "expA": 0.8840022006882886,
+      "expTotal": 4.579568763159672
+    }
+  },
+  "1645509": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-25T21:00:00+00:00",
+    "home": "Ferroviária",
+    "away": "Maringá",
+    "league": "Serie C · Brazil",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4702866282856181,
+      "pDraw": 0.2470969467421167,
+      "pAway": 0.28261642497226513,
+      "pOver": 0.5283808425641106,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6043878072900546,
+      "expA": 1.187793559467795,
+      "expTotal": 2.7921813667578497
+    }
+  },
+  "1645522": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-25T21:15:00+00:00",
+    "home": "Aurora",
+    "away": "Real Tomayapo",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6741996508209398,
+      "pDraw": 0.19439032465662484,
+      "pAway": 0.13141002452243536,
+      "pOver": 0.5535012357164375,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.103028588351506,
+      "expA": 0.8011484792001601,
+      "expTotal": 2.904177067551666
+    }
+  },
+  "1645523": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-25T23:30:00+00:00",
+    "home": "Oriente Petrolero",
+    "away": "The Strongest",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37133938691953683,
+      "pDraw": 0.23956067322952881,
+      "pAway": 0.3890999398509344,
+      "pOver": 0.5934601677448356,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5181022793347483,
+      "expA": 1.559013187223323,
+      "expTotal": 3.0771154665580713
+    }
+  },
+  "1645524": {
+    "savedAt": "2026-10-12T08:35:02.387507+00:00",
+    "kickoffUtc": "2026-10-26T22:00:00+00:00",
+    "home": "Nacional Potosí",
+    "away": "Guabirá",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.521705674791341,
+      "pDraw": 0.2085628219137511,
+      "pAway": 0.26973150329490786,
+      "pOver": 0.7008687635265466,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1333788080457374,
+      "expA": 1.4974485550401,
+      "expTotal": 3.6308273630858374
+    }
   }
 }
