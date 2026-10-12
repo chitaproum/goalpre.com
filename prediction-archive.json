@@ -160187,5 +160187,100 @@
       "expA": 1.4974485550401,
       "expTotal": 3.6308273630858374
     }
+  },
+  "1579457": {
+    "savedAt": "2026-10-12T16:31:17.025610+00:00",
+    "kickoffUtc": "2026-10-13T18:00:00+00:00",
+    "home": "Ijsselmeervogels",
+    "away": "GVVV Veenendaal",
+    "league": "Tweede Divisie · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.575733064978902,
+      "pDraw": 0.2066548209009067,
+      "pAway": 0.2176121141201913,
+      "pOver": 0.6525183012324834,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1267230483289374,
+      "expA": 1.24191703683,
+      "expTotal": 3.3686400851589378
+    }
+  },
+  "1645632": {
+    "savedAt": "2026-10-12T16:31:17.025610+00:00",
+    "kickoffUtc": "2026-10-17T20:00:00+00:00",
+    "home": "Austin II",
+    "away": "The Town",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.569609616267499,
+      "pDraw": 0.2292794156019809,
+      "pAway": 0.20111096813052026,
+      "pOver": 0.5270677244245011,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.8114853877380637,
+      "expA": 0.9764327564199875,
+      "expTotal": 2.787918144158051
+    }
+  },
+  "1645633": {
+    "savedAt": "2026-10-12T16:31:17.025610+00:00",
+    "kickoffUtc": "2026-10-17T20:00:00+00:00",
+    "home": "Crown Legacy",
+    "away": "New York RB II",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5690871185722711,
+      "pDraw": 0.18230767880822737,
+      "pAway": 0.24860520261950156,
+      "pOver": 0.8088348371297241,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.651468673921285,
+      "expA": 1.7520346796941109,
+      "expTotal": 4.403503353615395
+    }
+  },
+  "1645654": {
+    "savedAt": "2026-10-12T16:31:17.025610+00:00",
+    "kickoffUtc": "2026-10-24T13:00:00+00:00",
+    "home": "Selangor",
+    "away": "Kuching FA",
+    "league": "FA Cup · Malaysia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33077876381688265,
+      "pDraw": 0.21533666234396115,
+      "pAway": 0.4538845738391562,
+      "pOver": 0.7059273943370453,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6745347761592733,
+      "expA": 1.9830456931540905,
+      "expTotal": 3.6575804693133636
+    }
+  },
+  "1645653": {
+    "savedAt": "2026-10-12T16:31:17.025610+00:00",
+    "kickoffUtc": "2026-10-24T13:00:00+00:00",
+    "home": "DPMM FC Brunei",
+    "away": "Johor Darul Takzim FC",
+    "league": "FA Cup · Malaysia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.16037522917354471,
+      "pDraw": 0.13583256492707219,
+      "pAway": 0.7037922058993831,
+      "pOver": 0.8796590052172817,
+      "scoreH": 1,
+      "scoreA": 3,
+      "expH": 1.8653505422443544,
+      "expA": 3.700044703192026,
+      "expTotal": 5.56539524543638
+    }
   }
 }
