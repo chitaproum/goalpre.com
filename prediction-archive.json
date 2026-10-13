@@ -163645,5 +163645,157 @@
       "expA": 1.5044526178649176,
       "expTotal": 2.9561644062243593
     }
+  },
+  "1645668": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Urena SC",
+    "away": "Yaracuyanos FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3590398989052982,
+      "pDraw": 0.2622988807799976,
+      "pAway": 0.37866122031470417,
+      "pOver": 0.48817559179461384,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.292426665829928,
+      "expA": 1.33452092445782,
+      "expTotal": 2.626947590287748
+    }
+  },
+  "1645664": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Dinamo de Puerto La Cruz",
+    "away": "Aragua FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2880497645173421,
+      "pDraw": 0.3178431192160024,
+      "pAway": 0.39410711626665557,
+      "pOver": 0.2913984629195167,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8420175195426391,
+      "expA": 1.03995418032072,
+      "expTotal": 1.881971699863359
+    }
+  },
+  "1645665": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Monagas II",
+    "away": "Petare FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41528205387260686,
+      "pDraw": 0.2663102177101826,
+      "pAway": 0.3184077284172105,
+      "pOver": 0.46448244602512606,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3689021819940557,
+      "expA": 1.1640204667994398,
+      "expTotal": 2.5329226487934955
+    }
+  },
+  "1645667": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Puerto Cabello II",
+    "away": "Atletico el Vigia FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43456312254278107,
+      "pDraw": 0.2294583866464027,
+      "pAway": 0.33597849081081627,
+      "pOver": 0.6365484070876178,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.75890971539013,
+      "expA": 1.524451315834464,
+      "expTotal": 3.2833610312245938
+    }
+  },
+  "1645663": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Atletico Avila FC",
+    "away": "Bolívar",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.18854227341786262,
+      "pDraw": 0.3064687018561301,
+      "pAway": 0.5049890247260073,
+      "pOver": 0.2738547085235741,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.6125845912626273,
+      "expA": 1.204256914262728,
+      "expTotal": 1.8168415055253553
+    }
+  },
+  "1645666": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T19:30:00+00:00",
+    "home": "Club Atletico Barinas",
+    "away": "Real Frontera",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6989862749625297,
+      "pDraw": 0.15417315330947556,
+      "pAway": 0.14684057172799472,
+      "pOver": 0.7856293551597042,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.9259448352742026,
+      "expA": 1.3224575842614361,
+      "expTotal": 4.248402419535639
+    }
+  },
+  "1645669": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-18T22:30:00+00:00",
+    "home": "Fundación Lara Deportiva",
+    "away": "Deportivo Lara",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.30607357547126507,
+      "pDraw": 0.25121969941887823,
+      "pAway": 0.4427067251098566,
+      "pOver": 0.5228531559003311,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2338651055814887,
+      "expA": 1.53501698843676,
+      "expTotal": 2.768882094018249
+    }
+  },
+  "1635509": {
+    "savedAt": "2026-10-13T08:34:40.229608+00:00",
+    "kickoffUtc": "2026-10-27T14:00:00+00:00",
+    "home": "Panserraikos",
+    "away": "Niki Volos",
+    "league": "Cup · Greece",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39181030196919786,
+      "pDraw": 0.252609952815153,
+      "pAway": 0.35557974521564906,
+      "pOver": 0.5304262421864607,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4401941634210436,
+      "expA": 1.36021078353125,
+      "expTotal": 2.800404946952294
+    }
   }
 }
