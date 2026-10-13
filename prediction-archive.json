@@ -163797,5 +163797,24 @@
       "expA": 1.36021078353125,
       "expTotal": 2.800404946952294
     }
+  },
+  "1645808": {
+    "savedAt": "2026-10-13T16:32:38.042333+00:00",
+    "kickoffUtc": "2026-10-24T14:00:00+00:00",
+    "home": "Gala Fairydean Rovers",
+    "away": "Berwick Rangers",
+    "league": "Football League - Lowland League · Scotland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36914918381890166,
+      "pDraw": 0.23928367506408466,
+      "pAway": 0.3915671411170137,
+      "pOver": 0.5946740465370877,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5155128117900591,
+      "expA": 1.56719690917691,
+      "expTotal": 3.082709720966969
+    }
   }
 }
