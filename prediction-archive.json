@@ -170542,5 +170542,195 @@
       "expA": 1.3232374323386402,
       "expTotal": 2.7332279887464552
     }
+  },
+  "1525930": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-15T15:30:00+00:00",
+    "home": "Dinamo Minsk",
+    "away": "Slavia Mozyr",
+    "league": "Premier League · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6433893418638413,
+      "pDraw": 0.21282617343842578,
+      "pAway": 0.14378448469773292,
+      "pOver": 0.5024571759792152,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.91514534081573,
+      "expA": 0.772292421452475,
+      "expTotal": 2.687437762268205
+    }
+  },
+  "1525934": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-15T17:30:00+00:00",
+    "home": "ML Vitebsk",
+    "away": "Torpedo Zhodino",
+    "league": "Premier League · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6817436994264446,
+      "pDraw": 0.1834999123997133,
+      "pAway": 0.13475638817384208,
+      "pOver": 0.6111092590650705,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.26888715950281,
+      "expA": 0.899685781652196,
+      "expTotal": 3.168572941155006
+    }
+  },
+  "1646107": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-17T18:00:00+00:00",
+    "home": "Central Cordoba",
+    "away": "Centro Español",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3797744197542308,
+      "pDraw": 0.2962632472452964,
+      "pAway": 0.32396233300047284,
+      "pOver": 0.35896768938685353,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.120749487934274,
+      "expA": 1.0112497864666201,
+      "expTotal": 2.1319992744008944
+    }
+  },
+  "1646108": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-17T18:00:00+00:00",
+    "home": "General Lamadrid",
+    "away": "Estrella Del Sur",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31475709607642266,
+      "pDraw": 0.33295513507544333,
+      "pAway": 0.352287768848134,
+      "pOver": 0.2590568623757861,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8466514998699006,
+      "expA": 0.914745497150232,
+      "expTotal": 1.7613969970201326
+    }
+  },
+  "1646109": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-17T18:00:00+00:00",
+    "home": "Victoriano Arenas",
+    "away": "Deportivo Español",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28228917375875606,
+      "pDraw": 0.43725099949508117,
+      "pAway": 0.2804598267461627,
+      "pOver": 0.1033305830507202,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.5606410875623474,
+      "expA": 0.5578271461952999,
+      "expTotal": 1.1184682337576475
+    }
+  },
+  "1646106": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-17T18:00:00+00:00",
+    "home": "Berazategui",
+    "away": "Lujan",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3371197252635276,
+      "pDraw": 0.2940192762597048,
+      "pAway": 0.3688609984767675,
+      "pOver": 0.36761146837605985,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0507342128938801,
+      "expA": 1.113376605744936,
+      "expTotal": 2.1641108186388163
+    }
+  },
+  "1646110": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-17T19:30:00+00:00",
+    "home": "Mercedes",
+    "away": "Leones de Rosario",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3729800918536954,
+      "pDraw": 0.3369008449265998,
+      "pAway": 0.2901190632197049,
+      "pOver": 0.24759646575298555,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9336374308003783,
+      "expA": 0.7846222000679398,
+      "expTotal": 1.7182596308683182
+    }
+  },
+  "1646113": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-18T18:00:00+00:00",
+    "home": "Argentino Rosario",
+    "away": "Deportivo Muñiz",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4372817341804408,
+      "pDraw": 0.2797036653232956,
+      "pAway": 0.2830146004962636,
+      "pOver": 0.40218229891813867,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3034850852962652,
+      "expA": 0.9900923928138841,
+      "expTotal": 2.2935774781101492
+    }
+  },
+  "1646112": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-19T18:00:00+00:00",
+    "home": "Sportivo Barracas",
+    "away": "Sacachispas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33089061327931396,
+      "pDraw": 0.30367408594403666,
+      "pAway": 0.3654353007766494,
+      "pOver": 0.3369627081655895,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9919174533988498,
+      "expA": 1.05857571855024,
+      "expTotal": 2.05049317194909
+    }
+  },
+  "1646111": {
+    "savedAt": "2026-10-14T13:02:22.232697+00:00",
+    "kickoffUtc": "2026-10-19T18:00:00+00:00",
+    "home": "Lugano",
+    "away": "Canuelas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2802655721771591,
+      "pDraw": 0.2900188092684081,
+      "pAway": 0.4297156185544329,
+      "pOver": 0.36729246658230597,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9334639886052887,
+      "expA": 1.2295111771811698,
+      "expTotal": 2.1629751657864587
+    }
   }
 }
