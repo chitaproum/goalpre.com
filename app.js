@@ -7,6 +7,7 @@
 (function () {
   'use strict';
   var DATA = window.DATA || {};
+  var AI_INSIGHTS = window.AI_INSIGHTS || {};  // LLM-written per-fixture previews (optional, server-generated)
   var TEAMS = DATA.teams || {};
   var FIXTURES = DATA.fixtures || [];
   var HISTORY = DATA.history || [];
@@ -232,14 +233,150 @@
     };
   }
 
-  function predict(home, away, league) {
+  /* ---------- AI Consensus engine ----------
+     Blends the Poisson (Dixon-Coles) model, the KPI stats model and the live
+     de-margined market odds into one consensus probability, measures the value
+     edge (model vs market) and writes a plain-English AI insight.
+     100% client-side — no API key, no backend, GitHub-Pages safe. */
+  var AI_W = { poisson: 0.40, kpi: 0.35, market: 0.25 };
+
+  // De-margined (overround-removed) market-implied 1X2 probabilities, or null.
+  function marketImplied1x2(f) {
+    if (!f || !f.odds) return null;
+    var h = oddsQuote(f, '1x2', '1'), d = oddsQuote(f, '1x2', 'X'), a = oddsQuote(f, '1x2', '2');
+    if (!h || !d || !a) return null;
+    var ih = 1 / h.value, id = 1 / d.value, ia = 1 / a.value, s = ih + id + ia;
+    if (!(s > 0)) return null;
+    return { pHome: ih / s, pDraw: id / s, pAway: ia / s };
+  }
+  // De-margined market-implied P(Over 2.5), or null.
+  function marketImpliedOu(f) {
+    if (!f || !f.odds) return null;
+    var o = oddsQuote(f, 'ou', 'over'), u = oddsQuote(f, 'ou', 'under');
+    if (!o || !u) return null;
+    var io = 1 / o.value, iu = 1 / u.value, s = io + iu;
+    if (!(s > 0)) return null;
+    return io / s;
+  }
+  // Weighted blend of 1X2 probability sets, renormalized to sum to 1.
+  function blend1x2(parts) {
+    var tw = 0, h = 0, d = 0, a = 0;
+    parts.forEach(function (x) { tw += x.w; h += x.w * x.pHome; d += x.w * x.pDraw; a += x.w * x.pAway; });
+    if (tw <= 0) return null;
+    h /= tw; d /= tw; a /= tw;
+    var s = h + d + a;
+    return s > 0 ? { pHome: h / s, pDraw: d / s, pAway: a / s } : null;
+  }
+
+  function predictAi(home, away, f) {
+    var pois = predictPoisson(home, away);
+    var kpi = predictKpi(home, away);
+    var mkt = f ? marketImplied1x2(f) : null;
+    var mktOver = f ? marketImpliedOu(f) : null;
+
+    var parts = [
+      { w: AI_W.poisson, pHome: pois.pHome, pDraw: pois.pDraw, pAway: pois.pAway },
+      { w: AI_W.kpi,     pHome: kpi.pHome,  pDraw: kpi.pDraw,  pAway: kpi.pAway }
+    ];
+    if (mkt) parts.push({ w: AI_W.market, pHome: mkt.pHome, pDraw: mkt.pDraw, pAway: mkt.pAway });
+    var cons = blend1x2(parts) || { pHome: pois.pHome, pDraw: pois.pDraw, pAway: pois.pAway };
+
+    var ouParts = [{ w: AI_W.poisson, v: pois.pOver }, { w: AI_W.kpi, v: kpi.pOver }];
+    if (mktOver != null) ouParts.push({ w: AI_W.market, v: mktOver });
+    var owt = 0, osum = 0;
+    ouParts.forEach(function (x) { owt += x.w; osum += x.w * x.v; });
+    var pOver = clamp(owt > 0 ? osum / owt : pois.pOver, 0.02, 0.98);
+
+    // Model agreement between Poisson and KPI (0..1): 1 = identical distribution.
+    var agree1 = clamp(1 - (Math.abs(pois.pHome - kpi.pHome) + Math.abs(pois.pDraw - kpi.pDraw) + Math.abs(pois.pAway - kpi.pAway)) / 2, 0, 1);
+    var top = Math.max(cons.pHome, cons.pDraw, cons.pAway);
+    var confidence = clamp(0.65 * top + 0.35 * (top * agree1), 0, 1);
+
+    var pickKey = cons.pHome >= cons.pDraw && cons.pHome >= cons.pAway ? '1'
+                : (cons.pAway >= cons.pHome && cons.pAway >= cons.pDraw ? '2' : 'X');
+    var pickProb = pickKey === '1' ? cons.pHome : pickKey === '2' ? cons.pAway : cons.pDraw;
+    var edge = null, fairOdds = pickProb > 0 ? 1 / pickProb : null;
+    if (mkt) {
+      var mktProb = pickKey === '1' ? mkt.pHome : pickKey === '2' ? mkt.pAway : mkt.pDraw;
+      edge = pickProb - mktProb;
+    }
+
+    return {
+      pHome: cons.pHome, pDraw: cons.pDraw, pAway: cons.pAway,
+      scoreH: pois.scoreH, scoreA: pois.scoreA,
+      expH: pois.expH, expA: pois.expA, expTotal: pois.expTotal,
+      pOver: pOver,
+      _ai: {
+        confidence: confidence, agreement: agree1, edge: edge, fairOdds: fairOdds,
+        pickKey: pickKey, hasMarket: !!mkt, hasMarketOu: mktOver != null
+      }
+    };
+  }
+
+  // Plain-English AI insight for a match. Prefers the server-side LLM-written
+  // preview (window.AI_INSIGHTS, generated at update time with the key kept
+  // server-side) when available, and always falls back to the deterministic,
+  // in-browser text so the site works even without the LLM step.
+  function aiInsightText(f, p, market) {
+    var ai = p._ai || {}, home = f.home, away = f.away, out = [];
+    var llm = f && f.id != null ? AI_INSIGHTS[String(f.id)] : null;
+    if (llm && llm.text) {
+      out.push(llm.text);
+      var lconf = ai.confidence != null ? ai.confidence : 0.5;
+      out.push('AI confidence: ' + (lconf >= 0.62 ? 'High' : lconf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(lconf) + '%). Model estimate, not betting advice.');
+      return out.join(' ');
+    }
+    if (market === 'ou') {
+      var over = p.pOver >= 0.5;
+      var ouProb = over ? p.pOver : 1 - p.pOver;
+      out.push('The AI consensus leans ' + (over ? 'Over 2.5 goals' : 'Under 2.5 goals') + ' at ' + pct(ouProb)
+        + '%, from an expected ' + p.expTotal.toFixed(2) + ' total goals (' + home + ' ' + p.expH.toFixed(2) + ', ' + away + ' ' + p.expA.toFixed(2) + ').');
+    } else {
+      var k = ai.pickKey || bestKey(p);
+      var pickLabel = k === '1' ? home + ' to win' : k === '2' ? away + ' to win' : 'a draw';
+      var pp = k === '1' ? p.pHome : k === '2' ? p.pAway : p.pDraw;
+      out.push('AI consensus favours ' + pickLabel + ' at ' + pct(pp) + '%, blending the Poisson, KPI and market signals. Most likely score ' + p.scoreH + '\u2013' + p.scoreA + '.');
+    }
+    if (ai.agreement != null) {
+      out.push(ai.agreement >= 0.8 ? 'Both in-house models strongly agree, which lifts confidence.'
+        : ai.agreement >= 0.6 ? 'The Poisson and KPI models broadly agree on this call.'
+        : 'The two models partly disagree, so treat this as lower conviction.');
+    }
+    if (market !== 'ou' && ai.hasMarket && ai.edge != null) {
+      var e = ai.edge;
+      if (e >= 0.05) out.push('Clear value: the model rates the pick ' + pct(e) + '% above the bookmaker\u2019s implied chance (fair odds \u2248 ' + (ai.fairOdds ? ai.fairOdds.toFixed(2) : '\u2014') + ').');
+      else if (e >= 0.02) out.push('Slight value \u2014 the model is marginally above the market price.');
+      else if (e <= -0.03) out.push('No value: the market already prices this outcome higher than the model, so the odds look short.');
+      else out.push('The model and the market are closely aligned on price.');
+    } else if (market !== 'ou') {
+      out.push('No recent market odds to compare, so value cannot be measured for this pick.');
+    }
+    var conf = ai.confidence != null ? ai.confidence : 0.5;
+    out.push('AI confidence: ' + (conf >= 0.62 ? 'High' : conf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(conf) + '%).');
+    return out.join(' ');
+  }
+
+  // Extra block injected into the Match cell when the AI engine is active:
+  // a confidence pill, an optional value flag and an expandable AI insight.
+  function aiRowExtra(f, p, market) {
+    if (state.engine !== 'ai' || !p || !p._ai) return '';
+    var ai = p._ai, conf = ai.confidence != null ? ai.confidence : 0;
+    var tag = conf >= 0.62 ? 'high' : conf >= 0.5 ? 'med' : 'low';
+    var valueFlag = (market !== 'ou' && ai.hasMarket && ai.edge != null && ai.edge >= 0.05)
+      ? '<span class="ai-value" title="Model probability exceeds the market implied chance">\u2605 Value</span>' : '';
+    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">AI ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
+      + '<details class="ai-insight"><summary>AI insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
+  }
+
+  function predict(home, away, league, f) {
     activeLeague = league || null;
+    if (state.engine === 'ai') return predictAi(home, away, f);
     return state.engine === 'random' ? predictKpi(home, away) : predictPoisson(home, away);
   }
   /* ---------- state ---------- */
   var state = {
     mode: '1x2',        // 1x2 | ou | stats | selection
-    engine: 'poisson',  // poisson | random(KPI)
+    engine: 'poisson',  // poisson | random(KPI) | ai(AI consensus)
     league: 'all',
     tip: 'all',
     minProb: 0,
@@ -407,7 +544,7 @@
     if (dr) dr.textContent = (r[0] === r[1] || showDay(r[0]) === showDay(r[1])) ? showDay(r[0]) : showDay(r[0]) + ' - ' + showDay(r[1]);
     var counts = { today: 0, live: 0, tomorrow: 0, weekend: 0, yesterday: 0, all: 0 };
     FIXTURES.forEach(function (f) {
-      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league));
+      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f));
       Object.keys(counts).forEach(function (k) { if (inPeriod(f, p, k)) counts[k]++; });
     });
     Object.keys(counts).forEach(function (k) {
@@ -635,7 +772,7 @@
       + '<td class="col-pick"><input type="checkbox" class="pick-cb" data-key="' + esc(k) + '"' + checked + ' aria-label="Add to selection"></td>'
       + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
       + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
-      + '<td class="col-match">' + matchCell(f) + '</td>'
+      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, p, '1x2') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
       + '<td>' + probCell(p.pHome, '1', best) + '</td>'
       + '<td>' + probCell(p.pDraw, 'X', best) + '</td>'
@@ -652,7 +789,7 @@
       + '<td class="col-pick"><input type="checkbox" class="pick-cb" data-key="' + esc(k) + '"' + checked + ' aria-label="Add to selection"></td>'
       + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
       + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
-      + '<td class="col-match">' + matchCell(f) + '</td>'
+      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, p, 'ou') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
       + '<td><span class="score">' + p.expTotal.toFixed(2) + '</span></td>'
       + '<td><span class="ou over">' + pct(over) + '<span class="pct-sym">%</span></span></td>'
@@ -1073,7 +1210,7 @@ function leagueCode(l) {
     _rendered = [];
     var rows = [], cols = state.mode === 'ou' ? 10 : (state.mode === 'stats' ? 8 : 11);
     FIXTURES.forEach(function (f) {
-      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league));
+      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f));
       if (!passesFilters(f, p)) return;
       var idx = _rendered.length;
       _rendered.push(f);
@@ -1141,7 +1278,7 @@ function leagueCode(l) {
       + '<button type="button" class="sel-pdf" id="selPdf">Download PDF</button>'
       + '</td></tr>';
     var rows = fx.map(function (f) {
-      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league)), k = fxKey(f);
+      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f)), k = fxKey(f);
       return '<tr>'
         + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
         + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
@@ -1220,11 +1357,11 @@ function leagueCode(l) {
   function downloadSelectionPdf() {
     var fx = selectedFixtures();
     if (!fx.length) return;
-    var engName = state.engine === 'random' ? 'KPI' : 'Poisson';
+    var engName = state.engine === 'ai' ? 'AI Consensus' : state.engine === 'random' ? 'KPI' : 'Poisson';
     var w = window.open('', '_blank');
     if (!w) return;
     var rows = fx.map(function (f) {
-      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league));
+      var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f));
       return '<tr><td>' + esc(f.date) + '</td>'
         + '<td><div class="m-name">' + esc(f.home + ' v ' + f.away) + '</div>'
         + '<div class="m-league">' + esc(f.league) + '</div></td>'
@@ -1683,7 +1820,8 @@ function leagueCode(l) {
     var f = s.f;
     var po = market === '1x2' ? s.t1 : s.to;
     var kp = market === '1x2' ? s.k1 : s.ko;
-    var agree = po.key === kp.key;
+    var ai = market === '1x2' ? s.a1 : s.ao;
+    var agree = po.key === kp.key && (!ai || ai.key === po.key);
     var when = tpWhen(f);
     var dateStr = fmtFull(f.date);
     return '<a class="tp-item" href="#" data-tp-view="predictions">'
@@ -1694,10 +1832,10 @@ function leagueCode(l) {
       +   '</span>'
       +   '<span class="tp-meta">' + esc(dateStr) + (when ? ' &middot; ' + esc(when) : '') + ' &middot; ' + esc(f.league || '') + '</span>'
       + '</div>'
-      + '<div class="tp-engines">' + tpEngine('Poisson', po, market) + tpEngine('KPI', kp, market) + '</div>'
+      + '<div class="tp-engines">' + tpEngine('Poisson', po, market) + tpEngine('KPI', kp, market) + (ai ? tpEngine('AI', ai, market) : '') + '</div>'
       + (agree
-          ? '<span class="tp-flag tp-agree" title="Both engines pick the same outcome">&#10003; agree</span>'
-          : '<span class="tp-flag tp-split" title="The two engines differ">split</span>')
+          ? '<span class="tp-flag tp-agree" title="All engines pick the same outcome">&#10003; agree</span>'
+          : '<span class="tp-flag tp-split" title="The engines differ">split</span>')
       + '</a>';
   }
   function renderHomeTopPicks() {
@@ -1727,6 +1865,9 @@ function leagueCode(l) {
       s.kpi = predictKpi(s.f.home, s.f.away);
       s.k1 = tpTop1x2(s.kpi);
       s.ko = tpTopOU(s.kpi);
+      s.ai = predictAi(s.f.home, s.f.away, s.f);
+      s.a1 = tpTop1x2(s.ai);
+      s.ao = tpTopOU(s.ai);
       s.rank1 = (s.t1.prob + s.k1.prob) / 2;
       s.rankO = (s.to.prob + s.ko.prob) / 2;
     });
@@ -1796,6 +1937,9 @@ function leagueCode(l) {
       s.kpi = predictKpi(s.f.home, s.f.away);
       s.k1 = tpTop1x2(s.kpi);
       s.ko = tpTopOU(s.kpi);
+      s.ai = predictAi(s.f.home, s.f.away, s.f);
+      s.a1 = tpTop1x2(s.ai);
+      s.ao = tpTopOU(s.ai);
       s.rank1 = (s.t1.prob + s.k1.prob) / 2;
       s.rankO = (s.to.prob + s.ko.prob) / 2;
     });
@@ -1913,7 +2057,7 @@ function leagueCode(l) {
     var finished = leagueFinished(f), p = null;
     // Do not produce retrospective forecasts for completed matches.
     if (finished) p = f.prediction || null;
-    else p = state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league);
+    else p = state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f);
     var ou = leaguePageState.market === 'ou';
     var k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
     var status = finished && p ? 'Saved before kickoff' : (!finished ? 'Model estimate' : 'No saved forecast');
@@ -1960,7 +2104,7 @@ function leagueCode(l) {
     rows.forEach(function (r) { ((r.odds || {}).bookmakers || []).forEach(function (b) { booknames[b.id] = b.name; }); });
     host.innerHTML = '<header class="lp-title"><div><h1>' + esc(lg.displayName || name) + '</h1><p>' + esc(countryLabel(lg.country || '')) + ' · Season ' + esc((DATA.seasons || {})[name] || lg.season || '—') + '</p></div><button type="button" class="lp-button" data-lp-action="back">← Predictions</button></header>'
       + '<div class="lp-grid"><div class="lp-main"><div class="lp-controls"><p class="lp-round-summary">Latest results &amp; upcoming round · Full match lists</p>'
-      + '<div class="lp-options"><label>Market<select data-lp-select="market"><option value="1x2"' + (!ou ? ' selected' : '') + '>1X2</option><option value="ou"' + (ou ? ' selected' : '') + '>Over/Under 2.5</option></select></label><label>Model<select data-lp-select="engine"><option value="poisson"' + (state.engine === 'poisson' ? ' selected' : '') + '>Poisson</option><option value="random"' + (state.engine === 'random' ? ' selected' : '') + '>KPI</option></select></label><label>Bookmaker<select data-lp-select="book"><option value="best">Best available</option>' + Object.keys(booknames).map(function (id) { return '<option value="' + esc(id) + '"' + (String(id) === selectedBookmaker ? ' selected' : '') + '>' + esc(booknames[id]) + '</option>'; }).join('') + '</select></label></div></div>'
+      + '<div class="lp-options"><label>Market<select data-lp-select="market"><option value="1x2"' + (!ou ? ' selected' : '') + '>1X2</option><option value="ou"' + (ou ? ' selected' : '') + '>Over/Under 2.5</option></select></label><label>Model<select data-lp-select="engine"><option value="poisson"' + (state.engine === 'poisson' ? ' selected' : '') + '>Poisson</option><option value="random"' + (state.engine === 'random' ? ' selected' : '') + '>KPI</option><option value="ai"' + (state.engine === 'ai' ? ' selected' : '') + '>AI</option></select></label><label>Bookmaker<select data-lp-select="book"><option value="best">Best available</option>' + Object.keys(booknames).map(function (id) { return '<option value="' + esc(id) + '"' + (String(id) === selectedBookmaker ? ' selected' : '') + '>' + esc(booknames[id]) + '</option>'; }).join('') + '</select></label></div></div>'
       + '<div class="table-wrap lp-table-wrap"><table class="pred-table lp-table' + (ou ? ' ou-mode' : '') + '"><thead>' + HEADS[ou ? 'ou' : '1x2'] + '</thead><tbody>' + body + '</tbody></table>' + (!list.length ? '<p class="empty">No ' + (leaguePageState.tab === 'recent' ? 'completed matches' : 'matches in the latest and upcoming rounds') + ' available' + (leaguePageState.date ? ' on this date' : '') + '.</p>' : '') + '</div>'
       + '<p class="lp-note">Match times: ' + esc(DATA.timezone || 'UTC') + '. Updated: ' + esc(DATA.generatedAt || 'Not available') + '. Live scores are update snapshots. Completed matches show only forecasts saved before kickoff; — means unavailable. Odds and model estimates are not guarantees.</p></div>'
       + '<aside class="lp-aside"><section class="lp-card"><h2>Match calendar</h2><label>Date<input type="date" data-lp-select="date" value="' + esc(leaguePageState.date) + '"></label><button class="lp-button" data-lp-action="clear-date">All dates</button><p class="lp-muted">Filters these two round lists. Clear the date to see every match.</p></section><section class="lp-card"><h2>Standings</h2>' + leagueStandings(name) + '</section>' + standingsLegend() + '</aside></div>';

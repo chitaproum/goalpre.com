@@ -1168,3 +1168,21 @@ body.theme-dark .tp-pick.pkU{color:#b79be6;border-color:rgba(183,155,230,.3);bac
   .cards{grid-template-columns:1fr}
   .stat-num{font-size:22px}
 }
+
+/* ===== AI Consensus engine UI ===== */
+.engine-seg .eng-btn.eng-ai{position:relative}
+.engine-seg .eng-btn.eng-ai.active{color:var(--brand-ink);background:var(--brand)}
+.engine-seg .eng-btn.eng-ai::after{content:"NEW";position:absolute;top:-7px;right:-4px;font-size:8px;font-weight:800;letter-spacing:.5px;background:var(--accent2);color:#fff;padding:1px 4px;border-radius:999px;line-height:1}
+.ai-badges{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px}
+.ai-conf{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.4px;padding:2px 8px;border-radius:999px;line-height:1.4;text-transform:uppercase}
+.ai-conf.ai-high{background:rgba(12,122,77,.14);color:var(--brand)}
+.ai-conf.ai-med{background:rgba(183,121,31,.16);color:var(--accent2)}
+.ai-conf.ai-low{background:rgba(120,120,120,.16);color:var(--muted)}
+html[data-theme="dark"] .ai-conf.ai-high{background:rgba(61,220,151,.16)}
+.ai-value{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.4px;padding:2px 8px;border-radius:999px;line-height:1.4;background:var(--accent2);color:#fff}
+.ai-insight{margin-top:6px;font-size:12px}
+.ai-insight>summary{cursor:pointer;color:var(--brand);font-weight:700;list-style:none;display:inline-flex;align-items:center;gap:4px}
+.ai-insight>summary::before{content:"\\1F916";font-size:12px}
+.ai-insight>summary::-webkit-details-marker{display:none}
+.ai-insight[open]>summary{margin-bottom:4px}
+.ai-insight p{margin:0;color:var(--muted);line-height:1.5;max-width:52ch}

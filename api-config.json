@@ -77,6 +77,17 @@
     "maxFixturesPerRun": 80,
     "defaultBookmaker": "best"
   },
+  "aiInsights": {
+    "enabled": true,
+    "baseUrl": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini",
+    "temperature": 0.4,
+    "maxTokens": 160,
+    "timeoutSeconds": 40,
+    "daysAhead": 4,
+    "maxFixturesPerRun": 60,
+    "requestSpacingSeconds": 0.4
+  },
   "countryDiscovery": {
     "enabled": true,
     "countries": [

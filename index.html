@@ -64,7 +64,7 @@
   <div class="container">
     <section class="hero" aria-label="Overview">
       <div class="hero-copy">
-        <span class="hero-eyebrow">Poisson &amp; KPI models</span>
+        <span class="hero-eyebrow">Poisson &middot; KPI &middot; AI consensus</span>
         <h1>Smarter football predictions, backed by the numbers.</h1>
         <p>Win probabilities, correct scores and goal markets for every upcoming fixture. Statistical estimates, not guaranteed outcomes.</p>
       </div>
@@ -89,7 +89,7 @@
     <section id="view-home" class="view">
       <div class="home-wrap">
         <div class="home-intro">
-          <span class="home-eyebrow">Welcome to goalpre.com — the machine learning models for smarter football predictions</span>
+          <span class="home-eyebrow">Welcome to goalpre.com &mdash; machine-learning &amp; AI consensus models for smarter football predictions</span>
           <div class="home-actions">
             <button type="button" class="home-cta primary" data-view="predictions">View today's predictions</button>
             <button type="button" class="home-cta" data-view="top">TOP 20 predictions</button>
@@ -123,6 +123,11 @@
             <span class="home-card-ico" aria-hidden="true">&#128202;</span>
             <h2>Two prediction engines</h2>
             <p>Compare a classic Poisson goal model with a KPI confidence index built from form, venue strength and head-to-head records.</p>
+          </div>
+          <div class="home-card">
+            <span class="home-card-ico" aria-hidden="true">&#129302;</span>
+            <h2>AI consensus engine</h2>
+            <p>A new AI engine blends the Poisson model, the KPI model and live market odds into one probability, flags value bets and writes a plain-English insight for every match.</p>
           </div>
           <div class="home-card">
             <span class="home-card-ico" aria-hidden="true">&#128197;</span>
@@ -183,6 +188,7 @@
             <div class="engine-seg">
               <button type="button" class="eng-btn active" data-engine="poisson" aria-pressed="true">Poisson</button>
               <button type="button" class="eng-btn" data-engine="random" aria-pressed="false" title="KPI engine: prediction built from the teams' stats (avg goals for/against, PPG, win%, head-to-head)">KPI</button>
+              <button type="button" class="eng-btn eng-ai" data-engine="ai" aria-pressed="false" title="AI Consensus: blends the Poisson model, the KPI model and live market odds into one probability, flags value bets and writes a plain-English insight for each match">AI</button>
             </div>
           </div>
         </div>
@@ -305,7 +311,8 @@
           <li><strong>Score matrix.</strong> A Poisson distribution turns each λ into the probability of 0,1,2… goals. Multiplying home×away probabilities gives a full score grid (0–0, 1–0 …).</li>
           <li><strong>Outcomes.</strong> Summing the grid gives 1 / X / 2 probabilities, the most likely correct score, expected total goals and the Over/Under 2.5 split.</li>
         </ol>
-        <p><strong>KPI engine.</strong> Switch the <em>Data</em> toggle to <strong>KPI</strong> for an alternative, stats-weighted prediction. It builds a KPI Confidence Index from win rate, venue form, recent form, head-to-head dominance and average goals — see the README for the exact weights.</p>
+        <p><strong>KPI engine.</strong> Switch the <em>Data</em> toggle to <strong>KPI</strong> for an alternative, stats-weighted prediction. It builds a KPI Confidence Index from win rate, venue form, recent form, head-to-head dominance and average goals &mdash; see the README for the exact weights.</p>
+        <p><strong>AI consensus engine.</strong> Switch the <em>Data</em> toggle to <strong>AI</strong> for an ensemble that blends three signals &mdash; the Poisson model (40%), the KPI model (35%) and the live, de-margined market odds (25%) &mdash; into a single consensus probability. It also measures a <em>value edge</em> (the gap between the model&rsquo;s probability and the bookmaker&rsquo;s implied chance), highlights value picks with a &#9733; flag, grades an AI confidence level from the agreement between the two in-house models, and generates a short plain-English insight for each match. Everything is computed in your browser &mdash; there is no external AI service and no API key, so predictions stay fast, free and private.</p>
         <p class="muted">Fixtures and results are supplied by API-Football after the updater runs. Probabilities and expected goals are estimates from this site’s own models, not official API-Football forecasts or measured xG. Predictions are for entertainment and study only — no gambling advice is implied.</p>
       </article>
     </section>
@@ -333,6 +340,7 @@
   </div>
 
   <script src="data.js"></script>
+  <script src="ai-insights.js"></script>
   <script src="app.js"></script>
   <script src="ads.js"></script>
 </body>
