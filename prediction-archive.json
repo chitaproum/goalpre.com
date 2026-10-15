@@ -172632,5 +172632,271 @@
       "expA": 0.81450312091176,
       "expTotal": 2.692133991054528
     }
+  },
+  "1646143": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Acre",
+    "away": "Tira",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39904197277917336,
+      "pDraw": 0.22640507954655378,
+      "pAway": 0.37455294767427294,
+      "pOver": 0.6600288900268436,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.730988984375,
+      "expA": 1.6718765625,
+      "expTotal": 3.4028655468749998
+    }
+  },
+  "1646154": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Nazareth Illit",
+    "away": "Maccabi Yavne",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5248800859726006,
+      "pDraw": 0.23481106081487738,
+      "pAway": 0.240308853212522,
+      "pOver": 0.5482727742983426,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7619322100554686,
+      "expA": 1.115444756953125,
+      "expTotal": 2.8773769670085936
+    }
+  },
+  "1646152": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Kafr Qasim",
+    "away": "Beitar Petah Tikva",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5889812374062701,
+      "pDraw": 0.20627958235167257,
+      "pAway": 0.2047391802420574,
+      "pOver": 0.6362129604027306,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.114327109375,
+      "expA": 1.1718703125,
+      "expTotal": 3.2861974218750003
+    }
+  },
+  "1646148": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Ironi Nesher",
+    "away": "Hapoel Ramat HaSharon",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4147462325490506,
+      "pDraw": 0.25707470187148745,
+      "pAway": 0.328179065579462,
+      "pOver": 0.5054155210755996,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4424850503492188,
+      "expA": 1.254334826390625,
+      "expTotal": 2.696819876739844
+    }
+  },
+  "1646142": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Bnei Yehuda",
+    "away": "Ashdod",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33999066979893583,
+      "pDraw": 0.2492937661339817,
+      "pAway": 0.4107155640670825,
+      "pOver": 0.5427946355375897,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.347650859375,
+      "expA": 1.5052078125000001,
+      "expTotal": 2.8528586718750004
+    }
+  },
+  "1646147": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Ra'anana",
+    "away": "Hapoel Umm al-Fahm",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39904197277917336,
+      "pDraw": 0.22640507954655378,
+      "pAway": 0.37455294767427294,
+      "pOver": 0.6600288900268436,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.730988984375,
+      "expA": 1.6718765625,
+      "expTotal": 3.4028655468749998
+    }
+  },
+  "1646153": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Beitar Nahariya",
+    "away": "Hapoel Afula",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45767744167513125,
+      "pDraw": 0.25261195224293603,
+      "pAway": 0.2897106060819328,
+      "pOver": 0.5088798492709087,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5393199218749998,
+      "expA": 1.1718703125,
+      "expTotal": 2.7111902343749996
+    }
+  },
+  "1646155": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Dimona",
+    "away": "Hapoel Rishon LeZion",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5045001184897527,
+      "pDraw": 0.23718563971018602,
+      "pAway": 0.2583142418000612,
+      "pOver": 0.5542306283074013,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.730988984375,
+      "expA": 1.1718703125,
+      "expTotal": 2.902859296875
+    }
+  },
+  "1646146": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Sderot",
+    "away": "Maccabi Ahi Nazareth",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5518210245237526,
+      "pDraw": 0.20885587428201102,
+      "pAway": 0.23932310119423642,
+      "pOver": 0.6687187030773372,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.114327109375,
+      "expA": 1.3385390625,
+      "expTotal": 3.452866171875
+    }
+  },
+  "1646150": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Maccabi Kabilio Jaffa",
+    "away": "Ironi Modi'in",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4257914974573015,
+      "pDraw": 0.2405771429202687,
+      "pAway": 0.33363135962242996,
+      "pOver": 0.5816510869731503,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6171874999999998,
+      "expA": 1.40625,
+      "expTotal": 3.0234375
+    }
+  },
+  "1646151": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Maccabi Kiryat Malachi",
+    "away": "Hapoel Daliyat Al Karmel",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4749441131658719,
+      "pDraw": 0.2258997946334251,
+      "pAway": 0.29915609220070305,
+      "pOver": 0.6368589822552608,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8527986792054687,
+      "expA": 1.4327320563281252,
+      "expTotal": 3.2855307355335936
+    }
+  },
+  "1646145": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Ironi Karmiel",
+    "away": "Hapoel Azor",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44566582477779904,
+      "pDraw": 0.26221032252891485,
+      "pAway": 0.2921238526932861,
+      "pOver": 0.4708058277724979,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4424850503492188,
+      "expA": 1.115444756953125,
+      "expTotal": 2.5579298073023438
+    }
+  },
+  "1646149": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Kfar Saba 1928",
+    "away": "Kiryat Yam SC",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5108421164832038,
+      "pDraw": 0.22211093608499197,
+      "pAway": 0.2670469474318043,
+      "pOver": 0.631787439800017,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9226580468749999,
+      "expA": 1.3385390625,
+      "expTotal": 3.261197109375
+    }
+  },
+  "1646144": {
+    "savedAt": "2026-10-15T08:44:15.977385+00:00",
+    "kickoffUtc": "2026-10-26T16:00:00+00:00",
+    "home": "Hapoel Bnei Jisr az-Zarqa",
+    "away": "Hapoel Kfar Shalem",
+    "league": "State Cup · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40788161053264455,
+      "pDraw": 0.2675838831703343,
+      "pAway": 0.32453450629702113,
+      "pOver": 0.46107093238513547,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.347650859375,
+      "expA": 1.1718703125,
+      "expTotal": 2.519521171875
+    }
   }
 }
