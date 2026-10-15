@@ -172898,5 +172898,43 @@
       "expA": 1.1718703125,
       "expTotal": 2.519521171875
     }
+  },
+  "1621330": {
+    "savedAt": "2026-10-15T16:42:55.009205+00:00",
+    "kickoffUtc": "2026-10-16T11:00:00+00:00",
+    "home": "Hapoel Beit Shean",
+    "away": "Hapoel Nazareth Illit",
+    "league": "Liga Alef · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44637576482313984,
+      "pDraw": 0.23325743246133765,
+      "pAway": 0.3203668027155224,
+      "pOver": 0.6119281905488662,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.729362170485469,
+      "expA": 1.4344241780476072,
+      "expTotal": 3.163786348533076
+    }
+  },
+  "1646329": {
+    "savedAt": "2026-10-15T16:42:55.009205+00:00",
+    "kickoffUtc": "2026-10-28T11:00:00+00:00",
+    "home": "Urawa",
+    "away": "Nagoya Grampus",
+    "league": "J-League Cup · Japan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.565560363267144,
+      "pDraw": 0.18519039400073248,
+      "pAway": 0.24924924273212362,
+      "pOver": 0.7959981532622872,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.583207987609375,
+      "expA": 1.70795070365625,
+      "expTotal": 4.291158691265625
+    }
   }
 }
