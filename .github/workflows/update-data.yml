@@ -60,6 +60,9 @@ jobs:
           done
           # Include ads.txt if present
           if [ -f ads.txt ]; then cp ads.txt _site/; fi
+          # SEO files for crawlers
+          if [ -f robots.txt ]; then cp robots.txt _site/; fi
+          if [ -f sitemap.xml ]; then cp sitemap.xml _site/; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
