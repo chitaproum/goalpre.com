@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Predictions Guide — How to Read Probabilities, Odds &amp; Value | GoalPre</title>
+  <meta name="description" content="A plain-English guide to reading football predictions: what 1X2 and Over/Under probabilities mean, how the Poisson and KPI models work, how to spot value against the odds, and how to use predictions sensibly." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goalpre.com/predictions-guide.html" />
+  <meta name="theme-color" content="#0c7a4d" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal{max-width:860px;margin:0 auto;padding:28px 4px 60px}
+    .legal h1{font-size:28px;margin:12px 0 6px}
+    .legal .legal-meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+    .legal h2{font-size:19px;margin:30px 0 8px;padding-top:10px;border-top:1px solid var(--border)}
+    .legal h3{font-size:15px;margin:18px 0 6px}
+    .legal p,.legal li{font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal ul,.legal ol{padding-left:22px;margin:8px 0}
+    .legal li{margin:4px 0}
+    .legal a{color:var(--brand);text-decoration:underline}
+    .legal code{background:var(--surface2);padding:1px 5px;border-radius:4px;font-size:13px}
+    .legal table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+    .legal th,.legal td{border:1px solid var(--border);padding:7px 10px;text-align:left}
+    .legal th{background:var(--surface2)}
+    .legal .callout{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:18px 0}
+    .legal .toc{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin:0 0 22px}
+    .legal .toc ol{margin:6px 0 0;padding-left:20px}
+    .legal .toc a{text-decoration:none}
+    .legal-back{display:inline-block;margin:0 0 10px;font-size:13px;color:var(--brand);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GoalPre home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span><span class="logo-tx">Goal<span>Pre</span></span></a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" style="margin-left:auto">&#9790;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <article class="legal">
+      <a class="legal-back" href="index.html">&larr; Back to GoalPre</a>
+      <h1>The GoalPre guide to reading football predictions</h1>
+      <p class="legal-meta">A plain-English walkthrough of probabilities, odds, models and value.</p>
+
+      <p>Football predictions can look like a wall of percentages and decimals.
+      This guide explains, in everyday language, exactly what those numbers mean,
+      how GoalPre calculates them, and — most importantly — how to read them
+      sensibly. Everything here describes <strong>probabilities, not
+      certainties</strong>. The aim is understanding, not a shortcut to
+      guaranteed winnings, which do not exist.</p>
+
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ol>
+          <li><a href="#markets">The markets we cover</a></li>
+          <li><a href="#probability">What a probability really tells you</a></li>
+          <li><a href="#poisson">How the Poisson model works</a></li>
+          <li><a href="#kpi">How the KPI model works</a></li>
+          <li><a href="#ai">How the AI-consensus model works</a></li>
+          <li><a href="#odds">Odds, implied probability and the margin</a></li>
+          <li><a href="#value">What “value” means</a></li>
+          <li><a href="#confidence">Reading the confidence signal</a></li>
+          <li><a href="#mistakes">Five common mistakes</a></li>
+          <li><a href="#responsible">Using predictions responsibly</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="markets">1. The markets we cover</h2>
+      <p>GoalPre focuses on the two markets most football fans understand
+      instinctively:</p>
+      <ul>
+        <li><strong>1X2 (match result).</strong> Three outcomes: <code>1</code>
+        home win, <code>X</code> draw, <code>2</code> away win. The three
+        probabilities always add up to 100%.</li>
+        <li><strong>Over/Under 2.5 goals.</strong> Will the two teams combine for
+        three or more goals (Over) or two or fewer (Under)? These two
+        probabilities also add up to 100%.</li>
+      </ul>
+      <p>We also show the single <strong>most likely correct score</strong> and the
+      <strong>expected goals</strong> for each team — the average number of goals
+      the model thinks each side will score.</p>
+
+      <h2 id="probability">2. What a probability really tells you</h2>
+      <p>If GoalPre says a home win is <strong>60%</strong> likely, it does
+      <em>not</em> mean the home team will win. It means that, across many
+      matches with these same underlying numbers, the home side would be expected
+      to win roughly six times in ten. The other four times, something else
+      happens — and that is completely normal, not a “wrong” prediction.</p>
+      <div class="callout">
+        A 70% favourite still loses about three times in ten. A good model is one
+        whose 70% picks win close to 70% of the time over a long run — not one
+        that “never misses”, because no honest model can.
+      </div>
+
+      <h2 id="poisson">3. How the Poisson model works</h2>
+      <p>The Poisson model is the classic mathematical approach to football and
+      the backbone of GoalPre. In four steps:</p>
+      <ol>
+        <li><strong>Rate each team.</strong> Every team gets an <em>attack</em> and
+        a <em>defence</em> rating from the goals it scores and concedes, adjusted
+        for the league average.</li>
+        <li><strong>Estimate expected goals.</strong> For a fixture we compute
+        expected goals per side: roughly
+        <code>&lambda;_home = attack_home × defence_away × league_avg × home_advantage</code>,
+        and the mirror image for the away team.</li>
+        <li><strong>Build a score grid.</strong> A Poisson distribution turns each
+        expected-goals figure into the chance of 0, 1, 2, 3… goals. Combining the
+        two sides gives the probability of every scoreline (0–0, 1–0, 2–1…).</li>
+        <li><strong>Add it up.</strong> Summing the grid produces the 1X2
+        probabilities, the most likely score and the Over/Under split. A
+        Dixon-Coles correction nudges the low-scoring scorelines to match how
+        real football behaves.</li>
+      </ol>
+
+      <h2 id="kpi">4. How the KPI model works</h2>
+      <p>The KPI (Key Performance Indicator) model takes a different angle. Instead
+      of goals alone, it builds a weighted <em>confidence index</em> for each team
+      from several indicators:</p>
+      <table>
+        <tr><th>Indicator</th><th>Why it matters</th></tr>
+        <tr><td>Overall &amp; venue win rate</td><td>Baseline quality, home/away split</td></tr>
+        <tr><td>Recent form (last 6)</td><td>Current momentum</td></tr>
+        <tr><td>Head-to-head record</td><td>Specific match-up history</td></tr>
+        <tr><td>Average goals for / against</td><td>Attacking and defensive output</td></tr>
+      </table>
+      <p>Because it weights venue and form heavily, the KPI model sometimes
+      disagrees with the pure Poisson model — and that disagreement is itself
+      useful information (see confidence below).</p>
+
+      <h2 id="ai">5. How the AI-consensus model works</h2>
+      <p>The AI engine does not replace the other two — it <em>combines</em> them.
+      It blends the Poisson model (40%), the KPI model (35%) and the
+      market’s own de-margined odds (25%) into a single consensus probability,
+      then measures the gap between that consensus and the bookmaker price to flag
+      possible value. It also writes a short, neutral, plain-English summary of
+      the match. All of this is an estimate, not advice.</p>
+
+      <h2 id="odds">6. Odds, implied probability and the margin</h2>
+      <p>Decimal odds and probability are two sides of the same coin:
+      <code>implied probability = 1 ÷ decimal odds</code>. Odds of 2.00 imply a
+      50% chance; odds of 1.50 imply about 67%.</p>
+      <p>If you add up the implied probabilities of all outcomes in a real market,
+      they come to <em>more</em> than 100%. That extra slice is the bookmaker’s
+      <strong>margin</strong> (or “overround”) — their built-in profit. “De-margining”
+      simply removes that slice so you can compare the market’s true opinion with
+      a model on a like-for-like basis.</p>
+
+      <h2 id="value">7. What “value” means</h2>
+      <p>Value has a precise meaning: it is when your estimated probability is
+      <em>higher</em> than the probability implied by the odds. If a model rates a
+      team at 55% but the odds imply only 45%, that is a positive edge. GoalPre
+      marks these with a &#9733; value flag.</p>
+      <div class="callout">
+        Value is about the long run, not any single match. A value pick can still
+        lose; an over-priced pick can still win. The point is which side of the
+        price you are on across hundreds of bets — and even then, nothing is
+        guaranteed.
+      </div>
+
+      <h2 id="confidence">8. Reading the confidence signal</h2>
+      <p>On the AI engine, each match shows a confidence level (High / Medium /
+      Low). It is built from two things: how clear the favourite is, and how much
+      the Poisson and KPI models <em>agree</em>. When both models point the same
+      way, confidence rises. When they disagree, treat the pick as lower
+      conviction — the models are telling you the game is genuinely uncertain.</p>
+
+      <h2 id="mistakes">9. Five common mistakes</h2>
+      <ol>
+        <li><strong>Treating a probability as a certainty.</strong> 65% is not
+        “will win”.</li>
+        <li><strong>Chasing short odds blindly.</strong> A low price is not a safe
+        price.</li>
+        <li><strong>Ignoring the margin.</strong> Raw odds overstate the true
+        chances.</li>
+        <li><strong>Judging a model on one result.</strong> Only the long run
+        matters.</li>
+        <li><strong>Betting more than you can afford.</strong> Never do this — see
+        below.</li>
+      </ol>
+
+      <h2 id="responsible">10. Using predictions responsibly</h2>
+      <p>GoalPre is for information, study and entertainment. It is not betting
+      advice, and the models cannot see injuries, team news, motivation or
+      weather. If you choose to gamble, set a budget you can afford to lose,
+      never chase losses, and take breaks. Support is available — see our
+      <a href="responsible-gambling.html">responsible gambling page</a>. Must be
+      18+.</p>
+
+      <p style="margin-top:26px"><a href="glossary.html">Browse the full betting &amp; stats glossary &rarr;</a></p>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GoalPre &middot; Poisson, KPI &amp; AI-consensus football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>

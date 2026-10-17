@@ -2238,6 +2238,10 @@ function leagueCode(l) {
     $all('.home-cta[data-view]').forEach(function (b) {
       b.addEventListener('click', function () { showView(b.getAttribute('data-view')); });
     });
+    // Inline text links inside the intro copy jump to the matching view.
+    $all('.inline-link[data-view]').forEach(function (b) {
+      b.addEventListener('click', function () { showView(b.getAttribute('data-view')); });
+    });
     // Home page period buttons (e.g. TOP 20) jump to predictions with that period.
     $all('.home-cta[data-period]').forEach(function (b) {
       b.addEventListener('click', function () { showView('predictions'); setPeriod(b.getAttribute('data-period')); });

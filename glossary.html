@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Betting &amp; Stats Glossary — 1X2, Over/Under, Poisson, xG | GoalPre</title>
+  <meta name="description" content="A clear glossary of football prediction and betting terms: 1X2, double chance, Over/Under 2.5, Poisson, expected goals (xG), implied probability, margin, value, Dixon-Coles and more." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goalpre.com/glossary.html" />
+  <meta name="theme-color" content="#0c7a4d" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal{max-width:860px;margin:0 auto;padding:28px 4px 60px}
+    .legal h1{font-size:28px;margin:12px 0 6px}
+    .legal .legal-meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+    .legal h2{font-size:18px;margin:26px 0 6px;padding-top:10px;border-top:1px solid var(--border)}
+    .legal p,.legal li{font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal dt{font-weight:700;margin:16px 0 2px;font-size:15px}
+    .legal dd{margin:0 0 10px;font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal code{background:var(--surface2);padding:1px 5px;border-radius:4px;font-size:13px}
+    .legal a{color:var(--brand);text-decoration:underline}
+    .legal-back{display:inline-block;margin:0 0 10px;font-size:13px;color:var(--brand);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GoalPre home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span><span class="logo-tx">Goal<span>Pre</span></span></a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" style="margin-left:auto">&#9790;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <article class="legal">
+      <a class="legal-back" href="index.html">&larr; Back to GoalPre</a>
+      <h1>Football betting &amp; stats glossary</h1>
+      <p class="legal-meta">Plain-English definitions of the terms used across GoalPre.</p>
+
+      <p>New to prediction markets or statistical models? This glossary explains
+      the terms you will see on GoalPre and across football analytics in general.
+      For a step-by-step walkthrough, read the
+      <a href="predictions-guide.html">predictions guide</a>.</p>
+
+      <h2>Match-result terms</h2>
+      <dl>
+        <dt>1X2</dt>
+        <dd>The match-result market with three outcomes: <code>1</code> home win,
+        <code>X</code> draw, <code>2</code> away win. The three probabilities add
+        up to 100%.</dd>
+        <dt>Double chance</dt>
+        <dd>A single bet covering two of the three 1X2 outcomes (e.g. “home win or
+        draw”). Safer, but at shorter odds.</dd>
+        <dt>Draw no bet</dt>
+        <dd>A bet on home or away where your stake is returned if the match is
+        drawn.</dd>
+        <dt>Correct score</dt>
+        <dd>A prediction of the exact final scoreline. GoalPre shows the single
+        most likely score from the model’s grid.</dd>
+      </dl>
+
+      <h2>Goals markets</h2>
+      <dl>
+        <dt>Over/Under 2.5 goals</dt>
+        <dd>Will the two teams combine for three or more goals (Over) or two or
+        fewer (Under)? The “.5” avoids a tie — there is no “exactly 2.5 goals”.</dd>
+        <dt>Both teams to score (BTTS)</dt>
+        <dd>A market on whether both sides find the net at least once.</dd>
+        <dt>Expected goals (xG)</dt>
+        <dd>An estimate of how many goals a team “should” score given the quality
+        of its chances. On GoalPre, “expected goals” refers to the model’s own
+        &lambda; (lambda) output, not shot-based match xG.</dd>
+        <dt>Expected total goals</dt>
+        <dd>The sum of both teams’ expected goals — a quick read on whether a game
+        projects high- or low-scoring.</dd>
+      </dl>
+
+      <h2>Odds &amp; probability</h2>
+      <dl>
+        <dt>Decimal odds (“Coef”)</dt>
+        <dd>The European odds format. Your total return per unit staked, including
+        the stake. Odds of 2.50 return 2.50 for every 1 staked.</dd>
+        <dt>Implied probability</dt>
+        <dd>The chance suggested by the odds: <code>1 ÷ decimal odds</code>. Odds of
+        2.00 imply 50%.</dd>
+        <dt>Margin (overround / vig)</dt>
+        <dd>The bookmaker’s built-in edge. The implied probabilities of all
+        outcomes add up to more than 100%; the surplus is the margin.</dd>
+        <dt>De-margined odds</dt>
+        <dd>Odds with the margin stripped out, so the probabilities sum to exactly
+        100% — useful for comparing a market fairly with a model.</dd>
+        <dt>Value</dt>
+        <dd>When your estimated probability is higher than the odds imply. A
+        positive edge over the long run — never a guarantee on one match.</dd>
+      </dl>
+
+      <h2>Models &amp; method</h2>
+      <dl>
+        <dt>Poisson distribution</dt>
+        <dd>A probability model for counting rare, independent events — ideal for
+        goals. It turns an expected-goals figure into the chance of 0, 1, 2…
+        goals.</dd>
+        <dt>Dixon-Coles correction</dt>
+        <dd>A well-known adjustment to the basic Poisson model that corrects the
+        probabilities of low scorelines (0–0, 1–0, 0–1, 1–1), which plain Poisson
+        slightly misprices.</dd>
+        <dt>Attack / defence rating</dt>
+        <dd>How many goals a team scores or concedes relative to the league
+        average. Above 1.0 attack = scores more than average.</dd>
+        <dt>Home advantage</dt>
+        <dd>The small, consistent boost home teams enjoy, applied to the home
+        side’s expected goals.</dd>
+        <dt>KPI confidence index</dt>
+        <dd>GoalPre’s stats-weighted score built from win rate, venue form, recent
+        form, head-to-head and average goals.</dd>
+        <dt>Consensus / ensemble</dt>
+        <dd>Combining several models into one blended probability, which is often
+        more stable than any single model alone.</dd>
+      </dl>
+
+      <h2>Responsible-gambling terms</h2>
+      <dl>
+        <dt>Stake</dt>
+        <dd>The amount of money risked on a bet. Only ever stake what you can
+        afford to lose.</dd>
+        <dt>Chasing losses</dt>
+        <dd>Betting more to try to win back losses — a classic warning sign of
+        problem gambling. Don’t.</dd>
+        <dt>Deposit / time limits</dt>
+        <dd>Tools offered by licensed operators to cap how much you can deposit or
+        how long you play. Use them.</dd>
+      </dl>
+
+      <p style="margin-top:26px"><a href="faq.html">Read frequently asked questions &rarr;</a></p>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GoalPre &middot; Poisson, KPI &amp; AI-consensus football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>

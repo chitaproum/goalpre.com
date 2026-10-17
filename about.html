@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About GoalPre — How We Build Football Predictions</title>
+  <meta name="description" content="About GoalPre: an independent football-prediction project that turns public match data into Poisson, KPI and AI-consensus probabilities. Learn who we are, where our data comes from, and how often it updates." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goalpre.com/about.html" />
+  <meta name="theme-color" content="#0c7a4d" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal{max-width:860px;margin:0 auto;padding:28px 4px 60px}
+    .legal h1{font-size:28px;margin:12px 0 6px}
+    .legal .legal-meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+    .legal h2{font-size:19px;margin:30px 0 8px;padding-top:10px;border-top:1px solid var(--border)}
+    .legal h3{font-size:15px;margin:18px 0 6px}
+    .legal p,.legal li{font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal ul,.legal ol{padding-left:22px;margin:8px 0}
+    .legal li{margin:4px 0}
+    .legal a{color:var(--brand);text-decoration:underline}
+    .legal .callout{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:18px 0}
+    .legal-back{display:inline-block;margin:0 0 10px;font-size:13px;color:var(--brand);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GoalPre home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span><span class="logo-tx">Goal<span>Pre</span></span></a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" style="margin-left:auto">&#9790;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <article class="legal">
+      <a class="legal-back" href="index.html">&larr; Back to GoalPre</a>
+      <h1>About GoalPre</h1>
+      <p class="legal-meta">An independent statistical football-prediction project.</p>
+
+      <p>GoalPre is an independent project that turns publicly available football
+      match data into clear, probability-based predictions. We are football and
+      data enthusiasts, not a bookmaker. Our goal is simple: to show the maths
+      behind a match in a way that is honest, transparent and easy to read, so
+      that supporters can understand <em>why</em> one result is more likely than
+      another instead of just being handed a “tip”.</p>
+
+      <div class="callout">
+        <strong>What makes us different.</strong> Every number on this site is
+        produced by a model and explained in plain English. Nothing is
+        hand-picked, nothing is hidden, and we never claim certainty — football
+        is unpredictable, and our figures are probabilities, not promises.
+      </div>
+
+      <h2>What we do</h2>
+      <p>For every upcoming fixture in the leagues we cover, GoalPre publishes:</p>
+      <ul>
+        <li><strong>1X2 probabilities</strong> — the chance of a home win, draw
+        or away win.</li>
+        <li><strong>Most likely correct score</strong> — the single scoreline the
+        model rates highest.</li>
+        <li><strong>Over/Under 2.5 goals</strong> — the chance of a high- or
+        low-scoring game, with expected total goals.</li>
+        <li><strong>Value and confidence signals</strong> — where the model
+        disagrees with the market, and how strongly our models agree with each
+        other.</li>
+      </ul>
+
+      <h2>Our three prediction engines</h2>
+      <p>We deliberately show more than one model, because no single method is
+      perfect. You can switch between them on the predictions page:</p>
+      <ol>
+        <li><strong>Poisson model</strong> — a Dixon-Coles-corrected goal model
+        that converts each team’s attack and defence strength into a full score
+        grid.</li>
+        <li><strong>KPI framework</strong> — a stats-weighted confidence index
+        built from win rate, venue form, recent form, head-to-head record and
+        average goals.</li>
+        <li><strong>AI consensus</strong> — an ensemble that blends the Poisson
+        model, the KPI model and the de-margined market odds into one
+        probability, then writes a short plain-English insight for the match.</li>
+      </ol>
+      <p>Our full method is documented on the
+      <a href="predictions-guide.html">predictions guide</a> and
+      <a href="index.html#how">how-it-works</a> pages.</p>
+
+      <h2>Where our data comes from</h2>
+      <p>Fixtures, results, team data and bookmaker odds are sourced from
+      professional sports-data providers (via the API-Football service). We take
+      reasonable care to present this data accurately, but we do not control the
+      source and cannot guarantee it is error-free. Team names, league names and
+      logos remain the property of their respective owners and are used for
+      identification only.</p>
+
+      <h2>How often the site updates</h2>
+      <p>GoalPre refreshes automatically several times a day. Each update pulls
+      the latest fixtures and results, recalculates every prediction, records a
+      snapshot of each tip so we can measure accuracy honestly, and republishes
+      the site. The “Results &amp; Accuracy” page shows how previous predictions
+      actually performed — we never edit history after the fact.</p>
+
+      <h2>Who the site is for</h2>
+      <p>GoalPre is for football fans who enjoy the analytical side of the game:
+      following form, comparing models and understanding probability. The content
+      is intended for information, study and entertainment. It is <strong>not</strong>
+      betting advice, and it is intended for adults aged 18 or over. If you choose
+      to gamble, please read our <a href="responsible-gambling.html">responsible
+      gambling</a> page first.</p>
+
+      <h2>Editorial standards</h2>
+      <ul>
+        <li>We publish the method behind every prediction.</li>
+        <li>We report accuracy from saved, time-stamped snapshots — not
+        after-the-fact edits.</li>
+        <li>We clearly label estimates as estimates and never guarantee a result.</li>
+        <li>We separate our own model output from third-party data and odds.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Questions, corrections or feedback are welcome — see our
+      <a href="contact.html">contact page</a> or email
+      <a href="mailto:contact@goalpre.com">contact@goalpre.com</a>.</p>
+
+      <p style="margin-top:26px"><a href="predictions-guide.html">Read the full predictions guide &rarr;</a></p>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GoalPre &middot; Poisson, KPI &amp; AI-consensus football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
