@@ -1,0 +1,82 @@
+name: Update live scores
+# Polls API-Football for in-play matches every ~5 minutes and publishes a tiny
+# live.json to a DEDICATED data branch (live-data). It never touches main and
+# never redeploys GitHub Pages, so the heavy site build is left untouched while
+# the browser polls the raw live.json for score overlays.
+#
+# Quota: one request per run (/fixtures?live=all returns ALL live matches), so
+# a 5-minute cron is ~288 requests/day — well under a 7500/day plan.
+# Note: GitHub Actions cron is best-effort and can be delayed under load, so the
+# real refresh cadence may be a little longer than 5 minutes.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+# Keep live runs from overlapping each other (but separate from the main
+# site-build concurrency group so they never block the deploy pipeline).
+concurrency:
+  group: goalpre-live
+  cancel-in-progress: false
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need the script from main plus a persisted token to push the data branch.
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch live scores (key stays private)
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python fetch_live.py
+      - name: Publish live.json to the live-data branch
+        run: |
+          set -e
+          if [ ! -f live.json ]; then
+            echo 'No live.json produced (fetch failed soft); nothing to publish.'
+            exit 0
+          fi
+          # Stash the generated file outside the work tree so a branch switch
+          # can't clobber it.
+          cp live.json "$RUNNER_TEMP/live.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Work on an isolated branch that only ever carries live.json.
+          git fetch origin live-data || true
+          if git show-ref --verify --quiet refs/remotes/origin/live-data; then
+            git checkout -B live-data origin/live-data
+          else
+            # First run: create a clean orphan branch (no site history/blobs).
+            git checkout --orphan live-data
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          cp "$RUNNER_TEMP/live.json" live.json
+          git add live.json
+          if git diff --cached --quiet; then
+            echo 'No live score changes to publish.'
+            exit 0
+          fi
+          git commit -m 'Update live scores'
+          # The branch has a single writer (this workflow), but a slow prior run
+          # may still have advanced it — rebase and retry instead of force-pushing.
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:live-data; then
+              pushed=true
+              break
+            fi
+            echo "Push rejected (attempt $attempt); rebasing onto latest live-data..."
+            git pull --rebase --autostash origin live-data || true
+            sleep 3
+          done
+          if [ "$pushed" != true ]; then
+            echo 'ERROR: could not push live.json after 5 attempts.' >&2
+            exit 1
+          fi

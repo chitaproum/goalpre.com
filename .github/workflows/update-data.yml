@@ -25,6 +25,11 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history + persisted token so the snapshot step can rebase
+          # onto the latest main before pushing (avoids "fetch first" rejects).
+          fetch-depth: 0
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -44,9 +49,27 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data.js prediction-archive.json h2h-cache.json odds-cache.json api-request-cache.json league-discovery-cache.json ai-insights.js ai-insights-cache.json
-          if ! git diff --cached --quiet; then
+          if git diff --cached --quiet; then
+            echo 'No data changes to commit.'
+          else
             git commit -m 'Refresh football data, predictions and AI insights'
-            git push
+            # The scheduled run and manual pushes both target main, so the
+            # remote may have advanced while this job ran. Rebase onto the
+            # latest main and retry a few times instead of failing.
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                pushed=true
+                break
+              fi
+              echo "Push rejected (attempt $attempt); rebasing onto latest main..."
+              git pull --rebase --autostash origin main || true
+              sleep 5
+            done
+            if [ "$pushed" != true ]; then
+              echo 'ERROR: could not push data snapshot after 5 attempts.' >&2
+              exit 1
+            fi
           fi
       - uses: actions/configure-pages@v5
       - name: Prepare public website only
