@@ -1956,7 +1956,18 @@ function leagueCode(l) {
 
   function showView(view) {
     pageLoader.run();
-    if (view !== 'league' && location.hash.indexOf('#league=') === 0) history.replaceState(null, '', location.pathname + location.search);
+    // Persist the active view in the URL so a page refresh / shared link lands
+    // back on the same section instead of always resetting to Home. League
+    // pages keep their own #league= route and are left untouched here.
+    if (view !== 'league') {
+      if (view === 'home') {
+        // Clean URL for Home (also clears any lingering #view= / #league= hash).
+        if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+      } else {
+        var vh = '#view=' + view;
+        if (location.hash !== vh) history.replaceState(null, '', location.pathname + location.search + vh);
+      }
+    }
     $all('.view').forEach(function (v) { v.hidden = v.id !== 'view-' + view; });
     // Gentle fade-in on the view that just became visible, so the switch feels responsive.
     var shown = $('#view-' + view);
@@ -2156,9 +2167,25 @@ function leagueCode(l) {
       if (key === 'date') { leaguePageState.date = e.target.value; leaguePageState.limit = 50; }
       renderLeaguePage();
     });
-    window.addEventListener('hashchange', leagueRoute);
-    window.addEventListener('popstate', leagueRoute);
-    if (location.hash.indexOf('#league=') === 0) leagueRoute();
+    window.addEventListener('hashchange', routeHash);
+    window.addEventListener('popstate', routeHash);
+    routeHash(true);
+  }
+
+  // Central hash router: restores the right section on load / back / forward so
+  // refreshing the page keeps you on the view you were on (not Home).
+  var MAIN_VIEWS = { home: 1, top: 1, predictions: 1, results: 1, how: 1 };
+  function routeHash(initial) {
+    var h = location.hash || '';
+    if (h.indexOf('#league=') === 0) { leagueRoute(); return; }
+    if (h.indexOf('#view=') === 0) {
+      var v = h.slice(6);
+      if (MAIN_VIEWS[v]) { showView(v); return; }
+    }
+    // Empty / unrecognised hash means Home. On first load Home is already the
+    // default visible view, so skip the redundant switch (avoids a loader
+    // flash); only switch when navigating back to an empty hash at runtime.
+    if (h === '' && !initial) showView('home');
   }
 
   /* ---------- live score polling ----------
