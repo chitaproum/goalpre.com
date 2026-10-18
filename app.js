@@ -2161,6 +2161,90 @@ function leagueCode(l) {
     if (location.hash.indexOf('#league=') === 0) leagueRoute();
   }
 
+  /* ---------- live score polling ----------
+     A tiny companion workflow publishes a small live.json to a dedicated
+     `live-data` branch every ~5 minutes (one API-Football request per run,
+     key stays server-side). The browser polls that raw file and overlays the
+     current scores onto the matching fixtures, then re-renders — no API key is
+     ever exposed to the client and the heavy site build is never redeployed
+     just for a score change. */
+  var LIVE_FEED_URL = (window.DATA && window.DATA.liveFeedUrl)
+    || 'https://raw.githubusercontent.com/chitaproum/goalpre.com/live-data/live.json';
+  var LIVE_POLL_MS = 75000;          // ~75s client poll (feed itself updates ~5min)
+  var liveFixtureIndex = null;        // { fixtureId(String) : fixtureObject }
+  var liveAppliedIds = {};            // ids currently shown live via the feed
+
+  function buildLiveIndex() {
+    liveFixtureIndex = {};
+    for (var i = 0; i < FIXTURES.length; i++) {
+      var f = FIXTURES[i];
+      if (f && f.id != null) liveFixtureIndex[String(f.id)] = f;
+    }
+  }
+
+  function applyLiveFeed(feed) {
+    if (!liveFixtureIndex) buildLiveIndex();
+    // v2 feed uses the short "f" key with positional arrays [h,a,el,st];
+    // v1 used "fixtures" with {h,a,el,st} objects. Accept either.
+    var map = (feed && (feed.f || feed.fixtures)) || {};
+    var nowApplied = {}, changed = false;
+    // Overlay current scores onto any fixture we actually hold.
+    for (var id in map) {
+      if (!Object.prototype.hasOwnProperty.call(map, id)) continue;
+      var f = liveFixtureIndex[id];
+      if (!f) continue;              // live match we don't track; ignore
+      var m = map[id], h, a, el, st;
+      if (Array.isArray(m)) { h = m[0]; a = m[1]; el = m[2]; st = m[3]; }
+      else { m = m || {}; h = m.h; a = m.a; el = m.el; st = m.st; }
+      f.live = true;
+      f.currentHome = h;
+      f.currentAway = a;
+      f.elapsed = el;
+      if (st) f.status = st;
+      nowApplied[id] = true;
+      changed = true;
+    }
+    // A fixture that dropped out of the feed has finished playing; stop showing
+    // it as live (final score is reconciled by the next full data refresh).
+    for (var prev in liveAppliedIds) {
+      if (nowApplied[prev]) continue;
+      var pf = liveFixtureIndex[prev];
+      if (pf) { pf.live = false; changed = true; }
+    }
+    liveAppliedIds = nowApplied;
+    return changed;
+  }
+
+  function refreshAfterLive() {
+    try { renderPredictions(); } catch (e) {}
+    try { renderHomeTopPicks(); } catch (e) {}
+    var info = $('#dataStatus');
+    if (info && Object.keys(liveAppliedIds).length) {
+      // Non-destructive hint that live scores are flowing.
+      if (info.textContent.indexOf('Live scores') < 0) {
+        info.textContent += ' · Live scores on';
+      }
+    }
+  }
+
+  function pollLiveScores() {
+    var url = LIVE_FEED_URL + (LIVE_FEED_URL.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now();
+    fetch(url, { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (feed) {
+        if (!feed) return;
+        if (applyLiveFeed(feed)) refreshAfterLive();
+      })
+      .catch(function () { /* offline / feed missing: keep last known state */ });
+  }
+
+  function startLivePolling() {
+    if (typeof fetch !== 'function') return;   // very old browser: skip gracefully
+    buildLiveIndex();
+    pollLiveScores();                           // immediate first pull
+    setInterval(pollLiveScores, LIVE_POLL_MS);
+  }
+
   /* ---------- init / wiring ---------- */
   function init() {
     initBookmakers();
@@ -2438,6 +2522,9 @@ function leagueCode(l) {
     });
     var ac = $('#anchorAdClose');
     if (ac) ac.addEventListener('click', function () { document.body.classList.add('anchor-hidden'); });
+
+    // Begin polling live scores once the UI is wired up.
+    startLivePolling();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

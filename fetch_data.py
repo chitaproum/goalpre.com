@@ -31,6 +31,18 @@ def load_json(path, default):
         return default
     return json.loads(path.read_text())
 
+class ApiEndpointError(RuntimeError):
+    """A recoverable, request-specific API failure (e.g. a transient server-side
+    `bug`/`error` on one endpoint). The caller may skip just that league/fixture
+    and continue, instead of aborting the whole run. Fatal problems (bad key,
+    quota exhausted, HTTP errors) still raise a plain RuntimeError."""
+    pass
+
+# API-Football `errors` keys that mean the whole run must stop (auth / quota /
+# plan). Anything else (bug, rateLimit, generic server error) is treated as a
+# transient, per-request problem that is retried and then skipped.
+FATAL_API_ERROR_KEYS = {'token', 'key', 'plan', 'requests', 'subscription', 'access', 'authentication'}
+
 class Client:
     def __init__(self, key, budget=500):
         self.key, self.budget, self.calls = key, budget, 0
@@ -45,6 +57,7 @@ class Client:
             if page > 1:
                 q['page'] = page
             url = BASE + endpoint + '?' + urllib.parse.urlencode(q)
+            payload = None
             for attempt in range(3):
                 if self.remaining is not None and self.remaining <= self.reserve:
                     raise RuntimeError('Daily API reserve reached; existing data preserved.')
@@ -61,7 +74,6 @@ class Client:
                         if remaining is not None:
                             self.remaining = int(remaining)
                         payload = json.load(response)
-                    break
                 except urllib.error.HTTPError as e:
                     if e.code in (429, 500, 502, 503, 504) and attempt < 2:
                         time.sleep(10 * (attempt + 1))
@@ -72,11 +84,26 @@ class Client:
                         time.sleep(3 * (attempt + 1))
                         continue
                     raise RuntimeError(f'API network timeout on {endpoint}; existing data preserved.') from None
-            errors = payload.get('errors')
-            if errors:
-                # Avoid echoing arbitrary server content, which could contain secrets.
-                fields = ', '.join(errors.keys()) if isinstance(errors, dict) else 'response'
-                raise RuntimeError(f'API returned errors on {endpoint} ({fields}); inspect your provider dashboard.')
+
+                errors = payload.get('errors')
+                if errors:
+                    # Avoid echoing arbitrary server content, which could contain secrets.
+                    fields = ', '.join(errors.keys()) if isinstance(errors, dict) else 'response'
+                    keys = {str(k).lower() for k in errors.keys()} if isinstance(errors, dict) else set()
+                    if keys & FATAL_API_ERROR_KEYS:
+                        # Auth / quota / plan problems: stop and preserve existing data.
+                        raise RuntimeError(f'API returned errors on {endpoint} ({fields}); inspect your provider dashboard.')
+                    # Transient server-side issue (bug, rateLimit, generic error): back off and retry.
+                    if attempt < 2:
+                        time.sleep(8 * (attempt + 1))
+                        payload = None
+                        continue
+                    # Still failing after retries: recoverable at the caller level.
+                    raise ApiEndpointError(f'API returned errors on {endpoint} ({fields}) after retries; request skipped.')
+                break  # clean payload for this page
+
+            if payload is None:
+                raise ApiEndpointError(f'No clean response from {endpoint} after retries; request skipped.')
             if not isinstance(payload.get('response'), list):
                 raise RuntimeError(f'Unexpected API response on {endpoint}.')
             results.extend(payload['response'])
@@ -266,9 +293,16 @@ def discover_leagues(config, api, now, catalog_cache, warnings):
         entry = catalog_cache.get(country)
         fresh = entry and 0 <= (now-stamp(entry['at'])).total_seconds() < opts.get('cacheHours',168)*3600
         if not fresh:
-            rows = api.get('/leagues', country=country, current='true')
-            entry = {'at':now.isoformat(), 'rows':rows}
-            catalog_cache[country] = entry
+            try:
+                rows = api.get('/leagues', country=country, current='true')
+            except ApiEndpointError:
+                warnings.append(country+': league discovery failed this run; using cache if available.')
+                if entry is None:
+                    continue
+                rows = entry['rows']
+            else:
+                entry = {'at':now.isoformat(), 'rows':rows}
+                catalog_cache[country] = entry
         candidates = []
         for row in entry['rows']:
             league = row.get('league', {})
@@ -334,7 +368,10 @@ def run(root, api=None, now=None):
     configured_leagues = discover_leagues(config, api, now, discovery_cache, warnings)
     for lg in configured_leagues:
         print('Fetching '+lg['name'], flush=True)
-        meta = lg.get('_meta') or api.get('/leagues',id=lg['id'])
+        try:
+            meta = lg.get('_meta') or api.get('/leagues',id=lg['id'])
+        except ApiEndpointError:
+            warnings.append('League metadata unavailable for '+lg['name']+' this run; skipped.'); continue
         if not meta or not meta[0].get('seasons'):
             warnings.append('No seasons available for '+lg['name']); continue
         choices = meta[0]['seasons']
@@ -347,7 +384,10 @@ def run(root, api=None, now=None):
         odds_coverage[lg['id']] = coverage.get('odds')
         catalog = dict({k:v for k,v in lg.items() if not k.startswith('_')},season=year,coverage=coverage)
         league_catalog.append(catalog)
-        raw = api.get('/fixtures',league=lg['id'],season=year,timezone=config.get('timezone','UTC'))
+        try:
+            raw = api.get('/fixtures',league=lg['id'],season=year,timezone=config.get('timezone','UTC'))
+        except ApiEndpointError:
+            warnings.append('Fixtures unavailable for '+lg['name']+' this run; skipped.'); continue
         if not raw:
             warnings.append('No current-season fixtures for '+lg['name']); continue
         current_rows = [normalize(f,lg,year,tz) for f in raw]
@@ -379,7 +419,10 @@ def run(root, api=None, now=None):
         teams_by_league[lg['name']] = league_teams
         teams.update(league_teams)
         if coverage.get('standings'):
-            tables = api.get('/standings',league=lg['id'],season=year)
+            try:
+                tables = api.get('/standings',league=lg['id'],season=year)
+            except ApiEndpointError:
+                tables = []; warnings.append('Standings fetch failed for '+lg['name']+' this run.')
             standings_tables[lg['name']] = tables[0].get('league',{}).get('standings',[]) if tables else []
             ranks = {}
             for group in (tables[0].get('league',{}).get('standings',[]) if tables else []):
@@ -396,9 +439,12 @@ def run(root, api=None, now=None):
             if previous:
                 prev = max(previous)
                 api.previous_years = {prev}
-                for f in api.get('/fixtures',league=lg['id'],season=prev,timezone=config.get('timezone','UTC')):
-                    r = normalize(f,lg,prev,tz)
-                    if complete(r): all_results[r['id']] = r
+                try:
+                    for f in api.get('/fixtures',league=lg['id'],season=prev,timezone=config.get('timezone','UTC')):
+                        r = normalize(f,lg,prev,tz)
+                        if complete(r): all_results[r['id']] = r
+                except ApiEndpointError:
+                    warnings.append('Previous-season fixtures unavailable for '+lg['name']+' this run.')
                 api.previous_years = set()
     if not teams_by_league:
         raise RuntimeError('No usable fixtures returned for any selected competition; existing data preserved.')
@@ -417,10 +463,14 @@ def run(root, api=None, now=None):
         if not fresh:
             h2h_refreshes += 1
             rows=[]
-            for f in api.get('/fixtures/headtohead',h2h=pair,last=config.get('h2hLast',6),timezone=config.get('timezone','UTC')):
-                lg={'name':f['league']['name'],'id':f['league']['id']}
-                row=normalize(f,lg,f['league']['season'],tz)
-                if complete(row): rows.append(row)
+            try:
+                for f in api.get('/fixtures/headtohead',h2h=pair,last=config.get('h2hLast',6),timezone=config.get('timezone','UTC')):
+                    lg={'name':f['league']['name'],'id':f['league']['id']}
+                    row=normalize(f,lg,f['league']['season'],tz)
+                    if complete(row): rows.append(row)
+            except ApiEndpointError:
+                warnings.append('Head-to-head unavailable for fixture pair '+pair+' this run.')
+                rows = entry['rows'] if entry else []
             entry={'fetchedAt':now_iso,'rows':sorted(rows,key=lambda x:x['kickoffUtc'])}
             cache[pair]=entry
         h2h[pair]=entry['rows']
