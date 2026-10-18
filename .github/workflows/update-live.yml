@@ -43,9 +43,13 @@ jobs:
             echo 'No live.json produced (fetch failed soft); nothing to publish.'
             exit 0
           fi
-          # Stash the generated file outside the work tree so a branch switch
-          # can't clobber it.
+          # Stash the generated file outside the work tree, then remove it from
+          # the working directory. It is produced on the main checkout as an
+          # UNTRACKED file, so leaving it in place makes `git checkout live-data`
+          # abort ("untracked working tree files would be overwritten") because
+          # the live-data branch tracks its own live.json.
           cp live.json "$RUNNER_TEMP/live.json"
+          rm -f live.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # Work on an isolated branch that only ever carries live.json.
