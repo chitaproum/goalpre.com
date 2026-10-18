@@ -1,0 +1,101 @@
+name: Update football data and deploy
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */8 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - '**.css'
+      - '**.js'
+      - 'fetch_data.py'
+      - 'api-config.json'
+      - '.github/workflows/update-data.yml'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: football-pages
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history + persisted token so the snapshot step can rebase
+          # onto the latest main before pushing (avoids "fetch first" rejects).
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch real data (key stays private)
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python fetch_data.py
+      - name: Generate LLM match insights (optional; key stays private)
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          # Optional overrides; leave unset to use api-config.json defaults.
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python generate_insights.py
+      - name: Preserve data and prediction snapshots
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data.js prediction-archive.json h2h-cache.json odds-cache.json api-request-cache.json league-discovery-cache.json ai-insights.js ai-insights-cache.json
+          if git diff --cached --quiet; then
+            echo 'No data changes to commit.'
+          else
+            git commit -m 'Refresh football data, predictions and AI insights'
+            # The scheduled run and manual pushes both target main, so the
+            # remote may have advanced while this job ran. Rebase onto the
+            # latest main and retry a few times instead of failing.
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                pushed=true
+                break
+              fi
+              echo "Push rejected (attempt $attempt); rebasing onto latest main..."
+              git pull --rebase --autostash origin main || true
+              sleep 5
+            done
+            if [ "$pushed" != true ]; then
+              echo 'ERROR: could not push data snapshot after 5 attempts.' >&2
+              exit 1
+            fi
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Prepare public website only
+        run: |
+          mkdir -p _site
+          cp *.html styles.css theme.js app.js ads.js data.js _site/
+          # AI insights file is optional; copy it only when present.
+          if [ -f ai-insights.js ]; then cp ai-insights.js _site/; fi
+          for folder in images assets; do
+            if [ -d "$folder" ]; then cp -r "$folder" _site/; fi
+          done
+          # Include ads.txt if present
+          if [ -f ads.txt ]; then cp ads.txt _site/; fi
+          # SEO files for crawlers
+          if [ -f robots.txt ]; then cp robots.txt _site/; fi
+          if [ -f sitemap.xml ]; then cp sitemap.xml _site/; fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
