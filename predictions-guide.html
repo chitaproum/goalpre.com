@@ -117,15 +117,41 @@
 
       <h2 id="kpi">4. How the KPI model works</h2>
       <p>The KPI (Key Performance Indicator) model takes a different angle. Instead
-      of goals alone, it builds a weighted <em>confidence index</em> for each team
-      from several indicators:</p>
+      of goals alone, it builds weighted <em>confidence indices</em> from recent,
+      venue-aware match statistics. It uses two separate frameworks whose weights
+      each add up to 100%: one for the match winner (1X2) and one for the Over 2.5
+      goals line.</p>
+      <h3>Win prediction KPIs</h3>
       <table>
-        <tr><th>Indicator</th><th>Why it matters</th></tr>
-        <tr><td>Overall &amp; venue win rate</td><td>Baseline quality, home/away split</td></tr>
-        <tr><td>Recent form (last 6)</td><td>Current momentum</td></tr>
-        <tr><td>Head-to-head record</td><td>Specific match-up history</td></tr>
-        <tr><td>Average goals for / against</td><td>Attacking and defensive output</td></tr>
+        <tr><th>Indicator</th><th>Weight</th></tr>
+        <tr><td>Venue-specific win rate (home W% vs away W%)</td><td>20%</td></tr>
+        <tr><td>Recent 6-match form (W% + unbeaten credit)</td><td>17%</td></tr>
+        <tr><td>Points-per-game at the relevant venue</td><td>15%</td></tr>
+        <tr><td>Overall season win rate</td><td>12%</td></tr>
+        <tr><td>Head-to-head dominance (recent meetings)</td><td>10%</td></tr>
+        <tr><td>Venue loss avoidance (1 &minus; L%)</td><td>10%</td></tr>
+        <tr><td>Net goal differential margin (AGF &minus; AGA)</td><td>9%</td></tr>
+        <tr><td>Overall points-per-game level</td><td>7%</td></tr>
       </table>
+      <h3>Over 2.5 goals KPIs</h3>
+      <table>
+        <tr><th>Indicator</th><th>Weight</th></tr>
+        <tr><td>Combined Over-2.5% rate (home team at home + away team away)</td><td>20%</td></tr>
+        <tr><td>Combined goal pace / total AG+ (AGF+AGA of both teams)</td><td>15%</td></tr>
+        <tr><td>Recent 6-match Over-2.5 frequency</td><td>11%</td></tr>
+        <tr><td>Head-to-head Over-2.5 rate</td><td>10%</td></tr>
+        <tr><td>Recent 6-match both-teams-scoring trend</td><td>10%</td></tr>
+        <tr><td>Overall Over-2.5% rate (both teams)</td><td>8%</td></tr>
+        <tr><td>Venue attacking power (home &amp; away AGF around 1.80+)</td><td>8%</td></tr>
+        <tr><td>Venue defensive leakiness (home &amp; away AGA high)</td><td>8%</td></tr>
+        <tr><td>Overall AGF around 2.00+</td><td>5%</td></tr>
+        <tr><td>Overall AGA around 1.50+ (leaky = more goals)</td><td>5%</td></tr>
+      </table>
+      <p>Threshold-style indicators (such as &ldquo;AGF above 1.80&rdquo;) are
+      applied as smooth ramps rather than hard yes/no cut-offs, so a team just
+      below a line is not treated the same as one far below it. For the goals
+      line, leaky defences (high goals-against) raise the Over-2.5 score, because
+      teams that concede freely tend to play in higher-scoring games.</p>
       <p>Because it weights venue and form heavily, the KPI model sometimes
       disagrees with the pure Poisson model — and that disagreement is itself
       useful information (see confidence below).</p>

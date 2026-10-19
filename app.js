@@ -162,73 +162,143 @@
     return { rows: rows, hp: hp, ap: ap, n: rows.length };
   }
 
-  /* ---------- KPI engine: user-specified weights (sum = 1) ---------- */
-  var KPI_WEIGHTS = {
-    overallWin: 0.10, venueWin: 0.125, recent6: 0.10,
-    venueRecent6: 0.055, h2h: 0.035, net: 0.035,
-    overallAGF: 0.11, overallAGA: 0.15,
-    venueAGF: 0.13, venueAGA: 0.16
+  /* ---------- KPI engine (reviewed & updated) ----------
+     Two separate, transparent weighting frameworks whose weights each sum to 1:
+       (A) WIN prediction  — 8 team-strength KPIs -> per-team score -> 1X2.
+       (B) OVER 2.5 goals  — 10 goal-environment KPIs -> match P(Over 2.5).
+     Hard yes/no thresholds from the source tables (e.g. "AGF > 1.80",
+     "AGA > 1.50") are implemented as SMOOTH ramps centred on the threshold,
+     so a team on 1.99 vs 2.01 is not flipped from 0 to full credit (avoids a
+     cliff / knife-edge). One correction was applied: in the Over-2.5 table the
+     venue "Defensive Tightness (AGA < 0.80)" row rewards Over when defences are
+     TIGHT, which is backwards — leaky defences (high AGA) produce goals. It is
+     reimplemented as "Defensive Leakiness" (high combined AGA favours Over),
+     consistent with the "Overall AGA > 1.50" row in the same table. */
+
+  // (A) WIN prediction KPI weights (sum = 1.00).
+  var KPI_WIN_WEIGHTS = {
+    venueWin: 0.20,      // Venue-specific win rate (home W% at home vs away W% away)
+    venueAppg: 0.15,     // Points-per-game at the relevant venue
+    overallWin: 0.12,    // Overall season win rate
+    recentForm: 0.17,    // Recent 6-match form (points-based: W% + unbeaten credit)
+    h2hDom: 0.10,        // Head-to-head dominance in recent meetings
+    lossAvoid: 0.10,     // Venue loss avoidance (1 - L%)
+    net: 0.09,           // Net goal differential margin (AGF - AGA)
+    overallAppg: 0.07    // Overall APPG level
   };
-  function kpiComponents(stat, venue, dominance) {
-    function norm(x, lo, hi) { return clamp((x - lo) / (hi - lo), 0, 1); }
-    function form(games) {
-      if (!games.length) return 0.5;
-      return games.reduce(function (total, g) {
-        return total + (g.res === 'W' ? 3 : g.res === 'D' ? 1 : 0);
-      }, 0) / (3 * games.length);
-    }
+  // (B) OVER 2.5 goals KPI weights (sum = 1.00).
+  var KPI_OVER_WEIGHTS = {
+    combVenueOver: 0.20, // Combined Over-2.5 % (home team at home + away team away)
+    overallOver: 0.08,   // Overall Over-2.5 % (both teams)
+    pace: 0.15,          // Combined goal pace / total AG+ (AGF+AGA of both)
+    recentOver: 0.11,    // Recent 6-match Over-2.5 frequency
+    h2hOver: 0.10,       // Head-to-head Over-2.5 rate
+    atkPower: 0.08,      // Venue attacking power (home & away AGF vs 1.80)
+    leaky: 0.08,         // Venue defensive leakiness (home & away AGA high)  [corrected]
+    atkOverall: 0.05,    // Overall AGF vs 2.00
+    defOverall: 0.05,    // Overall AGA vs 1.50 (leaky = more goals)
+    recentBtts: 0.10     // Recent 6-match both-teams-scoring trend
+  };
+
+  function _norm(x, lo, hi) { return clamp((x - lo) / (hi - lo), 0, 1); }
+  // Smooth 0..1 ramp: 0.5 at the threshold, saturating within +/- width.
+  function _ramp(x, center, width) { return clamp(0.5 + (x - center) / width, 0, 1); }
+  function _form(games) {
+    if (!games.length) return 0.5;
+    return games.reduce(function (t, g) { return t + (g.res === 'W' ? 3 : g.res === 'D' ? 1 : 0); }, 0) / (3 * games.length);
+  }
+  function _overRate(games) {
+    if (!games.length) return 0.5;
+    return games.filter(function (g) { return g.gf + g.ga > 2.5; }).length / games.length;
+  }
+  function _bttsRate(games) {
+    if (!games.length) return 0.5;
+    return games.filter(function (g) { return g.gf > 0 && g.ga > 0; }).length / games.length;
+  }
+  function _avgKey(games, key) {
+    if (!games.length) return null;
+    return games.reduce(function (t, g) { return t + g[key]; }, 0) / games.length;
+  }
+
+  // (A) Per-team WIN score in [0,1] from the 8 weighted KPIs.
+  function winScore(stat, venue, dominance) {
     var games = stat ? (venue === 'H' ? stat.raw.hGames : stat.raw.aGames) : [];
-    function venueAverage(key) {
-      if (!games.length) return null;
-      return games.reduce(function (total, g) { return total + g[key]; }, 0) / games.length;
-    }
-    var venueGF = venueAverage('gf'), venueGA = venueAverage('ga');
-    return {
+    var n = games.length;
+    var venueWins = n ? games.filter(function (g) { return g.res === 'W'; }).length / n : 0.5;
+    var venueLoss = n ? games.filter(function (g) { return g.res === 'L'; }).length / n : 0.5;
+    var venuePts = n ? games.reduce(function (t, g) { return t + (g.res === 'W' ? 3 : g.res === 'D' ? 1 : 0); }, 0) / n : (stat ? stat.ppg : 1.0);
+    // Recent form blends points-based form with an unbeaten-rate credit.
+    var r6 = stat ? stat.recent6 : [];
+    var unbeaten = r6.length ? r6.filter(function (g) { return g.res !== 'L'; }).length / r6.length : 0.5;
+    var recentForm = clamp(0.65 * _form(r6) + 0.35 * unbeaten, 0, 1);
+    var c = {
+      venueWin: venueWins,
+      venueAppg: clamp(venuePts / 3, 0, 1),
       overallWin: stat ? stat.winRate : 0.5,
-      venueWin: games.length ? games.filter(function (g) { return g.res === 'W'; }).length / games.length : 0.5,
-      recent6: form(stat ? stat.recent6 : []),
-      venueRecent6: form(games.slice(-6)),
-      h2h: dominance,
-      net: stat ? norm(stat.net, -2, 2) : 0.5,
-      overallAGF: stat ? norm(stat.aGF, 0, 4) : 0.5,
-      overallAGA: stat ? 1 - norm(stat.aGA, 0, 4) : 0.5,
-      venueAGF: venueGF === null ? 0.5 : norm(venueGF, 0, 4),
-      venueAGA: venueGA === null ? 0.5 : 1 - norm(venueGA, 0, 4)
+      recentForm: recentForm,
+      h2hDom: dominance,
+      lossAvoid: n ? 1 - venueLoss : 0.5,
+      net: stat ? _norm(stat.net, -2, 2) : 0.5,
+      overallAppg: stat ? clamp(stat.ppg / 3, 0, 1) : 0.5
     };
+    var score = 0; for (var k in KPI_WIN_WEIGHTS) score += KPI_WIN_WEIGHTS[k] * c[k];
+    return { score: score, components: c };
   }
-  function kpiConfidence(components) {
-    return Object.keys(KPI_WEIGHTS).reduce(function (total, key) {
-      return total + KPI_WEIGHTS[key] * components[key];
-    }, 0);
+
+  // (B) Match-level P(Over 2.5) in [0,1] from the 10 weighted KPIs.
+  function overScore(hs, as, h2hRows) {
+    var hHome = hs ? hs.raw.hGames : [];   // home team's HOME matches
+    var aAway = as ? as.raw.aGames : [];   // away team's AWAY matches
+    var hVenueAGF = _avgKey(hHome, 'gf'), aVenueAGF = _avgKey(aAway, 'gf');
+    var hVenueAGA = _avgKey(hHome, 'ga'), aVenueAGA = _avgKey(aAway, 'ga');
+    var pace = (hs ? hs.aGF + hs.aGA : 2.6) + (as ? as.aGF + as.aGA : 2.6);
+    var h2hOver = h2hRows && h2hRows.length
+      ? h2hRows.filter(function (m) { return (m.fh + m.fa) > 2.5; }).length / h2hRows.length : 0.5;
+    var c = {
+      combVenueOver: (_overRate(hHome) + _overRate(aAway)) / 2,
+      overallOver: ((hs ? hs.overRate : 0.5) + (as ? as.overRate : 0.5)) / 2,
+      pace: _ramp(pace, 5.2, 2.0),
+      recentOver: (_overRate(hs ? hs.recent6 : []) + _overRate(as ? as.recent6 : [])) / 2,
+      h2hOver: h2hOver,
+      atkPower: (_ramp(hVenueAGF == null ? 1.4 : hVenueAGF, 1.80, 0.9) + _ramp(aVenueAGF == null ? 1.2 : aVenueAGF, 1.80, 0.9)) / 2,
+      leaky: (_ramp(hVenueAGA == null ? 1.1 : hVenueAGA, 1.30, 0.9) + _ramp(aVenueAGA == null ? 1.3 : aVenueAGA, 1.30, 0.9)) / 2,
+      atkOverall: (_ramp(hs ? hs.aGF : 1.4, 2.00, 0.9) + _ramp(as ? as.aGF : 1.2, 2.00, 0.9)) / 2,
+      defOverall: (_ramp(hs ? hs.aGA : 1.1, 1.50, 0.9) + _ramp(as ? as.aGA : 1.3, 1.50, 0.9)) / 2,
+      recentBtts: (_bttsRate(hs ? hs.recent6 : []) + _bttsRate(as ? as.recent6 : [])) / 2
+    };
+    var p = 0; for (var k in KPI_OVER_WEIGHTS) p += KPI_OVER_WEIGHTS[k] * c[k];
+    return { p: clamp(p, 0.02, 0.98), components: c };
   }
+
   function predictKpi(home, away) {
     var model = predictPoisson(home, away); // unchanged score and expected-goals model
     var hs = teamStat(home), as = teamStat(away), hh = h2h(home, away);
     var h2hTot = hh.hp + hh.ap;
     var hH2H = h2hTot ? hh.hp / h2hTot : 0.5;
     var aH2H = h2hTot ? hh.ap / h2hTot : 0.5;
-    var hComponents = kpiComponents(hs, 'H', hH2H);
-    var aComponents = kpiComponents(as, 'A', aH2H);
-    var hConf = kpiConfidence(hComponents), aConf = kpiConfidence(aComponents);
-    // Venue inputs already capture home/away strength; no extra unweighted home bump.
+    // (A) WIN framework -> 1X2
+    var hWin = winScore(hs, 'H', hH2H), aWin = winScore(as, 'A', aH2H);
+    var hConf = hWin.score, aConf = aWin.score;
     var closeness = 1 - clamp(Math.abs(hConf - aConf) / 0.5, 0, 1);
     var pDraw = clamp(0.08 + (0.34 - 0.08) * closeness, 0.08, 0.34);
     var rem = 1 - pDraw, tot = hConf + aConf;
     var pHome = rem * (tot > 0 ? hConf / tot : 0.5);
     var pAway = rem * (tot > 0 ? aConf / tot : 0.5);
-    // Over/Under KPI confidence: .45 Poisson + .35 historical over-rate + .20 expected-goals factor
-    var histOver = ((hs ? hs.overRate : 0.5) + (as ? as.overRate : 0.5)) / 2;
-    var expFactor = clamp(model.expTotal / 4, 0, 1);
-    var pOver = clamp(0.45 * model.pOver + 0.35 * histOver + 0.20 * expFactor, 0.02, 0.98);
+    // (B) OVER 2.5 framework -> P(Over), lightly stabilised with the Poisson model.
+    var over = overScore(hs, as, hh.rows);
+    var pOver = clamp(0.75 * over.p + 0.25 * model.pOver, 0.02, 0.98);
     return {
       pHome: pHome, pDraw: pDraw, pAway: pAway,
       scoreH: model.scoreH, scoreA: model.scoreA,
       expH: model.expH, expA: model.expA, expTotal: model.expTotal,
       pOver: pOver,
       _kpi: {
-        version: 'kpi-v2-user-weights', weights: KPI_WEIGHTS,
+        version: 'kpi-v3-dual-framework',
+        winWeights: KPI_WIN_WEIGHTS, overWeights: KPI_OVER_WEIGHTS,
         hConf: hConf, aConf: aConf, hH2H: hH2H, aH2H: aH2H, h2hN: hh.n,
-        homeComponents: hComponents, awayComponents: aComponents
+        overP: over.p,
+        homeWinComponents: hWin.components, awayWinComponents: aWin.components,
+        overComponents: over.components
       }
     };
   }
