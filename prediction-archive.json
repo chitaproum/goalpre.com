@@ -213064,5 +213064,290 @@
       "expA": 1.504608467488896,
       "expTotal": 2.9290800526944
     }
+  },
+  "1646741": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T17:00:00+00:00",
+    "home": "San Martin Formosa",
+    "away": "Cipolletti",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45286896716913716,
+      "pDraw": 0.25091418775579527,
+      "pAway": 0.2962168450750675,
+      "pOver": 0.5195137228862472,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5499787977877555,
+      "expA": 1.2050696196348074,
+      "expTotal": 2.7550484174225627
+    }
+  },
+  "1646743": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Boca Unidos",
+    "away": "Gimnasia Chivilcoy",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.35686302842322615,
+      "pDraw": 0.2781588778168852,
+      "pAway": 0.3649780937598886,
+      "pOver": 0.4243943144190381,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.180534040425637,
+      "expA": 1.1972017578165122,
+      "expTotal": 2.377735798242149
+    }
+  },
+  "1646748": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Villa Mitre",
+    "away": "Douglas Haig",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.356114981971307,
+      "pDraw": 0.35697398201128777,
+      "pAway": 0.28691103601740536,
+      "pOver": 0.20785056980582925,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8429351943199446,
+      "expA": 0.7229125536157351,
+      "expTotal": 1.5658477479356798
+    }
+  },
+  "1646747": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Sportivo Las Parejas",
+    "away": "Alvarado",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24609011547135135,
+      "pDraw": 0.38391216226287217,
+      "pAway": 0.36999772226577654,
+      "pOver": 0.16047426184851948,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.5848987608208616,
+      "expA": 0.7900292980525365,
+      "expTotal": 1.374928058873398
+    }
+  },
+  "1646745": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Juventud Antoniana",
+    "away": "Sol de América",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3590664955370941,
+      "pDraw": 0.29252087501553065,
+      "pAway": 0.34841262944737533,
+      "pOver": 0.37316108600742876,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1029379807895876,
+      "expA": 1.0818313781335198,
+      "expTotal": 2.1847693589231074
+    }
+  },
+  "1646744": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Gimnasia Concepción",
+    "away": "Olimpo Bahia Blanca",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2505314138593384,
+      "pDraw": 0.38881127589999415,
+      "pAway": 0.3606573102406675,
+      "pOver": 0.154633237302854,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.5846527760154795,
+      "expA": 0.765695271874239,
+      "expTotal": 1.3503480478897185
+    }
+  },
+  "1646742": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Argentino Monte Maíz",
+    "away": "Kimberley Mar del Plata",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32600957162036226,
+      "pDraw": 0.3459802157673384,
+      "pAway": 0.32801021261229935,
+      "pOver": 0.23123844480030584,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8262944043182829,
+      "expA": 0.8298368335152,
+      "expTotal": 1.656131237833483
+    }
+  },
+  "1646746": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-10-25T18:00:00+00:00",
+    "home": "Sarmiento de La Banda",
+    "away": "Atenas",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3432726918378617,
+      "pDraw": 0.2854866187213141,
+      "pAway": 0.3712406894408242,
+      "pOver": 0.3970047011110405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1088202925084039,
+      "expA": 1.1651840127055801,
+      "expTotal": 2.274004305213984
+    }
+  },
+  "1646754": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Olimpo Bahia Blanca",
+    "away": "Gimnasia Concepción",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.424324601157568,
+      "pDraw": 0.3740918427533579,
+      "pAway": 0.20158355608907405,
+      "pOver": 0.1638324309573347,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8805495626553748,
+      "expA": 0.50839371827433,
+      "expTotal": 1.3889432809297046
+    }
+  },
+  "1646752": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Douglas Haig",
+    "away": "Villa Mitre",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3496182654053294,
+      "pDraw": 0.3575137786741734,
+      "pAway": 0.29286795592049725,
+      "pOver": 0.20746380033898834,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8313494366580954,
+      "expA": 0.7329871254956041,
+      "expTotal": 1.5643365621536995
+    }
+  },
+  "1646749": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Alvarado",
+    "away": "Sportivo Las Parejas",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4346492603618159,
+      "pDraw": 0.3680444371821347,
+      "pAway": 0.1973063024560495,
+      "pOver": 0.1706545365399007,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.908533692760417,
+      "expA": 0.508607618105097,
+      "expTotal": 1.417141310865514
+    }
+  },
+  "1646753": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Kimberley Mar del Plata",
+    "away": "Argentino Monte Maíz",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3960032551622311,
+      "pDraw": 0.3402520273378525,
+      "pAway": 0.26374471749991646,
+      "pOver": 0.23561382567753064,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9543123585424799,
+      "expA": 0.718516873320246,
+      "expTotal": 1.672829231862726
+    }
+  },
+  "1646755": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Sol de América",
+    "away": "Juventud Antoniana",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4278171968018839,
+      "pDraw": 0.2871887008444218,
+      "pAway": 0.2849941023536943,
+      "pOver": 0.37808442350967875,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2441060848535477,
+      "expA": 0.959076505034424,
+      "expTotal": 2.2031825898879718
+    }
+  },
+  "1646750": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Atenas",
+    "away": "Sarmiento de La Banda",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4536157538880264,
+      "pDraw": 0.27701782652863166,
+      "pAway": 0.269366419583342,
+      "pOver": 0.4049752559315482,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.339961614611417,
+      "expA": 0.96419155870296,
+      "expTotal": 2.304153173314377
+    }
+  },
+  "1646751": {
+    "savedAt": "2026-10-19T16:44:17.116533+00:00",
+    "kickoffUtc": "2026-11-01T18:00:00+00:00",
+    "home": "Gimnasia Chivilcoy",
+    "away": "Boca Unidos",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44883416198909215,
+      "pDraw": 0.2711393709607357,
+      "pAway": 0.28002646705017226,
+      "pOver": 0.4310544474786318,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.376782021488989,
+      "expA": 1.026551339500554,
+      "expTotal": 2.403333360989543
+    }
   }
 }
