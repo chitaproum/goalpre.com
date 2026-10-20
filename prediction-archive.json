@@ -215591,5 +215591,119 @@
       "expA": 1.538165599059684,
       "expTotal": 2.293488265792897
     }
+  },
+  "1632045": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-10-30T22:30:00+00:00",
+    "home": "Club Guarani",
+    "away": "2 de Mayo",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4023008234739353,
+      "pDraw": 0.2974926525898641,
+      "pAway": 0.3002065239362006,
+      "pOver": 0.3505344779110811,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1500385075309825,
+      "expA": 0.9507039229442701,
+      "expTotal": 2.1007424304752527
+    }
+  },
+  "1632049": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-10-30T22:30:00+00:00",
+    "home": "Sportivo Trinidense",
+    "away": "Rubio NU",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6904469117762804,
+      "pDraw": 0.18120202615612602,
+      "pAway": 0.1283510620675936,
+      "pOver": 0.6061059356484745,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.276773294758553,
+      "expA": 0.868439299816584,
+      "expTotal": 3.145212594575137
+    }
+  },
+  "1632046": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-10-31T20:00:00+00:00",
+    "home": "Deportivo Recoleta",
+    "away": "Sportivo Ameliano",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2916377810318484,
+      "pDraw": 0.24993896709733757,
+      "pAway": 0.458423251870814,
+      "pOver": 0.5213178044408922,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1973343088645712,
+      "expA": 1.56524740659045,
+      "expTotal": 2.7625817154550214
+    }
+  },
+  "1632048": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-10-31T22:30:00+00:00",
+    "home": "Sportivo Luqueno",
+    "away": "Nacional Asuncion",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.12592710813115648,
+      "pDraw": 0.1939116652064458,
+      "pAway": 0.6801612266623976,
+      "pOver": 0.5427672827933169,
+      "scoreH": 0,
+      "scoreA": 2,
+      "expH": 0.7671226060040895,
+      "expA": 2.090699572454472,
+      "expTotal": 2.857822178458562
+    }
+  },
+  "1632047": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-10-31T22:30:00+00:00",
+    "home": "Club Sp. San Lorenzo",
+    "away": "Libertad Asuncion",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.13148378306941094,
+      "pDraw": 0.21056184374281095,
+      "pAway": 0.6579543731877782,
+      "pOver": 0.4869594891974239,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.7127581217737861,
+      "expA": 1.9120739830955278,
+      "expTotal": 2.6248321048693137
+    }
+  },
+  "1632044": {
+    "savedAt": "2026-10-20T16:40:56.766400+00:00",
+    "kickoffUtc": "2026-11-01T20:00:00+00:00",
+    "home": "Cerro Porteno",
+    "away": "Olimpia",
+    "league": "Division Profesional - Clausura · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.26480449969229863,
+      "pDraw": 0.26936770362735374,
+      "pAway": 0.46582779668034763,
+      "pOver": 0.4292895081146432,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9895469192571785,
+      "expA": 1.4070782346157298,
+      "expTotal": 2.3966251538729084
+    }
   }
 }
