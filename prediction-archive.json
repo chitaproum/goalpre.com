@@ -217206,5 +217206,271 @@
       "expA": 1.0771341269635486,
       "expTotal": 2.4343325297938003
     }
+  },
+  "1647021": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-24T11:00:00+00:00",
+    "home": "Woodys FC",
+    "away": "Tord",
+    "league": "Division 2 - Norra Götaland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.561378834548595,
+      "pDraw": 0.21298102131750235,
+      "pAway": 0.2256401441339026,
+      "pOver": 0.6323611045113515,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0401132572000003,
+      "expA": 1.225620806,
+      "expTotal": 3.2657340632
+    }
+  },
+  "1646940": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-24T11:00:00+00:00",
+    "home": "Bergnäsets",
+    "away": "Fransta",
+    "league": "Division 2 - Norrland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5623620871444508,
+      "pDraw": 0.18235124878966621,
+      "pAway": 0.2552866640658829,
+      "pOver": 0.8151475835004002,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.66266881413,
+      "expA": 1.7968320656,
+      "expTotal": 4.45950087973
+    }
+  },
+  "1647019": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-24T12:00:00+00:00",
+    "home": "Vallentuna",
+    "away": "Lidingö",
+    "league": "Division 2 - Norra Svealand · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6345480243935382,
+      "pDraw": 0.18670365442723283,
+      "pAway": 0.178748321179229,
+      "pOver": 0.6891004535043901,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3765248794675,
+      "expA": 1.19559146265,
+      "expTotal": 3.5721163421175
+    }
+  },
+  "1647017": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-24T12:00:00+00:00",
+    "home": "Hanvikens SK",
+    "away": "Syrianska FC",
+    "league": "Division 2 - Södra Svealand · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5665550483349358,
+      "pDraw": 0.18989403992910267,
+      "pAway": 0.24355091173596172,
+      "pOver": 0.7673168076098895,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4685692976999998,
+      "expA": 1.5981971112,
+      "expTotal": 4.0667664088999995
+    }
+  },
+  "1647015": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-24T13:00:00+00:00",
+    "home": "Halmia",
+    "away": "Åstorp",
+    "league": "Division 2 - Västra Götaland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5007623847045659,
+      "pDraw": 0.22348549554020036,
+      "pAway": 0.2757521197552336,
+      "pOver": 0.6323166898622117,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9009101869999998,
+      "expA": 1.3626414945,
+      "expTotal": 3.2635516815
+    }
+  },
+  "1646965": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-25T21:00:00+00:00",
+    "home": "Chattanooga",
+    "away": "Connecticut FC",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5349995106506134,
+      "pDraw": 0.19343882920615596,
+      "pAway": 0.2715616601432307,
+      "pOver": 0.777432310747896,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.42397979749492,
+      "expA": 1.713674055819176,
+      "expTotal": 4.137653853314096
+    }
+  },
+  "1646966": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-25T23:00:00+00:00",
+    "home": "Crown Legacy",
+    "away": "Columbus Crew II",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5791621242300155,
+      "pDraw": 0.19134448117909617,
+      "pAway": 0.22949339459088838,
+      "pOver": 0.7436864294686503,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.414841787541433,
+      "expA": 1.4879829878981758,
+      "expTotal": 3.902824775439609
+    }
+  },
+  "1646967": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-26T00:30:00+00:00",
+    "home": "Austin II",
+    "away": "Los Angeles FC II",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6646634704001613,
+      "pDraw": 0.18848580110785856,
+      "pAway": 0.14685072849198016,
+      "pOver": 0.615550220070573,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.23920697766892,
+      "expA": 0.9496185366467519,
+      "expTotal": 3.188825514315672
+    }
+  },
+  "1646968": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-26T02:00:00+00:00",
+    "home": "Portland Timbers II",
+    "away": "Ventura County",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36546912350280414,
+      "pDraw": 0.26204508991727704,
+      "pAway": 0.37248578657991877,
+      "pOver": 0.48952224141344686,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3086444907117687,
+      "expA": 1.3237102501987439,
+      "expTotal": 2.632354740910513
+    }
+  },
+  "1647022": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-31T12:00:00+00:00",
+    "home": "Tord",
+    "away": "Woodys FC",
+    "league": "Division 2 - Norra Götaland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.30693702807466416,
+      "pDraw": 0.23108817173737456,
+      "pAway": 0.46197480018796133,
+      "pOver": 0.6160141360614071,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4094639269,
+      "expA": 1.7740115280000002,
+      "expTotal": 3.1834754549
+    }
+  },
+  "1646941": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-31T12:00:00+00:00",
+    "home": "Fransta",
+    "away": "Bergnäsets",
+    "league": "Division 2 - Norrland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.35625380541011203,
+      "pDraw": 0.1965797631919679,
+      "pAway": 0.44716643139792,
+      "pOver": 0.8086391041622683,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.06635687544,
+      "expA": 2.3153641862,
+      "expTotal": 4.38172106164
+    }
+  },
+  "1647016": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-31T12:00:00+00:00",
+    "home": "Åstorp",
+    "away": "Halmia",
+    "league": "Division 2 - Västra Götaland · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3650609383463196,
+      "pDraw": 0.2333547780372074,
+      "pAway": 0.40158428361647297,
+      "pOver": 0.6237057232466403,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.567037718675,
+      "expA": 1.65296538,
+      "expTotal": 3.220003098675
+    }
+  },
+  "1647020": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-10-31T13:00:00+00:00",
+    "home": "Lidingö",
+    "away": "Vallentuna",
+    "league": "Division 2 - Norra Svealand · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2536889333389015,
+      "pDraw": 0.21238818269385223,
+      "pAway": 0.5339228839672462,
+      "pOver": 0.6667525913913557,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.3749301820474997,
+      "expA": 2.06654337345,
+      "expTotal": 3.4414735554975
+    }
+  },
+  "1647018": {
+    "savedAt": "2026-10-21T16:41:56.439527+00:00",
+    "kickoffUtc": "2026-11-01T14:00:00+00:00",
+    "home": "Syrianska FC",
+    "away": "Hanvikens SK",
+    "league": "Division 2 - Södra Svealand · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3380385462095844,
+      "pDraw": 0.20579067455698824,
+      "pAway": 0.45617077923342736,
+      "pOver": 0.7572759079870759,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.8379266778799999,
+      "expA": 2.146581998,
+      "expTotal": 3.98450867588
+    }
   }
 }
