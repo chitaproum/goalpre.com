@@ -216693,5 +216693,518 @@
       "expA": 1.109923520146518,
       "expTotal": 3.0041990860144954
     }
+  },
+  "1646916": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-24T21:30:00+00:00",
+    "home": "Monagas SC",
+    "away": "Puerto Cabello",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.29578077239490574,
+      "pDraw": 0.2542237538487271,
+      "pAway": 0.44999547375636717,
+      "pOver": 0.505205101098925,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1799371937678038,
+      "expA": 1.5161647453472522,
+      "expTotal": 2.696101939115056
+    }
+  },
+  "1646917": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-24T22:00:00+00:00",
+    "home": "Caracas FC",
+    "away": "Deportivo Tachira FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28058093964711395,
+      "pDraw": 0.2467997724079095,
+      "pAway": 0.4726192879449765,
+      "pOver": 0.5283990461123983,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1829174111404495,
+      "expA": 1.6093589817855332,
+      "expTotal": 2.7922763929259826
+    }
+  },
+  "1646918": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-25T21:30:00+00:00",
+    "home": "Portuguesa FC",
+    "away": "Carabobo FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33366997058642106,
+      "pDraw": 0.2829564000192591,
+      "pAway": 0.3833736293943198,
+      "pOver": 0.40495258600504713,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1015984698157835,
+      "expA": 1.2023591520460906,
+      "expTotal": 2.303957621861874
+    }
+  },
+  "1646919": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-25T23:30:00+00:00",
+    "home": "Deportivo La Guaira",
+    "away": "Metropolitanos FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3356303776023564,
+      "pDraw": 0.28554343253730163,
+      "pAway": 0.37882618986034183,
+      "pOver": 0.3960777374893405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0917545611761557,
+      "expA": 1.1787675757022882,
+      "expTotal": 2.270522136878444
+    }
+  },
+  "1646920": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-27T21:30:00+00:00",
+    "home": "Puerto Cabello",
+    "away": "Caracas FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.49162022340036204,
+      "pDraw": 0.25861590703362647,
+      "pAway": 0.24976386956601157,
+      "pOver": 0.45902355738682804,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.5132079216461785,
+      "expA": 0.9986050820722681,
+      "expTotal": 2.5118130037184465
+    }
+  },
+  "1646921": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-27T23:30:00+00:00",
+    "home": "Deportivo Tachira FC",
+    "away": "Monagas SC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6190856535752254,
+      "pDraw": 0.20181805065095096,
+      "pAway": 0.17909629577382374,
+      "pOver": 0.6162330053738778,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1325361242563377,
+      "expA": 1.056875578366608,
+      "expTotal": 3.1894117026229454
+    }
+  },
+  "1646922": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-28T21:30:00+00:00",
+    "home": "Carabobo FC",
+    "away": "Deportivo La Guaira",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43202563038165426,
+      "pDraw": 0.2831320388843001,
+      "pAway": 0.2848423307340456,
+      "pOver": 0.3913467206527198,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2747064407193116,
+      "expA": 0.978108531154524,
+      "expTotal": 2.2528149718738355
+    }
+  },
+  "1646923": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-28T23:30:00+00:00",
+    "home": "Metropolitanos FC",
+    "away": "Portuguesa FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.49732403308182516,
+      "pDraw": 0.26414301342159424,
+      "pAway": 0.2385329534965806,
+      "pOver": 0.430186618673765,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.470441987544944,
+      "expA": 0.9297487676990701,
+      "expTotal": 2.4001907552440143
+    }
+  },
+  "1531000": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-29T10:00:00+00:00",
+    "home": "Kattaqurgon",
+    "away": "Olimpik-Mobiuz",
+    "league": "Pro League A · Uzbekistan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.404633423673254,
+      "pDraw": 0.24761461914606686,
+      "pAway": 0.347751957180679,
+      "pOver": 0.5521148512217342,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5101810178545823,
+      "expA": 1.38271006131346,
+      "expTotal": 2.8928910791680424
+    }
+  },
+  "1534450": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-29T15:00:00+00:00",
+    "home": "Dinamo Minsk II",
+    "away": "Molodechno-DYuSSh 4",
+    "league": "1. Division · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4715857647982262,
+      "pDraw": 0.21505635010288213,
+      "pAway": 0.31335788509889156,
+      "pOver": 0.6990892992039118,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.006813299347181,
+      "expA": 1.6114994302436478,
+      "expTotal": 3.618312729590829
+    }
+  },
+  "1646897": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-31T13:00:00+00:00",
+    "home": "Racing Montevideo",
+    "away": "Cerro Largo",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5195120274192435,
+      "pDraw": 0.2858795615753684,
+      "pAway": 0.19460841100538817,
+      "pOver": 0.32800751732522343,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3262927197837848,
+      "expA": 0.6912876246412275,
+      "expTotal": 2.017580344425012
+    }
+  },
+  "1646898": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-31T16:00:00+00:00",
+    "home": "Cerro",
+    "away": "Central Espanol",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33600786897919355,
+      "pDraw": 0.28333305878245807,
+      "pAway": 0.3806590722383484,
+      "pOver": 0.40391221429010044,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1047926005103157,
+      "expA": 1.195236657576247,
+      "expTotal": 2.3000292580865627
+    }
+  },
+  "1646899": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-31T19:30:00+00:00",
+    "home": "Penarol",
+    "away": "Wanderers",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.64742563404817,
+      "pDraw": 0.2000921075761459,
+      "pAway": 0.1524822583756842,
+      "pOver": 0.5738649186823523,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.091239523895503,
+      "expA": 0.9021082599403021,
+      "expTotal": 2.993347783835805
+    }
+  },
+  "1646924": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-31T21:30:00+00:00",
+    "home": "Puerto Cabello",
+    "away": "Deportivo Tachira FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3613802615701424,
+      "pDraw": 0.2572922448004117,
+      "pAway": 0.38132749362944607,
+      "pOver": 0.5100205459602749,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3360969676538792,
+      "expA": 1.379524724310546,
+      "expTotal": 2.715621691964425
+    }
+  },
+  "1646925": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-10-31T23:30:00+00:00",
+    "home": "Caracas FC",
+    "away": "Monagas SC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45310969815289137,
+      "pDraw": 0.25161207249156436,
+      "pAway": 0.2952782293555442,
+      "pOver": 0.5160423175607083,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5436920947171724,
+      "expA": 1.1969733755080532,
+      "expTotal": 2.7406654702252258
+    }
+  },
+  "1646900": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T13:00:00+00:00",
+    "home": "Progreso",
+    "away": "Defensor Sporting",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3545396236984764,
+      "pDraw": 0.2897512090721816,
+      "pAway": 0.3557091672293419,
+      "pOver": 0.382621851155809,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1088722216891305,
+      "expA": 1.1112049380899927,
+      "expTotal": 2.220077159779123
+    }
+  },
+  "1646901": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T16:00:00+00:00",
+    "home": "Boston River",
+    "away": "Atletico Torque",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.261869592857221,
+      "pDraw": 0.23857462985991276,
+      "pAway": 0.4995557772828663,
+      "pOver": 0.5509972501590675,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1753134505332343,
+      "expA": 1.7134714699169897,
+      "expTotal": 2.888784920450224
+    }
+  },
+  "1646902": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Danubio",
+    "away": "Club Nacional",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24670459053338695,
+      "pDraw": 0.2536815609750426,
+      "pAway": 0.4996138484915705,
+      "pOver": 0.475663075212214,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0162820513451687,
+      "expA": 1.5611725069759004,
+      "expTotal": 2.577454558321069
+    }
+  },
+  "1646926": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T21:30:00+00:00",
+    "home": "Deportivo La Guaira",
+    "away": "Portuguesa FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42102945398559966,
+      "pDraw": 0.28995715066722255,
+      "pAway": 0.2890133953471777,
+      "pOver": 0.37064779107036294,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2186793228051132,
+      "expA": 0.9567713570500801,
+      "expTotal": 2.175450679855193
+    }
+  },
+  "1646903": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T23:00:00+00:00",
+    "home": "Albion FC",
+    "away": "Deportivo Maldonado",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28644261819837663,
+      "pDraw": 0.24214622685165754,
+      "pAway": 0.4714111549499658,
+      "pOver": 0.5525748177114386,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2390030769723472,
+      "expA": 1.6562943842669913,
+      "expTotal": 2.8952974612393385
+    }
+  },
+  "1646927": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-01T23:30:00+00:00",
+    "home": "Carabobo FC",
+    "away": "Metropolitanos FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37653201926998703,
+      "pDraw": 0.2752191603379564,
+      "pAway": 0.3482488203920566,
+      "pOver": 0.43513628142439625,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2387042460080808,
+      "expA": 1.180172524200219,
+      "expTotal": 2.4188767702083
+    }
+  },
+  "1646904": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-02T23:00:00+00:00",
+    "home": "Liverpool Montevideo",
+    "away": "Juventud",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5250575268646429,
+      "pDraw": 0.253062120114356,
+      "pAway": 0.22188035302100118,
+      "pOver": 0.4561779695192557,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.5745670398476956,
+      "expA": 0.926334555990076,
+      "expTotal": 2.500901595837772
+    }
+  },
+  "1646928": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-03T21:30:00+00:00",
+    "home": "Monagas SC",
+    "away": "Caracas FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37927468354807486,
+      "pDraw": 0.2571416119486618,
+      "pAway": 0.3635837045032633,
+      "pOver": 0.5108092366588336,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.376519381834261,
+      "expA": 1.342340951927976,
+      "expTotal": 2.718860333762237
+    }
+  },
+  "1646929": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-03T23:30:00+00:00",
+    "home": "Deportivo Tachira FC",
+    "away": "Puerto Cabello",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47176582492096164,
+      "pDraw": 0.24905137293031915,
+      "pAway": 0.27918280214871916,
+      "pOver": 0.5178509556378441,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5864534329571278,
+      "expA": 1.161823450133808,
+      "expTotal": 2.748276883090936
+    }
+  },
+  "1534464": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-04T15:00:00+00:00",
+    "home": "Uni Minsk",
+    "away": "Dinamo Minsk II",
+    "league": "1. Division · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32980345799683164,
+      "pDraw": 0.2667178844878135,
+      "pAway": 0.40347865751535494,
+      "pOver": 0.4657638160916538,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1910523069675176,
+      "expA": 1.346884965820496,
+      "expTotal": 2.537937272788014
+    }
+  },
+  "1646930": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-04T21:30:00+00:00",
+    "home": "Portuguesa FC",
+    "away": "Deportivo La Guaira",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36305394532744095,
+      "pDraw": 0.29446572553387673,
+      "pAway": 0.34248032913868226,
+      "pOver": 0.3665087548918352,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.100287060607592,
+      "expA": 1.0597211502653159,
+      "expTotal": 2.160008210872908
+    }
+  },
+  "1646931": {
+    "savedAt": "2026-10-21T08:45:51.752912+00:00",
+    "kickoffUtc": "2026-11-04T23:30:00+00:00",
+    "home": "Metropolitanos FC",
+    "away": "Carabobo FC",
+    "league": "Primera División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43175248673299477,
+      "pDraw": 0.2710048162274813,
+      "pAway": 0.29724269703952394,
+      "pOver": 0.43913138069463503,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3571984028302517,
+      "expA": 1.0771341269635486,
+      "expTotal": 2.4343325297938003
+    }
   }
 }
