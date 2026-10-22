@@ -218688,5 +218688,252 @@
       "expA": 1.4150292740223962,
       "expTotal": 3.3799580532514755
     }
+  },
+  "1647023": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-23T19:30:00+00:00",
+    "home": "Guairena FC",
+    "away": "Sportivo Carapeguá",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32082261163560205,
+      "pDraw": 0.27682109687144324,
+      "pAway": 0.40235629149295477,
+      "pOver": 0.4248378626075606,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.105864934342688,
+      "expA": 1.273590556159744,
+      "expTotal": 2.379455490502432
+    }
+  },
+  "1647024": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-23T22:00:00+00:00",
+    "home": "Independiente F.b.c.",
+    "away": "Paraguari AC",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4413356796379905,
+      "pDraw": 0.2356647002633127,
+      "pAway": 0.3229996200986968,
+      "pOver": 0.6013841833372109,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6944766836028027,
+      "expA": 1.4196209284440322,
+      "expTotal": 3.1140976120468347
+    }
+  },
+  "1647048": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-23T23:00:00+00:00",
+    "home": "Deportivo Tigres",
+    "away": "Virginia",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3659543976952278,
+      "pDraw": 0.2939457888623069,
+      "pAway": 0.3400998134424653,
+      "pOver": 0.368068455870253,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1084242811108103,
+      "expA": 1.05738577749077,
+      "expTotal": 2.16581005860158
+    }
+  },
+  "1647026": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-24T13:00:00+00:00",
+    "home": "SOL DE America",
+    "away": "Atlético Tembetary",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.521739154303835,
+      "pDraw": 0.23852401631111345,
+      "pAway": 0.2397368293850515,
+      "pOver": 0.531625184066849,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7197933799077219,
+      "expA": 1.0865696599381123,
+      "expTotal": 2.8063630398458344
+    }
+  },
+  "1647025": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-24T13:00:00+00:00",
+    "home": "3 de Noviembre",
+    "away": "Encarnación",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4684689251691764,
+      "pDraw": 0.25158493838181856,
+      "pAway": 0.2799461364490051,
+      "pOver": 0.5076137611786825,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5593729049231586,
+      "expA": 1.146693293178048,
+      "expTotal": 2.7060661981012064
+    }
+  },
+  "1647032": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T18:30:00+00:00",
+    "home": "Defensores Glew",
+    "away": "Argentino Rosario",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.48627454112643764,
+      "pDraw": 0.2704387603582496,
+      "pAway": 0.24328669851531268,
+      "pOver": 0.4117207941676929,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.4150698098774999,
+      "expA": 0.91470317785,
+      "expTotal": 2.3297729877275
+    }
+  },
+  "1647050": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T19:00:00+00:00",
+    "home": "CD IN San Juan FC",
+    "away": "EM Huanuni",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47573750026707845,
+      "pDraw": 0.22905581191080396,
+      "pAway": 0.29520668782211756,
+      "pOver": 0.6190843467471486,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.812310991996432,
+      "expA": 1.38612891257308,
+      "expTotal": 3.198439904569512
+    }
+  },
+  "1647049": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T19:00:00+00:00",
+    "home": "Mineros Potosi",
+    "away": "Independiente CBBA",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45743545357914595,
+      "pDraw": 0.21005111977784954,
+      "pAway": 0.3325134266430045,
+      "pOver": 0.7335332483435107,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.073347072208564,
+      "expA": 1.7532954466919322,
+      "expTotal": 3.8266425189004964
+    }
+  },
+  "1647051": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T19:00:00+00:00",
+    "home": "San Martin de Yacuiba",
+    "away": "26 de Febrero",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32062452598444174,
+      "pDraw": 0.24441635823922675,
+      "pAway": 0.43495911577633156,
+      "pOver": 0.5592541803592099,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3330365916193538,
+      "expA": 1.5910175083651161,
+      "expTotal": 2.92405409998447
+    }
+  },
+  "1647028": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "General Caballero",
+    "away": "12 de Junio VH",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4639572205493196,
+      "pDraw": 0.2389996459775223,
+      "pAway": 0.2970431334731581,
+      "pOver": 0.573162421897248,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6835155670187678,
+      "expA": 1.302152206934816,
+      "expTotal": 2.9856677739535837
+    }
+  },
+  "1647027": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Fernando De La Mora",
+    "away": "Deportivo Santani",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2067734764581393,
+      "pDraw": 0.23336444050207722,
+      "pAway": 0.5598620830397835,
+      "pOver": 0.517216235274185,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9769211454738839,
+      "expA": 1.769708507158544,
+      "expTotal": 2.746629652632428
+    }
+  },
+  "1647029": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-26T19:00:00+00:00",
+    "home": "Resistencia",
+    "away": "Benjamín Aceval",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3887137402664491,
+      "pDraw": 0.25727410884849866,
+      "pAway": 0.35401215088505233,
+      "pOver": 0.509468477029921,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.394448237066127,
+      "expA": 1.318914253291968,
+      "expTotal": 2.713362490358095
+    }
+  },
+  "1647030": {
+    "savedAt": "2026-10-22T08:47:54.496152+00:00",
+    "kickoffUtc": "2026-10-26T21:30:00+00:00",
+    "home": "Deportivo Capiata",
+    "away": "Tacuary",
+    "league": "Division Intermedia · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5008386253899473,
+      "pDraw": 0.23254530726040332,
+      "pAway": 0.26661606734964943,
+      "pOver": 0.5821152666608751,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7839500413011165,
+      "expA": 1.2424220540939999,
+      "expTotal": 3.026372095395116
+    }
   }
 }
