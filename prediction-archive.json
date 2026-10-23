@@ -223381,5 +223381,100 @@
       "expA": 1.1363107250000002,
       "expTotal": 3.5930703369000003
     }
+  },
+  "1647199": {
+    "savedAt": "2026-10-23T16:44:24.734919+00:00",
+    "kickoffUtc": "2026-10-28T23:30:00+00:00",
+    "home": "Porongos",
+    "away": "Deportivo Maldonado",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2240539201083383,
+      "pDraw": 0.21001331322425928,
+      "pAway": 0.5659327666674023,
+      "pOver": 0.6446600841988623,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.2450853094699998,
+      "expA": 2.0826821701,
+      "expTotal": 3.32776747957
+    }
+  },
+  "1647200": {
+    "savedAt": "2026-10-23T16:44:24.734919+00:00",
+    "kickoffUtc": "2026-10-29T23:30:00+00:00",
+    "home": "Wanderers Durazno",
+    "away": "Danubio",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31314909397870744,
+      "pDraw": 0.2244494145158938,
+      "pAway": 0.46240149150539883,
+      "pOver": 0.6518324952086478,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5006389606575,
+      "expA": 1.8604616038500001,
+      "expTotal": 3.3611005645075
+    }
+  },
+  "1647201": {
+    "savedAt": "2026-10-23T16:44:24.734919+00:00",
+    "kickoffUtc": "2026-11-04T18:00:00+00:00",
+    "home": "Lito",
+    "away": "Wanderers",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5643847421317201,
+      "pDraw": 0.2066831308352675,
+      "pAway": 0.22893212703301244,
+      "pOver": 0.6670199424333318,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1395308444275,
+      "expA": 1.30490344405,
+      "expTotal": 3.4444342884775
+    }
+  },
+  "1647202": {
+    "savedAt": "2026-10-23T16:44:24.734919+00:00",
+    "kickoffUtc": "2026-11-04T21:00:00+00:00",
+    "home": "San Carlos",
+    "away": "Boston River",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.29734051678052964,
+      "pDraw": 0.2643811429898195,
+      "pAway": 0.4382783402296508,
+      "pOver": 0.4645717898567444,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1173162396775,
+      "expA": 1.41602047135,
+      "expTotal": 2.5333367110275002
+    }
+  },
+  "1647203": {
+    "savedAt": "2026-10-23T16:44:24.734919+00:00",
+    "kickoffUtc": "2026-11-05T00:00:00+00:00",
+    "home": "Ferro Carril",
+    "away": "Club Nacional",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2779555010568026,
+      "pDraw": 0.25495637600396354,
+      "pAway": 0.4670881229392339,
+      "pOver": 0.4924552477444105,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1173162396775,
+      "expA": 1.5271240103,
+      "expTotal": 2.6444402499775
+    }
   }
 }
