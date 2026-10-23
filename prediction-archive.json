@@ -222906,5 +222906,480 @@
       "expA": 0.895469784362097,
       "expTotal": 2.0783490045167654
     }
+  },
+  "1647157": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-24T22:00:00+00:00",
+    "home": "Deportivo Lara",
+    "away": "Urena SC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6286629561272777,
+      "pDraw": 0.21407263166918375,
+      "pAway": 0.1572644122035384,
+      "pOver": 0.5225621989551208,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.9283473817206904,
+      "expA": 0.8419527344532001,
+      "expTotal": 2.7703001161738907
+    }
+  },
+  "1647154": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Aragua FC",
+    "away": "Monagas II",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37708186686695633,
+      "pDraw": 0.3019788477810576,
+      "pAway": 0.320939285351986,
+      "pOver": 0.3409659982053941,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.087000427559618,
+      "expA": 0.9783035573781134,
+      "expTotal": 2.0653039849377315
+    }
+  },
+  "1647160": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Yaracuyanos FC",
+    "away": "Club Atletico Barinas",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6561849907954479,
+      "pDraw": 0.17564082971439565,
+      "pAway": 0.16817417949015648,
+      "pOver": 0.7241441257652462,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.5491709886621394,
+      "expA": 1.2375219172362821,
+      "expTotal": 3.7866929058984216
+    }
+  },
+  "1647158": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Real Frontera",
+    "away": "Fundación Lara Deportiva",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.10937226463275447,
+      "pDraw": 0.15140187859068976,
+      "pAway": 0.7392258567765558,
+      "pOver": 0.7002787910591424,
+      "scoreH": 0,
+      "scoreA": 2,
+      "expH": 0.9576145121025231,
+      "expA": 2.6973761172037016,
+      "expTotal": 3.6549906293062246
+    }
+  },
+  "1647156": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Bolívar",
+    "away": "Petare FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3267628506507471,
+      "pDraw": 0.27883505731627284,
+      "pAway": 0.39440209203298005,
+      "pOver": 0.4186937801050461,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1087685683361543,
+      "expA": 1.2472651055219535,
+      "expTotal": 2.356033673858108
+    }
+  },
+  "1647159": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Puerto Cabello II",
+    "away": "Zamora FC B",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3587480149036267,
+      "pDraw": 0.22640965156472384,
+      "pAway": 0.4148423335316494,
+      "pOver": 0.6578628699406786,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.628193514603704,
+      "expA": 1.7634577170403136,
+      "expTotal": 3.3916512316440177
+    }
+  },
+  "1647155": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-25T19:30:00+00:00",
+    "home": "Atletico Avila FC",
+    "away": "Mineros de Guyana",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24605331872384667,
+      "pDraw": 0.31038343394586765,
+      "pAway": 0.4435632473302857,
+      "pOver": 0.2963710630583823,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.7642565296572454,
+      "expA": 1.1361810699360002,
+      "expTotal": 1.9004375995932457
+    }
+  },
+  "1647164": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-31T16:00:00+00:00",
+    "home": "CA River Plate",
+    "away": "Tacuarembo",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5257429879754403,
+      "pDraw": 0.24558831198258962,
+      "pAway": 0.22866870004197004,
+      "pOver": 0.4916189438124138,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6459228974586264,
+      "expA": 0.9955951890102401,
+      "expTotal": 2.6415180864688663
+    }
+  },
+  "1647165": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-31T16:00:00+00:00",
+    "home": "Uruguay Montevideo",
+    "away": "Sportivo Huracan",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36134345203937385,
+      "pDraw": 0.2694423330809937,
+      "pAway": 0.3692142148796325,
+      "pOver": 0.4585982785233535,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.246627021002922,
+      "expA": 1.2631765622437199,
+      "expTotal": 2.509803583246642
+    }
+  },
+  "1647166": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-31T19:00:00+00:00",
+    "home": "Fenix",
+    "away": "Cerrito",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4614378839509681,
+      "pDraw": 0.2508490274976971,
+      "pAway": 0.2877130885513347,
+      "pOver": 0.5152583892687231,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5596577450634654,
+      "expA": 1.177818348163912,
+      "expTotal": 2.7374760932273774
+    }
+  },
+  "1647167": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-10-31T22:00:00+00:00",
+    "home": "Rentistas",
+    "away": "La Luz",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4770844178895841,
+      "pDraw": 0.28228216918383714,
+      "pAway": 0.2406334129265788,
+      "pOver": 0.3714479919014049,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3256699289542073,
+      "expA": 0.8528637091940882,
+      "expTotal": 2.1785336381482954
+    }
+  },
+  "1647168": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-01T13:00:00+00:00",
+    "home": "Oriental",
+    "away": "Paysandu",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4890814572224979,
+      "pDraw": 0.25231708868132424,
+      "pAway": 0.25860145409617785,
+      "pOver": 0.49024742441124824,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.568049088091751,
+      "expA": 1.067635898223468,
+      "expTotal": 2.635684986315219
+    }
+  },
+  "1647169": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-01T19:00:00+00:00",
+    "home": "Colón",
+    "away": "Atenas",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4216429538834059,
+      "pDraw": 0.2727518684953457,
+      "pAway": 0.30560517762124834,
+      "pOver": 0.43563966694223244,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3308381916019314,
+      "expA": 1.0900306889195683,
+      "expTotal": 2.4208688805214997
+    }
+  },
+  "1647170": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-01T22:00:00+00:00",
+    "home": "Miramar",
+    "away": "Plaza Colonia",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.25622302839727334,
+      "pDraw": 0.28306759868507153,
+      "pAway": 0.46070937291765524,
+      "pOver": 0.3781042384333033,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.896780366401208,
+      "expA": 1.3065362914868879,
+      "expTotal": 2.203316657888096
+    }
+  },
+  "1647175": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Podbrezová",
+    "away": "Zlaté Moravce",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5027992369889517,
+      "pDraw": 0.24919767359650982,
+      "pAway": 0.2480030894145385,
+      "pOver": 0.49456189612946316,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6046894464453123,
+      "expA": 1.04850747421875,
+      "expTotal": 2.653196920664062
+    }
+  },
+  "1647176": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Žilina",
+    "away": "Ružomberok",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5820118560779292,
+      "pDraw": 0.19023649795353825,
+      "pAway": 0.22775164596853262,
+      "pOver": 0.7469734605255849,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4339464296874995,
+      "expA": 1.49147578125,
+      "expTotal": 3.9254222109374997
+    }
+  },
+  "1647171": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Dukla Banská Bystrica",
+    "away": "AS Trencin",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3597250360409487,
+      "pDraw": 0.2543565832603726,
+      "pAway": 0.38591838069867873,
+      "pOver": 0.5229665523853736,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3558225078125,
+      "expA": 1.413350859375,
+      "expTotal": 2.7691733671875
+    }
+  },
+  "1647177": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Lokomotíva Zvolen",
+    "away": "FK Košice",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.370835967724282,
+      "pDraw": 0.2221350237034327,
+      "pAway": 0.40702900857228536,
+      "pOver": 0.6817041839337458,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7151971484374997,
+      "expA": 1.8039754687499998,
+      "expTotal": 3.5191726171874995
+    }
+  },
+  "1647174": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Nové Zámky",
+    "away": "Zemplín Michalovce",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33552211399505016,
+      "pDraw": 0.22830663496014672,
+      "pAway": 0.4361712510448031,
+      "pOver": 0.6421370765268252,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.535509828125,
+      "expA": 1.775850496875,
+      "expTotal": 3.311360325
+    }
+  },
+  "1647173": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Čadca",
+    "away": "Spartak Trnava",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.53914711211391,
+      "pDraw": 0.2042723006865783,
+      "pAway": 0.25658058719951166,
+      "pOver": 0.709894552534685,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2030482230859376,
+      "expA": 1.4821007906249999,
+      "expTotal": 3.6851490137109373
+    }
+  },
+  "1647172": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Boleráz",
+    "away": "Skalica",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36972149650493424,
+      "pDraw": 0.24179496378196444,
+      "pAway": 0.38848353971310134,
+      "pOver": 0.5824511407348656,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4920094227618121,
+      "expA": 1.53490357873125,
+      "expTotal": 3.026913001493062
+    }
+  },
+  "1603081": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-05T17:00:00+00:00",
+    "home": "Al-Ahli Jeddah",
+    "away": "Al Taawon",
+    "league": "Pro League · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8024039568772044,
+      "pDraw": 0.12832527098249805,
+      "pAway": 0.06927077214029755,
+      "pOver": 0.6709355611501613,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.787398636917257,
+      "expA": 0.7110401418023681,
+      "expTotal": 3.4984387787196254
+    }
+  },
+  "1603082": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-05T17:00:00+00:00",
+    "home": "Al-Ettifaq",
+    "away": "Al-Hilal Saudi FC",
+    "league": "Pro League · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.14463657861866913,
+      "pDraw": 0.1659830417710541,
+      "pAway": 0.6893803796102768,
+      "pOver": 0.7217230057149634,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.1459326822306617,
+      "expA": 2.631682498151577,
+      "expTotal": 3.777615180382239
+    }
+  },
+  "1636026": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-06T18:00:00+00:00",
+    "home": "Tapachula",
+    "away": "Zacatepec 1948",
+    "league": "Primera Premier · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24028547201247627,
+      "pDraw": 0.21528796398596753,
+      "pAway": 0.5444265640015562,
+      "pOver": 0.6384568337920763,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.278928705273373,
+      "expA": 2.0165716923462598,
+      "expTotal": 3.295500397619633
+    }
+  },
+  "1646811": {
+    "savedAt": "2026-10-23T08:44:11.669971+00:00",
+    "kickoffUtc": "2026-11-06T19:45:00+00:00",
+    "home": "Oxford City",
+    "away": "Leicester",
+    "league": "FA Cup · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6619419396388737,
+      "pDraw": 0.17849547079826442,
+      "pAway": 0.15956258956286187,
+      "pOver": 0.6921658312428944,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4567596119,
+      "expA": 1.1363107250000002,
+      "expTotal": 3.5930703369000003
+    }
   }
 }
