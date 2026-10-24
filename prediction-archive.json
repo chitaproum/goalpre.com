@@ -243673,5 +243673,100 @@
       "expA": 1.315832975344503,
       "expTotal": 2.4642288197276114
     }
+  },
+  "1647207": {
+    "savedAt": "2026-10-24T08:41:08.980367+00:00",
+    "kickoffUtc": "2026-10-28T19:00:00+00:00",
+    "home": "Nacional Florida",
+    "away": "Juventud",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.352468870353103,
+      "pDraw": 0.2668145164268631,
+      "pAway": 0.3807166132200339,
+      "pOver": 0.4688305142980629,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2450853094699998,
+      "expA": 1.30490344405,
+      "expTotal": 2.54998875352
+    }
+  },
+  "1647210": {
+    "savedAt": "2026-10-24T08:41:08.980367+00:00",
+    "kickoffUtc": "2026-11-04T14:30:00+00:00",
+    "home": "Burgan",
+    "away": "Shamiya",
+    "league": "Division 1 · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5437339772811969,
+      "pDraw": 0.23561424181937954,
+      "pAway": 0.22065178089942353,
+      "pOver": 0.5241383168891578,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7504314522149835,
+      "expA": 1.0247919505522332,
+      "expTotal": 2.7752234027672165
+    }
+  },
+  "1647211": {
+    "savedAt": "2026-10-24T08:41:08.980367+00:00",
+    "kickoffUtc": "2026-11-04T14:30:00+00:00",
+    "home": "Yarmouk",
+    "away": "Sporty",
+    "league": "Division 1 · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6000814469318265,
+      "pDraw": 0.20137800996862135,
+      "pAway": 0.19854054309955227,
+      "pOver": 0.650507292828578,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.17906069553277,
+      "expA": 1.180556242672807,
+      "expTotal": 3.3596169382055767
+    }
+  },
+  "1647209": {
+    "savedAt": "2026-10-24T08:41:08.980367+00:00",
+    "kickoffUtc": "2026-11-04T14:30:00+00:00",
+    "home": "Al Jazira",
+    "away": "Khaitan",
+    "league": "Division 1 · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.48142452046570616,
+      "pDraw": 0.1991683365222952,
+      "pAway": 0.31940714301199874,
+      "pOver": 0.7819484239888904,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3001231447297092,
+      "expA": 1.866015309049573,
+      "expTotal": 4.166138453779283
+    }
+  },
+  "1647208": {
+    "savedAt": "2026-10-24T08:41:08.980367+00:00",
+    "kickoffUtc": "2026-11-05T21:00:00+00:00",
+    "home": "Gladiador",
+    "away": "Liverpool Montevideo",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2632929546887998,
+      "pDraw": 0.2684733991269881,
+      "pAway": 0.4682336461842121,
+      "pOver": 0.43161658436293127,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9895316582824999,
+      "expA": 1.41602047135,
+      "expTotal": 2.4055521296325
+    }
   }
 }
