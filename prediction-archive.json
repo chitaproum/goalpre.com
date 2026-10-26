@@ -255833,5 +255833,366 @@
       "expA": 1.4516012719205524,
       "expTotal": 2.7286432666046965
     }
+  },
+  "1647278": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-28T19:00:00+00:00",
+    "home": "Zamora FC B",
+    "away": "Bolívar",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46364662096918635,
+      "pDraw": 0.2337532300377331,
+      "pAway": 0.3026001489930805,
+      "pOver": 0.6008774053993674,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7434268440139429,
+      "expA": 1.3685577282154802,
+      "expTotal": 3.111984572229423
+    }
+  },
+  "1647314": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-30T15:00:00+00:00",
+    "home": "Al Riffa",
+    "away": "Al Najma",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7738830529073897,
+      "pDraw": 0.1281752971990794,
+      "pAway": 0.09794164989353087,
+      "pOver": 0.782937279913684,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.1678504147031057,
+      "expA": 1.1026126022823448,
+      "expTotal": 4.270463016985451
+    }
+  },
+  "1647313": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-30T15:00:00+00:00",
+    "home": "Al Ittifaq Maqaba",
+    "away": "Malkiya",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6269716102568766,
+      "pDraw": 0.23026363112979323,
+      "pAway": 0.14276475861333005,
+      "pOver": 0.43559613917961637,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.7373898139443598,
+      "expA": 0.684667876567547,
+      "expTotal": 2.422057690511907
+    }
+  },
+  "1647325": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-30T22:30:00+00:00",
+    "home": "Louisville City",
+    "away": "Pittsburgh Riverhounds",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43564088851436167,
+      "pDraw": 0.25752818569255803,
+      "pAway": 0.3068309257930803,
+      "pOver": 0.4962851855997069,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4692559437756083,
+      "expA": 1.1905059120970016,
+      "expTotal": 2.6597618558726097
+    }
+  },
+  "1647326": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-30T23:00:00+00:00",
+    "home": "Charleston Battery",
+    "away": "Rhode Island",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4912794152157349,
+      "pDraw": 0.2370543688652179,
+      "pAway": 0.27166621591904727,
+      "pOver": 0.5654398890328765,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7265092815718748,
+      "expA": 1.2252317733649842,
+      "expTotal": 2.951741054936859
+    }
+  },
+  "1647327": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-30T23:30:00+00:00",
+    "home": "Tampa Bay Rowdies",
+    "away": "Miami FC",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6807123210493495,
+      "pDraw": 0.1838397309298069,
+      "pAway": 0.13544794802084353,
+      "pOver": 0.6111713681862364,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.2665241685611757,
+      "expA": 0.9022724892462435,
+      "expTotal": 3.168796657807419
+    }
+  },
+  "1647328": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-31T00:00:00+00:00",
+    "home": "Detroit City",
+    "away": "Hartford Athletic",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45618317868305214,
+      "pDraw": 0.3161034066543332,
+      "pAway": 0.22771341466261466,
+      "pOver": 0.2745886791840879,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1216138995695635,
+      "expA": 0.6979097288502185,
+      "expTotal": 1.819523628419782
+    }
+  },
+  "1647329": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-31T01:00:00+00:00",
+    "home": "El Paso Locomotive",
+    "away": "San Antonio",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44908931465326357,
+      "pDraw": 0.2690051725987159,
+      "pAway": 0.28190551274802045,
+      "pOver": 0.4398209976330009,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3929848118349142,
+      "expA": 1.0440546363568861,
+      "expTotal": 2.4370394481918005
+    }
+  },
+  "1647316": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-31T15:00:00+00:00",
+    "home": "Manama",
+    "away": "Khalidiya",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.1547404056419248,
+      "pDraw": 0.15295207744834272,
+      "pAway": 0.6923075169097325,
+      "pOver": 0.8078870321382904,
+      "scoreH": 1,
+      "scoreA": 3,
+      "expH": 1.4272461130935143,
+      "expA": 3.01945092080676,
+      "expTotal": 4.446697033900275
+    }
+  },
+  "1647315": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-10-31T15:00:00+00:00",
+    "home": "Al Ahli",
+    "away": "East Riffa",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5208282393029767,
+      "pDraw": 0.24815267665871582,
+      "pAway": 0.2310190840383076,
+      "pOver": 0.4836986109703109,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6200434836144437,
+      "expA": 0.9896087454888001,
+      "expTotal": 2.6096522291032436
+    }
+  },
+  "1647318": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-01T15:00:00+00:00",
+    "home": "Muharraq",
+    "away": "Sitra",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4599426157912276,
+      "pDraw": 0.27153987306564364,
+      "pAway": 0.2685175111431288,
+      "pOver": 0.42362684235495357,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3853508229546123,
+      "expA": 0.9896087454888001,
+      "expTotal": 2.3749595684434124
+    }
+  },
+  "1647317": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-01T15:00:00+00:00",
+    "home": "A'Ali",
+    "away": "Al-Hidd",
+    "league": "Premier League · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.33452287203296044,
+      "pDraw": 0.29194707529204517,
+      "pAway": 0.37353005267499434,
+      "pOver": 0.3741848178130427,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0556164687646223,
+      "expA": 1.1329715081801,
+      "expTotal": 2.1885879769447225
+    }
+  },
+  "1647330": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-01T19:00:00+00:00",
+    "home": "Lexington",
+    "away": "Colorado Springs",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5093420150095141,
+      "pDraw": 0.2185022190465685,
+      "pAway": 0.2721557659439173,
+      "pOver": 0.6536969977829599,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9744066432562242,
+      "expA": 1.3975207928228854,
+      "expTotal": 3.3719274360791096
+    }
+  },
+  "1647331": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-01T23:00:00+00:00",
+    "home": "New Mexico United",
+    "away": "Phoenix Rising",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5187359497346925,
+      "pDraw": 0.22459931652819207,
+      "pAway": 0.2566647337371155,
+      "pOver": 0.6105960332584729,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8892925959724505,
+      "expA": 1.269434695689776,
+      "expTotal": 3.1587272916622267
+    }
+  },
+  "1647332": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-02T02:00:00+00:00",
+    "home": "Sacramento Republic",
+    "away": "FC Tulsa",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4624196178218346,
+      "pDraw": 0.2884723706639256,
+      "pAway": 0.2491080115142398,
+      "pOver": 0.3575797042671054,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2741702240712367,
+      "expA": 0.8527739577246121,
+      "expTotal": 2.1269441817958485
+    }
+  },
+  "1640301": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-03T15:00:00+00:00",
+    "home": "Olympic El Qanah",
+    "away": "Future FC",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3041598661760812,
+      "pDraw": 0.23444760819318813,
+      "pAway": 0.4613925256307307,
+      "pOver": 0.5984159818522035,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3676140607718748,
+      "expA": 1.7328904910625,
+      "expTotal": 3.1005045518343746
+    }
+  },
+  "1640302": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-03T15:00:00+00:00",
+    "home": "Abu Qair Semad",
+    "away": "Ceramica Cleopatra",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44734236017593676,
+      "pDraw": 0.268881498740425,
+      "pAway": 0.28377614108363824,
+      "pOver": 0.4411893403840776,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3919675145599997,
+      "expA": 1.0503457986,
+      "expTotal": 2.4423133131599997
+    }
+  },
+  "1640298": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-03T18:00:00+00:00",
+    "home": "Enppi",
+    "away": "Asyut Petrol",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6270615843951526,
+      "pDraw": 0.1959550156094471,
+      "pAway": 0.1769833999954003,
+      "pOver": 0.640468022360181,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2161398437499997,
+      "expA": 1.093745625,
+      "expTotal": 3.3098854687499997
+    }
+  },
+  "1640297": {
+    "savedAt": "2026-10-26T08:52:54.877356+00:00",
+    "kickoffUtc": "2026-11-03T18:00:00+00:00",
+    "home": "Smouha SC",
+    "away": "Pyramids FC",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3935987881524724,
+      "pDraw": 0.23290526434461187,
+      "pAway": 0.37349594750291576,
+      "pOver": 0.6267704606990521,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6411434374999998,
+      "expA": 1.593755625,
+      "expTotal": 3.2348990625
+    }
   }
 }
