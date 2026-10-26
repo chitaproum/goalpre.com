@@ -256194,5 +256194,613 @@
       "expA": 1.593755625,
       "expTotal": 3.2348990625
     }
+  },
+  "1646946": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-27T17:00:00+00:00",
+    "home": "Kaizer Chiefs",
+    "away": "TS Galaxy",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40364978595823,
+      "pDraw": 0.2741534171951469,
+      "pAway": 0.3221967968466232,
+      "pOver": 0.43509653183440405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.29375,
+      "expA": 1.125,
+      "expTotal": 2.41875
+    }
+  },
+  "1646947": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-27T17:00:00+00:00",
+    "home": "Mamelodi Sundowns",
+    "away": "Marumo Gallants",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40364978595823,
+      "pDraw": 0.2741534171951469,
+      "pAway": 0.3221967968466232,
+      "pOver": 0.43509653183440405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.29375,
+      "expA": 1.125,
+      "expTotal": 2.41875
+    }
+  },
+  "1646948": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-27T17:00:00+00:00",
+    "home": "Orlando Pirates",
+    "away": "Milford FC",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40364978595823,
+      "pDraw": 0.2741534171951469,
+      "pAway": 0.3221967968466232,
+      "pOver": 0.43509653183440405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.29375,
+      "expA": 1.125,
+      "expTotal": 2.41875
+    }
+  },
+  "1553820": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-28T14:00:00+00:00",
+    "home": "Radnicki 1923",
+    "away": "Železničar Pančevo",
+    "league": "Super Liga · Serbia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3334366736456104,
+      "pDraw": 0.2607079585491744,
+      "pAway": 0.4058553678052152,
+      "pOver": 0.4912830773526063,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2418201429211524,
+      "expA": 1.397657450768496,
+      "expTotal": 2.6394775936896484
+    }
+  },
+  "1553834": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-28T16:00:00+00:00",
+    "home": "Radnicki NIS",
+    "away": "FK Partizan",
+    "league": "Super Liga · Serbia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2596170448690318,
+      "pDraw": 0.2366356327551989,
+      "pAway": 0.5037473223757692,
+      "pOver": 0.5577753149366611,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1813041753730031,
+      "expA": 1.7369766169667311,
+      "expTotal": 2.9182807923397345
+    }
+  },
+  "1646949": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-28T17:00:00+00:00",
+    "home": "Durban City",
+    "away": "Stellenbosch",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40364978595823,
+      "pDraw": 0.2741534171951469,
+      "pAway": 0.3221967968466232,
+      "pOver": 0.43509653183440405,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.29375,
+      "expA": 1.125,
+      "expTotal": 2.41875
+    }
+  },
+  "1647410": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-30T23:00:00+00:00",
+    "home": "Union Omaha",
+    "away": "Chattanooga Red Wolves",
+    "league": "USL League One · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5204003953538958,
+      "pDraw": 0.23065285856272055,
+      "pAway": 0.2489467460833836,
+      "pOver": 0.5752247162496503,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8114367932525375,
+      "expA": 1.1842518582669375,
+      "expTotal": 2.995688651519475
+    }
+  },
+  "1647411": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-30T23:30:00+00:00",
+    "home": "Forward Madison",
+    "away": "Spokane Velocity",
+    "league": "USL League One · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5434505446267022,
+      "pDraw": 0.2333107948117939,
+      "pAway": 0.22323866056150393,
+      "pOver": 0.536824640821121,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.776925591608825,
+      "expA": 1.05175973495625,
+      "expTotal": 2.8286853265650747
+    }
+  },
+  "1647375": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-31T05:00:00+00:00",
+    "home": "Jeonbuk Motors",
+    "away": "Daejeon Citizen",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4174815839351081,
+      "pDraw": 0.253235011103677,
+      "pAway": 0.32928340496121494,
+      "pOver": 0.5224062903085206,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.480410762499725,
+      "expA": 1.2864989770857602,
+      "expTotal": 2.7669097395854854
+    }
+  },
+  "1647390": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-31T07:30:00+00:00",
+    "home": "Gwangju FC",
+    "away": "Gimcheon Sangmu FC",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.25365230948931716,
+      "pDraw": 0.24612854701282785,
+      "pAway": 0.500219143497855,
+      "pOver": 0.5118121809611416,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.08973290538665,
+      "expA": 1.6338305564814402,
+      "expTotal": 2.72356346186809
+    }
+  },
+  "1647429": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-31T21:00:00+00:00",
+    "home": "Ventura County",
+    "away": "Los Angeles FC II",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5735439163447044,
+      "pDraw": 0.19821352309227963,
+      "pAway": 0.22824256056301598,
+      "pOver": 0.70802374357108,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2823653948218086,
+      "expA": 1.3943113956060638,
+      "expTotal": 3.676676790427872
+    }
+  },
+  "1647428": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-10-31T21:00:00+00:00",
+    "home": "Chattanooga",
+    "away": "Columbus Crew II",
+    "league": "MLS Next Pro · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5209676695110902,
+      "pDraw": 0.20954013657532475,
+      "pAway": 0.26949219391358514,
+      "pOver": 0.6957843477707043,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.11677994572395,
+      "expA": 1.484633147946,
+      "expTotal": 3.60141309366995
+    }
+  },
+  "1647391": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T05:00:00+00:00",
+    "home": "Pohang Steelers",
+    "away": "Jeju United FC",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31748719010897913,
+      "pDraw": 0.29609512318111847,
+      "pAway": 0.38641768670990245,
+      "pOver": 0.3584936272048618,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.997506164834088,
+      "expA": 1.1327372169750103,
+      "expTotal": 2.1302433818090982
+    }
+  },
+  "1647376": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T05:00:00+00:00",
+    "home": "Ulsan Hyundai FC",
+    "away": "Gangwon FC",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36667535487214853,
+      "pDraw": 0.2578918907056173,
+      "pAway": 0.37543275442223417,
+      "pOver": 0.5076132257953009,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3433564419061954,
+      "expA": 1.362390392451735,
+      "expTotal": 2.7057468343579307
+    }
+  },
+  "1647392": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T07:30:00+00:00",
+    "home": "FC Anyang",
+    "away": "Bucheon FC 1995",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47003189043450894,
+      "pDraw": 0.2509498250681954,
+      "pAway": 0.2790182844972957,
+      "pOver": 0.5097136142847604,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5667489513194952,
+      "expA": 1.147942009489325,
+      "expTotal": 2.71469096080882
+    }
+  },
+  "1647377": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T07:30:00+00:00",
+    "home": "FC Seoul",
+    "away": "Incheon United",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5627376117254589,
+      "pDraw": 0.23366540013943932,
+      "pAway": 0.20359698813510185,
+      "pOver": 0.5120214897801756,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.76472449371173,
+      "expA": 0.9604552928001852,
+      "expTotal": 2.725179786511915
+    }
+  },
+  "1647433": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T15:00:00+00:00",
+    "home": "Al Hala",
+    "away": "Al Ittihad",
+    "league": "King's Cup · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1647434": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T16:30:00+00:00",
+    "home": "Qalali",
+    "away": "Budaiya",
+    "league": "King's Cup · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1647437": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T19:00:00+00:00",
+    "home": "Atlético Ottawa",
+    "away": "Forge",
+    "league": "Canadian Premier League · Canada",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.21431116055268407,
+      "pDraw": 0.23555915784845782,
+      "pAway": 0.5501296815988581,
+      "pOver": 0.5171392353385406,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9970760547813492,
+      "expA": 1.7490890772862921,
+      "expTotal": 2.7461651320676412
+    }
+  },
+  "1647438": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-01T21:00:00+00:00",
+    "home": "Supra du Quebec",
+    "away": "Cavalry FC",
+    "league": "Canadian Premier League · Canada",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.1847049857466035,
+      "pDraw": 0.19710031926333557,
+      "pAway": 0.6181946949900609,
+      "pOver": 0.6485902506022245,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.133671340418312,
+      "expA": 2.217206535337395,
+      "expTotal": 3.3508778757557067
+    }
+  },
+  "1647412": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-02T00:00:00+00:00",
+    "home": "Charlotte Independence",
+    "away": "Naples",
+    "league": "USL League One · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6433110131544819,
+      "pDraw": 0.18214720114778618,
+      "pAway": 0.174541785697732,
+      "pOver": 0.7039505576874445,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4464254858249497,
+      "expA": 1.2135419600219999,
+      "expTotal": 3.6599674458469496
+    }
+  },
+  "1647413": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-02T01:00:00+00:00",
+    "home": "Boise",
+    "away": "One Knoxville",
+    "league": "USL League One · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3789447200069694,
+      "pDraw": 0.25103057180849087,
+      "pAway": 0.3700247081845398,
+      "pOver": 0.5386924782340209,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4275620728896101,
+      "expA": 1.4077651025850224,
+      "expTotal": 2.8353271754746325
+    }
+  },
+  "1647435": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-02T15:00:00+00:00",
+    "home": "Al Shabab",
+    "away": "Al Tadamun Buri",
+    "league": "King's Cup · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1647436": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-02T15:00:00+00:00",
+    "home": "Umm Al Hassam",
+    "away": "Bahrain SC",
+    "league": "King's Cup · Bahrain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1647393": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-07T05:00:00+00:00",
+    "home": "Jeju United FC",
+    "away": "Gwangju FC",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6702664814609973,
+      "pDraw": 0.19144680144981238,
+      "pAway": 0.13828671708919035,
+      "pOver": 0.5824552028816592,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.166029687718964,
+      "expA": 0.8673966650731201,
+      "expTotal": 3.033426352792084
+    }
+  },
+  "1647394": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-07T07:30:00+00:00",
+    "home": "Gimcheon Sangmu FC",
+    "away": "FC Anyang",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40166174176503494,
+      "pDraw": 0.2652827712930857,
+      "pAway": 0.3330554869418793,
+      "pOver": 0.4722631200541207,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3546515373033015,
+      "expA": 1.20891968232675,
+      "expTotal": 2.5635712196300515
+    }
+  },
+  "1647439": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-07T18:00:00+00:00",
+    "home": "Forge",
+    "away": "Atlético Ottawa",
+    "league": "Canadian Premier League · Canada",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6398381042315724,
+      "pDraw": 0.20650330088241126,
+      "pAway": 0.15365859488601635,
+      "pOver": 0.5478996241430246,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.011452438879236,
+      "expA": 0.867022656331608,
+      "expTotal": 2.878475095210844
+    }
+  },
+  "1647440": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-07T21:00:00+00:00",
+    "home": "Cavalry FC",
+    "away": "Supra du Quebec",
+    "league": "Canadian Premier League · Canada",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7104212438923672,
+      "pDraw": 0.164298709282179,
+      "pAway": 0.1252800468254539,
+      "pOver": 0.6809116417205088,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.549787515638004,
+      "expA": 0.985801165581141,
+      "expTotal": 3.535588681219145
+    }
+  },
+  "1647378": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-08T05:00:00+00:00",
+    "home": "Daejeon Citizen",
+    "away": "Incheon United",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43593151785864476,
+      "pDraw": 0.24819942209403983,
+      "pAway": 0.31586906004731535,
+      "pOver": 0.5402571793563858,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.554835664881368,
+      "expA": 1.2873137065215001,
+      "expTotal": 2.842149371402868
+    }
+  },
+  "1647379": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-08T05:00:00+00:00",
+    "home": "FC Seoul",
+    "away": "Ulsan Hyundai FC",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6293723089299197,
+      "pDraw": 0.19233565398755326,
+      "pAway": 0.17829203708252706,
+      "pOver": 0.6604576774872786,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.27793456517527,
+      "expA": 1.1359229082236428,
+      "expTotal": 3.4138574733989127
+    }
+  },
+  "1647395": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-08T07:30:00+00:00",
+    "home": "Bucheon FC 1995",
+    "away": "Pohang Steelers",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3615495233374108,
+      "pDraw": 0.2937545651447971,
+      "pAway": 0.3446959115177923,
+      "pOver": 0.36894427785353234,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1011783276568825,
+      "expA": 1.06788957931782,
+      "expTotal": 2.1690679069747025
+    }
+  },
+  "1647380": {
+    "savedAt": "2026-10-26T16:52:26.057209+00:00",
+    "kickoffUtc": "2026-11-08T07:30:00+00:00",
+    "home": "Gangwon FC",
+    "away": "Jeonbuk Motors",
+    "league": "K League 1 · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3952061376211836,
+      "pDraw": 0.294589867178673,
+      "pAway": 0.3102039952001433,
+      "pOver": 0.3618280455929759,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1549358791507858,
+      "expA": 0.9876924136199402,
+      "expTotal": 2.142628292770726
+    }
   }
 }
