@@ -5,8 +5,12 @@
 (function () {
   'use strict';
   var CONFIG = {
-    enabled: true,
-    showPlaceholders: true, // false hides placements without a configured ad
+    // Kept OFF while the site is under AdSense review. Empty ad placeholders /
+    // sponsored frames on a data-driven site make it look like an ad shell,
+    // which works against a "low value content" re-review. Turn these back on
+    // (enabled: true) only AFTER Google re-approves the site.
+    enabled: false,
+    showPlaceholders: false, // false hides placements without a configured ad
     // Set false if ads must wait for consent; call PreBetAds.setConsent(true)
     // from your consent manager only after the required permission is granted.
     consentGranted: true,

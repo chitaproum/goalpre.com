@@ -131,6 +131,16 @@ button,input,select{font-family:inherit}
 .engine-seg .eng-btn.active{background:var(--surface);color:var(--brand);box-shadow:0 1px 3px rgba(0,0,0,.14)}
 
 /* ---------- Table ---------- */
+.pred-intro{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:0 0 14px}
+.pred-intro:empty{display:none}
+.pred-intro h2{margin:0 0 6px;font-size:16px;font-weight:800;color:var(--text);letter-spacing:-.2px}
+.pred-intro p{margin:0 0 8px;font-size:13.5px;line-height:1.6;color:var(--text)}
+.pred-intro p:last-child{margin-bottom:0}
+.pred-intro p.pi-note{color:var(--muted);font-size:12px}
+.pred-intro strong{color:var(--brand)}
+.pred-intro ul{margin:4px 0 8px;padding-left:18px}
+.pred-intro li{font-size:13px;line-height:1.55;color:var(--text);margin:2px 0}
+@media (max-width:640px){.pred-intro{padding:13px 14px}.pred-intro h2{font-size:15px}.pred-intro p{font-size:13px}}
 .table-wrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;box-shadow:var(--shadow)}
 .pred-table{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
 .pred-table thead th{background:var(--surface);color:var(--faint);text-align:center;padding:12px 10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;border-bottom:2px solid var(--line);white-space:nowrap;position:sticky;top:0;z-index:15;box-shadow:0 2px 4px rgba(0,0,0,0.04)}
@@ -750,6 +760,26 @@ td.col-score, th.col-score {
 .home-card h2{margin:0 0 8px;font-size:17px;font-weight:800;letter-spacing:-.2px}
 .home-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
 @media(max-width:820px){.home-features{grid-template-columns:1fr}.home-intro{padding:24px 20px}}
+
+/* ---------- Home: Latest match analysis ---------- */
+.home-analysis{width:100%;margin-top:26px}
+.home-analysis .ha-head{margin:0 0 14px}
+.home-analysis .ha-head h2{margin:0 0 4px;font-size:20px;font-weight:800;letter-spacing:-.3px}
+.home-analysis .ha-head p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+.home-analysis .ha-head a{color:var(--brand);text-decoration:underline}
+.ha-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ha-card{display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:var(--radius);padding:18px 18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .12s,box-shadow .12s}
+.ha-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.ha-league{align-self:flex-start;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--brand);background:var(--brand-soft);padding:3px 9px;border-radius:999px}
+.ha-card h3{margin:0;font-size:16px;font-weight:800;line-height:1.35;letter-spacing:-.2px;color:var(--text)}
+.ha-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+.ha-verdict{margin-top:auto;font-size:13px;font-weight:700;color:var(--text)}
+.ha-logos{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.ha-logos img{width:34px;height:34px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:8px;padding:3px}
+.ha-vs{font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase}
+.ha-verdict em{font-style:normal;font-weight:600;color:var(--muted)}
+.ha-note{margin:14px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+@media(max-width:820px){.ha-grid{grid-template-columns:1fr}.home-analysis .ha-head h2{font-size:18px}}
 
 /* Home: top-5 prediction highlights (both engines) */
 /* Also used by the Top 20 view */

@@ -637,6 +637,44 @@
       + '<th class="col-prob">Probabilities</th><th>Tip</th><th>Score</th><th></th></tr>'
   };
 
+  /* ---------- Editorial intros per prediction section ----------
+     Original human-written context so each section explains what the numbers
+     mean and how to read them, rather than presenting a bare table. Plain
+     markup only (no inline handlers). */
+  function predIntroHtml(mode) {
+    var avg = (Math.round((LEAGUE_AVG || 2.7) * 100) / 100).toFixed(2);
+    if (mode === '1x2') {
+      return '<h2>Match Result (1 X 2) predictions — how to read them</h2>'
+        + '<p>This section estimates the chance of each full-time outcome: a <strong>home win (1)</strong>, a <strong>draw (X)</strong>, or an <strong>away win (2)</strong>. The three percentages on every row always add up to 100%. The highlighted figure is the model’s most likely result, and the <em>Tip</em> column repeats it as the suggested pick.</p>'
+        + '<p>The numbers come from the data source you select above. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
+        + '<p class="pi-note">Draws are the hardest outcome to call, so even a leading draw probability rarely passes 40%. Treat a single-digit edge over the bookmaker’s implied chance as noise, not a signal.</p>';
+    }
+    if (mode === 'ou') {
+      return '<h2>Over/Under 2.5 Goals — reading the goal line</h2>'
+        + '<p>Here the question is not who wins but how many goals are scored. <strong>Over 2.5</strong> needs three or more goals in the match; <strong>Under 2.5</strong> needs two or fewer. The <em>Exp. goals</em> column is the model’s projected match total — roughly the two teams’ attacking and defensive rates added together — and the two percentages beside it are the share of simulated results that finish above or below the line.</p>'
+        + '<p>The 2.5 line is the market standard because it splits a typical match almost in half. Across the fixtures in this dataset the average is about <strong>' + avg + ' goals</strong> per game, so an expected total meaningfully above or below that is what tilts a tip. High-tempo, open leagues drift Over; cagey, defensive leagues and low-stakes dead-rubber fixtures drift Under.</p>'
+        + '<p class="pi-note">Goal totals swing on team news — a missing striker or a rested defence can move a projection after it is published. Check the Stats tab for each side’s recent scoring before trusting a line.</p>';
+    }
+    if (mode === 'stats') {
+      return '<h2>Stats explorer — the form behind the tips</h2>'
+        + '<p>Every prediction is only as good as the form underneath it, and this tab shows that form directly. Each row carries the projected goals for the home side, the away side and the match total, plus the most likely scoreline. <strong>Click any row</strong> to expand full detail: season table position, last-six form, separate home and away records, and the head-to-head history between the two teams.</p>'
+        + '<p>Use it as a sanity check. If a side is tipped to win but has lost its last four on the road and sits mid-table, the pick deserves caution. Strong, consistent home form paired with a weak visiting record is the pattern that most often lines up with the model and the market together.</p>'
+        + '<p class="pi-note">Form figures are computed from completed matches in the dataset, so very early-season and lower-division samples are small — read them as a trend, not a guarantee.</p>';
+    }
+    if (mode === 'selection') {
+      return '<h2>Your Selection — build and review a slip</h2>'
+        + '<p>Tick the checkbox on any prediction and it collects here so you can review your picks side by side before deciding. Combining several tips into one accumulator multiplies the odds, but it also multiplies the risk: every leg has to land, so the chance of the whole slip winning falls fast with each selection you add.</p>'
+        + '<p>Compare each pick’s model probability against its price, lean on the Stats tab for the shakier legs, and keep the slip short rather than chasing a long-shot return. Export it to PDF to keep a record of what you backed and why.</p>'
+        + '<p class="pi-note">These are model estimates for information only, not betting advice. Odds and availability change, no outcome is guaranteed, and you should only ever stake what you can afford to lose. 18+ — please gamble responsibly.</p>';
+    }
+    return '';
+  }
+
+  function renderPredIntro(mode) {
+    var el = $('#predIntro');
+    if (el) el.innerHTML = predIntroHtml(mode);
+  }
+
   function adRowHtml(cols) {
     return '<tr class="ad-row"><td colspan="' + cols + '" style="padding:0">'
       + '<div class="ad-slot ad-inline" data-ad-placement="inTable" style="margin:0;border-radius:0;border-left:0;border-right:0" aria-label="Advertisement">'
@@ -1275,6 +1313,7 @@ function leagueCode(l) {
   function renderPredictions() {
     var head = $('#predHead'), body = $('#predBody'), empty = $('#emptyMsg');
     syncPeriodUI();
+    renderPredIntro(state.mode);
     if (state.mode === 'selection') { renderSelection(head, body, empty); return; }
     head.innerHTML = HEADS[state.mode];
     _rendered = [];

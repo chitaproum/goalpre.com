@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://goalpre.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://goalpre.com/match-analysis.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://goalpre.com/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://goalpre.com/predictions-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://goalpre.com/how-we-write.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://goalpre.com/glossary.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://goalpre.com/faq.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://goalpre.com/responsible-gambling.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>

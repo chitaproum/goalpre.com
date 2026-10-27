@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How We Write Our Match Analysis — Editorial Process &amp; a Worked Example | GoalPre</title>
+  <meta name="description" content="How GoalPre writes its football match analysis: a human-led editorial process built on real statistics, with a full worked example from data brief to finished article." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goalpre.com/how-we-write.html" />
+  <meta name="theme-color" content="#0c7a4d" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal{max-width:860px;margin:0 auto;padding:28px 4px 60px}
+    .legal h1{font-size:28px;margin:12px 0 6px}
+    .legal .legal-meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+    .legal h2{font-size:19px;margin:30px 0 8px;padding-top:10px;border-top:1px solid var(--border)}
+    .legal h3{font-size:15px;margin:18px 0 6px}
+    .legal p,.legal li{font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal ul,.legal ol{padding-left:22px;margin:8px 0}
+    .legal li{margin:4px 0}
+    .legal a{color:var(--brand);text-decoration:underline}
+    .legal table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+    .legal th,.legal td{border:1px solid var(--border);padding:7px 10px;text-align:left}
+    .legal th{background:var(--surface2)}
+    .legal .callout{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:18px 0}
+    .legal .toc{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin:0 0 22px}
+    .legal .toc ol{margin:6px 0 0;padding-left:20px}
+    .legal .toc a{text-decoration:none}
+    .legal .article{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--brand);border-radius:8px;padding:18px 20px;margin:16px 0}
+    .legal .article .art-meta{color:var(--muted);font-size:12.5px;margin:0 0 10px}
+    .legal .article .art-read{font-weight:700}
+    .legal .article .art-disc{color:var(--muted);font-size:12.5px;font-style:italic;margin-top:12px}
+    .legal-back{display:inline-block;margin:0 0 10px;font-size:13px;color:var(--brand);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GoalPre home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span><span class="logo-tx">Goal<span>Pre</span></span></a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" style="margin-left:auto">&#9790;</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <article class="legal">
+      <a class="legal-back" href="index.html">&larr; Back to GoalPre</a>
+      <h1>How we write our match analysis</h1>
+      <p class="legal-meta">Our editorial process, in plain English — and a full worked example from data to finished article.</p>
+
+      <p>GoalPre's predictions are produced by statistical models, but our written
+      match analysis is produced by <strong>people</strong>. Every article is
+      researched from recent data, written and edited by a named human, and
+      fact-checked before it goes live. We do not auto-publish machine-written
+      text. This page explains how a piece is made and walks through one example
+      step by step.</p>
+
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ol>
+          <li><a href="#principles">Our editorial principles</a></li>
+          <li><a href="#process">The three-step process</a></li>
+          <li><a href="#example">A worked example</a></li>
+          <li><a href="#checks">What we check before publishing</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="principles">1. Our editorial principles</h2>
+      <p>A few rules govern everything we publish:</p>
+      <ul>
+        <li><strong>Data first.</strong> No article starts until the recent
+        statistics are gathered — expected goals (xG), shot rates, Over/Under 2.5
+        trends, form and head-to-head records.</li>
+        <li><strong>A human always decides.</strong> Software can help us organise
+        data, but a named writer makes the judgement calls and a second person
+        reviews the piece before it is published.</li>
+        <li><strong>We write few, not many.</strong> We cover a handful of
+        genuinely interesting fixtures each week rather than churning out a page
+        for every match. Quality over quantity.</li>
+        <li><strong>Honesty over hype.</strong> We say when the model and the
+        bookmakers simply agree and there is no edge, we give a confidence level,
+        and we never claim a “sure thing” — because none exists.</li>
+        <li><strong>Information, not advice.</strong> Everything is for study and
+        entertainment. It is not betting advice, and the models cannot see
+        injuries, motivation or weather.</li>
+      </ul>
+
+      <h2 id="process">2. The three-step process</h2>
+      <p>Every article follows the same route from numbers to words:</p>
+      <ol>
+        <li><strong>Build a data brief.</strong> We pull the recent stats for both
+        teams into an internal brief — the factual backbone of the article.</li>
+        <li><strong>Add the human layer.</strong> The writer adds what the data
+        alone cannot show: team news, fatigue from fixture congestion, how a side
+        actually plays, and where our model disagrees with the market.</li>
+        <li><strong>Draft, edit and sign off.</strong> The piece is written in a
+        human voice, every stat is verified, generic filler is cut, and a second
+        person reviews and approves it before publishing.</li>
+      </ol>
+
+      <h2 id="example">3. A worked example</h2>
+      <p>Here is the full process applied to one fixture. The statistics below are
+      <strong>illustrative sample figures</strong> used to demonstrate the method;
+      a live article uses real data pulled on the day of the match.</p>
+
+      <h3>Step 1 — the data brief (internal)</h3>
+      <p><strong>Arsenal vs Newcastle United</strong> · Premier League · Emirates
+      Stadium. Recent form over the last six matches:</p>
+      <table>
+        <tr><th>Metric (last 6)</th><th>Arsenal</th><th>Newcastle</th></tr>
+        <tr><td>xG for (per game)</td><td>2.05</td><td>1.48</td></tr>
+        <tr><td>xG against (per game)</td><td>0.82</td><td>1.21</td></tr>
+        <tr><td>Goals for / against</td><td>11 / 5</td><td>9 / 8</td></tr>
+        <tr><td>Shots / on target (pg)</td><td>16.3 / 6.1</td><td>12.7 / 4.4</td></tr>
+        <tr><td>Over 2.5 hit rate</td><td>3 of 6</td><td>4 of 6</td></tr>
+        <tr><td>Points per game</td><td>2.17</td><td>1.50</td></tr>
+        <tr><td>Venue split</td><td>Home 2.6 PPG</td><td>Away 1.17 PPG</td></tr>
+      </table>
+      <p><strong>Head-to-head (last 5):</strong> Arsenal 3 wins, 1 draw, 1
+      Newcastle win · average 2.4 goals · Over 2.5 in 2 of 5.<br />
+      <strong>Model output (illustrative):</strong> 1X2 — Home 58% / Draw 24% /
+      Away 18% · expected total 2.9 goals · Over 2.5 at 54%.<br />
+      <strong>Market:</strong> Home ~1.70 · Over 2.5 ~1.95.</p>
+
+      <h3>Step 2 — the human layer</h3>
+      <p>These are the notes the writer adds that the numbers alone miss:</p>
+      <ul>
+        <li>Newcastle are on a short turnaround after European football — fatigue
+        risk late in an away game.</li>
+        <li>Arsenal's main striker is a late fitness test; if he sits, the
+        attacking projection and the Over lean soften.</li>
+        <li>Newcastle defend deep and counter on the road, which keeps games
+        quiet for an hour before they leak late when chasing.</li>
+        <li>Model and market agree on the home win (no value there); on Over 2.5
+        the model is only a shade above the implied chance — a slim edge, not a
+        signal.</li>
+      </ul>
+
+      <h3>Step 3 — the finished, published article</h3>
+      <div class="article">
+        <h3 style="margin-top:0">Arsenal vs Newcastle: control at home, but the goals line is a coin-flip</h3>
+        <p class="art-meta">By the GoalPre analysis desk · illustrative date</p>
+        <p>Arsenal go into this one as clear favourites, and the underlying numbers
+        back that up rather than just the league table. Over their last six games
+        they have averaged 2.05 expected goals while conceding just 0.82 — the
+        profile of a side creating a lot and giving up very little. At the
+        Emirates, where they take 2.6 points per game, that advantage only grows.</p>
+        <p>Newcastle are the more awkward side to read. Four of their last six have
+        gone over 2.5 goals, which looks tempting, but that number hides
+        something. On the road they average barely over a point a game and tend to
+        sit deep and counter — a plan that can keep the score down for an hour and
+        then leak late once they are forced to chase. The trip also comes on a
+        short turnaround after European football, and tired legs in the final 20
+        minutes are exactly when Arsenal punish teams at home.</p>
+        <p>Our model lands on a 58% home win, an expected total of around 2.9
+        goals, and Over 2.5 a shade above even money at 54%. That home figure
+        lines up with the market price near 1.70, so there is no hidden value
+        there — the bookmakers and the model simply agree. The goals line is the
+        interesting part: the model is only marginally above the implied chance,
+        which to us is a coin-flip, not a signal.</p>
+        <p>One thing to watch before kick-off is Arsenal's main striker, who is a
+        late fitness call. If he starts, the attacking projection holds and the
+        Over looks a little more live. If he is rested or unavailable, expect a
+        more controlled, lower-scoring home win.</p>
+        <p class="art-read">Our read: the home win is the confident call here. On
+        goals we would lean Over only cautiously, and only if the first-choice
+        forward line starts — otherwise leave the line alone. Confidence: high on
+        the result, low on the total.</p>
+        <p class="art-disc">This analysis is based on recent statistics and is one
+        writer's opinion, not betting advice. Odds change and no result is
+        guaranteed. 18+ — please gamble responsibly.</p>
+      </div>
+
+      <h2 id="checks">4. What we check before publishing</h2>
+      <p>Before any article goes live, a reviewer confirms that:</p>
+      <ul>
+        <li>Every statistic was pulled from a real source and is accurate — we
+        never invent or “round into” a nicer story.</li>
+        <li>The piece contains specific, checkable detail and a genuine opinion
+        with a confidence level, not generic filler.</li>
+        <li>It states honestly where there is no value, and makes no guarantees.</li>
+        <li>It carries an author byline, a date, and a responsible-gambling
+        notice.</li>
+      </ul>
+      <p>Want the full method behind the numbers themselves? Read our
+      <a href="predictions-guide.html">predictions guide</a> or browse the
+      <a href="glossary.html">betting &amp; stats glossary</a>.</p>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>GoalPre &middot; Poisson, KPI &amp; AI-consensus football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="match-analysis.html">Match analysis</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
