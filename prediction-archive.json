@@ -257733,5 +257733,347 @@
       "expA": 1.5523170218330038,
       "expTotal": 4.3504070309723355
     }
+  },
+  "1525936": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-28T11:00:00+00:00",
+    "home": "Belshina",
+    "away": "Dinamo Minsk",
+    "league": "Premier League · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.12109064340556162,
+      "pDraw": 0.1759494847494849,
+      "pAway": 0.7029598718449536,
+      "pOver": 0.6120502258598179,
+      "scoreH": 0,
+      "scoreA": 2,
+      "expH": 0.8506006546820936,
+      "expA": 2.3241901414345327,
+      "expTotal": 3.174790796116626
+    }
+  },
+  "1525938": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-28T12:00:00+00:00",
+    "home": "FC Isloch Minsk R.",
+    "away": "ML Vitebsk",
+    "league": "Premier League · Belarus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36018937294776937,
+      "pDraw": 0.26227774332687237,
+      "pAway": 0.37753288372535826,
+      "pOver": 0.4883307522215408,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2951795182824113,
+      "expA": 1.3323903945689026,
+      "expTotal": 2.627569912851314
+    }
+  },
+  "1647441": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-29T01:05:00+00:00",
+    "home": "Quindio",
+    "away": "Real Cundinamarca",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4348570491262911,
+      "pDraw": 0.30951926418679115,
+      "pAway": 0.2556236866869179,
+      "pOver": 0.30248037244814857,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1308870612588042,
+      "expA": 0.792165769716636,
+      "expTotal": 1.9230528309754402
+    }
+  },
+  "1647442": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-29T19:00:00+00:00",
+    "home": "Envigado",
+    "away": "Ind. Yumbo",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4065021867693862,
+      "pDraw": 0.3036109411511719,
+      "pAway": 0.28988687207944197,
+      "pOver": 0.3298696944323939,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1243109734276804,
+      "expA": 0.8999794857690001,
+      "expTotal": 2.0242904591966804
+    }
+  },
+  "1647444": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-29T21:00:00+00:00",
+    "home": "Tigres FC",
+    "away": "Real Cartagena",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3455698931660419,
+      "pDraw": 0.2757133355607114,
+      "pAway": 0.3787167712732467,
+      "pOver": 0.4330122317510286,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1711100587196055,
+      "expA": 1.23961082364063,
+      "expTotal": 2.4107208823602355
+    }
+  },
+  "1647443": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-10-29T21:00:00+00:00",
+    "home": "Popayan",
+    "away": "Union Magdalena",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.27787866081014545,
+      "pDraw": 0.24705813361987794,
+      "pAway": 0.4750632055699766,
+      "pOver": 0.5255564895895981,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1715888184725312,
+      "expA": 1.6087973833628866,
+      "expTotal": 2.7803862018354177
+    }
+  },
+  "1647445": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-01T01:15:00+00:00",
+    "home": "Real Cartagena",
+    "away": "Quindio",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3928907025962653,
+      "pDraw": 0.2811333895697097,
+      "pAway": 0.325975907834025,
+      "pOver": 0.4102349959255233,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2300703203349421,
+      "expA": 1.093864690657557,
+      "expTotal": 2.323935010992499
+    }
+  },
+  "1647446": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-01T19:00:00+00:00",
+    "home": "Real Cundinamarca",
+    "away": "Tigres FC",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38183696433625236,
+      "pDraw": 0.31015185611147406,
+      "pAway": 0.30801117955227353,
+      "pOver": 0.3155254423365471,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.0557647866693116,
+      "expA": 0.9154985523886757,
+      "expTotal": 1.9712633390579875
+    }
+  },
+  "1647464": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Urena SC",
+    "away": "Monagas II",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.34786679642460666,
+      "pDraw": 0.24456620199675747,
+      "pAway": 0.4075670015786359,
+      "pOver": 0.566369641333992,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4100310320285887,
+      "expA": 1.5451241121205177,
+      "expTotal": 2.9551551441491064
+    }
+  },
+  "1647465": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Yaracuyanos FC",
+    "away": "Aragua FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4160666763182318,
+      "pDraw": 0.29612107618757194,
+      "pAway": 0.28781224749419626,
+      "pOver": 0.35117537974272905,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1769686623154074,
+      "expA": 0.9261608849994599,
+      "expTotal": 2.1031295473148672
+    }
+  },
+  "1647463": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Petare FC",
+    "away": "Fundación Lara Deportiva",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36133303695699465,
+      "pDraw": 0.2660279235444073,
+      "pAway": 0.3726390394985981,
+      "pOver": 0.472602607497898,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2704428294015069,
+      "expA": 1.29444284237818,
+      "expTotal": 2.564885671779687
+    }
+  },
+  "1647448": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-04T21:00:00+00:00",
+    "home": "Tigres FC",
+    "away": "Quindio",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3088824680911733,
+      "pDraw": 0.34513925924289823,
+      "pAway": 0.3459782726659285,
+      "pOver": 0.23238761885093925,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.7973771241133877,
+      "expA": 0.8631433419662341,
+      "expTotal": 1.6605204660796218
+    }
+  },
+  "1647447": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-04T21:00:00+00:00",
+    "home": "Real Cartagena",
+    "away": "Real Cundinamarca",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.48069614323218324,
+      "pDraw": 0.2459605262680085,
+      "pAway": 0.27334333049980836,
+      "pOver": 0.527265433498487,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6241332966296562,
+      "expA": 1.163456127638532,
+      "expTotal": 2.7875894242681882
+    }
+  },
+  "1647466": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-07T22:00:00+00:00",
+    "home": "Fundación Lara Deportiva",
+    "away": "Petare FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46012868107626026,
+      "pDraw": 0.2585811008312674,
+      "pAway": 0.28129021809247234,
+      "pOver": 0.4797158635979083,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4886092687349068,
+      "expA": 1.1047328951317452,
+      "expTotal": 2.593342163866652
+    }
+  },
+  "1647467": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-08T19:30:00+00:00",
+    "home": "Aragua FC",
+    "away": "Yaracuyanos FC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.360471811146914,
+      "pDraw": 0.30047117106225324,
+      "pAway": 0.3390570177908327,
+      "pOver": 0.3472442569080112,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.065085017749379,
+      "expA": 1.02345101070905,
+      "expTotal": 2.088536028458429
+    }
+  },
+  "1647468": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-08T19:30:00+00:00",
+    "home": "Monagas II",
+    "away": "Urena SC",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5028822409790845,
+      "pDraw": 0.23319516835065618,
+      "pAway": 0.2639225906702593,
+      "pOver": 0.5769236346719483,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7768927289385952,
+      "expA": 1.226113940894425,
+      "expTotal": 3.0030066698330202
+    }
+  },
+  "1647449": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-08T21:00:00+00:00",
+    "home": "Quindio",
+    "away": "Tigres FC",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41528633947719956,
+      "pDraw": 0.3364626247556998,
+      "pAway": 0.24825103576710064,
+      "pOver": 0.23907169224700467,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9926148432611691,
+      "expA": 0.6933714122725111,
+      "expTotal": 1.6859862555336802
+    }
+  },
+  "1647450": {
+    "savedAt": "2026-10-27T08:50:18.716494+00:00",
+    "kickoffUtc": "2026-11-08T21:00:00+00:00",
+    "home": "Real Cundinamarca",
+    "away": "Real Cartagena",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.35539023759279464,
+      "pDraw": 0.25528233354522417,
+      "pAway": 0.3893274288619813,
+      "pOver": 0.5184158836100603,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3379745467843116,
+      "expA": 1.4122898231562229,
+      "expTotal": 2.7502643699405347
+    }
   }
 }
