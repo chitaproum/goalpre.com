@@ -255681,5 +255681,214 @@
       "expA": 1.0696263655086453,
       "expTotal": 2.3275707597648356
     }
+  },
+  "1647611": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-10-31T18:00:00+00:00",
+    "home": "Central Cordoba",
+    "away": "Canuelas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28565169473507246,
+      "pDraw": 0.3210928546546635,
+      "pAway": 0.3932554506102641,
+      "pOver": 0.28283924705515323,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8253679530922979,
+      "expA": 1.0248254778894164,
+      "expTotal": 1.8501934309817143
+    }
+  },
+  "1647610": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-10-31T18:00:00+00:00",
+    "home": "Argentino Rosario",
+    "away": "Defensores Glew",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3164089284115573,
+      "pDraw": 0.28246552632447186,
+      "pAway": 0.401125545263971,
+      "pOver": 0.4035299082460507,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0634414442238167,
+      "expA": 1.2351625522214604,
+      "expTotal": 2.2986039964452774
+    }
+  },
+  "1647612": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-10-31T18:00:00+00:00",
+    "home": "Estrella Del Sur",
+    "away": "Deportivo Español",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.27413919723524366,
+      "pDraw": 0.374932275820193,
+      "pAway": 0.3509285269445633,
+      "pOver": 0.17690304868088044,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.6567438257731889,
+      "expA": 0.78592432091723,
+      "expTotal": 1.4426681466904188
+    }
+  },
+  "1647614": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-01T20:00:00+00:00",
+    "home": "FBC Melgar W",
+    "away": "U. de Deportes W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.10682305611870135,
+      "pDraw": 0.12712451005705297,
+      "pAway": 0.7660524338242456,
+      "pOver": 0.8142218929407213,
+      "scoreH": 1,
+      "scoreA": 3,
+      "expH": 1.250551240166976,
+      "expA": 3.3262508967199684,
+      "expTotal": 4.576802136886944
+    }
+  },
+  "1647613": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-02T18:00:00+00:00",
+    "home": "Sportivo Barracas",
+    "away": "Leones de Rosario",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3343803216550441,
+      "pDraw": 0.3140848870710007,
+      "pAway": 0.3515347912739553,
+      "pOver": 0.307375443036181,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9543826096360187,
+      "expA": 0.9867408372387502,
+      "expTotal": 1.941123446874769
+    }
+  },
+  "1647618": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-02T19:00:00+00:00",
+    "home": "Ind. Yumbo",
+    "away": "Popayan",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5232069708074969,
+      "pDraw": 0.2613107141872061,
+      "pAway": 0.21548231500529705,
+      "pOver": 0.4206067557934005,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.5029651917962044,
+      "expA": 0.8607456372334681,
+      "expTotal": 2.3637108290296727
+    }
+  },
+  "1647619": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-02T23:10:00+00:00",
+    "home": "Union Magdalena",
+    "away": "Envigado",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39118364121039273,
+      "pDraw": 0.27396047524905925,
+      "pAway": 0.33485588354054807,
+      "pOver": 0.4383331931014607,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2740331241289924,
+      "expA": 1.1571539889571199,
+      "expTotal": 2.4311871130861125
+    }
+  },
+  "1647615": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-03T20:00:00+00:00",
+    "home": "Sporting Cristal W",
+    "away": "Alianza Lima W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.29032448372065256,
+      "pDraw": 0.23818001491138366,
+      "pAway": 0.47149550136796387,
+      "pOver": 0.5729959306824308,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2853432297834926,
+      "expA": 1.6996643008966636,
+      "expTotal": 2.9850075306801562
+    }
+  },
+  "1647620": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-06T00:00:00+00:00",
+    "home": "Libertad San Carlos",
+    "away": "Atletico Torque",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3417021812653311,
+      "pDraw": 0.24746457090206986,
+      "pAway": 0.41083324783259895,
+      "pOver": 0.5515651182563376,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3678106659649998,
+      "expA": 1.5227239869000002,
+      "expTotal": 2.890534652865
+    }
+  },
+  "1647616": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-08T18:00:00+00:00",
+    "home": "Alianza Lima W",
+    "away": "Sporting Cristal W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.567803274573778,
+      "pDraw": 0.21838424455553535,
+      "pAway": 0.2138124808706867,
+      "pOver": 0.5918404550231926,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9546139460311631,
+      "expA": 1.117689765029124,
+      "expTotal": 3.072303711060287
+    }
+  },
+  "1647617": {
+    "savedAt": "2026-10-28T08:57:33.967074+00:00",
+    "kickoffUtc": "2026-11-09T20:00:00+00:00",
+    "home": "U. de Deportes W",
+    "away": "FBC Melgar W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8436643253146731,
+      "pDraw": 0.09283023853745206,
+      "pAway": 0.0635054361478749,
+      "pOver": 0.8263753285449602,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.825188531227963,
+      "expA": 1.0874358610147619,
+      "expTotal": 4.912624392242725
+    }
   }
 }
