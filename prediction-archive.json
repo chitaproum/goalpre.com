@@ -255890,5 +255890,271 @@
       "expA": 1.0874358610147619,
       "expTotal": 4.912624392242725
     }
+  },
+  "1563787": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-03T19:45:00+00:00",
+    "home": "Northampton",
+    "away": "Oldham",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4299791918964815,
+      "pDraw": 0.30389374325186413,
+      "pAway": 0.2661270648516544,
+      "pOver": 0.32134542854811216,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.153362955360252,
+      "expA": 0.8394430575336249,
+      "expTotal": 1.992806012893877
+    }
+  },
+  "1597367": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-03T19:45:00+00:00",
+    "home": "Bracknell Town",
+    "away": "Chertsey Town",
+    "league": "Non League Premier - Southern South · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.18940889926415486,
+      "pDraw": 0.1837682935855117,
+      "pAway": 0.6268228071503336,
+      "pOver": 0.7225819555202994,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.3063646843098253,
+      "expA": 2.4657186832936,
+      "expTotal": 3.7720833676034253
+    }
+  },
+  "1631607": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T00:00:00+00:00",
+    "home": "Atletico Hidalgo",
+    "away": "Celaya 2",
+    "league": "Liga Premier Serie B · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.136085583882651,
+      "pDraw": 0.1485824119841246,
+      "pAway": 0.7153320041332244,
+      "pOver": 0.7881246941814183,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.2872506921813538,
+      "expA": 2.9909445810524278,
+      "expTotal": 4.278195273233782
+    }
+  },
+  "1640360": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T08:30:00+00:00",
+    "home": "Wests APIA",
+    "away": "Adelaide City",
+    "league": "Australian Championship · Australia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5739919789783577,
+      "pDraw": 0.21882215575240477,
+      "pAway": 0.20718586526923738,
+      "pOver": 0.5809928354204011,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9427105382932812,
+      "expA": 1.08020346890625,
+      "expTotal": 3.0229140071995313
+    }
+  },
+  "1549871": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Millonarios",
+    "away": "Alianza Valledupar",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6858168196274984,
+      "pDraw": 0.1915742755873912,
+      "pAway": 0.12260890478511043,
+      "pOver": 0.5448824353273797,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.1089113420815746,
+      "expA": 0.7582882408553759,
+      "expTotal": 2.8671995829369505
+    }
+  },
+  "1549868": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Deportivo Pasto",
+    "away": "Junior",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31496954520219633,
+      "pDraw": 0.24899359751369388,
+      "pAway": 0.4360368572841099,
+      "pOver": 0.5363582875415509,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2782626519217937,
+      "expA": 1.547328192170376,
+      "expTotal": 2.8255908440921695
+    }
+  },
+  "1549867": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Deportivo Cali",
+    "away": "Deportes Tolima",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45488237725454106,
+      "pDraw": 0.29869914504443335,
+      "pAway": 0.24641847770102565,
+      "pOver": 0.32693704578181254,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.207914688887214,
+      "expA": 0.8055865225398758,
+      "expTotal": 2.01350121142709
+    }
+  },
+  "1549865": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Bucaramanga",
+    "away": "Fortaleza FC",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.580317910752981,
+      "pDraw": 0.22658041965535372,
+      "pAway": 0.1931016695916653,
+      "pOver": 0.5275616646952577,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.835374105875279,
+      "expA": 0.954818914105056,
+      "expTotal": 2.790193019980335
+    }
+  },
+  "1549869": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Internacional de Bogota",
+    "away": "Santa Fe",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2554094416761883,
+      "pDraw": 0.23240827166006803,
+      "pAway": 0.5121822866637437,
+      "pOver": 0.573197391458457,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1975153130114942,
+      "expA": 1.788962368819472,
+      "expTotal": 2.986477681830966
+    }
+  },
+  "1549864": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Once Caldas",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6026175205699091,
+      "pDraw": 0.21334879696601897,
+      "pAway": 0.1840336824640718,
+      "pOver": 0.5714338747993302,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.9838858172216158,
+      "expA": 0.9968775704635441,
+      "expTotal": 2.98076338768516
+    }
+  },
+  "1549863": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Águilas Doradas",
+    "away": "Independiente Medellin",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3750866093692525,
+      "pDraw": 0.2509450158155094,
+      "pAway": 0.37396837481523826,
+      "pOver": 0.5391519647948216,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4198806965959612,
+      "expA": 1.4173981710781198,
+      "expTotal": 2.837278867674081
+    }
+  },
+  "1549872": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Deportivo Pereira",
+    "away": "America de Cali",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.14281949193435364,
+      "pDraw": 0.22958790479602778,
+      "pAway": 0.6275926032696186,
+      "pOver": 0.43803643854923396,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.6877778835112416,
+      "expA": 1.743703949841392,
+      "expTotal": 2.431481833352634
+    }
+  },
+  "1549870": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Llaneros",
+    "away": "Chico",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5213683066547273,
+      "pDraw": 0.26905705853777256,
+      "pAway": 0.20957463480749997,
+      "pOver": 0.38962356173710827,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.4417303655814289,
+      "expA": 0.8048778069652318,
+      "expTotal": 2.2466081725466607
+    }
+  },
+  "1549866": {
+    "savedAt": "2026-10-29T01:02:25.766492+00:00",
+    "kickoffUtc": "2026-11-12T21:00:00+00:00",
+    "home": "Cucuta",
+    "away": "Jaguares",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46703673317326627,
+      "pDraw": 0.22759506259379755,
+      "pAway": 0.30536820423293626,
+      "pOver": 0.6321639422154712,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8233653801366543,
+      "expA": 1.438718369991056,
+      "expTotal": 3.2620837501277102
+    }
   }
 }
