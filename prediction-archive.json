@@ -256156,5 +256156,138 @@
       "expA": 1.438718369991056,
       "expTotal": 3.2620837501277102
     }
+  },
+  "1647664": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-10-31T14:00:00+00:00",
+    "home": "Arna-Bjørnar W",
+    "away": "Viking FK W",
+    "league": "Toppserien · Norway",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4396113309030525,
+      "pDraw": 0.22070988140121756,
+      "pAway": 0.33967878769572996,
+      "pOver": 0.681897857453418,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8831249999999997,
+      "expA": 1.6375,
+      "expTotal": 3.520625
+    }
+  },
+  "1647666": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Zamora FC B",
+    "away": "Deportivo Lara",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.23994605553661089,
+      "pDraw": 0.22443284780583656,
+      "pAway": 0.5356210966575525,
+      "pOver": 0.5947671952334459,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.195208836249472,
+      "expA": 1.8897380426311803,
+      "expTotal": 3.084946878880652
+    }
+  },
+  "1647665": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-07T14:00:00+00:00",
+    "home": "Viking FK W",
+    "away": "Arna-Bjørnar W",
+    "league": "Toppserien · Norway",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4396113309030525,
+      "pDraw": 0.22070988140121756,
+      "pAway": 0.33967878769572996,
+      "pOver": 0.681897857453418,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8831249999999997,
+      "expA": 1.6375,
+      "expTotal": 3.520625
+    }
+  },
+  "1647668": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-08T18:00:00+00:00",
+    "home": "Canuelas",
+    "away": "Central Cordoba",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4686951961031642,
+      "pDraw": 0.30664231889023275,
+      "pAway": 0.22466248500660305,
+      "pOver": 0.29523666410811195,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1785492995728286,
+      "expA": 0.71771126355852,
+      "expTotal": 1.8962605631313485
+    }
+  },
+  "1647669": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-08T18:00:00+00:00",
+    "home": "Deportivo Español",
+    "away": "Estrella Del Sur",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4160522495167198,
+      "pDraw": 0.36304320765375786,
+      "pAway": 0.2209045428295223,
+      "pOver": 0.18487291510338136,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9038129690548143,
+      "expA": 0.57108158762886,
+      "expTotal": 1.4748945566836742
+    }
+  },
+  "1647670": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-08T18:00:00+00:00",
+    "home": "Leones de Rosario",
+    "away": "Sportivo Barracas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.426653050709192,
+      "pDraw": 0.30678522322097107,
+      "pAway": 0.26656172606983697,
+      "pOver": 0.31372864024907626,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1347519628245626,
+      "expA": 0.8298979214226251,
+      "expTotal": 1.9646498842471876
+    }
+  },
+  "1647667": {
+    "savedAt": "2026-10-29T08:59:21.059001+00:00",
+    "kickoffUtc": "2026-11-08T22:00:00+00:00",
+    "home": "Deportivo Lara",
+    "away": "Zamora FC B",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6312085054263211,
+      "pDraw": 0.19776110599275853,
+      "pAway": 0.17103038858092037,
+      "pOver": 0.6208528788728007,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.173198749025857,
+      "expA": 1.03931203152128,
+      "expTotal": 3.212510780547137
+    }
   }
 }
