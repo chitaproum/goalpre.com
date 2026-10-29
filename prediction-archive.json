@@ -256289,5 +256289,81 @@
       "expA": 1.03931203152128,
       "expTotal": 3.212510780547137
     }
+  },
+  "1647904": {
+    "savedAt": "2026-10-29T21:07:14.424531+00:00",
+    "kickoffUtc": "2026-10-31T19:00:00+00:00",
+    "home": "26 de Febrero",
+    "away": "San Martin de Yacuiba",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4540773392790229,
+      "pDraw": 0.24789482657083398,
+      "pAway": 0.29802783415014317,
+      "pOver": 0.533570529092885,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.580376922308151,
+      "expA": 1.23353223317298,
+      "expTotal": 2.813909155481131
+    }
+  },
+  "1647905": {
+    "savedAt": "2026-10-29T21:07:14.424531+00:00",
+    "kickoffUtc": "2026-10-31T19:00:00+00:00",
+    "home": "Independiente CBBA",
+    "away": "Mineros Potosi",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39487862130455864,
+      "pDraw": 0.2247861208540353,
+      "pAway": 0.3803352578414061,
+      "pOver": 0.6687748967631922,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7421917764673753,
+      "expA": 1.7068653074959201,
+      "expTotal": 3.4490570839632957
+    }
+  },
+  "1647906": {
+    "savedAt": "2026-10-29T21:07:14.424531+00:00",
+    "kickoffUtc": "2026-11-01T19:00:00+00:00",
+    "home": "EM Huanuni",
+    "away": "CD IN San Juan FC",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2275765883320494,
+      "pDraw": 0.1994728574645147,
+      "pAway": 0.5729505542034359,
+      "pOver": 0.7009258884866657,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.3756874593190902,
+      "expA": 2.2589719098769803,
+      "expTotal": 3.6346593691960702
+    }
+  },
+  "1647907": {
+    "savedAt": "2026-10-29T21:07:14.424531+00:00",
+    "kickoffUtc": "2026-11-01T19:30:00+00:00",
+    "home": "Virginia",
+    "away": "Deportivo Tigres",
+    "league": "Nacional B · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3505029833443425,
+      "pDraw": 0.30002185272867365,
+      "pAway": 0.3494751639269839,
+      "pOver": 0.34892578463453133,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0483815322371108,
+      "expA": 1.0463809607690642,
+      "expTotal": 2.094762493006175
+    }
   }
 }
