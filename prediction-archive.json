@@ -257980,5 +257980,100 @@
       "expA": 1.703997504500844,
       "expTotal": 2.756140466251659
     }
+  },
+  "1647908": {
+    "savedAt": "2026-10-30T15:02:28.011506+00:00",
+    "kickoffUtc": "2026-11-01T15:00:00+00:00",
+    "home": "Bray Wanderers",
+    "away": "UCD",
+    "league": "First Division · Ireland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4334587913323435,
+      "pDraw": 0.20994186939302756,
+      "pAway": 0.356599339274629,
+      "pOver": 0.7420155191042647,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0393246751851843,
+      "expA": 1.841461811237916,
+      "expTotal": 3.8807864864231005
+    }
+  },
+  "1648031": {
+    "savedAt": "2026-10-30T15:02:28.011506+00:00",
+    "kickoffUtc": "2026-11-11T10:00:00+00:00",
+    "home": "Vissel Kobe",
+    "away": "Machida Zelvia",
+    "league": "J-League Cup · Japan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4104641443037469,
+      "pDraw": 0.2636082990045962,
+      "pAway": 0.32592755669165696,
+      "pOver": 0.4774436099309374,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.382208221145,
+      "expA": 1.2019201923,
+      "expTotal": 2.5841284134449998
+    }
+  },
+  "1648030": {
+    "savedAt": "2026-10-30T15:02:28.011506+00:00",
+    "kickoffUtc": "2026-11-11T10:00:00+00:00",
+    "home": "Kawasaki Frontale",
+    "away": "Kashiwa Reysol",
+    "league": "J-League Cup · Japan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6698198896165363,
+      "pDraw": 0.17906313879367278,
+      "pAway": 0.15111697158979098,
+      "pOver": 0.6709386037307552,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4106425925988995,
+      "expA": 1.0637036249999998,
+      "expTotal": 3.4743462175988995
+    }
+  },
+  "1648032": {
+    "savedAt": "2026-10-30T15:02:28.011506+00:00",
+    "kickoffUtc": "2026-11-11T10:00:00+00:00",
+    "home": "Yokohama F. Marinos",
+    "away": "Kashima",
+    "league": "J-League Cup · Japan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5265446200281848,
+      "pDraw": 0.20548126801906902,
+      "pAway": 0.26797411195274623,
+      "pOver": 0.7146809446392324,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.186656623645,
+      "expA": 1.5264399423,
+      "expTotal": 3.7130965659449995
+    }
+  },
+  "1648033": {
+    "savedAt": "2026-10-30T15:02:28.011506+00:00",
+    "kickoffUtc": "2026-11-11T10:30:00+00:00",
+    "home": "Urawa",
+    "away": "Cerezo Osaka",
+    "league": "J-League Cup · Japan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4819691246779208,
+      "pDraw": 0.20844916603368774,
+      "pAway": 0.3095817092883914,
+      "pOver": 0.7303503675532835,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1247086414971372,
+      "expA": 1.6827748799355,
+      "expTotal": 3.807483521432637
+    }
   }
 }
