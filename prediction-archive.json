@@ -268886,5 +268886,100 @@
       "expA": 1.9087311556742,
       "expTotal": 2.7930058641899747
     }
+  },
+  "1648166": {
+    "savedAt": "2026-10-31T14:31:43.977681+00:00",
+    "kickoffUtc": "2026-11-03T17:00:00+00:00",
+    "home": "Mamelodi Sundowns",
+    "away": "Golden Arrows",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2957984960401705,
+      "pDraw": 0.27362441624867145,
+      "pAway": 0.4305770877111581,
+      "pOver": 0.4288802500200036,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0581538923675,
+      "expA": 1.3368040277625,
+      "expTotal": 2.39495792013
+    }
+  },
+  "1648170": {
+    "savedAt": "2026-10-31T14:31:43.977681+00:00",
+    "kickoffUtc": "2026-11-04T17:00:00+00:00",
+    "home": "Flora Tallinn",
+    "away": "Tartu Welco",
+    "league": "Cup · Estonia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6095825962422413,
+      "pDraw": 0.14221771573405442,
+      "pAway": 0.24819968802370415,
+      "pOver": 0.8682572053058271,
+      "scoreH": 4,
+      "scoreA": 3,
+      "expH": 4.677233726755573,
+      "expA": 3.16775973734283,
+      "expTotal": 7.844993464098403
+    }
+  },
+  "1648167": {
+    "savedAt": "2026-10-31T14:31:43.977681+00:00",
+    "kickoffUtc": "2026-11-06T17:00:00+00:00",
+    "home": "Kaizer Chiefs",
+    "away": "Siwelele",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.510024522465503,
+      "pDraw": 0.27745937777846,
+      "pAway": 0.21251609975603694,
+      "pOver": 0.3661341535939817,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3776010520737498,
+      "expA": 0.7812437500125,
+      "expTotal": 2.15884480208625
+    }
+  },
+  "1648168": {
+    "savedAt": "2026-10-31T14:31:43.977681+00:00",
+    "kickoffUtc": "2026-11-06T17:00:00+00:00",
+    "home": "Orlando Pirates",
+    "away": "Sekhukhune United",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4724451837672446,
+      "pDraw": 0.2454807361108377,
+      "pAway": 0.2820740801219178,
+      "pOver": 0.5350789757036954,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.622511946755,
+      "expA": 1.197913958325,
+      "expTotal": 2.82042590508
+    }
+  },
+  "1648169": {
+    "savedAt": "2026-10-31T14:31:43.977681+00:00",
+    "kickoffUtc": "2026-11-06T17:00:00+00:00",
+    "home": "Stellenbosch",
+    "away": "Amazulu",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4295318451361479,
+      "pDraw": 0.29196657898508327,
+      "pAway": 0.27850157587876895,
+      "pOver": 0.36057530350286926,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2178774722206247,
+      "expA": 0.9201338194500001,
+      "expTotal": 2.1380112916706246
+    }
   }
 }
