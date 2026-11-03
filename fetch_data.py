@@ -500,10 +500,16 @@ def run(root, api=None, now=None):
             r['prediction']=saved['prediction']; r['predictionSavedAt']=saved['savedAt']
         if r['date'][:10]>=cutoff30 or r.get('prediction'): visible.append(r)
     total_goals=sum(r['fh']+r['fa'] for r in history)
+    # NOTE: 'history' is emitted empty on purpose. It is the current-season subset
+    # of 'matches', which the site already prefers (app.js uses DATA.matches and
+    # only falls back to DATA.history when matches is empty). Shipping both roughly
+    # doubled the data.js size and pushed it past GitHub's 100 MB hard limit, which
+    # broke the deploy. 'history' is still computed above for recentResults and the
+    # league-average calculation; it is just not duplicated into the public file.
     data={'source':'API-Football','demo':False,'generatedAt':now_iso,'today':today.isoformat(),
         'timezone':config.get('timezone','UTC'),'leagueAvgGoals':total_goals/len(history) if history else 2.7,
         'leagueAvgGoalsByLeague':league_averages,'homeAdvantage':config.get('homeAdvantage',1.15),
-        'teams':teams,'teamsByLeague':teams_by_league,'fixtures':fixtures,'history':history,'recentResults':visible,
+        'teams':teams,'teamsByLeague':teams_by_league,'fixtures':fixtures,'history':[],'recentResults':visible,
         'matches':results,'h2h':h2h,'standings':standings,'seasons':seasons,
         'leagueFixtures':league_fixtures,'standingsTables':standings_tables,
         'popularLeagues':[x for x in league_catalog if x['id'] in {v['id'] for v in config.get('leagues',[])}],
