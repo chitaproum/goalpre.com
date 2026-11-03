@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data.js prediction-archive.json h2h-cache.json odds-cache.json api-request-cache.json league-discovery-cache.json ai-insights.js ai-insights-cache.json
+          git add data.js prediction-archive.json h2h-cache.json odds-cache.json league-discovery-cache.json ai-insights.js ai-insights-cache.json
           if git diff --cached --quiet; then
             echo 'No data changes to commit.'
           else
