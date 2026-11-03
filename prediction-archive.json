@@ -276562,5 +276562,2513 @@
       "expA": 1.203532872444,
       "expTotal": 4.864961573135999
     }
+  },
+  "1648371": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T09:00:00+00:00",
+    "home": "Java United",
+    "away": "Bekasi City",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4366415409866467,
+      "pDraw": 0.22490376655621055,
+      "pAway": 0.3384546924571427,
+      "pOver": 0.6602163414556893,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8208352499999998,
+      "expA": 1.583335,
+      "expTotal": 3.40417025
+    }
+  },
+  "1648372": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T09:00:00+00:00",
+    "home": "Persikad Depok FC",
+    "away": "Persiku Kudus",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4366415409866467,
+      "pDraw": 0.22490376655621055,
+      "pAway": 0.3384546924571427,
+      "pOver": 0.6602163414556893,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8208352499999998,
+      "expA": 1.583335,
+      "expTotal": 3.40417025
+    }
+  },
+  "1648373": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Persiba Balikpapan",
+    "away": "Bali United",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4366415409866467,
+      "pDraw": 0.22490376655621055,
+      "pAway": 0.3384546924571427,
+      "pOver": 0.6602163414556893,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8208352499999998,
+      "expA": 1.583335,
+      "expTotal": 3.40417025
+    }
+  },
+  "1648374": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "Persik Kediri",
+    "away": "Persis Solo",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4366415409866467,
+      "pDraw": 0.22490376655621055,
+      "pAway": 0.3384546924571427,
+      "pOver": 0.6602163414556893,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8208352499999998,
+      "expA": 1.583335,
+      "expTotal": 3.40417025
+    }
+  },
+  "1648375": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T12:00:00+00:00",
+    "home": "PSS Sleman",
+    "away": "PSGC Ciamis",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4366415409866467,
+      "pDraw": 0.22490376655621055,
+      "pAway": 0.3384546924571427,
+      "pOver": 0.6602163414556893,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8208352499999998,
+      "expA": 1.583335,
+      "expTotal": 3.40417025
+    }
+  },
+  "1648291": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T15:00:00+00:00",
+    "home": "Ghazl El Mehalla",
+    "away": "Al Ittihad",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648408": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-04T22:00:00+00:00",
+    "home": "Sporting Baie-Mahault",
+    "away": "Siroco Les Abymes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648292": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-05T12:30:00+00:00",
+    "home": "El Gouna FC",
+    "away": "El Shorta",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648293": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-05T15:00:00+00:00",
+    "home": "National Bank of Egypt",
+    "away": "Bur Fouad",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648426": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T00:00:00+00:00",
+    "home": "Union Magdalena",
+    "away": "Ind. Yumbo",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44535216115878384,
+      "pDraw": 0.27973081157901997,
+      "pAway": 0.2749170272621962,
+      "pOver": 0.3984831591367428,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3126702527004248,
+      "expA": 0.9669883175745139,
+      "expTotal": 2.279658570274939
+    }
+  },
+  "1648294": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T12:30:00+00:00",
+    "home": "Smouha SC",
+    "away": "El Minya",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648295": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T15:00:00+00:00",
+    "home": "Enppi",
+    "away": "Proxy",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648296": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T18:00:00+00:00",
+    "home": "Zamalek SC",
+    "away": "Misr Insurance",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648428": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T19:00:00+00:00",
+    "home": "Birzebbuga",
+    "away": "Mosta",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3114177363225612,
+      "pDraw": 0.23591002839709516,
+      "pAway": 0.45267223528034356,
+      "pOver": 0.5951315712312213,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.379056692138192,
+      "expA": 1.706142656867904,
+      "expTotal": 3.085199349006096
+    }
+  },
+  "1648427": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T21:00:00+00:00",
+    "home": "Popayan",
+    "away": "Envigado",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.27267906077314674,
+      "pDraw": 0.24946242876847896,
+      "pAway": 0.47785851045837424,
+      "pOver": 0.511905001893097,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.136353646623404,
+      "expA": 1.5874048875360196,
+      "expTotal": 2.7237585341594235
+    }
+  },
+  "1648409": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-06T23:00:00+00:00",
+    "home": "Olympique Cayenne",
+    "away": "Etoile Matoury",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648429": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T13:00:00+00:00",
+    "home": "Floriana",
+    "away": "Hibernians",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5607225708000303,
+      "pDraw": 0.21355433320922257,
+      "pAway": 0.2257230959907471,
+      "pOver": 0.6297185361183673,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.031847037628343,
+      "expA": 1.220778777966048,
+      "expTotal": 3.2526258155943912
+    }
+  },
+  "1648297": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T15:00:00+00:00",
+    "home": "AL Masry",
+    "away": "Misr EL Makasa",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648298": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T15:00:00+00:00",
+    "home": "Ceramica Cleopatra",
+    "away": "Abu Qair Semad",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648430": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T15:45:00+00:00",
+    "home": "Gzira United",
+    "away": "Balzan FC",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.22124317853199074,
+      "pDraw": 0.22887495019315154,
+      "pAway": 0.5498818712748577,
+      "pOver": 0.553817040468347,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.073966933584732,
+      "expA": 1.8278355920457918,
+      "expTotal": 2.901802525630524
+    }
+  },
+  "1648300": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T18:00:00+00:00",
+    "home": "Pyramids FC",
+    "away": "El Dakhleya",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648299": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-07T18:00:00+00:00",
+    "home": "Al Ahly",
+    "away": "El Seka El Hadid",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648445": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T00:00:00+00:00",
+    "home": "Louisville City",
+    "away": "Miami FC",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5620198199643466,
+      "pDraw": 0.20596763713320881,
+      "pAway": 0.23201254290244447,
+      "pOver": 0.6743190859951966,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1543001789637057,
+      "expA": 1.3294299141191248,
+      "expTotal": 3.4837300930828308
+    }
+  },
+  "1648446": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T00:30:00+00:00",
+    "home": "Charleston Battery",
+    "away": "Hartford Athletic",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5229964914737386,
+      "pDraw": 0.23964363726502672,
+      "pAway": 0.23735987126123467,
+      "pOver": 0.5245623938235925,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7076529716869155,
+      "expA": 1.06906506967892,
+      "expTotal": 2.7767180413658354
+    }
+  },
+  "1648447": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T02:30:00+00:00",
+    "home": "New Mexico United",
+    "away": "Colorado Springs",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4692671244570986,
+      "pDraw": 0.2458058889424131,
+      "pAway": 0.28492698660048826,
+      "pOver": 0.5354197561650147,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6164456960116032,
+      "expA": 1.2053959719036498,
+      "expTotal": 2.821841667915253
+    }
+  },
+  "1648448": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T03:00:00+00:00",
+    "home": "Sacramento Republic",
+    "away": "El Paso Locomotive",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4568829608426084,
+      "pDraw": 0.2573269450307278,
+      "pAway": 0.2857900941266637,
+      "pOver": 0.48723357671441425,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4961541700195997,
+      "expA": 1.1272268605944842,
+      "expTotal": 2.623381030614084
+    }
+  },
+  "1648431": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T10:00:00+00:00",
+    "home": "Birkirkara",
+    "away": "Zabbar St. Patrick",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45183681765978695,
+      "pDraw": 0.25182348146638023,
+      "pAway": 0.2963397008738329,
+      "pOver": 0.5156722075831196,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5402912853531368,
+      "expA": 1.1988365546873039,
+      "expTotal": 2.7391278400404406
+    }
+  },
+  "1648301": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T12:30:00+00:00",
+    "home": "Petrojet",
+    "away": "Delphi",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648302": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T15:00:00+00:00",
+    "home": "Future FC",
+    "away": "Olympic El Qanah",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648432": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T16:00:00+00:00",
+    "home": "Sliema Wanderers",
+    "away": "Valletta FC",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24505613178452068,
+      "pDraw": 0.23625690166473867,
+      "pAway": 0.5186869665507406,
+      "pOver": 0.546509271393797,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.124811364292388,
+      "expA": 1.744883162714384,
+      "expTotal": 2.869694527006772
+    }
+  },
+  "1648303": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T18:00:00+00:00",
+    "home": "El Geish",
+    "away": "Asyut Petrol",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648433": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-08T18:45:00+00:00",
+    "home": "Marsaxlokk",
+    "away": "Hamrun Spartans",
+    "league": "Premier League · Malta",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4670195744062981,
+      "pDraw": 0.23063583886417624,
+      "pAway": 0.30234458672952563,
+      "pOver": 0.6156886242130927,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.784683148562339,
+      "expA": 1.397308445665264,
+      "expTotal": 3.181991594227603
+    }
+  },
+  "1648304": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-09T12:30:00+00:00",
+    "home": "Wadi Degla",
+    "away": "Kahraba Ismailia",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648305": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-09T15:00:00+00:00",
+    "home": "Masr",
+    "away": "Samanod",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1648306": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-10T15:00:00+00:00",
+    "home": "El Mokawloon",
+    "away": "Itesalat",
+    "league": "Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1647938": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-12T18:00:00+00:00",
+    "home": "Chambéry",
+    "away": "Grenoble",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647948": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-13T19:00:00+00:00",
+    "home": "Dijon",
+    "away": "Orleans",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647986": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-13T19:00:00+00:00",
+    "home": "St-Philbert Gd Lieu",
+    "away": "La Roche VF",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647949": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Dunkerque",
+    "away": "Quevilly",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647962": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Le Puy Foot",
+    "away": "Diables Noirs",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648004": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Versailles",
+    "away": "Rodez",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647997": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Tefana",
+    "away": "Thionville Lusitanos",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647939": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Châteaubriant",
+    "away": "Horizon Patho",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647999": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Tourcoing",
+    "away": "Reims",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647964": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Lourdes",
+    "away": "PAU",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647927": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Balagne",
+    "away": "Montpellier",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647993": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Saint-Renan",
+    "away": "Laval",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647996": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Saint-Pauloise",
+    "away": "La Tamponnaise",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648006": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Vesoul",
+    "away": "Fleury 91",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647952": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Firminy",
+    "away": "Annecy",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647957": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Kellermann",
+    "away": "Metz",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647959": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "La Neuvillette",
+    "away": "Valenciennes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647998": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Tinteniac",
+    "away": "Concarneau",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648410": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:00:00+00:00",
+    "home": "Tatinghem",
+    "away": "Racing Colombes 92",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647931": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T13:30:00+00:00",
+    "home": "Boulay",
+    "away": "Sochaux",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647981": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T14:00:00+00:00",
+    "home": "Rhone-Crussol",
+    "away": "Fréjus St-Raphaël",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647953": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T15:00:00+00:00",
+    "home": "Vendée Fontenay",
+    "away": "Clermont Foot",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647943": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T15:00:00+00:00",
+    "home": "Choisy au Bac",
+    "away": "Caen",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647937": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T15:00:00+00:00",
+    "home": "Chalon",
+    "away": "Hauts Lyonnais",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647956": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T16:00:00+00:00",
+    "home": "Croix Football IC",
+    "away": "Thaon",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647961": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T16:00:00+00:00",
+    "home": "Le Poiré sur Vie",
+    "away": "USSA Vertou",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647942": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T16:00:00+00:00",
+    "home": "Cheruy",
+    "away": "Bourg-en-bresse 01",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647994": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T16:00:00+00:00",
+    "home": "St Sebastien",
+    "away": "La Baule-Le Pouliguen",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647958": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T16:30:00+00:00",
+    "home": "Koetzingue",
+    "away": "Biesheim",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647965": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Lyon Duchere",
+    "away": "Feurs",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647975": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Cheminots Paray",
+    "away": "Villefranche",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647978": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Pontivy GSI",
+    "away": "TA Rennes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647985": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Saint-Omer",
+    "away": "Vire",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648008": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Vitré",
+    "away": "Saint-Pierre Milizac",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647923": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Caen PTT",
+    "away": "Chambly Thelle FC",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647951": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Cournon",
+    "away": "Chassieu Décines",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647963": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Le Touquet",
+    "away": "Avranches",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647929": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Racing Besançon",
+    "away": "APM Metz",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647991": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "St Ouen l'Aumône",
+    "away": "Boulogne",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647945": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Saint-Brieuc",
+    "away": "Rouen",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647930": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "Stade Béthunois",
+    "away": "Nancy",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647924": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:00:00+00:00",
+    "home": "ASPTT Dijon",
+    "away": "Selongey",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647928": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T17:30:00+00:00",
+    "home": "Balma",
+    "away": "Castanet",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647926": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Avenir Foot Lozère",
+    "away": "Entente Crest-Aouste",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647960": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Lannion",
+    "away": "Guingamp",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647933": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Bressuire",
+    "away": "Challans",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647990": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Stade Bordelais",
+    "away": "Mazeres",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647941": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Chauny",
+    "away": "Le Pays du Valois",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647934": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Brive",
+    "away": "Angoulême",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647932": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Boulazac",
+    "away": "Anglet Genets",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647947": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "CPB Brequigny",
+    "away": "Montluçon",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647944": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Claira/Laurent",
+    "away": "Puissalicon",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647966": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T18:00:00+00:00",
+    "home": "Macaire",
+    "away": "Nueillaubiers",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647974": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T19:00:00+00:00",
+    "home": "OM Cambrai",
+    "away": "Amiens",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648407": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Godoy Cruz",
+    "away": "Tristan Suarez",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3184609578270511,
+      "pDraw": 0.33513857533376357,
+      "pAway": 0.34640046683918535,
+      "pOver": 0.254343635661046,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8466015363721721,
+      "expA": 0.89708622465105,
+      "expTotal": 1.7436877610232222
+    }
+  },
+  "1648401": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Colon Santa Fe",
+    "away": "Midland",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41721867681179614,
+      "pDraw": 0.2951738000182786,
+      "pAway": 0.2876075231699252,
+      "pOver": 0.3539759898143872,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1837559913291136,
+      "expA": 0.9297553603170701,
+      "expTotal": 2.1135113516461836
+    }
+  },
+  "1648406": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Temperley",
+    "away": "Ciudad de Bolívar",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.48447994514509946,
+      "pDraw": 0.29206193167655664,
+      "pAway": 0.2234581231783439,
+      "pOver": 0.3321310780956628,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.270426628424555,
+      "expA": 0.7623238445095001,
+      "expTotal": 2.032750472934055
+    }
+  },
+  "1648403": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Deportivo Moron",
+    "away": "Colegiales",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47635792635045104,
+      "pDraw": 0.25949699785004354,
+      "pAway": 0.26414507579950536,
+      "pOver": 0.4657262015100529,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4952070284044654,
+      "expA": 1.04282906871633,
+      "expTotal": 2.5380360971207954
+    }
+  },
+  "1648404": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Ferro Carril Oeste",
+    "away": "Gimnasia Y Tiro",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4248221841389131,
+      "pDraw": 0.29443760719483103,
+      "pAway": 0.2807402086662559,
+      "pOver": 0.35387291185817,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1978413882167038,
+      "expA": 0.9152962458222099,
+      "expTotal": 2.113137634038914
+    }
+  },
+  "1648405": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Gimnasia Jujuy",
+    "away": "Almirante Brown",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38782679084451355,
+      "pDraw": 0.27636923002669894,
+      "pAway": 0.33580397912878757,
+      "pOver": 0.4293486069805583,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.251977939412606,
+      "expA": 1.1447067169265002,
+      "expTotal": 2.396684656339106
+    }
+  },
+  "1648402": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Deportivo Madryn",
+    "away": "Deportivo Maipu",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4893201163681555,
+      "pDraw": 0.25440045254578614,
+      "pAway": 0.2562794310860583,
+      "pOver": 0.4802059346499242,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5490551851175274,
+      "expA": 1.0464054443383102,
+      "expTotal": 2.5954606294558378
+    }
+  },
+  "1648400": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Atlanta",
+    "away": "CA Estudiantes",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4499125755801623,
+      "pDraw": 0.2809456054761524,
+      "pAway": 0.2691418189436854,
+      "pOver": 0.3916603528474392,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.309577568666752,
+      "expA": 0.94444903896448,
+      "expTotal": 2.254026607631232
+    }
+  },
+  "1647987": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Sedan",
+    "away": "Bourges Foot 18",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647972": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Pays Neslois",
+    "away": "Furiani-Agliani",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647982": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Riom",
+    "away": "Limonest",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647979": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Stade Pontivy",
+    "away": "Stade Plabennec",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647922": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Amnéville",
+    "away": "Sundhoffen",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647967": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Marseille Endoume",
+    "away": "Toulon",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648001": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Senlis",
+    "away": "St-Pryvé St-Hilaire",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647988": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Seyssinet-Pariset",
+    "away": "Nimes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647983": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Rochefort",
+    "away": "Juventus Papus",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647976": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Gobelins",
+    "away": "RED Star FC 93",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648002": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Vandœuvre",
+    "away": "Epinal",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648000": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Tremblay",
+    "away": "Maisons Alfort",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647992": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Strasbourg Koenigshoffen",
+    "away": "Oberlauterbach",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647970": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Montigny",
+    "away": "Pontarlier",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647940": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Chatou",
+    "away": "Les Ulis",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647977": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Perros-Louannec",
+    "away": "Vannes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647984": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "SAG Cestas",
+    "away": "Bayonne",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647973": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "OCPAM",
+    "away": "Olympique Marcquois",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647955": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Grau-du-Roi",
+    "away": "Riviera",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647950": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "FC 2 Rives 82",
+    "away": "Trélissac",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647935": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Buxerolles",
+    "away": "Sablé",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647936": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Castelbourgeois",
+    "away": "Nantes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647946": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Contres",
+    "away": "Linas-Montlhery",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648007": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Violaines",
+    "away": "US Vermelles",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648009": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Yerres Crosne",
+    "away": "Union Cosnoise",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648005": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Verson",
+    "away": "RC Calais",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647989": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Sottevillais",
+    "away": "Fecamp",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647968": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Massay",
+    "away": "Montlouis",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1648003": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Veauche",
+    "away": "Saint Paul en Jarez",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647969": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Metz ESAP",
+    "away": "Reipertswiller",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647980": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "RC Chambery",
+    "away": "Niort",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647995": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "Talange",
+    "away": "Baume Dames",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647971": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T13:00:00+00:00",
+    "home": "US Montreuil-sur-Mer",
+    "away": "Loon-Plage",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647954": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T14:00:00+00:00",
+    "home": "Rumilly Vallières",
+    "away": "Saint Etienne",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
+  },
+  "1647925": {
+    "savedAt": "2026-11-03T15:10:01.130899+00:00",
+    "kickoffUtc": "2026-11-15T14:00:00+00:00",
+    "home": "Atlas Paillade",
+    "away": "Cannes",
+    "league": "Coupe de France · France",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45628641628479955,
+      "pDraw": 0.19793621882454154,
+      "pAway": 0.3457773648906588,
+      "pOver": 0.7989625880479081,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3,
+      "expA": 2.0,
+      "expTotal": 4.3
+    }
   }
 }
