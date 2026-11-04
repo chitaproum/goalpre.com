@@ -1990,6 +1990,111 @@ function leagueCode(l) {
       : '<p class="tp-empty">No upcoming fixtures to rank yet.</p>';
   }
 
+  /* ---------- Home: Top trend matches (auto-updating) ---------- */
+  /* Builds a small set of "trending" fixture cards from the live data on
+     every load, so the home page always reflects the latest fixtures.
+     Ranking = a blend of model win-probability and goals expectation, with
+     strong top-division leagues nudged up and already-finished games dropped. */
+  var TREND_BIG_LEAGUES = {
+    'Premier League': 3, 'Serie A': 3, 'La Liga': 3, 'Bundesliga': 3,
+    'Ligue 1': 3, 'Eredivisie': 2, 'Primeira Liga': 2, 'Championship': 2,
+    'S\u00fcper Lig': 2, 'Jupiler Pro League': 2, 'Liga MX': 2,
+    'Major League Soccer \u00b7 USA': 2, 'Saudi Pro League': 2, 'Pro League': 1,
+    'First Division A': 1, 'Super League': 1, 'Liga Profesional Argentina': 2
+  };
+  function trendLeagueWeight(name) {
+    if (!name) return 0;
+    if (TREND_BIG_LEAGUES[name] != null) return TREND_BIG_LEAGUES[name];
+    // any league whose name contains a big-league word gets a small nudge
+    if (/Premier League|Serie A|La Liga|Bundesliga|Ligue 1/.test(name)) return 1;
+    return 0;
+  }
+  function trendLean(p) {
+    if (!p) return null;
+    var k = bestKey(p);
+    if (k === '1') return { txt: 'Home win', prob: p.pHome };
+    if (k === '2') return { txt: 'Away win', prob: p.pAway };
+    return { txt: 'Draw', prob: p.pDraw };
+  }
+  function trendGoalsLine(p) {
+    if (!p) return null;
+    var over = p.pOver, under = 1 - p.pOver;
+    return over >= under ? { txt: 'Over 2.5', prob: over } : { txt: 'Under 2.5', prob: under };
+  }
+  function trendConfidence(prob) {
+    if (prob >= 0.70) return 'high';
+    if (prob >= 0.58) return 'medium-high';
+    if (prob >= 0.48) return 'medium';
+    return 'lean';
+  }
+  function trendCard(s) {
+    var f = s.f;
+    var dateStr = fmtFull(f.date);
+    var when = tpWhen(f);
+    var logo1 = f.homeLogo ? '<img src="' + esc(f.homeLogo) + '" alt="" loading="lazy" width="34" height="34">' : '';
+    var logo2 = f.awayLogo ? '<img src="' + esc(f.awayLogo) + '" alt="" loading="lazy" width="34" height="34">' : '';
+    var verdict = 'Lean: ' + esc(s.lean.txt) + ' &middot; ' + esc(s.gline.txt) + ' &middot; <em>Confidence: ' + esc(trendConfidence(s.score01)) + '</em>';
+    var sub = esc(f.home) + ' vs ' + esc(f.away) + ' | ' + esc(f.league || '') + ' | ' + esc(dateStr) + (when ? ' &middot; ' + esc(when) : '');
+    return '<a class="ha-card" href="match-analysis.html">'
+      + '<span class="ha-logos" aria-hidden="true">' + logo1 + '<span class="ha-vs">v</span>' + logo2 + '</span>'
+      + '<span class="ha-league">' + esc(f.league || '') + '</span>'
+      + '<h3>' + esc(f.home) + ' vs ' + esc(f.away) + '</h3>'
+      + '<p>' + esc(s.blurb) + '</p>'
+      + '<span class="ha-verdict">' + verdict + '</span>'
+      + '</a>';
+  }
+  function renderHomeTrends() {
+    var grid = $('#haGrid');
+    if (!grid) return;
+    var today = todayStr();
+    // Only upcoming fixtures; today first, otherwise the soonest days ahead.
+    var pool = FIXTURES.filter(function (f) { return !matchFinished(f) && dayOf(f) >= today; });
+    if (!pool.length) {
+      // Data snapshot predates "today" (refresh delayed) or the slate is done:
+      // fall back to the most recent unplayed fixtures so the row is never blank.
+      pool = FIXTURES.filter(function (f) { return !matchFinished(f); });
+    }
+    if (!pool.length) {
+      grid.innerHTML = '<p class="tp-empty">No upcoming fixtures to rank yet.</p>';
+      return;
+    }
+    var scored = pool.map(function (f) {
+      activeLeague = f.league || null;
+      var pois = (f.prediction && f.prediction.pHome != null) ? f.prediction : predictPoisson(f.home, f.away);
+      var lean = trendLean(pois);
+      var gline = trendGoalsLine(pois);
+      var prob = lean ? lean.prob : 0;
+      var goals = gline ? gline.prob : 0;
+      var w = trendLeagueWeight(f.league);
+      // rank: both markets matter, top leagues preferred, small recency preference
+      var score = (prob * 0.55 + goals * 0.35) + w * 0.04;
+      return { f: f, lean: lean, gline: gline, prob: prob, goals: goals, score01: prob, rank: score, w: w };
+    });
+    // Prefer top-division fixtures: take a big-league pool first, fall back if thin.
+    var big = scored.filter(function (s) { return s.w >= 2 && !/\bW\b|Women|U19|U20|U21|U23|II\b|Reserve/.test(s.f.home + ' ' + s.f.away + ' ' + (s.f.league || '')); });
+    var src = big.length >= 4 ? big : scored;
+    var best = src.slice().sort(function (a, b) {
+      if (Math.abs(b.rank - a.rank) > 0.001) return b.rank - a.rank;
+      return String(a.f.date) < String(b.f.date) ? -1 : 1;
+    });
+    // de-duplicate to at most one card per fixture
+    var seen = {}, picked = [];
+    for (var i = 0; i < best.length && picked.length < 4; i++) {
+      var key = fxKey(best[i].f);
+      if (seen[key]) continue;
+      seen[key] = true;
+      picked.push(best[i]);
+    }
+    function blurbFor(s) {
+      var f = s.f, parts = [];
+      if (s.lean) parts.push(s.lean.txt + ' (' + pct(s.lean.prob) + '%)');
+      if (s.gline) parts.push(s.gline.txt.toLowerCase() + ' (' + pct(s.gline.prob) + '%)');
+      return 'Model read: ' + parts.join(', ') + '. Projected goals ' + (f.prediction && f.prediction.expTotal != null ? f.prediction.expTotal.toFixed(2) : '\u2014') + '.';
+    }
+    picked.forEach(function (s) { s.blurb = blurbFor(s); });
+    grid.innerHTML = picked.map(trendCard).join('');
+  }
+
   /* ---------- Top 20 predictions (full week, dedicated view) ---------- */
 
   /* Compute the current "active week" for the Top 20 view.
@@ -2354,6 +2459,7 @@ function leagueCode(l) {
   function refreshAfterLive() {
     try { renderPredictions(); } catch (e) {}
     try { renderHomeTopPicks(); } catch (e) {}
+    try { renderHomeTrends(); } catch (e) {}
     var info = $('#dataStatus');
     if (info && Object.keys(liveAppliedIds).length) {
       // Non-destructive hint that live scores are flowing.
@@ -2429,6 +2535,7 @@ function leagueCode(l) {
     var hm = $('#heroMatches'); if (hm) hm.textContent = todayMatchesList.length;
     var hl = $('#heroLeagues'); if (hl) hl.textContent = Object.keys(todayLeagueSet).length;
     renderHomeTopPicks();
+    renderHomeTrends();
     var tt = $('#themeToggle');
     if (tt) {
       var sync = function () {
