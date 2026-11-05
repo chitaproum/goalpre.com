@@ -467,14 +467,39 @@
   function addDays(s, n) { var d = parseDay(s); d.setDate(d.getDate() + n); return isoDate(d); }
   function dayOf(f) { return String(f.date).slice(0, 10); }
   function showDay(s) { var a = s.split('-'); return a[2] + '.' + a[1] + '.' + a[0]; }
-  var REAL_TODAY = DATA.today || isoDate(new Date());
-  /* "Today" is the real date when the data has fixtures within 2 days of it;
-     otherwise (static demo data) it is the first fixture day, so the page is never empty. */
-  var REF = DATA.demo === false ? REAL_TODAY : (function () {
-    var days = FIXTURES.map(dayOf).sort(), near = [];
-    for (var i = -2; i <= 2; i++) near.push(addDays(REAL_TODAY, i));
-    if (days.some(function (d) { return near.indexOf(d) !== -1; })) return REAL_TODAY;
-    return days[0] || REAL_TODAY;
+  var REAL_TODAY = isoDate(new Date());
+  /* "Today" always follows the visitor's real clock, so the Today panel stops
+     showing matches that have already been played once the data snapshot ages.
+     The data is refreshed a few times a day by the workflow; between refreshes
+     we still want the calendar to be right.
+
+     Rule: use the real date. Only fall back to the snapshot's own date when the
+     feed has clearly not caught up with the clock yet (an old snapshot whose
+     fixtures all sit in the past would otherwise leave every panel empty).
+     Static demo data keeps the old behaviour (first fixture day) so the page
+     is never empty. */
+  var REF = (function () {
+    if (DATA.demo !== false) {
+      var days = FIXTURES.map(dayOf).sort(), near = [];
+      for (var i = -2; i <= 2; i++) near.push(addDays(REAL_TODAY, i));
+      if (days.some(function (d) { return near.indexOf(d) !== -1; })) return REAL_TODAY;
+      return days[0] || REAL_TODAY;
+    }
+    var all = FIXTURES.map(dayOf).sort();
+    var first = all[0], last = all[all.length - 1];
+    if (!first) return REAL_TODAY;
+    // If the real date falls inside the snapshot window, or the snapshot still
+    // has fixtures ahead of us, trust the real clock.
+    if (REAL_TODAY >= first && REAL_TODAY <= last) return REAL_TODAY;
+    if (last > REAL_TODAY) return REAL_TODAY;
+    // Snapshot is entirely in the past (stale feed): keep the clock only if
+    // there is still something unplayed today, otherwise pin to the snapshot's
+    // own "today" so the day strip and Today panel remain meaningful.
+    var todayPlayed = FIXTURES.some(function (f) {
+      return dayOf(f) === REAL_TODAY && !matchFinished(f);
+    });
+    if (todayPlayed) return REAL_TODAY;
+    return DATA.today || first;
   })();
   // Reference "today" string used for hero counters and the Today day-pill.
   // (Was referenced by init() but never defined, which threw a ReferenceError
@@ -2095,6 +2120,63 @@ function leagueCode(l) {
     grid.innerHTML = picked.map(trendCard).join('');
   }
 
+  /* ---------- Home: Yesterday's results table ---------- */
+  /* Pools every fixture played on the previous calendar day (relative to the
+     live clock) and lists its final score. Falls back gracefully when the
+     snapshot has no games for that day yet. */
+  function hyOutcomeLabel(f) {
+    if (f.fh == null || f.fa == null) return '';
+    if (f.fh > f.fa) return { txt: 'Home win', cls: 'win' };
+    if (f.fh < f.fa) return { txt: 'Away win', cls: 'win' };
+    return { txt: 'Draw', cls: 'draw' };
+  }
+  function renderYesterday() {
+    var body = $('#hyBody');
+    if (!body) return;
+    var yDay = addDays(REF, -1);
+    var played = FIXTURES.filter(function (f) {
+      return dayOf(f) === yDay && f.fh != null && f.fa != null;
+    });
+    // If the snapshot has nothing for yesterday yet, use the most recent
+    // completed day in the data so the table is never blank.
+    var usedDay = yDay;
+    if (!played.length) {
+      var daysWithScores = FIXTURES.filter(function (f) { return f.fh != null && f.fa != null; })
+        .map(dayOf).sort();
+      if (daysWithScores.length) {
+        usedDay = daysWithScores[daysWithScores.length - 1];
+        played = FIXTURES.filter(function (f) {
+          return dayOf(f) === usedDay && f.fh != null && f.fa != null;
+        });
+      }
+    }
+    // Newest first, then by league so the list reads cleanly.
+    played.sort(function (a, b) {
+      var lc = String(a.league || '').localeCompare(String(b.league || ''));
+      return lc !== 0 ? lc : String(a.date).localeCompare(String(b.date));
+    });
+    if (!played.length) {
+      body.innerHTML = '<tr><td colspan="5" class="empty">No completed matches to show yet.</td></tr>';
+      var hd0 = $('#hyDate'); if (hd0) hd0.textContent = '';
+      return;
+    }
+    var rows = played.map(function (f) {
+      var out = hyOutcomeLabel(f);
+      var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : esc(f.league || '');
+      var ht = (f.htH != null && f.htA != null) ? (f.htH + '-' + f.htA) : '&ndash;';
+      return '<tr>'
+        + '<td class="col-league">' + badge + '</td>'
+        + '<td class="col-match">' + esc(f.home + ' v ' + f.away) + '</td>'
+        + '<td><span class="score">' + ht + '</span></td>'
+        + '<td><span class="score">' + f.fh + '-' + f.fa + '</span></td>'
+        + '<td><span class="verdict ' + (out.cls === 'draw' ? 'miss' : 'win') + '">' + esc(out.txt) + '</span></td>'
+        + '</tr>';
+    }).join('');
+    body.innerHTML = rows;
+    var hd = $('#hyDate');
+    if (hd) hd.textContent = showDay(usedDay);
+  }
+
   /* ---------- Top 20 predictions (full week, dedicated view) ---------- */
 
   /* Compute the current "active week" for the Top 20 view.
@@ -2460,6 +2542,7 @@ function leagueCode(l) {
     try { renderPredictions(); } catch (e) {}
     try { renderHomeTopPicks(); } catch (e) {}
     try { renderHomeTrends(); } catch (e) {}
+    try { renderYesterday(); } catch (e) {}
     var info = $('#dataStatus');
     if (info && Object.keys(liveAppliedIds).length) {
       // Non-destructive hint that live scores are flowing.
@@ -2536,6 +2619,7 @@ function leagueCode(l) {
     var hl = $('#heroLeagues'); if (hl) hl.textContent = Object.keys(todayLeagueSet).length;
     renderHomeTopPicks();
     renderHomeTrends();
+    renderYesterday();
     var tt = $('#themeToggle');
     if (tt) {
       var sync = function () {
