@@ -2120,59 +2120,112 @@ function leagueCode(l) {
     grid.innerHTML = picked.map(trendCard).join('');
   }
 
-  /* ---------- Home: Yesterday's results table ---------- */
-  /* Pools every fixture played on the previous calendar day (relative to the
-     live clock) and lists its final score. Falls back gracefully when the
-     snapshot has no games for that day yet. */
-  function hyOutcomeLabel(f) {
+  /* ---------- Home: Yesterday's Best Choice results ---------- */
+  /* Replays the SAME Best Choice selection logic used on the home page, but for
+     the most recent completed day, and only keeps the picks that made the cut
+     (top 5 1X2 + top 5 Over/Under 2.5). Each row shows the real final score and
+     whether the tip actually landed (HIT / miss). */
+  function hyAiPick(s, market) {
+    var f = s.f;
+    if (!f.prediction || f.prediction.pHome == null) return null;
+    var po = market === '1x2' ? s.t1 : s.to;
+    var ai = s.ai;
+    if (!ai) return null;
+    var a = market === '1x2' ? s.a1 : s.ao;
+    return (a && a.key === po.key) ? a.key : null;
+  }
+  function hy1x2Hit(f, key) {
+    if (f.fh == null || f.fa == null) return null;
+    var real = f.fh > f.fa ? '1' : (f.fh < f.fa ? '2' : 'X');
+    return real === key;
+  }
+  function hyOuHit(f, side) {
+    if (f.fh == null || f.fa == null) return null;
+    var tot = f.fh + f.fa;
+    return side === 'O' ? tot > 2.5 : tot < 2.5;
+  }
+  function hyRow(s, market) {
+    var f = s.f;
     if (f.fh == null || f.fa == null) return '';
-    if (f.fh > f.fa) return { txt: 'Home win', cls: 'win' };
-    if (f.fh < f.fa) return { txt: 'Away win', cls: 'win' };
-    return { txt: 'Draw', cls: 'draw' };
+    var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : esc(f.league || '');
+    var ht = (f.htH != null && f.htA != null) ? (f.htH + '-' + f.htA) : '&ndash;';
+    var tip, hit;
+    if (market === '1x2') {
+      var k = s.t1.key;
+      tip = k === '1' ? 'Home win' : (k === '2' ? 'Away win' : 'Draw');
+      hit = hy1x2Hit(f, k);
+    } else {
+      tip = s.to.key;
+      hit = hyOuHit(f, s.to.side);
+    }
+    var flag = (hit === null) ? '<span class="hy-flag hy-pending">&ndash;</span>'
+      : (hit ? '<span class="hy-flag hy-hit">\u2713 HIT</span>' : '<span class="hy-flag hy-miss">miss</span>');
+    var aiNote = hyAiPick(s, market);
+    var tag = market === '1x2' ? '1X2' : 'O/U';
+    return '<tr>'
+      + '<td class="col-league">' + badge + '</td>'
+      + '<td class="col-match">' + esc(f.home + ' v ' + f.away) + '</td>'
+      + '<td><span class="hy-mkt">' + tag + '</span> ' + esc(tip) + (aiNote ? ' <span class="hy-ai" title="AI agrees">AI</span>' : '') + '</td>'
+      + '<td><span class="score">' + ht + '</span></td>'
+      + '<td><span class="score">' + f.fh + '-' + f.fa + '</span></td>'
+      + '<td>' + flag + '</td>'
+      + '</tr>';
   }
   function renderYesterday() {
     var body = $('#hyBody');
     if (!body) return;
+    // The day we want: yesterday relative to the live clock, but fall back to
+    // the most recent completed day in the data so the panel is never blank.
     var yDay = addDays(REF, -1);
-    var played = FIXTURES.filter(function (f) {
-      return dayOf(f) === yDay && f.fh != null && f.fa != null;
-    });
-    // If the snapshot has nothing for yesterday yet, use the most recent
-    // completed day in the data so the table is never blank.
+    var scored = FIXTURES.filter(function (f) { return f.fh != null && f.fa != null; });
     var usedDay = yDay;
-    if (!played.length) {
-      var daysWithScores = FIXTURES.filter(function (f) { return f.fh != null && f.fa != null; })
-        .map(dayOf).sort();
-      if (daysWithScores.length) {
-        usedDay = daysWithScores[daysWithScores.length - 1];
-        played = FIXTURES.filter(function (f) {
-          return dayOf(f) === usedDay && f.fh != null && f.fa != null;
-        });
+    var dayFixtures = scored.filter(function (f) { return dayOf(f) === yDay; });
+    if (!dayFixtures.length) {
+      var dsSorted = scored.map(dayOf).sort();
+      if (dsSorted.length) {
+        usedDay = dsSorted[dsSorted.length - 1];
+        dayFixtures = scored.filter(function (f) { return dayOf(f) === usedDay; });
       }
     }
-    // Newest first, then by league so the list reads cleanly.
-    played.sort(function (a, b) {
-      var lc = String(a.league || '').localeCompare(String(b.league || ''));
-      return lc !== 0 ? lc : String(a.date).localeCompare(String(b.date));
-    });
-    if (!played.length) {
-      body.innerHTML = '<tr><td colspan="5" class="empty">No completed matches to show yet.</td></tr>';
-      var hd0 = $('#hyDate'); if (hd0) hd0.textContent = '';
+    if (!dayFixtures.length) {
+      body.innerHTML = '<tr><td colspan="6" class="empty">No Best Choice results to show yet.</td></tr>';
+      var hdE = $('#hyDate'); if (hdE) hdE.textContent = '';
       return;
     }
-    var rows = played.map(function (f) {
-      var out = hyOutcomeLabel(f);
-      var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : esc(f.league || '');
-      var ht = (f.htH != null && f.htA != null) ? (f.htH + '-' + f.htA) : '&ndash;';
-      return '<tr>'
-        + '<td class="col-league">' + badge + '</td>'
-        + '<td class="col-match">' + esc(f.home + ' v ' + f.away) + '</td>'
-        + '<td><span class="score">' + ht + '</span></td>'
-        + '<td><span class="score">' + f.fh + '-' + f.fa + '</span></td>'
-        + '<td><span class="verdict ' + (out.cls === 'draw' ? 'miss' : 'win') + '">' + esc(out.txt) + '</span></td>'
-        + '</tr>';
-    }).join('');
-    body.innerHTML = rows;
+    // Stage 1: shortlist exactly like renderHomeTopPicks does.
+    var stage1 = dayFixtures.map(function (f) {
+      var pois = (f.prediction && f.prediction.pHome != null) ? f.prediction : null;
+      if (!pois) return null;
+      return { f: f, t1: tpTop1x2(pois), to: tpTopOU(pois) };
+    }).filter(Boolean);
+    if (!stage1.length) {
+      body.innerHTML = '<tr><td colspan="6" class="empty">No Best Choice results to show yet.</td></tr>';
+      var hdE2 = $('#hyDate'); if (hdE2) hdE2.textContent = '';
+      return;
+    }
+    var short1 = stage1.slice().sort(function (a, b) { return b.t1.prob - a.t1.prob; }).slice(0, 18);
+    var shortO = stage1.slice().sort(function (a, b) { return b.to.prob - a.to.prob; }).slice(0, 18);
+    var seen = {}, union = [];
+    short1.concat(shortO).forEach(function (s) { var k = fxKey(s.f); if (!seen[k]) { seen[k] = true; union.push(s); } });
+    // Stage 2: KPI + AI, grouped by league for cache friendliness.
+    union.sort(function (a, b) { return String(a.f.league || '') < String(b.f.league || '') ? -1 : 1; });
+    union.forEach(function (s) {
+      activeLeague = s.f.league || null;
+      s.kpi = predictKpi(s.f.home, s.f.away);
+      s.k1 = tpTop1x2(s.kpi);
+      s.ko = tpTopOU(s.kpi);
+      s.ai = predictAi(s.f.home, s.f.away, s.f);
+      s.a1 = tpTop1x2(s.ai);
+      s.ao = tpTopOU(s.ai);
+      s.rank1 = (s.t1.prob + s.k1.prob) / 2;
+      s.rankO = (s.to.prob + s.ko.prob) / 2;
+    });
+    var best1 = union.slice().sort(function (a, b) { return b.rank1 - a.rank1; }).slice(0, 5);
+    var bestO = union.slice().sort(function (a, b) { return b.rankO - a.rankO; }).slice(0, 5);
+    var rows = best1.map(function (s) { return hyRow(s, '1x2'); })
+      .concat(bestO.map(function (s) { return hyRow(s, 'ou'); }))
+      .filter(Boolean).join('');
+    body.innerHTML = rows || '<tr><td colspan="6" class="empty">No Best Choice picks for this day.</td></tr>';
     var hd = $('#hyDate');
     if (hd) hd.textContent = showDay(usedDay);
   }
