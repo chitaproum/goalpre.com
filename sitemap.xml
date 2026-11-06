@@ -11,4 +11,9 @@
   <url><loc>https://goalpre.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://goalpre.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://goalpre.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://goalpre.com/insights.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://goalpre.com/insight-expected-goals.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://goalpre.com/insight-over-2-5-goals.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://goalpre.com/insight-why-tipsters-lose.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://goalpre.com/insight-reading-a-prediction.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

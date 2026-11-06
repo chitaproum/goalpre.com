@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading a prediction: turning model output into a sensible decision | GoalPre</title>
+  <meta name="description" content="A probability is not a tip. Here is how to turn a model’s 1X2 and Over/Under output into a sensible decision — reading confidence, spotting value against the price, and knowing when to pass." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://goalpre.com/insight-reading-a-prediction.html" />
+  <meta name="theme-color" content="#0c7a4d" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal{max-width:860px;margin:0 auto;padding:28px 4px 60px}
+    .legal h1{font-size:28px;margin:12px 0 6px}
+    .legal .legal-meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+    .legal h2{font-size:19px;margin:30px 0 8px;padding-top:10px;border-top:1px solid var(--border)}
+    .legal h3{font-size:15px;margin:18px 0 6px}
+    .legal p,.legal li{font-size:14.5px;line-height:1.7;color:var(--text)}
+    .legal ul,.legal ol{padding-left:22px;margin:8px 0}
+    .legal li{margin:4px 0}
+    .legal a{color:var(--brand);text-decoration:underline}
+    .legal table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+    .legal th,.legal td{border:1px solid var(--border);padding:7px 10px;text-align:left}
+    .legal th{background:var(--surface2)}
+    .legal .callout{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:18px 0}
+    .legal .toc{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin:0 0 22px}
+    .legal .toc ol{margin:6px 0 0;padding-left:20px}
+    .legal .toc a{text-decoration:none}
+    .legal .art-disc{color:var(--muted);font-size:12.5px;font-style:italic;margin-top:22px;border-top:1px solid var(--border);padding-top:14px}
+    .legal-back{display:inline-block;margin:0 0 10px;font-size:13px;color:var(--brand);text-decoration:none}
+    .blog-list{list-style:none;padding:0;margin:8px 0 0}
+    .blog-list li{border:1px solid var(--border);border-left:3px solid var(--brand);border-radius:8px;padding:16px 18px;margin:0 0 14px}
+    .blog-list h2{font-size:18px;margin:0 0 4px;padding:0;border:0}
+    .blog-list h2 a{text-decoration:none;color:var(--text)}
+    .blog-list .b-meta{color:var(--muted);font-size:12.5px;margin:0 0 8px}
+    .blog-list p{margin:0 0 10px}
+    .blog-list .b-read{font-weight:700;color:var(--brand);text-decoration:none;font-size:13.5px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GoalPre home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span><span class="logo-tx">Goal<span>Pre</span></span></a>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme" style="margin-left:auto">&#9790;</button>
+    </div>
+  </header>
+  <div class="container">
+    <article class="legal">
+      <a class="legal-back" href="insights.html">&larr; All insights</a>
+<h1>Reading a prediction: turning model output into a sensible decision</h1>
+      <p class="legal-meta">By GoalPre analysis desk &middot; 26 October 2026 &middot; 6 min read</p>
+      <p>A model gives you probabilities, not instructions. The skill is in reading them: separating confidence from value, and knowing that “no bet” is a perfectly good answer.</p>
+
+      <h2>A probability is a weather forecast, not a promise</h2>
+      <p>When our model says a home win is 58% likely, it is not predicting a home win.
+      It is saying that in a long run of near-identical matches, the home side would
+      win about 58 times in 100 — and lose or draw the other 42. A 58% pick that
+      loses is not a wrong forecast any more than a 30%-chance-of-rain day that turns
+      wet. Judge the process over many games, not one result.</p>
+      <h2>Confidence versus value: two different questions</h2>
+      <p>These get confused constantly, so we keep them separate.</p>
+      <ul>
+        <li><strong>Confidence</strong> is how likely the outcome is. A 72% favourite
+        is a high-confidence outcome.</li>
+        <li><strong>Value</strong> is whether the price is generous relative to that
+        chance. A 72% shot at a price that implies 80% is high-confidence but <em>poor
+        value</em> — you are being underpaid for the risk.</li>
+      </ul>
+      <p>To check value, turn the odds into an implied probability: divide 1 by the
+      decimal odds. Odds of 2.00 imply 50%; 1.50 imply 67%. If the model’s chance is
+      meaningfully higher than the price’s implied chance, there may be an edge. If it
+      is lower or the same, there is not — however confident the pick looks.</p>
+      <div class="callout"><strong>Worked example:</strong> model says 60%, odds are 2.10
+      (implied 47.6%). The model rates the outcome more likely than the price does —
+      that is where value lives. Flip it: model 60%, odds 1.50 (implied 67%). Now the
+      market rates it <em>more</em> likely than the model does — no value, pass.</div>
+      <h2>Reading our panels</h2>
+      <p>On the home page, “Today’s Best Choice” surfaces the fixtures where our
+      engines line up most strongly, and “Yesterday’s Best Choice result” shows
+      honestly how the previous day’s top picks actually finished — hits and misses
+      alike. We show the misses on purpose: a tips page that only displays winners is
+      the first trap from our piece on
+      <a href="insight-why-tipsters-lose.html">why most tipsters lose</a>.</p>
+      <h2>When the right call is no call</h2>
+      <p>Most matches are priced efficiently, so most of the time the sensible decision
+      is to pass. That is not a failure of the model — it is the model doing its job,
+      telling you there is nothing to beat. Patience, flat stakes and a willingness to
+      sit out are worth more than any single prediction. For the full method, see the
+      <a href="predictions-guide.html">predictions guide</a>; for the terms, the
+      <a href="glossary.html">glossary</a>.</p>
+      <p class="art-disc">This article is general information and one analyst’s opinion for study and entertainment. It is not betting advice, and no outcome is guaranteed. Odds move and models cannot see injuries, motivation or weather. 18+ — please gamble responsibly. If betting stops being fun, take a break and see our <a href="responsible-gambling.html">responsible gambling</a> page.</p>
+    </article>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>GoalPre &middot; Poisson, KPI &amp; AI-consensus football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p class="footer-links"><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="insights.html">Insights</a> &middot; <a href="match-analysis.html">Top trend matches</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
