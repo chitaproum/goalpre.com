@@ -92,10 +92,23 @@ jobs:
   deploy:
     needs: update
     runs-on: ubuntu-latest
+    # A large data.js makes GitHub Pages take several minutes to publish;
+    # give the job plenty of room so a slow-but-working publish never fails.
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy GitHub Pages
+      - name: Deploy GitHub Pages (with retry)
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          # Wait up to ~20 min before the action itself gives up.
+          timeout: 1200000
+      - name: Retry deploy once if it timed out
+        if: steps.deployment.outcome == 'failure'
+        id: deployment_retry
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 1200000
