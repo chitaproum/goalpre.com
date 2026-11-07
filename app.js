@@ -1950,7 +1950,7 @@ function leagueCode(l) {
       + '<span class="tp-pick ' + cls + '">' + esc(t.key) + '</span>'
       + '<span class="tp-prob">' + pct(t.prob) + '%</span></div>';
   }
-  function tpItem(s, market) {
+  function tpItem(s, market, idx) {
     var f = s.f;
     var po = market === '1x2' ? s.t1 : s.to;
     var kp = market === '1x2' ? s.k1 : s.ko;
@@ -1958,7 +1958,8 @@ function leagueCode(l) {
     var agree = po.key === kp.key && (!ai || ai.key === po.key);
     var when = tpWhen(f);
     var dateStr = fmtFull(f.date);
-    return '<a class="tp-item" href="#" data-tp-view="predictions">'
+    var hidden = (typeof idx === 'number' && idx >= 5) ? ' tp-hidden' : '';
+    return '<a class="tp-item' + hidden + '" href="#" data-tp-view="predictions">'
       + '<div class="tp-match">'
       +   '<span class="tp-teams">'
       +     '<span class="tp-team"><span class="tp-crest" aria-hidden="true">' + esc(initials(f.home)) + '</span>' + esc(f.home) + '</span>'
@@ -1971,6 +1972,14 @@ function leagueCode(l) {
           ? '<span class="tp-flag tp-agree" title="All engines pick the same outcome">&#10003; agree</span>'
           : '<span class="tp-flag tp-split" title="The engines differ">split</span>')
       + '</a>';
+  }
+  // "More" button shown when a Best Choice list holds more than 5 tips.
+  // Clicking it reveals the hidden rows (tips 6-10) within the same panel.
+  function tpMoreBtn(total) {
+    if (!total || total <= 5) return '';
+    var extra = total - 5;
+    return '<button type="button" class="tp-more-btn" aria-expanded="false">'
+      + 'More <span class="tp-more-count">(+' + extra + ')</span></button>';
   }
   function renderHomeTopPicks() {
     var el1 = $('#tp1x2'), elO = $('#tpou');
@@ -2005,13 +2014,13 @@ function leagueCode(l) {
       s.rank1 = (s.t1.prob + s.k1.prob) / 2;
       s.rankO = (s.to.prob + s.ko.prob) / 2;
     });
-    var best1 = union.slice().sort(function (a, b) { return b.rank1 - a.rank1; }).slice(0, 5);
-    var bestO = union.slice().sort(function (a, b) { return b.rankO - a.rankO; }).slice(0, 5);
+    var best1 = union.slice().sort(function (a, b) { return b.rank1 - a.rank1; }).slice(0, 10);
+    var bestO = union.slice().sort(function (a, b) { return b.rankO - a.rankO; }).slice(0, 10);
     if (el1) el1.innerHTML = best1.length
-      ? best1.map(function (s) { return tpItem(s, '1x2'); }).join('')
+      ? best1.map(function (s, i) { return tpItem(s, '1x2', i); }).join('') + tpMoreBtn(best1.length)
       : '<p class="tp-empty">No upcoming fixtures to rank yet.</p>';
     if (elO) elO.innerHTML = bestO.length
-      ? bestO.map(function (s) { return tpItem(s, 'ou'); }).join('')
+      ? bestO.map(function (s, i) { return tpItem(s, 'ou', i); }).join('') + tpMoreBtn(bestO.length)
       : '<p class="tp-empty">No upcoming fixtures to rank yet.</p>';
   }
 
@@ -2713,6 +2722,21 @@ function leagueCode(l) {
     // Home top-pick cards jump to the full predictions table.
     document.addEventListener('click', function (e) {
       var node = e.target, hit = null;
+      while (node && node.nodeType === 1) {
+        if (node.classList && node.classList.contains('tp-more-btn')) {
+          e.preventDefault();
+          var list = node.parentNode;
+          if (list) {
+            var hiddenRows = list.querySelectorAll('.tp-item.tp-hidden');
+            for (var j = 0; j < hiddenRows.length; j++) hiddenRows[j].classList.remove('tp-hidden');
+          }
+          node.setAttribute('aria-expanded', 'true');
+          node.style.display = 'none';
+          return;
+        }
+        node = node.parentNode;
+      }
+      node = e.target; hit = null;
       while (node && node.nodeType === 1) {
         if (node.classList && node.classList.contains('tp-item')) { hit = node; break; }
         node = node.parentNode;

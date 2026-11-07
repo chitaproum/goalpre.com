@@ -843,6 +843,10 @@ td.col-score, th.col-score {
 .tp-flag.tp-agree{color:var(--brand);background:var(--brand-soft)}
 .tp-flag.tp-split{color:var(--muted);background:var(--surface);border:1px solid var(--line)}
 .tp-empty{margin:4px 0 10px;color:var(--muted);font-size:13px}
+.tp-item.tp-hidden{display:none}
+.tp-more-btn{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;margin-top:4px;padding:7px 18px;border:1px solid var(--line);border-radius:999px;background:var(--surface2);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.tp-more-btn:hover{border-color:var(--brand);color:var(--brand)}
+.tp-more-count{color:var(--muted);font-weight:600}
 .share-btn{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface2);color:var(--text);font-size:13px;font-weight:700;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{border-color:var(--brand);color:var(--brand)}
 .share-btn svg{flex:0 0 auto}
