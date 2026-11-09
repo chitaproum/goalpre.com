@@ -254484,5 +254484,328 @@
       "expA": 1.3413846570959325,
       "expTotal": 2.7030454597281155
     }
+  },
+  "1649430": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-09T19:30:00+00:00",
+    "home": "Lito",
+    "away": "Danubio",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41738149372767436,
+      "pDraw": 0.22377206073969513,
+      "pAway": 0.35884644553263045,
+      "pOver": 0.6713661256564997,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8028039614802134,
+      "expA": 1.6602505900960756,
+      "expTotal": 3.463054551576289
+    }
+  },
+  "1649431": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-10T00:00:00+00:00",
+    "home": "Deportivo Maldonado",
+    "away": "Club Nacional",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5479646813137874,
+      "pDraw": 0.22413692030615345,
+      "pAway": 0.2278983983800591,
+      "pOver": 0.5827982733723368,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8892569239478025,
+      "expA": 1.1411588368574999,
+      "expTotal": 3.0304157608053024
+    }
+  },
+  "1649432": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-10T19:30:00+00:00",
+    "home": "Boston River",
+    "away": "Atletico Torque",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3854919373342121,
+      "pDraw": 0.2615516015499516,
+      "pAway": 0.35295646111583634,
+      "pOver": 0.49086976673817995,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3538590230771752,
+      "expA": 1.283923404031434,
+      "expTotal": 2.6377824271086094
+    }
+  },
+  "1649433": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T00:00:00+00:00",
+    "home": "Liverpool Montevideo",
+    "away": "Juventud",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4636846765956429,
+      "pDraw": 0.29621793538916924,
+      "pAway": 0.2400973880151879,
+      "pOver": 0.33048466083685885,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.229918171188276,
+      "expA": 0.7967096077378678,
+      "expTotal": 2.026627778926144
+    }
+  },
+  "1649463": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T01:00:00+00:00",
+    "home": "Pumas UNAM W",
+    "away": "Tigres UANL W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.1270165574563383,
+      "pDraw": 0.14838236975216676,
+      "pAway": 0.724601072791495,
+      "pOver": 0.7665325822580745,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.1867202712030938,
+      "expA": 2.9175951436228797,
+      "expTotal": 4.104315414825973
+    }
+  },
+  "1649464": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T03:00:00+00:00",
+    "home": "Juárez W",
+    "away": "Guadalajara W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3634050454589171,
+      "pDraw": 0.2594339356547979,
+      "pAway": 0.377161018886285,
+      "pOver": 0.5007381827085422,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3239669236020786,
+      "expA": 1.3537277836856618,
+      "expTotal": 2.67769470728774
+    }
+  },
+  "1649444": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T16:30:00+00:00",
+    "home": "Babrungas",
+    "away": "Minija",
+    "league": "1 Lyga · Lithuania",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3909981502636621,
+      "pDraw": 0.28456996243044785,
+      "pAway": 0.32443188730589007,
+      "pOver": 0.39782247361552875,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.20570588519554,
+      "expA": 1.071385969580384,
+      "expTotal": 2.2770918547759242
+    }
+  },
+  "1649446": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T21:00:00+00:00",
+    "home": "Envigado",
+    "away": "Union Magdalena",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4216322678368842,
+      "pDraw": 0.27492427301111705,
+      "pAway": 0.3034434591519988,
+      "pOver": 0.42688510635631594,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.315562121078165,
+      "expA": 1.07174522858436,
+      "expTotal": 2.387307349662525
+    }
+  },
+  "1649445": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-11T21:00:00+00:00",
+    "home": "Popayan",
+    "away": "Ind. Yumbo",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3470021029940191,
+      "pDraw": 0.27118387192079285,
+      "pAway": 0.3818140250851881,
+      "pOver": 0.4507319834992618,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2031612197807673,
+      "expA": 1.2759837062874662,
+      "expTotal": 2.4791449260682334
+    }
+  },
+  "1649465": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-12T01:00:00+00:00",
+    "home": "América W",
+    "away": "Toluca W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.806397836432235,
+      "pDraw": 0.10641771207753872,
+      "pAway": 0.08718445149022636,
+      "pOver": 0.8448520096754809,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.806348034706276,
+      "expA": 1.31687486540631,
+      "expTotal": 5.1232229001125855
+    }
+  },
+  "1649466": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-12T03:00:00+00:00",
+    "home": "Pachuca W",
+    "away": "Monterrey W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.23848035115257574,
+      "pDraw": 0.1826441135639286,
+      "pAway": 0.5788755352834957,
+      "pOver": 0.796540617776647,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.676237832270148,
+      "expA": 2.62259338334028,
+      "expTotal": 4.298831215610428
+    }
+  },
+  "1649467": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-14T23:00:00+00:00",
+    "home": "Tigres UANL W",
+    "away": "Pumas UNAM W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8079823792452643,
+      "pDraw": 0.11311875234981554,
+      "pAway": 0.0788988684049202,
+      "pOver": 0.7917608183132694,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.3552344151663114,
+      "expA": 1.031930670611386,
+      "expTotal": 4.387165085777697
+    }
+  },
+  "1649468": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-15T03:00:00+00:00",
+    "home": "Guadalajara W",
+    "away": "Juárez W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4667686369737019,
+      "pDraw": 0.2516958917888814,
+      "pAway": 0.2815354712374166,
+      "pOver": 0.5081035405787345,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.556786951238511,
+      "expA": 1.151275585740938,
+      "expTotal": 2.7080625369794493
+    }
+  },
+  "1649448": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-15T21:00:00+00:00",
+    "home": "Union Magdalena",
+    "away": "Popayan",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5386113620766678,
+      "pDraw": 0.23255080071070613,
+      "pAway": 0.22883783721262604,
+      "pOver": 0.5462833492349831,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7870503831078144,
+      "expA": 1.0819810751142,
+      "expTotal": 2.8690314582220147
+    }
+  },
+  "1649447": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-15T21:00:00+00:00",
+    "home": "Ind. Yumbo",
+    "away": "Envigado",
+    "league": "Primera B · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32715409720192395,
+      "pDraw": 0.2975760669344765,
+      "pAway": 0.3752698358635995,
+      "pOver": 0.355248579897754,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.012035090533356,
+      "expA": 1.106164815255225,
+      "expTotal": 2.1181999057885808
+    }
+  },
+  "1649469": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-16T01:00:00+00:00",
+    "home": "Monterrey W",
+    "away": "Pachuca W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6859436370304807,
+      "pDraw": 0.15435936995233016,
+      "pAway": 0.15969699301718923,
+      "pOver": 0.8110367658792716,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.015982390841322,
+      "expA": 1.4575981150175201,
+      "expTotal": 4.473580505858842
+    }
+  },
+  "1649470": {
+    "savedAt": "2026-11-09T09:28:51.208727+00:00",
+    "kickoffUtc": "2026-11-16T03:10:00+00:00",
+    "home": "Toluca W",
+    "away": "América W",
+    "league": "Liga MX Femenil · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.14325304847195208,
+      "pDraw": 0.14053434503794526,
+      "pAway": 0.7162126064901027,
+      "pOver": 0.8394821932779823,
+      "scoreH": 1,
+      "scoreA": 3,
+      "expH": 1.5144060952172564,
+      "expA": 3.3098678562663273,
+      "expTotal": 4.824273951483583
+    }
   }
 }
