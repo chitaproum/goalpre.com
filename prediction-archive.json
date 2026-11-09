@@ -254807,5 +254807,290 @@
       "expA": 3.3098678562663273,
       "expTotal": 4.824273951483583
     }
+  },
+  "1649487": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-14T14:00:00+00:00",
+    "home": "Arna-Bjørnar W",
+    "away": "Røa W",
+    "league": "Toppserien · Norway",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7208286351614271,
+      "pDraw": 0.15756518017408272,
+      "pAway": 0.12160618466449007,
+      "pOver": 0.7049701347761069,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.6606861275281517,
+      "expA": 1.0187568058920524,
+      "expTotal": 3.679442933420204
+    }
+  },
+  "1649489": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-17T23:30:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Once Caldas",
+    "league": "Copa Colombia · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.34989092299933183,
+      "pDraw": 0.27099388482674114,
+      "pAway": 0.3791151921739271,
+      "pOver": 0.4517546635912082,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.210973469406087,
+      "expA": 1.272145697124416,
+      "expTotal": 2.483119166530503
+    }
+  },
+  "1649490": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-18T01:30:00+00:00",
+    "home": "America de Cali",
+    "away": "Internacional de Bogota",
+    "league": "Copa Colombia · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47336317460444494,
+      "pDraw": 0.22777524032765334,
+      "pAway": 0.2988615850679019,
+      "pOver": 0.6275247648815268,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8267966017354869,
+      "expA": 1.4125891831834694,
+      "expTotal": 3.239385784918956
+    }
+  },
+  "1649491": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T00:30:00+00:00",
+    "home": "Orlando City SC",
+    "away": "FC Cincinnati",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4323611702132159,
+      "pDraw": 0.17872593852677612,
+      "pAway": 0.388912891260008,
+      "pOver": 0.8903583571702535,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.7515152456670893,
+      "expA": 2.6183989970938204,
+      "expTotal": 5.36991424276091
+    }
+  },
+  "1649492": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T03:00:00+00:00",
+    "home": "Seattle Sounders",
+    "away": "Real Salt Lake",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40086615099938433,
+      "pDraw": 0.2524856178381616,
+      "pAway": 0.3466482311624541,
+      "pOver": 0.529693855905921,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.458508387598514,
+      "expA": 1.33883558718085,
+      "expTotal": 2.797343974779364
+    }
+  },
+  "1649497": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "San Jose Earthquakes",
+    "away": "Houston Dynamo",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44868609515689734,
+      "pDraw": 0.25045792015879115,
+      "pAway": 0.3008559846843115,
+      "pOver": 0.5237677934060087,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.549486308034774,
+      "expA": 1.223243478710838,
+      "expTotal": 2.7727297867456118
+    }
+  },
+  "1649494": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "FC Dallas",
+    "away": "Portland Timbers",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5095182156608121,
+      "pDraw": 0.20190234687196176,
+      "pAway": 0.2885794374672262,
+      "pOver": 0.7493732523562623,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.255911674832564,
+      "expA": 1.67786479562424,
+      "expTotal": 3.933776470456804
+    }
+  },
+  "1649493": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "Chicago Fire",
+    "away": "Charlotte",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41789067625250287,
+      "pDraw": 0.21145681215192552,
+      "pAway": 0.3706525115955716,
+      "pOver": 0.7370476183553674,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9845822095265455,
+      "expA": 1.863574951803582,
+      "expTotal": 3.8481571613301275
+    }
+  },
+  "1649496": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "New England Revolution",
+    "away": "Philadelphia Union",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41052415010886834,
+      "pDraw": 0.2255279969563122,
+      "pAway": 0.36394785293481946,
+      "pOver": 0.6632678625323593,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7663288440751095,
+      "expA": 1.6535989585394697,
+      "expTotal": 3.419927802614579
+    }
+  },
+  "1649495": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "Inter Miami",
+    "away": "Columbus Crew",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5213871226844291,
+      "pDraw": 0.19191574806240247,
+      "pAway": 0.2866971292531683,
+      "pOver": 0.7967717662481215,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.465878886815993,
+      "expA": 1.823405748754275,
+      "expTotal": 4.289284635570268
+    }
+  },
+  "1649498": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "St. Louis City",
+    "away": "Los Angeles FC",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4064986155657463,
+      "pDraw": 0.24869647655806235,
+      "pAway": 0.3448049078761914,
+      "pOver": 0.5465595907016416,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.503359272360533,
+      "expA": 1.365605497750901,
+      "expTotal": 2.868964770111434
+    }
+  },
+  "1649505": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-21T12:00:00+00:00",
+    "home": "Ostersunds FK",
+    "away": "Varbergs BoIS FC",
+    "league": "Allsvenskan · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4265333769302313,
+      "pDraw": 0.23948822915356213,
+      "pAway": 0.33397839391620654,
+      "pOver": 0.5869419118548397,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6300215,
+      "expA": 1.41741,
+      "expTotal": 3.0474315
+    }
+  },
+  "1649508": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-21T13:00:00+00:00",
+    "home": "Lund",
+    "away": "Norrby IF",
+    "league": "Superettan · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5128394622156798,
+      "pDraw": 0.23863786330304745,
+      "pAway": 0.24852267448127274,
+      "pOver": 0.5393169331271189,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.71712245837,
+      "expA": 1.1217211416500001,
+      "expTotal": 2.83884360002
+    }
+  },
+  "1649507": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-21T13:00:00+00:00",
+    "home": "Enköping",
+    "away": "Orebro SK",
+    "league": "Superettan · Sweden",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5061912100380348,
+      "pDraw": 0.23847211127211243,
+      "pAway": 0.25533667868985277,
+      "pOver": 0.5460194981088858,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.71712245837,
+      "expA": 1.15029817445,
+      "expTotal": 2.86742063282
+    }
+  },
+  "1649488": {
+    "savedAt": "2026-11-09T10:38:32.639878+00:00",
+    "kickoffUtc": "2026-11-21T14:00:00+00:00",
+    "home": "Røa W",
+    "away": "Arna-Bjørnar W",
+    "league": "Toppserien · Norway",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.18114738146796908,
+      "pDraw": 0.19069381160583415,
+      "pAway": 0.6281588069261967,
+      "pOver": 0.6736949343133667,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.1715703267758601,
+      "expA": 2.313640110894045,
+      "expTotal": 3.485210437669905
+    }
   }
 }
