@@ -700,10 +700,10 @@
     if (el) el.innerHTML = predIntroHtml(mode);
   }
 
+  // Ad placeholders removed for AdSense re-approval. Kept as a no-op so any
+  // caller stays harmless; re-introduce real ad markup only after approval.
   function adRowHtml(cols) {
-    return '<tr class="ad-row"><td colspan="' + cols + '" style="padding:0">'
-      + '<div class="ad-slot ad-inline" data-ad-placement="inTable" style="margin:0;border-radius:0;border-left:0;border-right:0" aria-label="Advertisement">'
-      + '<span class="ad-body">Your banner here<span class="ad-size">Leaderboard 728×90</span></span></div></td></tr>';
+    return '';
   }
 
   // Offset (ms) of a named IANA zone from UTC at a given instant: wallclock - utc.
@@ -1351,7 +1351,7 @@ function leagueCode(l) {
       if (state.mode === '1x2') rows.push(row1x2(f, p));
       else if (state.mode === 'ou') rows.push(rowOu(f, p));
       else rows.push(rowStats(f, p, idx));
-      if (idx === 3) rows.push(adRowHtml(cols)); // inline ad after 4th row
+      if (idx === 3) { /* inline ad removed for AdSense re-approval */ }
     });
     body.innerHTML = rows.join('');
     var tbl = document.querySelector('#view-predictions .pred-table');
@@ -1646,8 +1646,7 @@ function leagueCode(l) {
       + '<div class="side-group"><div class="side-title">Popular leagues</div>' + allBtn + pl + '</div>'
       + '<div class="side-group"><div class="side-title">Countries</div>'
       + '<div class="side-search"><span class="ico">⚲</span><input type="search" id="countrySearch" placeholder="Search country…" aria-label="Search country"></div>'
-      + '<div class="country-list">' + countries + '</div></div>'
-      + '<div class="ad-slot ad-mpu" data-ad-placement="sidebar" aria-label="Advertisement"><span class="ad-body">Your ad here<span class="ad-size">MPU 300×250</span></span></div>');
+      + '<div class="country-list">' + countries + '</div></div>');
 
     // populate league filter dropdown — mirror the sidebar exactly:
     // only leagues that appear under a country group in the sidebar list (1).
