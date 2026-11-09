@@ -1940,9 +1940,42 @@ function leagueCode(l) {
     var over = p.pOver, under = 1 - p.pOver;
     return over >= under ? { key: 'Over 2.5', prob: over, side: 'O' } : { key: 'Under 2.5', prob: under, side: 'U' };
   }
+  // Kickoff TIME (HH:MM) converted into the user's selected Time Zone setting.
+  // Mirrors fmtDate(): prefer the authoritative kickoffUtc instant, else treat
+  // the stored string as the data's base timezone. Falls back to the raw time
+  // when no timezone override is set or conversion fails.
   function tpWhen(f) {
-    var parts = String(f.date || '').split(' ');
-    return parts[1] ? parts[1] : '';
+    var raw = String(f.date || '');
+    var rawTime = raw.split(' ')[1] || '';
+    if (userSettings.timezone !== 'default') {
+      try {
+        var parsed = f.kickoffUtc ? new Date(f.kickoffUtc) : null;
+        if (!parsed || isNaN(parsed.getTime())) parsed = baseZoneToDate(raw);
+        if (parsed && !isNaN(parsed.getTime())) {
+          var tzOpt = userSettings.timezone === 'local' ? undefined : userSettings.timezone;
+          var tFmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: tzOpt });
+          return tFmt.format(parsed);
+        }
+      } catch (e) {}
+    }
+    return rawTime;
+  }
+  // Kickoff DATE (DD/MM/YYYY) in the user's selected Time Zone, matching tpWhen
+  // so a fixture that crosses midnight shows the correct day for that zone.
+  function tpDate(f) {
+    var raw = String(f.date || '');
+    if (userSettings.timezone !== 'default') {
+      try {
+        var parsed = f.kickoffUtc ? new Date(f.kickoffUtc) : null;
+        if (!parsed || isNaN(parsed.getTime())) parsed = baseZoneToDate(raw);
+        if (parsed && !isNaN(parsed.getTime())) {
+          var tzOpt = userSettings.timezone === 'local' ? undefined : userSettings.timezone;
+          var dFmt = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: tzOpt });
+          return dFmt.format(parsed);
+        }
+      } catch (e) {}
+    }
+    return fmtFull(raw);
   }
   function tpEngine(name, t, market) {
     var cls = market === '1x2' ? ('pk' + t.key) : ('pk' + t.side);
@@ -1957,9 +1990,11 @@ function leagueCode(l) {
     var ai = market === '1x2' ? s.a1 : s.ao;
     var agree = po.key === kp.key && (!ai || ai.key === po.key);
     var when = tpWhen(f);
-    var dateStr = fmtFull(f.date);
+    var dateStr = tpDate(f);
     var hidden = (typeof idx === 'number' && idx >= 5) ? ' tp-hidden' : '';
+    var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : '';
     return '<a class="tp-item' + hidden + '" href="#" data-tp-view="predictions">'
+      + '<span class="tp-lead">' + badge + '</span>'
       + '<div class="tp-match">'
       +   '<span class="tp-teams">'
       +     '<span class="tp-team"><span class="tp-crest" aria-hidden="true">' + esc(initials(f.home)) + '</span>' + esc(f.home) + '</span>'
@@ -2063,7 +2098,7 @@ function leagueCode(l) {
   }
   function trendCard(s) {
     var f = s.f;
-    var dateStr = fmtFull(f.date);
+    var dateStr = tpDate(f);
     var when = tpWhen(f);
     var logo1 = f.homeLogo ? '<img src="' + esc(f.homeLogo) + '" alt="" loading="lazy" width="34" height="34">' : '';
     var logo2 = f.awayLogo ? '<img src="' + esc(f.awayLogo) + '" alt="" loading="lazy" width="34" height="34">' : '';
@@ -2153,7 +2188,7 @@ function leagueCode(l) {
     var tot = f.fh + f.fa;
     return side === 'O' ? tot > 2.5 : tot < 2.5;
   }
-  function hyRow(s, market) {
+  function hyRow(s, market, hidden) {
     var f = s.f;
     if (f.fh == null || f.fa == null) return '';
     var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : esc(f.league || '');
@@ -2171,7 +2206,7 @@ function leagueCode(l) {
       : (hit ? '<span class="hy-flag hy-hit">\u2713 HIT</span>' : '<span class="hy-flag hy-miss">miss</span>');
     var aiNote = hyAiPick(s, market);
     var tag = market === '1x2' ? '1X2' : 'O/U';
-    return '<tr>'
+    return '<tr' + (hidden ? ' class="hy-hidden"' : '') + '>'
       + '<td class="col-league">' + badge + '</td>'
       + '<td class="col-match">' + esc(f.home + ' v ' + f.away) + '</td>'
       + '<td><span class="hy-mkt">' + tag + '</span> ' + esc(tip) + (aiNote ? ' <span class="hy-ai" title="AI agrees">AI</span>' : '') + '</td>'
@@ -2229,12 +2264,25 @@ function leagueCode(l) {
       s.rank1 = (s.t1.prob + s.k1.prob) / 2;
       s.rankO = (s.to.prob + s.ko.prob) / 2;
     });
-    var best1 = union.slice().sort(function (a, b) { return b.rank1 - a.rank1; }).slice(0, 5);
-    var bestO = union.slice().sort(function (a, b) { return b.rankO - a.rankO; }).slice(0, 5);
-    var rows = best1.map(function (s) { return hyRow(s, '1x2'); })
-      .concat(bestO.map(function (s) { return hyRow(s, 'ou'); }))
+    var best1 = union.slice().sort(function (a, b) { return b.rank1 - a.rank1; }).slice(0, 15);
+    var bestO = union.slice().sort(function (a, b) { return b.rankO - a.rankO; }).slice(0, 15);
+    var rows = best1.map(function (s, i) { return hyRow(s, '1x2', i >= 5); })
+      .concat(bestO.map(function (s, i) { return hyRow(s, 'ou', i >= 5); }))
       .filter(Boolean).join('');
     body.innerHTML = rows || '<tr><td colspan="6" class="empty">No Best Choice picks for this day.</td></tr>';
+    var hyMoreBtn = $('#hyMore');
+    if (hyMoreBtn) {
+      var hiddenCount = body.querySelectorAll('tr.hy-hidden').length;
+      if (hiddenCount > 0) {
+        hyMoreBtn.hidden = false;
+        hyMoreBtn.setAttribute('aria-expanded', 'false');
+        var cnt = hyMoreBtn.querySelector('.tp-more-count');
+        if (cnt) cnt.textContent = '(+' + hiddenCount + ')';
+        hyMoreBtn.firstChild && (hyMoreBtn.childNodes[0].nodeValue = 'More ');
+      } else {
+        hyMoreBtn.hidden = true;
+      }
+    }
     var hd = $('#hyDate');
     if (hd) hd.textContent = showDay(usedDay);
   }
@@ -2682,6 +2730,17 @@ function leagueCode(l) {
     renderHomeTopPicks();
     renderHomeTrends();
     renderYesterday();
+    // Additive timezone listener: the primary tzSel change handlers refresh the
+    // predictions/results/league views but not the home panels, so bind one more
+    // that re-renders the home Best Choice / trends / yesterday blocks on tz change.
+    var tzSelHome = $('#tzSelect');
+    if (tzSelHome) {
+      tzSelHome.addEventListener('change', function () {
+        try { renderHomeTopPicks(); } catch (e) {}
+        try { renderHomeTrends(); } catch (e) {}
+        try { renderYesterday(); } catch (e) {}
+      });
+    }
     var tt = $('#themeToggle');
     if (tt) {
       var sync = function () {
@@ -2725,6 +2784,16 @@ function leagueCode(l) {
       while (node && node.nodeType === 1) {
         if (node.classList && node.classList.contains('tp-more-btn')) {
           e.preventDefault();
+          if (node.id === 'hyMore') {
+            var hyBody = $('#hyBody');
+            if (hyBody) {
+              var hyHidden = hyBody.querySelectorAll('tr.hy-hidden');
+              for (var h = 0; h < hyHidden.length; h++) hyHidden[h].classList.remove('hy-hidden');
+            }
+            node.setAttribute('aria-expanded', 'true');
+            node.style.display = 'none';
+            return;
+          }
           var list = node.parentNode;
           if (list) {
             var hiddenRows = list.querySelectorAll('.tp-item.tp-hidden');
