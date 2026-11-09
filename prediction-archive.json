@@ -255092,5 +255092,271 @@
       "expA": 2.313640110894045,
       "expTotal": 3.485210437669905
     }
+  },
+  "1649517": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-11T21:00:00+00:00",
+    "home": "Monarcas",
+    "away": "Leones Negros UDG",
+    "league": "Liga de Expansión MX · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3953179155041935,
+      "pDraw": 0.22817598166821715,
+      "pAway": 0.37650610282758945,
+      "pOver": 0.6510638938701144,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7007684610565807,
+      "expA": 1.6556545768595698,
+      "expTotal": 3.3564230379161506
+    }
+  },
+  "1649518": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-11T21:00:00+00:00",
+    "home": "Piratas",
+    "away": "CA La Paz",
+    "league": "Liga de Expansión MX · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39137524034919824,
+      "pDraw": 0.23610811338593365,
+      "pAway": 0.3725166462648681,
+      "pOver": 0.6106249627098052,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6006041640901059,
+      "expA": 1.5566469461386738,
+      "expTotal": 3.1572511102287795
+    }
+  },
+  "1649521": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-13T17:00:00+00:00",
+    "home": "NJ/NY Gotham FC W",
+    "away": "Kansas City W",
+    "league": "NWSL Women · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4516629863719312,
+      "pDraw": 0.27201825264550444,
+      "pAway": 0.2763187609825643,
+      "pOver": 0.42603310085871043,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.37340504224352,
+      "expA": 1.010718050586262,
+      "expTotal": 2.384123092829782
+    }
+  },
+  "1649522": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-13T17:00:00+00:00",
+    "home": "Utah Royals W",
+    "away": "Washington Spirit W",
+    "league": "NWSL Women · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32442995450539086,
+      "pDraw": 0.2649290234871892,
+      "pAway": 0.41064102200742,
+      "pOver": 0.4716830178342276,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1890703994643905,
+      "expA": 1.37222367622912,
+      "expTotal": 2.5612940756935103
+    }
+  },
+  "1649520": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Leones Negros UDG",
+    "away": "Monarcas",
+    "league": "Liga de Expansión MX · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4766009048893116,
+      "pDraw": 0.22226088954082648,
+      "pAway": 0.30113820556986187,
+      "pOver": 0.6559979017567997,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9040027633885053,
+      "expA": 1.4789290965709398,
+      "expTotal": 3.382931859959445
+    }
+  },
+  "1649519": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "CA La Paz",
+    "away": "Piratas",
+    "league": "Liga de Expansión MX · Mexico",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46944524665882015,
+      "pDraw": 0.2303807873542133,
+      "pAway": 0.3001739659869666,
+      "pOver": 0.6156770564604852,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7901439880594747,
+      "expA": 1.39182970790444,
+      "expTotal": 3.1819736959639147
+    }
+  },
+  "1649516": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Juventud Palmeiras",
+    "league": "Copa Perú · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44545671531153747,
+      "pDraw": 0.21257765233265666,
+      "pAway": 0.34196563235580585,
+      "pOver": 0.7242173736902442,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0152584519274996,
+      "expA": 1.7523986538499998,
+      "expTotal": 3.7676571057774995
+    }
+  },
+  "1649527": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-14T23:00:00+00:00",
+    "home": "Charleston Battery",
+    "away": "Louisville City",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5229553268530854,
+      "pDraw": 0.20826573720304545,
+      "pAway": 0.26877893594386904,
+      "pOver": 0.7015064749203797,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1382912649786534,
+      "expA": 1.49631983230665,
+      "expTotal": 3.6346110972853034
+    }
+  },
+  "1649529": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-15T00:30:00+00:00",
+    "home": "Charlotte Independence",
+    "away": "Boise",
+    "league": "USL League One · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5338228379085489,
+      "pDraw": 0.20617852476176848,
+      "pAway": 0.2599986373296825,
+      "pOver": 0.7037581472691499,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1714593723581013,
+      "expA": 1.4769744426419424,
+      "expTotal": 3.6484338150000437
+    }
+  },
+  "1649528": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-16T00:00:00+00:00",
+    "home": "New Mexico United",
+    "away": "Sacramento Republic",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3971614735949446,
+      "pDraw": 0.2747958321462282,
+      "pAway": 0.32804269425882726,
+      "pOver": 0.43393468106103106,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2786546784002824,
+      "expA": 1.1356235382072601,
+      "expTotal": 2.4142782166075425
+    }
+  },
+  "1649530": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-21T17:00:00+00:00",
+    "home": "Mamelodi Sundowns",
+    "away": "Kaizer Chiefs",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3417725551292788,
+      "pDraw": 0.30004183489300834,
+      "pAway": 0.3581856099777128,
+      "pOver": 0.3487006027036654,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0309929831281106,
+      "expA": 1.0629359890419543,
+      "expTotal": 2.093928972170065
+    }
+  },
+  "1649531": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-21T17:00:00+00:00",
+    "home": "Stellenbosch",
+    "away": "Orlando Pirates",
+    "league": "League Cup · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3477495669685354,
+      "pDraw": 0.287904908898987,
+      "pAway": 0.36434552413247767,
+      "pOver": 0.3888271329128193,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1050269015787713,
+      "expA": 1.1382765771920398,
+      "expTotal": 2.243303478770811
+    }
+  },
+  "1649532": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-21T20:00:00+00:00",
+    "home": "Cavalry FC",
+    "away": "Atlético Ottawa",
+    "league": "Canadian Premier League · Canada",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6841652407909415,
+      "pDraw": 0.1802877637275783,
+      "pAway": 0.13554699548148016,
+      "pOver": 0.6283992671653207,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.3225513049100597,
+      "expA": 0.9309534296883839,
+      "expTotal": 3.253504734598444
+    }
+  },
+  "1649537": {
+    "savedAt": "2026-11-09T18:46:46.691327+00:00",
+    "kickoffUtc": "2026-11-22T13:00:00+00:00",
+    "home": "ODD Ballklubb",
+    "away": "Bryne",
+    "league": "1. Division · Norway",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46933926566538675,
+      "pDraw": 0.23161173275024952,
+      "pAway": 0.29904900158436365,
+      "pOver": 0.609103521304639,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7748022291801953,
+      "expA": 1.375890955531032,
+      "expTotal": 3.150693184711227
+    }
   }
 }
