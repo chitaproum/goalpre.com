@@ -257771,5 +257771,252 @@
       "expA": 0.9204059053946702,
       "expTotal": 2.336833204007194
     }
+  },
+  "1649562": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-14T07:00:00+00:00",
+    "home": "Guizhou Zhucheng",
+    "away": "Heilongjiang Lava Spring",
+    "league": "League One · China",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5203351037953134,
+      "pDraw": 0.21936473563188866,
+      "pAway": 0.2603001605727978,
+      "pOver": 0.6390504156624252,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9625275512049996,
+      "expA": 1.3351221534,
+      "expTotal": 3.2976497046049995
+    }
+  },
+  "1649582": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-14T21:00:00+00:00",
+    "home": "Deportivo Recoleta",
+    "away": "Libertad Asuncion",
+    "league": "Copa Paraguay · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5208637416921931,
+      "pDraw": 0.24154157804869253,
+      "pAway": 0.2375946802591143,
+      "pOver": 0.5168028305070321,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6870856769874272,
+      "expA": 1.057307565491541,
+      "expTotal": 2.744393242478968
+    }
+  },
+  "1649583": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-15T21:00:00+00:00",
+    "home": "Cerro Porteno",
+    "away": "SOL DE America",
+    "league": "Copa Paraguay · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3428508753949535,
+      "pDraw": 0.22397829042948544,
+      "pAway": 0.43317083417556107,
+      "pOver": 0.666301944250472,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6084146996027517,
+      "expA": 1.82778551740125,
+      "expTotal": 3.436200217004002
+    }
+  },
+  "1649563": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-21T07:00:00+00:00",
+    "home": "Heilongjiang Lava Spring",
+    "away": "Guizhou Zhucheng",
+    "league": "League One · China",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3478555670516703,
+      "pDraw": 0.2318275299851404,
+      "pAway": 0.42031690296318935,
+      "pOver": 0.6281838691281886,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.53539047641,
+      "expA": 1.7065456966999997,
+      "expTotal": 3.2419361731099996
+    }
+  },
+  "1649629": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T10:30:00+00:00",
+    "home": "Viimsi",
+    "away": "Kuressaare",
+    "league": "Meistriliiga · Estonia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5358657679796346,
+      "pDraw": 0.2349101281041469,
+      "pAway": 0.22922410391621856,
+      "pOver": 0.5364849593401907,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7600583250000001,
+      "expA": 1.0670665,
+      "expTotal": 2.8271248250000003
+    }
+  },
+  "1649567": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Gimnasia L.P.",
+    "away": "Newells Old Boys",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5142355507643426,
+      "pDraw": 0.2419666902295384,
+      "pAway": 0.243797759006119,
+      "pOver": 0.5207939720123088,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6814368121556253,
+      "expA": 1.079456143690408,
+      "expTotal": 2.7608929558460336
+    }
+  },
+  "1649569": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "River Plate",
+    "away": "Lanus",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.45342699417399507,
+      "pDraw": 0.28711312462160143,
+      "pAway": 0.25945988120440355,
+      "pOver": 0.36712900229747,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.273849300898462,
+      "expA": 0.88855626925876,
+      "expTotal": 2.162405570157222
+    }
+  },
+  "1649570": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Rosario Central",
+    "away": "Gimnasia M.",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5901400218758305,
+      "pDraw": 0.23203495980039732,
+      "pAway": 0.17782501832377215,
+      "pOver": 0.4837675898978935,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.7622723444231037,
+      "expA": 0.848456610904704,
+      "expTotal": 2.610728955327808
+    }
+  },
+  "1649571": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Velez Sarsfield",
+    "away": "Belgrano Cordoba",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41173401363256673,
+      "pDraw": 0.2910932429492221,
+      "pAway": 0.2971727434182112,
+      "pOver": 0.36961350880328514,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1992582126246352,
+      "expA": 0.9723312243507841,
+      "expTotal": 2.1715894369754194
+    }
+  },
+  "1649566": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Defensa Y Justicia",
+    "away": "Barracas Central",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38095936749539816,
+      "pDraw": 0.29141052078775515,
+      "pAway": 0.3276301117168467,
+      "pOver": 0.37514143870651107,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.149006650342189,
+      "expA": 1.043150858489976,
+      "expTotal": 2.1921575088321648
+    }
+  },
+  "1649565": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Boca Juniors",
+    "away": "Independ. Rivadavia",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5436473397830711,
+      "pDraw": 0.232587687361722,
+      "pAway": 0.22376497285520705,
+      "pOver": 0.5405276668478732,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.785340042979618,
+      "expA": 1.059116509555152,
+      "expTotal": 2.84445655253477
+    }
+  },
+  "1649564": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Argentinos JRS",
+    "away": "Independiente",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.48256391761981127,
+      "pDraw": 0.2712720663233683,
+      "pAway": 0.2461640160568204,
+      "pOver": 0.4108467787808312,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.4063232037734,
+      "expA": 0.92012438140602,
+      "expTotal": 2.32644758517942
+    }
+  },
+  "1649568": {
+    "savedAt": "2026-11-10T16:25:36.643221+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Instituto Cordoba",
+    "away": "Huracan",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44787747660992216,
+      "pDraw": 0.2885484337110006,
+      "pAway": 0.2635740896790772,
+      "pOver": 0.364710265050497,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.2593009095112138,
+      "expA": 0.894100404165888,
+      "expTotal": 2.1534013136771017
+    }
   }
 }
