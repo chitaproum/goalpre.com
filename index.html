@@ -88,6 +88,10 @@
     <aside id="sidebar" class="sidebar" aria-label="Leagues and countries">
       <button class="side-toggle" id="sideToggle" aria-label="Toggle leagues menu">Leagues &amp; Countries <span class="side-caret">&#9662;</span></button></aside>
     <div class="content">
+    <!-- Ad: top leaderboard banner (728x90) -->
+    <div class="ad-slot ad-leaderboard" data-ad-placement="top" aria-label="Advertisement">
+      <span class="ad-body">Your banner here<span class="ad-size">Leaderboard 728×90</span></span>
+    </div>
     <!-- HOME VIEW -->
     <section id="view-home" class="view">
       <div class="home-wrap">
@@ -141,7 +145,6 @@
               <tbody id="hyBody"><tr><td colspan="6" class="empty">Loading yesterday&rsquo;s Best Choice results&hellip;</td></tr></tbody>
             </table>
           </div>
-          <button class="tp-more-btn hy-more" id="hyMore" aria-expanded="false" hidden>More <span class="tp-more-count"></span></button>
           <p class="ha-note">Picks are statistical opinion for information only, not betting advice. 18+ &middot; please gamble responsibly.</p>
         </section>
 
@@ -274,6 +277,43 @@
         <p id="emptyMsg" class="empty" hidden>No matches match your filters.</p>
       </div>
 
+      <!-- Ad: in-content leaderboard below the table -->
+      <div class="ad-slot ad-inline" data-ad-placement="below" aria-label="Advertisement">
+        <span class="ad-body">Your banner here<span class="ad-size">Leaderboard 728×90</span></span>
+      </div>
+
+      <!-- Affiliate bookmaker offers (primary monetization for tipster sites) -->
+      <!-- HIDDEN DURING ADSENSE REVIEW: demo/placeholder sponsored offers with
+           dead (#) links read as low-value commercial filler to reviewers.
+           Restore this block only after re-approval, and only with REAL,
+           disclosed affiliate links. -->
+      <section class="affiliate" aria-label="Sponsored bookmaker offers" style="display:none">
+        <h2>Top Bookmaker Offers — Sponsored</h2>
+        <div class="aff-grid">
+          <div class="aff-card">
+            <span class="aff-rank">#1</span>
+            <span class="aff-name">BetSlot</span>
+            <span class="aff-stars">★★★★★</span>
+            <span class="aff-offer">100% welcome bonus up to $100 on your first deposit.</span>
+            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
+          </div>
+          <div class="aff-card">
+            <span class="aff-rank">#2</span>
+            <span class="aff-name">GoalBet</span>
+            <span class="aff-stars">★★★★☆</span>
+            <span class="aff-offer">Bet $10 get $30 in free bets for new customers.</span>
+            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
+          </div>
+          <div class="aff-card">
+            <span class="aff-rank">#3</span>
+            <span class="aff-name">KickOdds</span>
+            <span class="aff-stars">★★★★☆</span>
+            <span class="aff-offer">Enhanced acca odds + $20 risk-free first bet.</span>
+            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
+          </div>
+        </div>
+        <p class="aff-disc">Sponsored placeholders. 18+ | T&amp;Cs apply | Please gamble responsibly. These are demo links, not real offers.</p>
+      </section>
     </section>
 
     <!-- League pages share this template; hash links work on GitHub Pages. -->
@@ -362,12 +402,25 @@
     </div><!-- /.content -->
   </main>
 
+  <div class="container">
+    <!-- Ad: footer banner -->
+    <div class="ad-slot ad-footer" data-ad-placement="footer" aria-label="Advertisement">
+      <span class="ad-body">Your banner here<span class="ad-size">Billboard 970×90</span></span>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <p>GoalPre &middot; Poisson-model &amp; KPI football predictions &middot; 18+ Please gamble responsibly.</p>
       <p class="footer-links"><a href="about.html">About</a> &middot; <a href="insights.html">Insights</a> &middot; <a href="match-analysis.html">Top trend matches</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Conditions and Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
     </div>
   </footer>
+
+  <!-- Ad: sticky bottom anchor -->
+  <div id="anchorAd" class="ad-slot ad-anchor" data-ad-placement="anchor" aria-label="Advertisement">
+    <span class="ad-body">Your sticky banner here<span class="ad-size">Anchor 320×50</span></span>
+    <button type="button" class="ad-close" id="anchorAdClose" aria-label="Close advertisement">×</button>
+  </div>
 
   <script src="data.js"></script>
   <script src="ai-insights.js"></script>
