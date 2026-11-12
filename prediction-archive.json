@@ -229480,5 +229480,119 @@
       "expA": 0.9817658013413475,
       "expTotal": 2.6277418429375667
     }
+  },
+  "1649826": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-14T20:00:00+00:00",
+    "home": "U. de Deportes W",
+    "away": "Alianza Lima W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5334931755011529,
+      "pDraw": 0.2208239885542774,
+      "pAway": 0.24568283594456963,
+      "pOver": 0.6177217992631359,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.939755996269208,
+      "expA": 1.2534496458512487,
+      "expTotal": 3.1932056421204567
+    }
+  },
+  "1649969": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-19T16:00:00+00:00",
+    "home": "Sveikata",
+    "away": "Hegelmann II",
+    "league": "1 Lyga · Lithuania",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6251298452733342,
+      "pDraw": 0.18653721664681042,
+      "pAway": 0.18833293807985535,
+      "pOver": 0.7069446847684249,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4092032836649997,
+      "expA": 1.2663909107,
+      "expTotal": 3.675594194365
+    }
+  },
+  "1649971": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-19T21:00:00+00:00",
+    "home": "Danubio",
+    "away": "Juventud",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46990969807756594,
+      "pDraw": 0.2506841207357824,
+      "pAway": 0.2794061811866517,
+      "pOver": 0.5110712740285844,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5691629751256249,
+      "expA": 1.15110737885,
+      "expTotal": 2.720270353975625
+    }
+  },
+  "1649972": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-19T21:00:00+00:00",
+    "home": "Atletico Torque",
+    "away": "Club Nacional",
+    "league": "Copa Uruguay · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46034283460459585,
+      "pDraw": 0.24228126774722558,
+      "pAway": 0.2973758976481786,
+      "pOver": 0.5583155230840894,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6443257190525,
+      "expA": 1.2758219628000003,
+      "expTotal": 2.9201476818525003
+    }
+  },
+  "1649970": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-22T16:00:00+00:00",
+    "home": "Hegelmann II",
+    "away": "Sveikata",
+    "league": "1 Lyga · Lithuania",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2667628449316439,
+      "pDraw": 0.21082860740341658,
+      "pAway": 0.5224085476649395,
+      "pOver": 0.6869356228782851,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.4563495473049999,
+      "expA": 2.0949593771,
+      "expTotal": 3.551308924405
+    }
+  },
+  "1649825": {
+    "savedAt": "2026-11-12T14:40:28.018520+00:00",
+    "kickoffUtc": "2026-11-22T16:00:00+00:00",
+    "home": "Alianza Lima W",
+    "away": "U. de Deportes W",
+    "league": "Liga Women · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3295051058473734,
+      "pDraw": 0.2355453187081772,
+      "pAway": 0.4349495754444494,
+      "pOver": 0.6044147498058587,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.441467092728936,
+      "expA": 1.6867443445819201,
+      "expTotal": 3.1282114373108563
+    }
   }
 }
