@@ -229594,5 +229594,62 @@
       "expA": 1.6867443445819201,
       "expTotal": 3.1282114373108563
     }
+  },
+  "1603084": {
+    "savedAt": "2026-11-12T16:48:09.024177+00:00",
+    "kickoffUtc": "2026-11-26T14:25:00+00:00",
+    "home": "Al-Fateh",
+    "away": "Al Riyadh",
+    "league": "Pro League · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40833014790528277,
+      "pDraw": 0.2395527850036504,
+      "pAway": 0.35211706709106694,
+      "pOver": 0.5911318149710202,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.597915332407556,
+      "expA": 1.4685604115598072,
+      "expTotal": 3.066475743967363
+    }
+  },
+  "1603080": {
+    "savedAt": "2026-11-12T16:48:09.024177+00:00",
+    "kickoffUtc": "2026-11-26T15:05:00+00:00",
+    "home": "Abha",
+    "away": "Al Shabab",
+    "league": "Pro League · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.19092455478883397,
+      "pDraw": 0.22170472262005397,
+      "pAway": 0.587370722591112,
+      "pOver": 0.5452283306488405,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.9756813040675866,
+      "expA": 1.889783227870725,
+      "expTotal": 2.8654645319383114
+    }
+  },
+  "1603083": {
+    "savedAt": "2026-11-12T16:48:09.024177+00:00",
+    "kickoffUtc": "2026-11-26T17:30:00+00:00",
+    "home": "Al-Faisaly FC",
+    "away": "Al Diriyah",
+    "league": "Pro League · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32369030086472234,
+      "pDraw": 0.27698081829326426,
+      "pAway": 0.39932888084201335,
+      "pOver": 0.4248844920294592,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1120268222401095,
+      "expA": 1.267602920388035,
+      "expTotal": 2.3796297426281443
+    }
   }
 }
