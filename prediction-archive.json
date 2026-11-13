@@ -232786,5 +232786,119 @@
       "expA": 1.764113742759,
       "expTotal": 3.9503979839592747
     }
+  },
+  "1565517": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-14T10:00:00+00:00",
+    "home": "Livyi Bereh",
+    "away": "Bukovyna",
+    "league": "Premier League · Ukraine",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40479313592163757,
+      "pDraw": 0.33377605128629256,
+      "pAway": 0.2614308127920699,
+      "pOver": 0.24827523287058373,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.98970511353,
+      "expA": 0.7311268535542681,
+      "expTotal": 1.7208319670842682
+    }
+  },
+  "1650045": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-15T05:00:00+00:00",
+    "home": "Gyeongju W",
+    "away": "Suwon FMC W",
+    "league": "WK-League · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2502826881088003,
+      "pDraw": 0.21840610500748237,
+      "pAway": 0.5313112068837175,
+      "pOver": 0.6339936505964021,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.297706477777029,
+      "expA": 1.975038859769976,
+      "expTotal": 3.272745337547005
+    }
+  },
+  "1650047": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-15T12:00:00+00:00",
+    "home": "Minija",
+    "away": "Šiauliai",
+    "league": "A Lyga · Lithuania",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6124830861005024,
+      "pDraw": 0.21138325760801746,
+      "pAway": 0.1761336562914802,
+      "pOver": 0.5672110529519225,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.9959171437499998,
+      "expA": 0.96634375,
+      "expTotal": 2.96226089375
+    }
+  },
+  "1650046": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-18T10:00:00+00:00",
+    "home": "Suwon FMC W",
+    "away": "Gyeongju W",
+    "league": "WK-League · South Korea",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6297922290430918,
+      "pDraw": 0.1926193297753055,
+      "pAway": 0.17758844118160272,
+      "pOver": 0.6577849498040995,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2712946887354724,
+      "expA": 1.1284404154582863,
+      "expTotal": 3.3997351041937587
+    }
+  },
+  "1650048": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-21T12:00:00+00:00",
+    "home": "Šiauliai",
+    "away": "Minija",
+    "league": "A Lyga · Lithuania",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24325464940054128,
+      "pDraw": 0.23708822983136987,
+      "pAway": 0.5196571207680888,
+      "pOver": 0.541179467692657,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1112953124999998,
+      "expA": 1.735580125,
+      "expTotal": 2.8468754374999996
+    }
+  },
+  "1565542": {
+    "savedAt": "2026-11-13T16:19:06.887340+00:00",
+    "kickoffUtc": "2026-11-27T11:00:00+00:00",
+    "home": "Livyi Bereh",
+    "away": "Kolos Kovalivka",
+    "league": "Premier League · Ukraine",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3662478451913318,
+      "pDraw": 0.2934642916039218,
+      "pAway": 0.34028786320474635,
+      "pOver": 0.3696594573107226,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1115180189032725,
+      "expA": 1.0602124593935822,
+      "expTotal": 2.1717304782968547
+    }
   }
 }
