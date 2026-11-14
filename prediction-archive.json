@@ -247036,5 +247036,81 @@
       "expA": 1.473645812418,
       "expTotal": 2.8848409106938124
     }
+  },
+  "1650154": {
+    "savedAt": "2026-11-14T15:02:42.155338+00:00",
+    "kickoffUtc": "2026-11-15T19:30:00+00:00",
+    "home": "Fenix",
+    "away": "Atenas",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3882389185569244,
+      "pDraw": 0.2631828886830871,
+      "pAway": 0.3485781927599885,
+      "pOver": 0.4834918271651835,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3465160563643015,
+      "expA": 1.26167938208284,
+      "expTotal": 2.6081954384471415
+    }
+  },
+  "1650155": {
+    "savedAt": "2026-11-14T15:02:42.155338+00:00",
+    "kickoffUtc": "2026-11-15T22:30:00+00:00",
+    "home": "Oriental",
+    "away": "Colón",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39322635149789514,
+      "pDraw": 0.27378502654702014,
+      "pAway": 0.3329886219550847,
+      "pOver": 0.43869096075219727,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.278800644161186,
+      "expA": 1.1537667248071581,
+      "expTotal": 2.4325673689683445
+    }
+  },
+  "1650156": {
+    "savedAt": "2026-11-14T15:02:42.155338+00:00",
+    "kickoffUtc": "2026-11-18T19:30:00+00:00",
+    "home": "Atenas",
+    "away": "Fenix",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4352975668578499,
+      "pDraw": 0.2596312991357333,
+      "pAway": 0.3050711340064168,
+      "pOver": 0.4868662287903201,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.450931289395266,
+      "expA": 1.1708835272733058,
+      "expTotal": 2.6218148166685715
+    }
+  },
+  "1650157": {
+    "savedAt": "2026-11-14T15:02:42.155338+00:00",
+    "kickoffUtc": "2026-11-18T22:30:00+00:00",
+    "home": "Colón",
+    "away": "Oriental",
+    "league": "Segunda División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4155833767434788,
+      "pDraw": 0.2720778995122816,
+      "pAway": 0.31233872374423965,
+      "pOver": 0.4403075953201132,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3268317335282318,
+      "expA": 1.112000560140162,
+      "expTotal": 2.4388322936683937
+    }
   }
 }
