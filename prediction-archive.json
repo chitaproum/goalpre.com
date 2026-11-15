@@ -255168,5 +255168,43 @@
       "expA": 0.9012495817687501,
       "expTotal": 2.86933600708155
     }
+  },
+  "1650170": {
+    "savedAt": "2026-11-15T15:39:16.229969+00:00",
+    "kickoffUtc": "2026-11-15T19:30:00+00:00",
+    "home": "Urena SC",
+    "away": "Fundación Lara Deportiva",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3069723424428364,
+      "pDraw": 0.23397243543705398,
+      "pAway": 0.45905522212010963,
+      "pOver": 0.6021609967563203,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.381904475507695,
+      "expA": 1.7360127228370676,
+      "expTotal": 3.1179171983447627
+    }
+  },
+  "1650171": {
+    "savedAt": "2026-11-15T15:39:16.229969+00:00",
+    "kickoffUtc": "2026-11-16T19:30:00+00:00",
+    "home": "Aragua FC",
+    "away": "Deportivo Lara",
+    "league": "Segunda División · Venezuela",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.26455117599732125,
+      "pDraw": 0.3074539537843594,
+      "pAway": 0.4279948702183194,
+      "pOver": 0.3112265468334129,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8223522772144218,
+      "expA": 1.1330481867831088,
+      "expTotal": 1.9554004639975306
+    }
   }
 }
