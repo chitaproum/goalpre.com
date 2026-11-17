@@ -259614,5 +259614,480 @@
       "expA": 0.7416742386825002,
       "expTotal": 2.6279588049750005
     }
+  },
+  "1650501": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-19T19:30:00+00:00",
+    "home": "Penarol",
+    "away": "Cerro Largo",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6224327320113726,
+      "pDraw": 0.22909789265596486,
+      "pAway": 0.14846937533266258,
+      "pOver": 0.4491933441540471,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.756395640881263,
+      "expA": 0.718276340337336,
+      "expTotal": 2.474671981218599
+    }
+  },
+  "1650500": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-19T19:30:00+00:00",
+    "home": "Boston River",
+    "away": "Deportivo Maldonado",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.20787840211851175,
+      "pDraw": 0.24855749431010996,
+      "pAway": 0.5435641035713783,
+      "pOver": 0.45869336643708275,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8943853054623331,
+      "expA": 1.6165022512072498,
+      "expTotal": 2.5108875566695827
+    }
+  },
+  "1650502": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-19T19:30:00+00:00",
+    "home": "Progreso",
+    "away": "Atletico Torque",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2155506555305844,
+      "pDraw": 0.22227656011243596,
+      "pAway": 0.5621727843569796,
+      "pOver": 0.5763155122866602,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0958713712470753,
+      "expA": 1.905618228553116,
+      "expTotal": 3.001489599800191
+    }
+  },
+  "1650504": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-20T19:30:00+00:00",
+    "home": "Liverpool Montevideo",
+    "away": "Wanderers",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5576242686416251,
+      "pDraw": 0.2374719736542456,
+      "pAway": 0.20490375770412933,
+      "pOver": 0.49817437782966184,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.7250285099155476,
+      "expA": 0.9433891779356548,
+      "expTotal": 2.6684176878512025
+    }
+  },
+  "1650505": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-20T19:30:00+00:00",
+    "home": "Racing Montevideo",
+    "away": "Central Espanol",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5696595575821451,
+      "pDraw": 0.24504888051992996,
+      "pAway": 0.18529156189792492,
+      "pOver": 0.44520579523490805,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6419140166223574,
+      "expA": 0.8166587468548739,
+      "expTotal": 2.4585727634772314
+    }
+  },
+  "1650503": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-20T19:30:00+00:00",
+    "home": "Cerro",
+    "away": "Club Nacional",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.21530776961693596,
+      "pDraw": 0.23402179935823028,
+      "pAway": 0.5506704310248337,
+      "pOver": 0.5247280339287693,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0114711241844578,
+      "expA": 1.7663229845032198,
+      "expTotal": 2.7777941086876776
+    }
+  },
+  "1650549": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-20T21:00:00+00:00",
+    "home": "Recoleta",
+    "away": "Santiago Wanderers",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3032361021272718,
+      "pDraw": 0.23436353223021267,
+      "pAway": 0.46240036564251563,
+      "pOver": 0.5983188603560421,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3651396839574996,
+      "expA": 1.7349265315799998,
+      "expTotal": 3.1000662155374994
+    }
+  },
+  "1650566": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-21T17:00:00+00:00",
+    "home": "Sacramento Republic",
+    "away": "Louisville City",
+    "league": "USL Championship · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4723067385521021,
+      "pDraw": 0.24731615448813005,
+      "pAway": 0.2803771069597678,
+      "pOver": 0.5260390988104622,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6039500780840885,
+      "expA": 1.17843323792145,
+      "expTotal": 2.7823833160055385
+    }
+  },
+  "1650568": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-21T18:30:00+00:00",
+    "home": "Sportivo Barracas",
+    "away": "Berazategui",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3176032565543361,
+      "pDraw": 0.2945446302411083,
+      "pAway": 0.38785211320455576,
+      "pOver": 0.3634123620052441,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.005095877829571,
+      "expA": 1.143412872205104,
+      "expTotal": 2.148508750034675
+    }
+  },
+  "1650567": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-21T18:30:00+00:00",
+    "home": "Estrella Del Sur",
+    "away": "Canuelas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2559629932846085,
+      "pDraw": 0.30312395743600345,
+      "pAway": 0.4409130492793881,
+      "pOver": 0.3193374344712365,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8155619517461102,
+      "expA": 1.1698339919767964,
+      "expTotal": 1.9853959437229065
+    }
+  },
+  "1650550": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-21T23:30:00+00:00",
+    "home": "Deportes Copiapo",
+    "away": "Antofagasta",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2558262042218608,
+      "pDraw": 0.22729852948849844,
+      "pAway": 0.5168752662896408,
+      "pOver": 0.5971307386934637,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2419342251634997,
+      "expA": 1.8535347916799998,
+      "expTotal": 3.0954690168434995
+    }
+  },
+  "1650551": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-22T15:00:00+00:00",
+    "home": "San Marcos de Arica",
+    "away": "Magallanes",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4670741464410058,
+      "pDraw": 0.2491351288666319,
+      "pAway": 0.28379072469236233,
+      "pOver": 0.5203108131909784,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5814804962048747,
+      "expA": 1.1769725140775,
+      "expTotal": 2.7584530102823748
+    }
+  },
+  "1650520": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-22T18:00:00+00:00",
+    "home": "Sarmiento de La Banda",
+    "away": "Cipolletti",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2676322732463955,
+      "pDraw": 0.2653933536672072,
+      "pAway": 0.46697437308639733,
+      "pOver": 0.4455106756411089,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0202195872091973,
+      "expA": 1.438870329877746,
+      "expTotal": 2.4590899170869434
+    }
+  },
+  "1650506": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-23T19:30:00+00:00",
+    "home": "Juventud",
+    "away": "Defensor Sporting",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4075271337037549,
+      "pDraw": 0.2798477777782996,
+      "pAway": 0.31262508851794546,
+      "pOver": 0.4118494467187991,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2618120914382056,
+      "expA": 1.068253979851773,
+      "expTotal": 2.330066071289979
+    }
+  },
+  "1650507": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-23T22:30:00+00:00",
+    "home": "Albion FC",
+    "away": "Danubio",
+    "league": "Primera División · Uruguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5445377675218279,
+      "pDraw": 0.24590875455507055,
+      "pAway": 0.20955347792310156,
+      "pOver": 0.47050687044700945,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6419140166223574,
+      "expA": 0.915474063048831,
+      "expTotal": 2.5573880796711883
+    }
+  },
+  "1650513": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-24T23:20:00+00:00",
+    "home": "Millonarios",
+    "away": "Bucaramanga",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4024723934194147,
+      "pDraw": 0.26226299001337067,
+      "pAway": 0.33526461656721473,
+      "pOver": 0.48516294641268043,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3794536313147743,
+      "expA": 1.2354465404411759,
+      "expTotal": 2.6149001717559504
+    }
+  },
+  "1650514": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-25T01:30:00+00:00",
+    "home": "America de Cali",
+    "away": "Deportivo Cali",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39717228651770203,
+      "pDraw": 0.314260328873108,
+      "pAway": 0.28856738460918996,
+      "pOver": 0.30064890279475975,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.0602249318922474,
+      "expA": 0.8560225740613366,
+      "expTotal": 1.9162475059535842
+    }
+  },
+  "1650515": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-25T23:20:00+00:00",
+    "home": "Santa Fe",
+    "away": "Once Caldas",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47008415533840814,
+      "pDraw": 0.25234743489710715,
+      "pAway": 0.2775684097644847,
+      "pOver": 0.5029749101031668,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5536729324114504,
+      "expA": 1.133442930242322,
+      "expTotal": 2.6871158626537723
+    }
+  },
+  "1650516": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-26T01:30:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Independiente Medellin",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6424285910805584,
+      "pDraw": 0.19212652417931064,
+      "pAway": 0.16544488474013097,
+      "pOver": 0.6371008549450533,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2439999380777795,
+      "expA": 1.0498950332439663,
+      "expTotal": 3.2938949713217456
+    }
+  },
+  "1650552": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-26T22:00:00+00:00",
+    "home": "Santiago Wanderers",
+    "away": "Recoleta",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5605550142537683,
+      "pDraw": 0.2160000850282973,
+      "pAway": 0.22344490071793446,
+      "pOver": 0.615263643320682,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9951655113169995,
+      "expA": 1.1870779860499998,
+      "expTotal": 3.1822434973669993
+    }
+  },
+  "1650553": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-27T23:00:00+00:00",
+    "home": "Antofagasta",
+    "away": "Deportes Copiapo",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6135466541421115,
+      "pDraw": 0.20258286252892754,
+      "pAway": 0.18387048332896094,
+      "pOver": 0.6208457985543557,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1315650104319994,
+      "expA": 1.07994280449,
+      "expTotal": 3.2115078149219993
+    }
+  },
+  "1650570": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-28T18:30:00+00:00",
+    "home": "Canuelas",
+    "away": "Estrella Del Sur",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5200894222430377,
+      "pDraw": 0.28289990524910663,
+      "pAway": 0.19701067250785567,
+      "pOver": 0.3379876392272257,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3453090907733158,
+      "expA": 0.7091843058661829,
+      "expTotal": 2.054493396639499
+    }
+  },
+  "1650569": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-28T18:30:00+00:00",
+    "home": "Berazategui",
+    "away": "Sportivo Barracas",
+    "league": "Primera C · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4687420337231881,
+      "pDraw": 0.2828889576842266,
+      "pAway": 0.2483690085925853,
+      "pOver": 0.37424066959753444,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.3149248030358696,
+      "expA": 0.8739964155039749,
+      "expTotal": 2.1889212185398446
+    }
+  },
+  "1650554": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-28T21:00:00+00:00",
+    "home": "Magallanes",
+    "away": "San Marcos de Arica",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.36671588029891244,
+      "pDraw": 0.2566299650669269,
+      "pAway": 0.37665415463416063,
+      "pOver": 0.5132051355922218,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3535183911891249,
+      "expA": 1.3752004314825,
+      "expTotal": 2.728718822671625
+    }
+  },
+  "1650521": {
+    "savedAt": "2026-11-17T15:18:18.697506+00:00",
+    "kickoffUtc": "2026-11-29T18:00:00+00:00",
+    "home": "Cipolletti",
+    "away": "Sarmiento de La Banda",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5547832970089487,
+      "pDraw": 0.24436034280970992,
+      "pAway": 0.20085636018134154,
+      "pOver": 0.46654656110457005,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6547008793594078,
+      "expA": 0.8871474671384325,
+      "expTotal": 2.54184834649784
+    }
   }
 }
