@@ -1285,10 +1285,11 @@ html[data-theme="dark"] .ai-conf.ai-high{background:rgba(61,220,151,.16)}
 .ai-value{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.4px;padding:2px 8px;border-radius:999px;line-height:1.4;background:var(--accent2);color:#fff}
 .ai-insight{margin-top:6px;font-size:12px}
 .ai-insight>summary{cursor:pointer;color:var(--brand);font-weight:700;list-style:none;display:inline-flex;align-items:center;gap:4px}
-.ai-insight>summary::before{content:"\\1F916";font-size:12px}
+.ai-insight>summary::before{content:"\1F916";font-size:12px;font-family:inherit}
 .ai-insight>summary::-webkit-details-marker{display:none}
 .ai-insight[open]>summary{margin-bottom:4px}
-.ai-insight p{margin:0;color:var(--muted);line-height:1.5;max-width:52ch}
+.ai-insight p{margin:0;color:var(--muted);line-height:1.5;max-width:52ch;overflow-wrap:anywhere;word-break:break-word}
+tr.stats-row .ai-insight p,td.col-match .ai-insight p{max-width:100%}
 
 /* Crawlable intro / about block on the home view */
 .home-about{max-width:900px;margin:4px auto 26px;padding:0 2px}
