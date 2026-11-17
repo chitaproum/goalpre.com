@@ -257961,5 +257961,1658 @@
       "expA": 1.565807309014,
       "expTotal": 3.8945074118456997
     }
+  },
+  "1647106": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-11-24T13:15:00+00:00",
+    "home": "Andijan",
+    "away": "Lokomotiv",
+    "league": "Cup · Uzbekistan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3633341834419758,
+      "pDraw": 0.2293213366972679,
+      "pAway": 0.4073444798607562,
+      "pOver": 0.643824689319472,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6072945251589044,
+      "expA": 1.7123296294728958,
+      "expTotal": 3.3196241546318
+    }
+  },
+  "1647107": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-11-24T13:15:00+00:00",
+    "home": "Olmaliq",
+    "away": "Navbahor",
+    "league": "Cup · Uzbekistan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41298770648405914,
+      "pDraw": 0.2597489017071383,
+      "pAway": 0.3272633918088026,
+      "pOver": 0.4938077388432189,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4172671868057862,
+      "expA": 1.232406249396336,
+      "expTotal": 2.6496734362021224
+    }
+  },
+  "1635025": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T08:30:00+00:00",
+    "home": "Bóng đá Huế",
+    "away": "Pho Hien",
+    "league": "V.League 2 · Vietnam",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31733242747968793,
+      "pDraw": 0.23152145479336195,
+      "pAway": 0.45114611772695007,
+      "pOver": 0.6190291045860252,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4414555780083,
+      "expA": 1.7563498592721027,
+      "expTotal": 3.197805437280403
+    }
+  },
+  "1635026": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T08:30:00+00:00",
+    "home": "Long An",
+    "away": "Lam Dong",
+    "league": "V.League 2 · Vietnam",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42914149041987065,
+      "pDraw": 0.28560335040964047,
+      "pAway": 0.2852551591704889,
+      "pOver": 0.3833381556540059,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.255532108451096,
+      "expA": 0.967280770917279,
+      "expTotal": 2.222812879368375
+    }
+  },
+  "1605143": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T10:00:00+00:00",
+    "home": "BKMA II",
+    "away": "Ararat-Armenia II",
+    "league": "First League · Armenia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6858101905602819,
+      "pDraw": 0.1680248961331677,
+      "pAway": 0.14616491330655046,
+      "pOver": 0.7149927553835319,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.5976892303887458,
+      "expA": 1.136601809013524,
+      "expTotal": 3.7342910394022697
+    }
+  },
+  "1648464": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T10:00:00+00:00",
+    "home": "Karvan",
+    "away": "Zira",
+    "league": "Cup · Azerbaijan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5519253625806562,
+      "pDraw": 0.17088609380561784,
+      "pAway": 0.277188543613726,
+      "pOver": 0.8793178727773743,
+      "scoreH": 3,
+      "scoreA": 2,
+      "expH": 3.0412652285399995,
+      "expA": 2.1976039898999997,
+      "expTotal": 5.23886921844
+    }
+  },
+  "1635027": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T11:00:00+00:00",
+    "home": "Hung Yen",
+    "away": "Văn Hiến",
+    "league": "V.League 2 · Vietnam",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6625383197469702,
+      "pDraw": 0.19277832463223893,
+      "pAway": 0.14468335562079096,
+      "pOver": 0.5906812984859103,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.1687869112312437,
+      "expA": 0.9020808074263441,
+      "expTotal": 3.070867718657588
+    }
+  },
+  "1635028": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T11:00:00+00:00",
+    "home": "Thai Nguyen",
+    "away": "Xuan Thien Phu Tho",
+    "league": "V.League 2 · Vietnam",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8641047267714755,
+      "pDraw": 0.08569658714649898,
+      "pAway": 0.05019868608202542,
+      "pOver": 0.8044314167327455,
+      "scoreH": 3,
+      "scoreA": 0,
+      "expH": 3.7362246198440343,
+      "expA": 0.9020808074263441,
+      "expTotal": 4.638305427270378
+    }
+  },
+  "1634388": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T11:50:00+00:00",
+    "home": "Al Nairyah",
+    "away": "Hetten FC",
+    "league": "Division 2 · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5993264302157042,
+      "pDraw": 0.1955708879016987,
+      "pAway": 0.20510268188259703,
+      "pOver": 0.6890829997882132,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2882122309977384,
+      "expA": 1.280365452520518,
+      "expTotal": 3.5685776835182565
+    }
+  },
+  "1619200": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:00:00+00:00",
+    "home": "Sheffield Wednesday U21",
+    "away": "Barnsley U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5095241568596467,
+      "pDraw": 0.1871802814468755,
+      "pAway": 0.30329556169347777,
+      "pOver": 0.8296453891341647,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.5847143876331646,
+      "expA": 2.0015699667031153,
+      "expTotal": 4.58628435433628
+    }
+  },
+  "1648466": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:00:00+00:00",
+    "home": "Sabah FA",
+    "away": "Imisli FK",
+    "league": "Cup · Azerbaijan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3930628835638481,
+      "pDraw": 0.17297919210821514,
+      "pAway": 0.4339579243279368,
+      "pOver": 0.9082281126183793,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.8270852499999997,
+      "expA": 2.95834,
+      "expTotal": 5.785425249999999
+    }
+  },
+  "1648388": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:00:00+00:00",
+    "home": "Persijap",
+    "away": "Persepam Madura Utd",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38545101331528947,
+      "pDraw": 0.20359919037054372,
+      "pAway": 0.4109497963141667,
+      "pOver": 0.7790558101428764,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.0364501875,
+      "expA": 2.104175,
+      "expTotal": 4.1406251874999995
+    }
+  },
+  "1648389": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:00:00+00:00",
+    "home": "Isenmulang Kalteng",
+    "away": "RANS Nusantara",
+    "league": "League Cup Indonesia · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5916047115572737,
+      "pDraw": 0.17501545973833477,
+      "pAway": 0.23337982870439153,
+      "pOver": 0.8258878862815447,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.8031278749999995,
+      "expA": 1.77082625,
+      "expTotal": 4.573954124999999
+    }
+  },
+  "1604079": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:20:00+00:00",
+    "home": "Al Taee",
+    "away": "Al Jabalain",
+    "league": "Division 1 · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.1694216797297428,
+      "pDraw": 0.22933935783962095,
+      "pAway": 0.6012389624306362,
+      "pOver": 0.4817061930781244,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8217072625527204,
+      "expA": 1.7809326786786317,
+      "expTotal": 2.6026399412313523
+    }
+  },
+  "1604078": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:20:00+00:00",
+    "home": "Al Bukayriyah",
+    "away": "Al Ula",
+    "league": "Division 1 · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.0552914237253877,
+      "pDraw": 0.11110832256091074,
+      "pAway": 0.8336002537137016,
+      "pOver": 0.6956808966241906,
+      "scoreH": 0,
+      "scoreA": 2,
+      "expH": 0.6701561076772474,
+      "expA": 2.98741450317552,
+      "expTotal": 3.6575706108527677
+    }
+  },
+  "1604075": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T12:25:00+00:00",
+    "home": "Al Jandal",
+    "away": "Jeddah Club",
+    "league": "Division 1 · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4056640288041485,
+      "pDraw": 0.27790548086255046,
+      "pAway": 0.3164304903333011,
+      "pOver": 0.41981484497318805,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2716427092424705,
+      "expA": 1.0886698077861487,
+      "expTotal": 2.3603125170286194
+    }
+  },
+  "1619203": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T13:00:00+00:00",
+    "home": "Huddersfield Town U21",
+    "away": "Fleetwood Town U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6228996175827698,
+      "pDraw": 0.17758653418353626,
+      "pAway": 0.199513848233694,
+      "pOver": 0.7695233271509355,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.6300243910999375,
+      "expA": 1.46408962253104,
+      "expTotal": 4.0941140136309775
+    }
+  },
+  "1619201": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T13:00:00+00:00",
+    "home": "Charlton Athletic U21",
+    "away": "Queens Park Rangers U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5832845603266127,
+      "pDraw": 0.1781252498574187,
+      "pAway": 0.23859018981596855,
+      "pOver": 0.8175844821017592,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.7350436974696173,
+      "expA": 1.7539474515673403,
+      "expTotal": 4.488991149036957
+    }
+  },
+  "1619204": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T13:00:00+00:00",
+    "home": "Hull City U21",
+    "away": "Sheffield United U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3320600836170115,
+      "pDraw": 0.2345213587002436,
+      "pAway": 0.43341855768274495,
+      "pOver": 0.6102787965017676,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4595712114549233,
+      "expA": 1.6962607457615049,
+      "expTotal": 3.155831957216428
+    }
+  },
+  "1619202": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T13:00:00+00:00",
+    "home": "Coventry City U21",
+    "away": "Bristol City U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5045929338273725,
+      "pDraw": 0.19185766876402222,
+      "pAway": 0.3035493974086053,
+      "pOver": 0.8082686356832105,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.469871562935806,
+      "expA": 1.9150193890134,
+      "expTotal": 4.384890951949206
+    }
+  },
+  "1607227": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T13:00:00+00:00",
+    "home": "Al Shamal II",
+    "away": "UMM Salal",
+    "league": "Second Division · Qatar",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28113775095581517,
+      "pDraw": 0.25646697498858473,
+      "pAway": 0.4623952740556001,
+      "pOver": 0.48815830339018046,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1178745725657524,
+      "expA": 1.50924649144441,
+      "expTotal": 2.6271210640101623
+    }
+  },
+  "1604080": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T14:30:00+00:00",
+    "home": "Al-Adalah",
+    "away": "Al-Raed",
+    "league": "Division 1 · Saudi Arabia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4885529734387186,
+      "pDraw": 0.24234600283410912,
+      "pAway": 0.26910102372717226,
+      "pOver": 0.5399573770420802,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6667928584341969,
+      "expA": 1.174496022681366,
+      "expTotal": 2.841288881115563
+    }
+  },
+  "1648468": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T15:00:00+00:00",
+    "home": "Turan",
+    "away": "Kapaz",
+    "league": "Cup · Azerbaijan",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41794187037650504,
+      "pDraw": 0.17536453715083336,
+      "pAway": 0.40669359247266157,
+      "pOver": 0.9021841475194875,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.8270852499999997,
+      "expA": 2.7916625,
+      "expTotal": 5.61874775
+    }
+  },
+  "1640304": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T15:00:00+00:00",
+    "home": "National Bank of Egypt",
+    "away": "Smouha SC",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32116443189239713,
+      "pDraw": 0.34079398181300025,
+      "pAway": 0.33804158629460274,
+      "pOver": 0.24204703964378244,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8335436189371876,
+      "expA": 0.8637152951249999,
+      "expTotal": 1.6972589140621874
+    }
+  },
+  "1509223": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T15:00:00+00:00",
+    "home": "Dila",
+    "away": "Samgurali",
+    "league": "Erovnuli Liga · Georgia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5177309174702389,
+      "pDraw": 0.22285013995353598,
+      "pAway": 0.25941894257622516,
+      "pOver": 0.6214572740413496,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9131001043521678,
+      "expA": 1.2977185145045402,
+      "expTotal": 3.210818618856708
+    }
+  },
+  "1509224": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T15:00:00+00:00",
+    "home": "FC Iberia 1999",
+    "away": "Dinamo Batumi",
+    "league": "Erovnuli Liga · Georgia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41601821404953254,
+      "pDraw": 0.24398410673941304,
+      "pAway": 0.33999767921105434,
+      "pOver": 0.5673460502993705,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.565857543927488,
+      "expA": 1.3936418185519501,
+      "expTotal": 2.959499362479438
+    }
+  },
+  "1606568": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T15:30:00+00:00",
+    "home": "Al-Khor",
+    "away": "Muaither SC",
+    "league": "Second Division · Qatar",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.555994032605817,
+      "pDraw": 0.20797526517373288,
+      "pAway": 0.23603070222045006,
+      "pOver": 0.6692396589364878,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.125697230201641,
+      "expA": 1.3301904450421749,
+      "expTotal": 3.455887675243816
+    }
+  },
+  "1646053": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T16:00:00+00:00",
+    "home": "Pohronie",
+    "away": "Slovan Bratislava",
+    "league": "Cup · Slovakia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.35658193995070375,
+      "pDraw": 0.18928500630158387,
+      "pAway": 0.4541330537477123,
+      "pOver": 0.8425388338865857,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.216557069155,
+      "expA": 2.4943403628,
+      "expTotal": 4.710897431955
+    }
+  },
+  "1619206": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T17:00:00+00:00",
+    "home": "Cardiff City U21",
+    "away": "Colchester United U21",
+    "league": "Professional Development League · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6487372783273457,
+      "pDraw": 0.15693714893986946,
+      "pAway": 0.1943255727327847,
+      "pOver": 0.8544471210112999,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.1726062219707725,
+      "expA": 1.7769721995824497,
+      "expTotal": 4.949578421553222
+    }
+  },
+  "1648358": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T17:00:00+00:00",
+    "home": "VfB Stuttgart",
+    "away": "Dynamo Dresden",
+    "league": "DFB Pokal · Germany",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3773641017973611,
+      "pDraw": 0.216950417220824,
+      "pAway": 0.40568548098181495,
+      "pOver": 0.7093505990484407,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8030034122109226,
+      "expA": 1.8739412101155133,
+      "expTotal": 3.676944622326436
+    }
+  },
+  "1648356": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T17:00:00+00:00",
+    "home": "Holstein Kiel",
+    "away": "1. FC Köln",
+    "league": "DFB Pokal · Germany",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3472638781507018,
+      "pDraw": 0.2163046087631916,
+      "pAway": 0.4364315130861066,
+      "pOver": 0.7068250708040928,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7195934796986658,
+      "expA": 1.9428508604076002,
+      "expTotal": 3.662444340106266
+    }
+  },
+  "1603620": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T17:00:00+00:00",
+    "home": "AEK Larnaca",
+    "away": "AEL",
+    "league": "1. Division · Cyprus",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6210708977370079,
+      "pDraw": 0.19586215430132228,
+      "pAway": 0.18306694796166986,
+      "pOver": 0.651763146073701,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.233000722460435,
+      "expA": 1.1345209913638081,
+      "expTotal": 3.3675217138242433
+    }
+  },
+  "1648201": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T17:45:00+00:00",
+    "home": "Waalwijk",
+    "away": "Cambuur",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3653080845690178,
+      "pDraw": 0.22879905651449414,
+      "pAway": 0.4058928589164881,
+      "pOver": 0.6467599098536257,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.618716062359851,
+      "expA": 1.71577269507462,
+      "expTotal": 3.334488757434471
+    }
+  },
+  "1555558": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Hapoel Beer Sheva",
+    "away": "Bnei Sakhnin",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5171041048594173,
+      "pDraw": 0.2547243049575718,
+      "pAway": 0.22817159018301086,
+      "pOver": 0.4558387121979841,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.5580382296275,
+      "expA": 0.9414818518499999,
+      "expTotal": 2.4995200814775
+    }
+  },
+  "1555561": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Maccabi Haifa",
+    "away": "Beitar Jerusalem",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39843597613603676,
+      "pDraw": 0.22128278539298815,
+      "pAway": 0.3802812384709751,
+      "pOver": 0.6869885305451403,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7965554277649995,
+      "expA": 1.7518568148000002,
+      "expTotal": 3.548412242565
+    }
+  },
+  "1555556": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Hapoel Katamon",
+    "away": "Hapoel Haifa",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4318905427686693,
+      "pDraw": 0.20962424967461363,
+      "pAway": 0.3584852075567171,
+      "pOver": 0.7440995645196882,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0418741944699996,
+      "expA": 1.8525964074,
+      "expTotal": 3.8944706018699997
+    }
+  },
+  "1555562": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Maccabi Petah Tikva",
+    "away": "Hapoel Petah Tikva",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5665844978523056,
+      "pDraw": 0.21795204532828058,
+      "pAway": 0.2154634568194137,
+      "pOver": 0.5959876764917373,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9618084685099997,
+      "expA": 1.1296423704000003,
+      "expTotal": 3.09145083891
+    }
+  },
+  "1555557": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Hapoel Tel Aviv",
+    "away": "Maccabi Netanya",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5038952817470974,
+      "pDraw": 0.26029274789056556,
+      "pAway": 0.235811970362337,
+      "pOver": 0.44188104438060144,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.5052286111174997,
+      "expA": 0.939996,
+      "expTotal": 2.4452246111175
+    }
+  },
+  "1555560": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Ironi Kiryat Shmona",
+    "away": "Maccabi Tel Aviv",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.10630759146998443,
+      "pDraw": 0.1458004795547932,
+      "pAway": 0.7478919289752224,
+      "pOver": 0.7195904082684604,
+      "scoreH": 0,
+      "scoreA": 2,
+      "expH": 0.983887227765,
+      "expA": 2.7948158518499997,
+      "expTotal": 3.7787030796149996
+    }
+  },
+  "1555559": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Ironi Tiberias",
+    "away": "Hapoel Ramat Gan",
+    "league": "Ligat Ha'al · Israel",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5548221324451126,
+      "pDraw": 0.23450944248637215,
+      "pAway": 0.2106684250685152,
+      "pOver": 0.5172012825987876,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.759077609255,
+      "expA": 0.9874135925999998,
+      "expTotal": 2.746491201855
+    }
+  },
+  "1646668": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Brühl",
+    "away": "FC Aarau",
+    "league": "Schweizer Cup · Switzerland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6105596742344067,
+      "pDraw": 0.17940702324258043,
+      "pAway": 0.21003330252301278,
+      "pOver": 0.7762074557030415,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.623306463650103,
+      "expA": 1.518930216812334,
+      "expTotal": 4.142236680462437
+    }
+  },
+  "1640305": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:00:00+00:00",
+    "home": "Pyramids FC",
+    "away": "Future FC",
+    "league": "League Cup · Egypt",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41861586515358473,
+      "pDraw": 0.29384731602281033,
+      "pAway": 0.2875368188236049,
+      "pOver": 0.3580033822282781,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1930534669812498,
+      "expA": 0.9353976762093751,
+      "expTotal": 2.128451143190625
+    }
+  },
+  "1634797": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:45:00+00:00",
+    "home": "Al Arabi",
+    "away": "Al Sahel",
+    "league": "Premier League · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7311971924999907,
+      "pDraw": 0.16048373319924408,
+      "pAway": 0.10831907430076523,
+      "pOver": 0.6507359850026768,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.510862713569695,
+      "expA": 0.8625081004394085,
+      "expTotal": 3.373370814009103
+    }
+  },
+  "1622671": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T18:45:00+00:00",
+    "home": "Al Fahaheel",
+    "away": "Al Salmiyah",
+    "league": "Premier League · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41928466423173155,
+      "pDraw": 0.23955548377138083,
+      "pAway": 0.34115985199688764,
+      "pOver": 0.5886654598138187,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6174148115942595,
+      "expA": 1.437831417466752,
+      "expTotal": 3.0552462290610114
+    }
+  },
+  "1648187": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:00:00+00:00",
+    "home": "Willem II",
+    "away": "Excelsior",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3748722142825915,
+      "pDraw": 0.19843837037185552,
+      "pAway": 0.42668941534555294,
+      "pOver": 0.8035397286808431,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.0978914529318717,
+      "expA": 2.2388843112947696,
+      "expTotal": 4.336775764226641
+    }
+  },
+  "1648197": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:00:00+00:00",
+    "home": "NAC Breda",
+    "away": "SC Genemuiden",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.450016060477508,
+      "pDraw": 0.19997456338540195,
+      "pAway": 0.3500093761370901,
+      "pOver": 0.7903510952727428,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2493130361156326,
+      "expA": 1.9802522514738596,
+      "expTotal": 4.229565287589493
+    }
+  },
+  "1648190": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:00:00+00:00",
+    "home": "Almere City FC",
+    "away": "Vvsb",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.30508219626030497,
+      "pDraw": 0.23853689850745777,
+      "pAway": 0.4563809052322372,
+      "pOver": 0.5796196242867695,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3338362297578121,
+      "expA": 1.6806881553454875,
+      "expTotal": 3.0145243851032997
+    }
+  },
+  "1648188": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:00:00+00:00",
+    "home": "AFC Amsterdam",
+    "away": "Purmersteijn",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5625183716039388,
+      "pDraw": 0.21259931577395608,
+      "pAway": 0.22488231262210506,
+      "pOver": 0.6332465230069442,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0450191112042373,
+      "expA": 1.225160415391185,
+      "expTotal": 3.270179526595422
+    }
+  },
+  "1645558": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:00:00+00:00",
+    "home": "Real Oruro",
+    "away": "ABB",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.49437231727303094,
+      "pDraw": 0.1849729074402806,
+      "pAway": 0.32065477528668845,
+      "pOver": 0.8483831714082485,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.6424123735853873,
+      "expA": 2.14123224772575,
+      "expTotal": 4.783644621311137
+    }
+  },
+  "1646669": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:30:00+00:00",
+    "home": "Lausanne",
+    "away": "Grasshoppers",
+    "league": "Schweizer Cup · Switzerland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4708323076185541,
+      "pDraw": 0.17907059769059067,
+      "pAway": 0.35009709469085526,
+      "pOver": 0.8823696515283418,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.8029041230434766,
+      "expA": 2.4373079330812844,
+      "expTotal": 5.240212056124761
+    }
+  },
+  "1564444": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Huddersfield",
+    "away": "Stevenage",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5538291491742586,
+      "pDraw": 0.2332491363303581,
+      "pAway": 0.21292171449538327,
+      "pOver": 0.5251605868099026,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7739217366260427,
+      "expA": 1.005732533507202,
+      "expTotal": 2.7796542701332445
+    }
+  },
+  "1564439": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Barnsley",
+    "away": "Wycombe",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3091074111570149,
+      "pDraw": 0.2216803796900656,
+      "pAway": 0.4692122091529195,
+      "pOver": 0.6634842815851744,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5162025380956121,
+      "expA": 1.9057478367836505,
+      "expTotal": 3.4219503748792626
+    }
+  },
+  "1564442": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Burton Albion",
+    "away": "Wigan",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47804116511495076,
+      "pDraw": 0.24260870183748734,
+      "pAway": 0.27935013304756195,
+      "pOver": 0.545966123675935,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6568036386271248,
+      "expA": 1.210069551631145,
+      "expTotal": 2.8668731902582696
+    }
+  },
+  "1564448": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Oxford United",
+    "away": "Sheffield Wednesday",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43074407105823725,
+      "pDraw": 0.25808405334362267,
+      "pAway": 0.3111718755981401,
+      "pOver": 0.4956492334869853,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4578498337979255,
+      "expA": 1.1993201183976976,
+      "expTotal": 2.6571699521956234
+    }
+  },
+  "1564441": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Bradford",
+    "away": "Milton Keynes Dons",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37902474463452074,
+      "pDraw": 0.28524181111861097,
+      "pAway": 0.3357334442468682,
+      "pOver": 0.3971443021294932,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1809019289792186,
+      "expA": 1.0936307976493125,
+      "expTotal": 2.2745327266285313
+    }
+  },
+  "1564440": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Blackpool",
+    "away": "Luton",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3056775974408198,
+      "pDraw": 0.21283370687204606,
+      "pAway": 0.4814886956871341,
+      "pOver": 0.7059537361477339,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.6082480128588914,
+      "expA": 2.050410923273551,
+      "expTotal": 3.658658936132442
+    }
+  },
+  "1564449": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Plymouth",
+    "away": "Bromley",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6746274259913644,
+      "pDraw": 0.17241576049198631,
+      "pAway": 0.15295681351664936,
+      "pOver": 0.7083422365461022,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.544059984701804,
+      "expA": 1.1471214043692468,
+      "expTotal": 3.6911813890710508
+    }
+  },
+  "1564443": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Cambridge United",
+    "away": "Leicester",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39820164971790695,
+      "pDraw": 0.22539175645080012,
+      "pAway": 0.376406593831293,
+      "pOver": 0.6654002773216706,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.741971517254032,
+      "expA": 1.6891576545243903,
+      "expTotal": 3.431129171778422
+    }
+  },
+  "1564445": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Leyton Orient",
+    "away": "Peterborough",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6399939074366308,
+      "pDraw": 0.20936320825077553,
+      "pAway": 0.15064288431259373,
+      "pOver": 0.5298716464345803,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.969828616285741,
+      "expA": 0.8315346338397586,
+      "expTotal": 2.8013632501254997
+    }
+  },
+  "1564446": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Mansfield Town",
+    "away": "Stockport County",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2926720319311576,
+      "pDraw": 0.23176002033004361,
+      "pAway": 0.47556794773879874,
+      "pOver": 0.6045341483357854,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3508841715696651,
+      "expA": 1.7783737892608515,
+      "expTotal": 3.1292579608305164
+    }
+  },
+  "1564447": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Notts County",
+    "away": "AFC Wimbledon",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5198340087448778,
+      "pDraw": 0.2719865954749995,
+      "pAway": 0.2081793957801226,
+      "pOver": 0.37920615756535897,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.4196936264711275,
+      "expA": 0.7879126273648001,
+      "expTotal": 2.2076062538359276
+    }
+  },
+  "1563895": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Northampton",
+    "away": "Fleetwood Town",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.34732773818732904,
+      "pDraw": 0.3261481679396133,
+      "pAway": 0.32652409387305753,
+      "pOver": 0.2758066062700298,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.9311400321646592,
+      "expA": 0.8928725419278879,
+      "expTotal": 1.824012574092547
+    }
+  },
+  "1563890": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Chesterfield",
+    "away": "Exeter City",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3840989713248279,
+      "pDraw": 0.3015205606000925,
+      "pAway": 0.3143804680750796,
+      "pOver": 0.3413524877956516,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.1008994178027527,
+      "expA": 0.9658375537616221,
+      "expTotal": 2.066736971564375
+    }
+  },
+  "1563892": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Gillingham",
+    "away": "Swindon Town",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.46916226736743266,
+      "pDraw": 0.24890230918926637,
+      "pAway": 0.281935423443301,
+      "pOver": 0.5201890823953913,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5856314631340314,
+      "expA": 1.17233068829223,
+      "expTotal": 2.7579621514262613
+    }
+  },
+  "1563896": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Oldham",
+    "away": "Bristol Rovers",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4468580983548564,
+      "pDraw": 0.25093548493012596,
+      "pAway": 0.3022064167150177,
+      "pOver": 0.5223334883064276,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5427996308202214,
+      "expA": 1.22394011704468,
+      "expTotal": 2.7667397478649014
+    }
+  },
+  "1563887": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Accrington ST",
+    "away": "Crewe",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4733523118251509,
+      "pDraw": 0.23424540292854748,
+      "pAway": 0.29240228524630163,
+      "pOver": 0.592598265969429,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7465917654733871,
+      "expA": 1.327186684309984,
+      "expTotal": 3.0737784497833713
+    }
+  },
+  "1563891": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Crawley Town",
+    "away": "Port Vale",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3365138075004999,
+      "pDraw": 0.26018699052254946,
+      "pAway": 0.4032992019769506,
+      "pOver": 0.4941442261710878,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.253519801347091,
+      "expA": 1.3974901307680319,
+      "expTotal": 2.651009932115123
+    }
+  },
+  "1563893": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Grimsby",
+    "away": "Colchester",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5974259973367275,
+      "pDraw": 0.21194574778573533,
+      "pAway": 0.1906282548775372,
+      "pOver": 0.58821044182758,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.012450819678766,
+      "expA": 1.044122769811264,
+      "expTotal": 3.0565735894900303
+    }
+  },
+  "1563894": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Newport County",
+    "away": "Walsall",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.32837219325866385,
+      "pDraw": 0.25392057114472355,
+      "pAway": 0.41770723559661255,
+      "pOver": 0.5191386637093008,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2786699566535742,
+      "expA": 1.474657584724576,
+      "expTotal": 2.75332754137815
+    }
+  },
+  "1563888": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Barnet",
+    "away": "Rotherham",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6715026631749106,
+      "pDraw": 0.1651092445515693,
+      "pAway": 0.16338809227352014,
+      "pOver": 0.7670069545888115,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.757903818615085,
+      "expA": 1.3303752638636162,
+      "expTotal": 4.088279082478701
+    }
+  },
+  "1563889": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Cheltenham",
+    "away": "Rochdale",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5353586245820764,
+      "pDraw": 0.20761062830581845,
+      "pAway": 0.2570307471121051,
+      "pOver": 0.6937282807984215,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.14564248802192,
+      "expA": 1.4447956087007798,
+      "expTotal": 3.5904380967227
+    }
+  },
+  "1563897": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Tranmere",
+    "away": "Salford City",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.315615822042767,
+      "pDraw": 0.2527849283806899,
+      "pAway": 0.43159924957654316,
+      "pOver": 0.5199151604861291,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.250870621893986,
+      "expA": 1.5057341239602218,
+      "expTotal": 2.756604745854208
+    }
+  },
+  "1563898": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "York",
+    "away": "Shrewsbury",
+    "league": "League Two · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5341244411098929,
+      "pDraw": 0.2154598177461871,
+      "pAway": 0.25041574114392007,
+      "pOver": 0.6483991310657939,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0183389225701736,
+      "expA": 1.327186684309984,
+      "expTotal": 3.3455256068801575
+    }
+  },
+  "1587893": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Marine",
+    "away": "Bedford Town",
+    "league": "National League - North · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.44093306472824706,
+      "pDraw": 0.25402010786786133,
+      "pAway": 0.3050468274038916,
+      "pOver": 0.5103446198091214,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5070464849527625,
+      "expA": 1.2100686811556773,
+      "expTotal": 2.7171151661084396
+    }
+  },
+  "1587889": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Harborough Town",
+    "away": "Radcliffe",
+    "league": "National League - North · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.43898136838437896,
+      "pDraw": 0.2590731079801028,
+      "pAway": 0.30194552363551824,
+      "pOver": 0.4878618747114731,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4604099209829526,
+      "expA": 1.1654134234351976,
+      "expTotal": 2.6258233444181505
+    }
+  },
+  "1596070": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Cheshunt",
+    "away": "Dartford",
+    "league": "Non League Premier - Isthmian · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2958395325944754,
+      "pDraw": 0.23554584356618333,
+      "pAway": 0.46861462383934116,
+      "pOver": 0.5885567096642591,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.328045413479326,
+      "expA": 1.7271470706107097,
+      "expTotal": 3.0551924840900355
+    }
+  },
+  "1597004": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Bishop's Stortford",
+    "away": "Stourbridge",
+    "league": "Non League Premier - Southern Central · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3313137222043119,
+      "pDraw": 0.2515091165441787,
+      "pAway": 0.4171771612515095,
+      "pOver": 0.5306180724902773,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.305733313002394,
+      "expA": 1.4955431018132879,
+      "expTotal": 2.801276414815682
+    }
+  },
+  "1648352": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Bayern München",
+    "away": "Hertha BSC",
+    "league": "DFB Pokal · Germany",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5882851197742357,
+      "pDraw": 0.18189952865581435,
+      "pAway": 0.22981535156994992,
+      "pOver": 0.7900568870104031,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.6202875792135902,
+      "expA": 1.6268819069156941,
+      "expTotal": 4.247169486129284
+    }
+  },
+  "1648353": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Borussia Mönchengladbach",
+    "away": "SV Darmstadt 98",
+    "league": "DFB Pokal · Germany",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5488536128651834,
+      "pDraw": 0.20221106116749493,
+      "pAway": 0.24893532596732162,
+      "pOver": 0.7122594613384768,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.23427848946874,
+      "expA": 1.4657817976737324,
+      "expTotal": 3.700060287142472
+    }
+  },
+  "1556897": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Dunfermline",
+    "away": "Arbroath",
+    "league": "Championship · Scotland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6538129613152552,
+      "pDraw": 0.23478579497574317,
+      "pAway": 0.11140124370900167,
+      "pOver": 0.36793370613340143,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6520131100875326,
+      "expA": 0.5143561325178045,
+      "expTotal": 2.166369242605337
+    }
+  },
+  "1562044": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T19:45:00+00:00",
+    "home": "Ballymena United",
+    "away": "Larne",
+    "league": "Premiership · Northern Ireland",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2503784116404618,
+      "pDraw": 0.22982703218325964,
+      "pAway": 0.5197945561762786,
+      "pOver": 0.5803523619213863,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1971053542514078,
+      "expA": 1.8216334110827996,
+      "expTotal": 3.0187387653342075
+    }
+  },
+  "1557491": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T20:00:00+00:00",
+    "home": "Coventry",
+    "away": "Ipswich",
+    "league": "Premier League",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3596444539667958,
+      "pDraw": 0.22158317354899823,
+      "pAway": 0.41877237248420607,
+      "pOver": 0.6827654774531878,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6899506628117746,
+      "expA": 1.8351699498405003,
+      "expTotal": 3.525120612652275
+    }
+  },
+  "1564450": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T20:00:00+00:00",
+    "home": "Reading",
+    "away": "Doncaster",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6316030524271729,
+      "pDraw": 0.1976406934464563,
+      "pAway": 0.17075625412637083,
+      "pOver": 0.620912211258618,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1742910935602096,
+      "expA": 1.0385322125873266,
+      "expTotal": 3.212823306147536
+    }
+  },
+  "1639884": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T20:00:00+00:00",
+    "home": "Inter",
+    "away": "Genoa",
+    "league": "Coppa Italia · Italy",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3032116908281501,
+      "pDraw": 0.22955348226510358,
+      "pAway": 0.4672348269067464,
+      "pOver": 0.6214150066899301,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4110890793,
+      "expA": 1.79846085385,
+      "expTotal": 3.20954993315
+    }
+  },
+  "1648186": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T20:00:00+00:00",
+    "home": "GO Ahead Eagles",
+    "away": "FC OSS",
+    "league": "KNVB Beker · Netherlands",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5837604231723623,
+      "pDraw": 0.18698847008131597,
+      "pAway": 0.2292511067463217,
+      "pOver": 0.7648054371215018,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.5047529801293087,
+      "expA": 1.5464706022178476,
+      "expTotal": 4.0512235823471565
+    }
+  },
+  "1645559": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T21:15:00+00:00",
+    "home": "Real Tomayapo",
+    "away": "Guabirá",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28658713184058293,
+      "pDraw": 0.23612702481035702,
+      "pAway": 0.47728584334905994,
+      "pOver": 0.5801231295588782,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2892319291464,
+      "expA": 1.7277990530099998,
+      "expTotal": 3.0170309821564
+    }
+  },
+  "1645560": {
+    "savedAt": "2026-11-17T06:09:37.110336+00:00",
+    "kickoffUtc": "2026-12-01T23:30:00+00:00",
+    "home": "Real Potosí",
+    "away": "Universitario de Vinto",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6450624657513204,
+      "pDraw": 0.2147754969749119,
+      "pAway": 0.14016203727376775,
+      "pOver": 0.48780755580069707,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.8862845662925003,
+      "expA": 0.7416742386825002,
+      "expTotal": 2.6279588049750005
+    }
   }
 }
