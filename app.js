@@ -1207,21 +1207,22 @@ function leagueCode(l) {
     var agf = avg(s.gf, s.p), aga = avg(s.ga, s.p);
     return '<tr><td class="sp-team">' + (rk ? '<span class="sp-rank">' + rk + '</span>' : '')
       + '<span class="sp-name">' + esc(team) + '</span>' + (tag ? '<span class="sp-tag">' + tag + '</span>' : '') + '</td>'
-      + '<td><span class="sp-p">' + s.p + '</span></td><td>' + s.w + '</td><td>' + s.d + '</td><td>' + s.l + '</td>'
+      + '<td class="p2"><span class="sp-p">' + s.p + '</span></td><td>' + s.w + '</td><td>' + s.d + '</td><td>' + s.l + '</td>'
       + '<td>' + s.gf + '</td><td>' + s.ga + '</td>'
       + '<td>' + per(s.w, s.p) + '</td><td>' + per(s.d, s.p) + '</td><td>' + per(s.l, s.p) + '</td>'
       + '<td class="sp-agf">' + agf.toFixed(2) + '</td><td class="sp-aga">' + aga.toFixed(2) + '</td>'
-      + '<td>' + (agf + aga).toFixed(2) + '</td><td class="sp-ppg">' + avg(s.pts, s.p).toFixed(2) + '</td>'
+      + '<td class="agg">' + (agf + aga).toFixed(2) + '</td><td class="sp-ppg">' + avg(s.pts, s.p).toFixed(2) + '</td>'
       + '<td class="sp-ov sp-ov-l">' + dash(s.overTotal, '%') + '</td><td class="sp-ov">' + dash(s.overLast8, '%') + '</td></tr>';
   }
-  function statTable(title, rowsHtml) {
-    return '<h3 class="sp-title">' + title + '</h3><div class="sp-scroll"><table class="sp-table"><thead>'
+  function statTable(title, rowsArr) {
+    var rowsHtml = (rowsArr || []).join('').replace('</tr><tr>', '</tr><tr class="sp-tr-split">');
+    return '<h3 class="sp-title">' + title + '</h3><table class="sp-table"><thead>'
       + '<tr><th rowspan="2" class="sp-th-team">Team</th><th rowspan="2">P</th><th rowspan="2">W</th><th rowspan="2">D</th>'
       + '<th rowspan="2">L</th><th rowspan="2">GF</th><th rowspan="2">GA</th><th rowspan="2">W%</th><th rowspan="2">D%</th>'
       + '<th rowspan="2">L%</th><th rowspan="2">AGF</th><th rowspan="2">AGA</th><th rowspan="2">AG+</th><th rowspan="2">APPG</th>'
       + '<th colspan="2" class="sp-th-ov">Over 2.5</th></tr>'
       + '<tr><th class="sp-th-ov2 sp-ov-l">Total</th><th class="sp-th-ov2">Last 8</th></tr>'
-      + '</thead><tbody>' + rowsHtml + '</tbody></table></div>';
+      + '</thead><tbody>' + rowsHtml + '</tbody></table>';
   }
 
   /* one match line: date | HOME score (ht) AWAY | league tag */
@@ -1260,9 +1261,9 @@ function leagueCode(l) {
     var hHome = hAll.filter(function (x) { return x.venue === 'H'; });
     var aAway = aAll.filter(function (x) { return x.venue === 'A'; });
     var overall = statTable('Overall statistic',
-      statRow(f.home, f.league, hAll) + statRow(f.away, f.league, aAll));
+      [statRow(f.home, f.league, hAll), statRow(f.away, f.league, aAll)]);
     var split = statTable('Home / Away statistic',
-      statRow(f.home, f.league, hHome, 'Home') + statRow(f.away, f.league, aAway, 'Away'));
+      [statRow(f.home, f.league, hHome, 'Home'), statRow(f.away, f.league, aAway, 'Away')]);
 
     var pair = [f.homeId, f.awayId].sort(function (a,b) { return a-b; }).join('-');
     // Prefer the pre-built head-to-head feed; when it has nothing for this
@@ -1284,10 +1285,10 @@ function leagueCode(l) {
       ? hh.map(function (m) { return matchLine(m, null, true); }).join('')
       : '<div class="sp-none">No previous meetings between these two teams.</div>';
     var h2hCard = card('', 'Head to head', h2hRows,
-      hh.length ? foot(hw, dw, aw, hh.length, [teamCode(f.home), 'Draw', teamCode(f.away)], ['sp-fw', 'sp-fl']) : '');
+      hh.length ? foot(hw, dw, aw, hh.length, [teamCode(f.home) + ' win', 'Draw', teamCode(f.away) + ' win'], ['sp-fw', 'sp-fl']) : '');
     h2hCard = h2hCard.replace('<div class="sp-card-h">', '<div class="sp-card-h sp-card-h2h">');
 
-    return '<div class="sp-panel">' + overall + split + '<div class="sp-grid">'
+    return '<div class="sp-panel"><div class="sp-tables">' + overall + split + '</div><div class="sp-grid">'
       + h2hCard
       + formCard(f.home, hAll, 'Last 6 matches', 6)
       + formCard(f.away, aAll, 'Last 6 matches', 6)
