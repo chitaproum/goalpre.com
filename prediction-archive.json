@@ -263015,5 +263015,841 @@
       "expA": 1.1944731572040002,
       "expTotal": 3.0258627120007504
     }
+  },
+  "1650522": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-20T14:20:00+00:00",
+    "home": "Al Salmiyah",
+    "away": "Khaitan",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650523": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-20T16:30:00+00:00",
+    "home": "Al Tadhamon",
+    "away": "Al Jazira",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650694": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T08:30:00+00:00",
+    "home": "Pekanbaru",
+    "away": "Persikota Tangerang",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6511024951739316,
+      "pDraw": 0.20024331363400147,
+      "pAway": 0.1486541911920669,
+      "pOver": 0.5653492508565544,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.078798737230851,
+      "expA": 0.8766232064219659,
+      "expTotal": 2.9554219436528166
+    }
+  },
+  "1650695": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T08:30:00+00:00",
+    "home": "Persiba Bantul",
+    "away": "Persika Karanganyar",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3628398869798941,
+      "pDraw": 0.2834231796965213,
+      "pAway": 0.3537369333235845,
+      "pOver": 0.4048827103709366,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.142620649701162,
+      "expTotal": 2.3036858669719606
+    }
+  },
+  "1650696": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T08:30:00+00:00",
+    "home": "Persitara",
+    "away": "Batavia",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.1595802889136784,
+      "pDraw": 0.1748174663129947,
+      "pAway": 0.665602244773327,
+      "pOver": 0.710646681257385,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.176145158592896,
+      "expA": 2.5276409679938556,
+      "expTotal": 3.7037861265867518
+    }
+  },
+  "1650697": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T08:30:00+00:00",
+    "home": "Pesik",
+    "away": "Persekat",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4334699175452451,
+      "pDraw": 0.2594601180548511,
+      "pAway": 0.30706996439990386,
+      "pOver": 0.4883659092519614,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4499339806242115,
+      "expA": 1.177892249405158,
+      "expTotal": 2.6278262300293695
+    }
+  },
+  "1650524": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T14:20:00+00:00",
+    "home": "Al Fahaheel",
+    "away": "Burgan",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650525": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T16:30:00+00:00",
+    "home": "Al Nasar",
+    "away": "Al Sulaibikhat",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650861": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-21T21:30:00+00:00",
+    "home": "Cobreloa",
+    "away": "San Luis",
+    "league": "Primera B · Chile",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47420338828982717,
+      "pDraw": 0.24796423887436342,
+      "pAway": 0.27783237283580936,
+      "pOver": 0.5216363384451895,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.599121803712,
+      "expA": 1.16489856672,
+      "expTotal": 2.764020370432
+    }
+  },
+  "1650703": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:00:00+00:00",
+    "home": "Pesinga Ngawi",
+    "away": "Persibangga Purbalingga",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.37203812768177064,
+      "pDraw": 0.2656126503439032,
+      "pAway": 0.3623492219743261,
+      "pOver": 0.4743626111437505,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2962233198537536,
+      "expA": 1.275631643992014,
+      "expTotal": 2.5718549638457677
+    }
+  },
+  "1650698": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Donggala United",
+    "away": "Perseden Denpasar",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3063156496847858,
+      "pDraw": 0.22866008015840697,
+      "pAway": 0.4650242701568072,
+      "pOver": 0.6274793829906833,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4313689516761832,
+      "expA": 1.807651075852914,
+      "expTotal": 3.2390200275290972
+    }
+  },
+  "1650699": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Ngada",
+    "away": "Persinab Nabire",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5612419154930315,
+      "pDraw": 0.20423141626983565,
+      "pAway": 0.23452666823713286,
+      "pOver": 0.6859196280799732,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.185627625431593,
+      "expA": 1.362197438486208,
+      "expTotal": 3.547825063917801
+    }
+  },
+  "1650700": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Persibo",
+    "away": "Persegres Gresik United",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.35161837392859246,
+      "pDraw": 0.3052366405373253,
+      "pAway": 0.3431449855340822,
+      "pOver": 0.33291935524593946,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.025919585448369,
+      "expA": 1.009621928061564,
+      "expTotal": 2.0355415135099326
+    }
+  },
+  "1650701": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Persikutim",
+    "away": "Pasuruan United",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3102251378035434,
+      "pDraw": 0.2633253290654101,
+      "pAway": 0.4264495331310465,
+      "pOver": 0.47379588368798253,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.408630365631612,
+      "expTotal": 2.56969558290241
+    }
+  },
+  "1650702": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Persipa Pati",
+    "away": "Putra Sang Fajar",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3102251378035434,
+      "pDraw": 0.2633253290654101,
+      "pAway": 0.4264495331310465,
+      "pOver": 0.47379588368798253,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.408630365631612,
+      "expTotal": 2.56969558290241
+    }
+  },
+  "1650816": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T08:30:00+00:00",
+    "home": "Persekabpas Pasuruan",
+    "away": "Persipani Paniai",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5683812810356644,
+      "pDraw": 0.22960228686314596,
+      "pAway": 0.2020164321011897,
+      "pOver": 0.5268943217619364,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.8084982885538883,
+      "expA": 0.9786697818406019,
+      "expTotal": 2.78716807039449
+    }
+  },
+  "1650526": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T14:20:00+00:00",
+    "home": "Al Shabab",
+    "away": "Al Sahel",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650527": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T16:30:00+00:00",
+    "home": "Al Jahra",
+    "away": "Yarmouk",
+    "league": "Crown Prince Cup · Kuwait",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.42191608577749046,
+      "pDraw": 0.24630534011357524,
+      "pAway": 0.33177857410893424,
+      "pOver": 0.5543185243000931,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5525,
+      "expA": 1.35,
+      "expTotal": 2.9025
+    }
+  },
+  "1650862": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-22T17:00:00+00:00",
+    "home": "AD Sarchí",
+    "away": "Municipal Grecia",
+    "league": "Liga de Ascenso · Costa Rica",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38601357894769567,
+      "pDraw": 0.2694368634774958,
+      "pAway": 0.3445495575748086,
+      "pOver": 0.4573970694092738,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.29612958928823,
+      "expA": 1.2089881249748375,
+      "expTotal": 2.5051177142630676
+    }
+  },
+  "1650863": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-24T00:00:00+00:00",
+    "home": "Pitbulls Santa Barbara FC",
+    "away": "ADR Jicaral",
+    "league": "Liga de Ascenso · Costa Rica",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.24685152134463584,
+      "pDraw": 0.23551911328014724,
+      "pAway": 0.5176293653752169,
+      "pOver": 0.5514370000101018,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1377330209256864,
+      "expA": 1.753200797854688,
+      "expTotal": 2.8909338187803746
+    }
+  },
+  "1564333": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-24T19:45:00+00:00",
+    "home": "Blackpool",
+    "away": "Leicester",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3324873012839642,
+      "pDraw": 0.22377271574895952,
+      "pAway": 0.44373998296707623,
+      "pOver": 0.6638058452395023,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5765886798139364,
+      "expA": 1.8465562525392725,
+      "expTotal": 3.4231449323532086
+    }
+  },
+  "1564334": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-24T19:45:00+00:00",
+    "home": "Bromley",
+    "away": "Wycombe",
+    "league": "League One · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.22940785469933667,
+      "pDraw": 0.18921756581773233,
+      "pAway": 0.581374579482931,
+      "pOver": 0.7540704623786619,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.5162025380956121,
+      "expA": 2.458031443269178,
+      "expTotal": 3.9742339813647902
+    }
+  },
+  "1650704": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-25T08:30:00+00:00",
+    "home": "Batavia",
+    "away": "Pesik",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4001091324752084,
+      "pDraw": 0.22816130171177004,
+      "pAway": 0.37172956581302163,
+      "pOver": 0.6507601214785274,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7114653989148143,
+      "expA": 1.6434147014088838,
+      "expTotal": 3.3548801003236983
+    }
+  },
+  "1650705": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-25T08:30:00+00:00",
+    "home": "Persekat",
+    "away": "Nusantara United",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5620722181161862,
+      "pDraw": 0.22836831504484312,
+      "pAway": 0.20955946683897067,
+      "pOver": 0.541825797313039,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.827614896635662,
+      "expA": 1.022716846949582,
+      "expTotal": 2.8503317435852438
+    }
+  },
+  "1650706": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-25T08:30:00+00:00",
+    "home": "Persikota Tangerang",
+    "away": "Persitara",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6803562610991504,
+      "pDraw": 0.18574457848739767,
+      "pAway": 0.13389916041345196,
+      "pOver": 0.5984842863456612,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.2317472671163885,
+      "expA": 0.8766232064219659,
+      "expTotal": 3.108370473538354
+    }
+  },
+  "1650707": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Donggala United",
+    "away": "Persikutim",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.387986446335597,
+      "pDraw": 0.23367391767993745,
+      "pAway": 0.3783396359844656,
+      "pOver": 0.6231279286185699,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.6199249204763535,
+      "expA": 1.597244164056108,
+      "expTotal": 3.217169084532461
+    }
+  },
+  "1650708": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Persegres Gresik United",
+    "away": "Persibangga Purbalingga",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4306527101430742,
+      "pDraw": 0.27955746974981177,
+      "pAway": 0.289789820107114,
+      "pOver": 0.4054366757100301,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2962233198537536,
+      "expA": 1.009621928061564,
+      "expTotal": 2.3058452479153173
+    }
+  },
+  "1650709": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Persiba Bantul",
+    "away": "Pesinga Ngawi",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.47692504643497796,
+      "pDraw": 0.2629346806510628,
+      "pAway": 0.26014027291395925,
+      "pOver": 0.450013071859052,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.466976390590816,
+      "expA": 1.009621928061564,
+      "expTotal": 2.47659831865238
+    }
+  },
+  "1650711": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Persipani Paniai",
+    "away": "Persinab Nabire",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5329411975470295,
+      "pDraw": 0.23084877410367238,
+      "pAway": 0.236210028349298,
+      "pOver": 0.5616364655036152,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.8084982885538883,
+      "expA": 1.1271507129163076,
+      "expTotal": 2.935649001470196
+    }
+  },
+  "1650712": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Putra Sang Fajar",
+    "away": "Persibo",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5449875276287443,
+      "pDraw": 0.2481761329254362,
+      "pAway": 0.20683633944581958,
+      "pOver": 0.45898163654485813,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.6199249204763535,
+      "expA": 0.8921039873464078,
+      "expTotal": 2.5120289078227613
+    }
+  },
+  "1650817": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T08:30:00+00:00",
+    "home": "Persekabpas Pasuruan",
+    "away": "Ngada",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6008935382068057,
+      "pDraw": 0.20091880226205588,
+      "pAway": 0.1981876595311384,
+      "pOver": 0.6521878686197089,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.185627625431593,
+      "expA": 1.182753517049952,
+      "expTotal": 3.368381142481545
+    }
+  },
+  "1650710": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T12:00:00+00:00",
+    "home": "Persika Karanganyar",
+    "away": "Persipa Pati",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4356073101207754,
+      "pDraw": 0.27783177203803844,
+      "pAway": 0.2865609178411861,
+      "pOver": 0.41013897304086006,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3140137471563362,
+      "expA": 1.009621928061564,
+      "expTotal": 2.3236356752179
+    }
+  },
+  "1650713": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-26T12:00:00+00:00",
+    "home": "Perseden Denpasar",
+    "away": "Pasuruan United",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3832304814772584,
+      "pDraw": 0.2662351094992956,
+      "pAway": 0.3505344090234461,
+      "pOver": 0.471032327614593,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3140137471563362,
+      "expA": 1.2446686536314637,
+      "expTotal": 2.5586824007878
+    }
+  },
+  "1650714": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-29T08:30:00+00:00",
+    "home": "Nusantara United",
+    "away": "Pesik",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.26494864315220173,
+      "pDraw": 0.22371344642992208,
+      "pAway": 0.5113379104178762,
+      "pOver": 0.6222625351170613,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3140137471563362,
+      "expA": 1.9005457612448637,
+      "expTotal": 3.2145595084011997
+    }
+  },
+  "1650715": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-29T08:30:00+00:00",
+    "home": "Persekat",
+    "away": "Persitara",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7142268242396375,
+      "pDraw": 0.17431801694478796,
+      "pAway": 0.11145515881557455,
+      "pOver": 0.5930454700967684,
+      "scoreH": 2,
+      "scoreA": 0,
+      "expH": 2.300639157234779,
+      "expA": 0.7846325216240259,
+      "expTotal": 3.085271678858805
+    }
+  },
+  "1650722": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:00:00+00:00",
+    "home": "Pesinga Ngawi",
+    "away": "Persibo",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3661308931785427,
+      "pDraw": 0.2845236846639925,
+      "pAway": 0.3493454221574648,
+      "pOver": 0.40078057400653855,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.1271507129163076,
+      "expTotal": 2.288215930187106
+    }
+  },
+  "1650716": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Persegres Gresik United",
+    "away": "Persipa Pati",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3920068868366264,
+      "pDraw": 0.2925568434191209,
+      "pAway": 0.31543626974425265,
+      "pOver": 0.36937582152221704,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.009621928061564,
+      "expTotal": 2.170687145332362
+    }
+  },
+  "1650717": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Pasuruan United",
+    "away": "Ngada",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5231753098721215,
+      "pDraw": 0.2055866896178075,
+      "pAway": 0.27123800051007113,
+      "pOver": 0.7170496639590521,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.185627625431593,
+      "expA": 1.5416413599224639,
+      "expTotal": 3.7272689853540566
+    }
+  },
+  "1650718": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Pekanbaru",
+    "away": "Batavia",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.655182471604602,
+      "pDraw": 0.18110202844199272,
+      "pAway": 0.16371549995340537,
+      "pOver": 0.6877997221759802,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.4252838000574872,
+      "expA": 1.141776704333408,
+      "expTotal": 3.567060504390895
+    }
+  },
+  "1650720": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Persinab Nabire",
+    "away": "Persikutim",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.341780960084484,
+      "pDraw": 0.2759510823331645,
+      "pAway": 0.38226795758235144,
+      "pOver": 0.4317115863245319,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.2446686536314637,
+      "expTotal": 2.405733870902262
+    }
+  },
+  "1650721": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Persipani Paniai",
+    "away": "Donggala United",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5436628092317634,
+      "pDraw": 0.1979910966139847,
+      "pAway": 0.25834609415425197,
+      "pOver": 0.7428923308145688,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3207890137429708,
+      "expA": 1.5726072074381638,
+      "expTotal": 3.893396221181135
+    }
+  },
+  "1650723": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T08:30:00+00:00",
+    "home": "Persibangga Purbalingga",
+    "away": "Persiba Bantul",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3767497892859494,
+      "pDraw": 0.26450472726355295,
+      "pAway": 0.35874548345049767,
+      "pOver": 0.47884225187178353,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3140137471563362,
+      "expA": 1.275631643992014,
+      "expTotal": 2.58964539114835
+    }
+  },
+  "1650719": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T12:00:00+00:00",
+    "home": "Persika Karanganyar",
+    "away": "Putra Sang Fajar",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.341780960084484,
+      "pDraw": 0.2759510823331645,
+      "pAway": 0.38226795758235144,
+      "pOver": 0.4317115863245319,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1610652172707985,
+      "expA": 1.2446686536314637,
+      "expTotal": 2.405733870902262
+    }
+  },
+  "1650818": {
+    "savedAt": "2026-11-18T17:14:56.509894+00:00",
+    "kickoffUtc": "2026-11-30T12:00:00+00:00",
+    "home": "Perseden Denpasar",
+    "away": "Persekabpas Pasuruan",
+    "league": "Liga Nusantara · Indonesia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2989088897298038,
+      "pDraw": 0.2846216212364935,
+      "pAway": 0.4164694890337028,
+      "pOver": 0.3913452308730783,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.0081166873852607,
+      "expA": 1.2446686536314637,
+      "expTotal": 2.2527853410167245
+    }
   }
 }
