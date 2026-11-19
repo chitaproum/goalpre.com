@@ -264915,5 +264915,43 @@
       "expA": 2.3557649797499995,
       "expTotal": 4.681573870274999
     }
+  },
+  "1651069": {
+    "savedAt": "2026-11-19T17:22:21.217681+00:00",
+    "kickoffUtc": "2026-11-22T00:30:00+00:00",
+    "home": "Gimnasia Jujuy",
+    "away": "Deportivo Madryn",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31245397291420735,
+      "pDraw": 0.22726896526913384,
+      "pAway": 0.46027706181665884,
+      "pOver": 0.6375235828932471,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4679298843034836,
+      "expA": 1.8206477140364519,
+      "expTotal": 3.2885775983399355
+    }
+  },
+  "1651070": {
+    "savedAt": "2026-11-19T17:22:21.217681+00:00",
+    "kickoffUtc": "2026-11-28T21:00:00+00:00",
+    "home": "Deportivo Madryn",
+    "away": "Gimnasia Jujuy",
+    "league": "Primera Nacional · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5612352135231192,
+      "pDraw": 0.20961481407930457,
+      "pAway": 0.2291499723975762,
+      "pOver": 0.6529621438924205,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0937448711419195,
+      "expA": 1.276460768959551,
+      "expTotal": 3.370205640101471
+    }
   }
 }
