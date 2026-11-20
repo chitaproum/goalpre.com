@@ -267936,5 +267936,347 @@
       "expA": 0.8671613812277625,
       "expTotal": 3.9376102995408035
     }
+  },
+  "1651071": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-21T11:00:00+00:00",
+    "home": "Viimsi JK U21",
+    "away": "Tallinna Kalev II",
+    "league": "Esiliiga B · Estonia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5578533949609767,
+      "pDraw": 0.1768746941064135,
+      "pAway": 0.26527191093260977,
+      "pOver": 0.847869365543449,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.828387441,
+      "expA": 1.9716706360000003,
+      "expTotal": 4.800058077
+    }
+  },
+  "1651117": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-22T20:00:00+00:00",
+    "home": "Douglas Haig",
+    "away": "Olimpo Bahia Blanca",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3336591602549483,
+      "pDraw": 0.3616016306391085,
+      "pAway": 0.3047392091059433,
+      "pOver": 0.20096934003960992,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.7943343113244128,
+      "expA": 0.744538908567069,
+      "expTotal": 1.5388732198914816
+    }
+  },
+  "1651119": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-22T21:00:00+00:00",
+    "home": "Nashville SC",
+    "away": "FC Cincinnati",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7709142177759605,
+      "pDraw": 0.13260012338331512,
+      "pAway": 0.09648565884072446,
+      "pOver": 0.7556603311815392,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.0211016782641127,
+      "expA": 1.0212647179432102,
+      "expTotal": 4.042366396207322
+    }
+  },
+  "1651120": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-23T01:30:00+00:00",
+    "home": "Vancouver Whitecaps",
+    "away": "Real Salt Lake",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6527956872108287,
+      "pDraw": 0.1885936080940598,
+      "pAway": 0.15861070469511143,
+      "pOver": 0.6403378805047143,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.2783098668509267,
+      "expA": 1.032780307316485,
+      "expTotal": 3.3110901741674117
+    }
+  },
+  "1651123": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-26T22:30:00+00:00",
+    "home": "Cerro Porteno",
+    "away": "Libertad Asuncion",
+    "league": "Copa Paraguay · Paraguay",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.40522496014122356,
+      "pDraw": 0.2656217572120082,
+      "pAway": 0.32915328264676813,
+      "pOver": 0.470036345858158,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3580787975217847,
+      "expA": 1.1966987378348821,
+      "expTotal": 2.554777535356667
+    }
+  },
+  "1651072": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-27T17:30:00+00:00",
+    "home": "Tallinna Kalev II",
+    "away": "Viimsi JK U21",
+    "league": "Esiliiga B · Estonia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3714757414666932,
+      "pDraw": 0.1896559652040219,
+      "pAway": 0.43886829332928495,
+      "pOver": 0.8441554625785044,
+      "scoreH": 2,
+      "scoreA": 2,
+      "expH": 2.2674212314,
+      "expA": 2.4594673400000002,
+      "expTotal": 4.7268885714
+    }
+  },
+  "1651151": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-27T23:35:00+00:00",
+    "home": "Deportivo Cali",
+    "away": "Bucaramanga",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.41031542255835535,
+      "pDraw": 0.2968940225663672,
+      "pAway": 0.29279055487527744,
+      "pOver": 0.35034886942747534,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.164817695894653,
+      "expA": 0.935243889789468,
+      "expTotal": 2.100061585684121
+    }
+  },
+  "1651152": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-28T01:40:00+00:00",
+    "home": "Millonarios",
+    "away": "America de Cali",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.34852491795361373,
+      "pDraw": 0.2776416822918809,
+      "pAway": 0.37383339975450536,
+      "pOver": 0.42595229381026056,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1658218880979265,
+      "expA": 1.217865283005966,
+      "expTotal": 2.3836871711038925
+    }
+  },
+  "1651121": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-28T03:00:00+00:00",
+    "home": "Real Salt Lake",
+    "away": "Vancouver Whitecaps",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.22548216170116148,
+      "pDraw": 0.21712117432351652,
+      "pAway": 0.5573966639753221,
+      "pOver": 0.6124865985749407,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.1876973534139577,
+      "expA": 1.98113901465298,
+      "expTotal": 3.1688363680669376
+    }
+  },
+  "1651122": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-28T23:30:00+00:00",
+    "home": "FC Cincinnati",
+    "away": "Nashville SC",
+    "league": "Major League Soccer · USA",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.14981275627097726,
+      "pDraw": 0.16757958832839537,
+      "pAway": 0.6826076554006274,
+      "pOver": 0.7256524822285872,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.1744544256346916,
+      "expA": 2.6270449376209677,
+      "expTotal": 3.801499363255659
+    }
+  },
+  "1651153": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-29T00:30:00+00:00",
+    "home": "Santa Fe",
+    "away": "Atletico Nacional",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.314503441491896,
+      "pDraw": 0.2479792416693354,
+      "pAway": 0.4375173168387686,
+      "pOver": 0.5407017765273772,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.2849155557129983,
+      "expA": 1.559136176758797,
+      "expTotal": 2.8440517324717955
+    }
+  },
+  "1651118": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-29T20:00:00+00:00",
+    "home": "Olimpo Bahia Blanca",
+    "away": "Douglas Haig",
+    "league": "Torneo Federal A · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3685494232463099,
+      "pDraw": 0.3586948486598764,
+      "pAway": 0.27275572809381365,
+      "pOver": 0.2030222256787716,
+      "scoreH": 0,
+      "scoreA": 0,
+      "expH": 0.8562197448521293,
+      "expA": 0.6907254881081851,
+      "expTotal": 1.5469452329603144
+    }
+  },
+  "1651154": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-11-29T23:30:00+00:00",
+    "home": "Independiente Medellin",
+    "away": "Once Caldas",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.38484787699390893,
+      "pDraw": 0.24882270592242145,
+      "pAway": 0.3663294170836696,
+      "pOver": 0.5487775890077707,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4599189113537543,
+      "expA": 1.4185368088640278,
+      "expTotal": 2.878455720217782
+    }
+  },
+  "1651155": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-12-01T23:20:00+00:00",
+    "home": "Bucaramanga",
+    "away": "Deportivo Cali",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3659250560905114,
+      "pDraw": 0.30036950526035594,
+      "pAway": 0.33370543864913277,
+      "pOver": 0.34721139101134524,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.075530473257888,
+      "expA": 1.0128849529518722,
+      "expTotal": 2.0884154262097603
+    }
+  },
+  "1651156": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-12-02T01:30:00+00:00",
+    "home": "America de Cali",
+    "away": "Millonarios",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4582788793486234,
+      "pDraw": 0.26928282442566864,
+      "pAway": 0.27243829622570803,
+      "pOver": 0.4339056089912522,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.4005450754568607,
+      "expA": 1.0137581635634145,
+      "expTotal": 2.414303239020275
+    }
+  },
+  "1651157": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-12-02T23:20:00+00:00",
+    "home": "Once Caldas",
+    "away": "Independiente Medellin",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4585885141233054,
+      "pDraw": 0.24334422492886343,
+      "pAway": 0.2980672609478312,
+      "pOver": 0.55387414089142,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.631317330193632,
+      "expA": 1.2694947055250039,
+      "expTotal": 2.9008120357186358
+    }
+  },
+  "1651158": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-12-03T01:30:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Santa Fe",
+    "league": "Primera A · Colombia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5316688201774193,
+      "pDraw": 0.23214536705905411,
+      "pAway": 0.23618581276352643,
+      "pOver": 0.5558516973428034,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7930066032726164,
+      "expA": 1.117317874533042,
+      "expTotal": 2.9103244778056583
+    }
+  },
+  "1577615": {
+    "savedAt": "2026-11-20T16:56:56.926469+00:00",
+    "kickoffUtc": "2026-12-04T14:00:00+00:00",
+    "home": "Spartak Kostroma",
+    "away": "Ska-khabarovsk",
+    "league": "First League · Russia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4909943519256502,
+      "pDraw": 0.23229585976067288,
+      "pAway": 0.27670978831367676,
+      "pOver": 0.5910963160350935,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7823442408343535,
+      "expA": 1.2847956059601,
+      "expTotal": 3.0671398467944533
+    }
   }
 }
