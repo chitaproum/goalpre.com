@@ -429,7 +429,7 @@
   // Extra block injected into the Match cell when the AI engine is active:
   // a confidence pill, an optional value flag and an expandable AI insight.
   function aiRowExtra(f, p, market) {
-    if (state.engine !== 'ai' || !p || !p._ai) return '';
+    if (!p || !p._ai) return '';
     var ai = p._ai, conf = ai.confidence != null ? ai.confidence : 0;
     var tag = conf >= 0.62 ? 'high' : conf >= 0.5 ? 'med' : 'low';
     var valueFlag = (market !== 'ou' && ai.hasMarket && ai.edge != null && ai.edge >= 0.05)
@@ -653,7 +653,7 @@
   /* ---------- table headers per mode ---------- */
   var HEADS = {
     '1x2': '<tr><th class="col-pick">Pick</th><th class="col-date">Date</th><th class="col-league">League</th>'
-      + '<th class="col-match">Match</th><th class="col-live">Result/Live</th><th>1</th><th>X</th><th>2</th><th>Tip</th><th>Score</th><th title="Decimal bookmaker odds for the displayed tip">Coef.</th></tr>',
+      + '<th class="col-match">Match</th><th class="col-live">Result/Live</th><th>1</th><th>X</th><th>2</th><th>Tip</th><th>Score</th><th title="Decimal bookmaker odds for each method’s tip">Coef.</th></tr>',
     'ou': '<tr><th class="col-pick">Pick</th><th class="col-date">Date</th><th class="col-league">League</th>'
       + '<th class="col-match">Match</th><th class="col-live">Result/Live</th><th>Exp. goals</th><th>Over 2.5</th><th>Under 2.5</th><th>Tip</th><th title="Decimal bookmaker odds for the displayed tip">Coef.</th></tr>',
     'stats': '<tr><th>Date</th><th class="col-league">League</th><th class="col-match">Match</th>'
@@ -670,8 +670,8 @@
     var avg = (Math.round((LEAGUE_AVG || 2.7) * 100) / 100).toFixed(2);
     if (mode === '1x2') {
       return '<h2>Match Result (1 X 2) predictions — how to read them</h2>'
-        + '<p>This section estimates the chance of each full-time outcome: a <strong>home win (1)</strong>, a <strong>draw (X)</strong>, or an <strong>away win (2)</strong>. The three percentages on every row always add up to 100%. The highlighted figure is the model’s most likely result, and the <em>Tip</em> column repeats it as the suggested pick.</p>'
-        + '<p>The numbers come from the data source you select above. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
+        + '<p>This section estimates the chance of each full-time outcome: a <strong>home win (1)</strong>, a <strong>draw (X)</strong>, or an <strong>away win (2)</strong>. The three underlying probabilities for each method add up to 100%; displayed percentages may differ slightly due to rounding. The highlighted figure is the model’s most likely result, and the <em>Tip</em> column repeats it as the suggested pick.</p>'
+        + '<p>All three methods appear together for each match. Read each method across its 1, X, 2, Tip, Score and Coef. figures. Filters and Your Selection continue to use the Poisson baseline. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
         + '<p class="pi-note">Draws are the hardest outcome to call, so even a leading draw probability rarely passes 40%. Treat a single-digit edge over the bookmaker’s implied chance as noise, not a signal.</p>';
     }
     if (mode === 'ou') {
@@ -899,21 +899,42 @@
   }
 
   /* ---------- row builders per mode ---------- */
+  // Compare the existing engines without changing their calculations.
+  var comparisonCache = {};
+  function comparisonModels(f) {
+    var key = fxKey(f) + '|' + selectedBookmaker;
+    if (comparisonCache[key]) return comparisonCache[key];
+    activeLeague = f.league;
+    return comparisonCache[key] = [
+      {name: 'Poisson', cls: 'poisson', p: f.prediction || predictPoisson(f.home, f.away)},
+      {name: 'KPI', cls: 'kpi', p: predictKpi(f.home, f.away)},
+      {name: 'AI', cls: 'ai', p: predictAi(f.home, f.away, f)}
+    ];
+  }
+  function comparisonStack(models, cls, make) {
+    return '<td class="cmp-col ' + cls + '"><div class="cmp-stack">' + models.map(function (m) {
+      return '<div class="cmp-line cmp-' + m.cls + '" data-method="' + m.name + '">' + make(m.p, m) + '</div>';
+    }).join('') + '</div></td>';
+  }
   function row1x2(f, p) {
-    var best = bestKey(p), k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
-    return '<tr>'
+    var k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
+    var models = comparisonModels(f);
+    return '<tr class="comparison-row">'
       + '<td class="col-pick"><input type="checkbox" class="pick-cb" data-key="' + esc(k) + '"' + checked + ' aria-label="Add to selection"></td>'
       + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
       + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
-      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, p, '1x2') + '</td>'
+      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, models[2].p, '1x2') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
-      + '<td>' + probCell(p.pHome, '1', best) + '</td>'
-      + '<td>' + probCell(p.pDraw, 'X', best) + '</td>'
-      + '<td>' + probCell(p.pAway, '2', best) + '</td>'
-      + '<td>' + tipBadge(best) + '</td>'
-      + '<td><span class="score">' + p.scoreH + '-' + p.scoreA + '</span></td>'
-      + oddsCell(f, '1x2', best)
-      + '</tr>';
+      + comparisonStack(models, 'col-method', function (p, m) { return '<span class="method-label">' + m.name + '</span>'; })
+      + comparisonStack(models, 'cmp-home', function (p) { return probCell(p.pHome, '1', bestKey(p)); })
+      + comparisonStack(models, 'cmp-draw', function (p) { return probCell(p.pDraw, 'X', bestKey(p)); })
+      + comparisonStack(models, 'cmp-away', function (p) { return probCell(p.pAway, '2', bestKey(p)); })
+      + comparisonStack(models, 'cmp-tip', function (p) { return tipBadge(bestKey(p)); })
+      + comparisonStack(models, 'cmp-score', function (p) { return '<span class="score">' + p.scoreH + '-' + p.scoreA + '</span>'; })
+      + comparisonStack(models, 'col-odds cmp-odds', function (p) {
+          var q = oddsQuote(f, '1x2', bestKey(p));
+          return q ? '<span class="odds-badge" title="' + esc(q.name + ': market odds for ' + bestKey(p)) + '">' + formatOddsVal(q.value) + '</span>' : '<span class="odds-missing" title="No recent pre-match odds available">—</span>';
+        }) + '</tr>';
   }
   function rowOu(f, p) {
     var over = p.pOver, under = 1 - over, k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
@@ -1350,9 +1371,10 @@ function leagueCode(l) {
     syncPeriodUI();
     renderPredIntro(state.mode);
     if (state.mode === 'selection') { renderSelection(head, body, empty); return; }
-    head.innerHTML = HEADS[state.mode];
+    head.innerHTML = state.mode === '1x2' ? HEADS['1x2'].replace('<th>1</th>', '<th class="col-method">Method</th><th>1</th>') : HEADS[state.mode];
+    comparisonCache = {};
     _rendered = [];
-    var rows = [], cols = state.mode === 'ou' ? 10 : (state.mode === 'stats' ? 8 : 11);
+    var rows = [], cols = state.mode === 'ou' ? 10 : (state.mode === 'stats' ? 8 : 12);
     FIXTURES.forEach(function (f) {
       var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f));
       if (!passesFilters(f, p)) return;
@@ -1365,7 +1387,7 @@ function leagueCode(l) {
     });
     body.innerHTML = rows.join('');
     var tbl = document.querySelector('#view-predictions .pred-table');
-    if (tbl) { tbl.classList.toggle('ou-mode', state.mode === 'ou'); tbl.classList.toggle('stats-mode', state.mode === 'stats'); }
+    if (tbl) { tbl.classList.toggle('comparison-mode', state.mode === '1x2'); tbl.classList.toggle('ou-mode', state.mode === 'ou'); tbl.classList.toggle('stats-mode', state.mode === 'stats'); }
     empty.hidden = rows.length > 0;
     bindRowEvents();
     updateSelBadges();

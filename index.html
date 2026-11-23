@@ -229,14 +229,7 @@
             <button class="mode-btn mstats" data-mode="stats" role="tab">Stats</button>
             <button class="mode-btn msel" data-mode="selection" role="tab">Your Selection <span class="sel-count" id="selCount" hidden>0</span></button>
           </div>
-          <div class="engine-toggle" role="group" aria-label="Prediction data source">
-            <span class="engine-label">Data</span>
-            <div class="engine-seg">
-              <button type="button" class="eng-btn active" data-engine="poisson" aria-pressed="true">Poisson</button>
-              <button type="button" class="eng-btn" data-engine="random" aria-pressed="false" title="KPI engine: prediction built from the teams' stats (avg goals for/against, PPG, win%, head-to-head)">KPI</button>
-              <button type="button" class="eng-btn eng-ai" data-engine="ai" aria-pressed="false" title="AI Consensus: blends the Poisson model, the KPI model and live market odds into one probability, flags value bets and writes a plain-English insight for each match">AI</button>
-            </div>
-          </div>
+
         </div>
         <div class="filters">
           <label>League
@@ -395,7 +388,7 @@
           <li><strong>Outcomes.</strong> Summing the grid gives 1 / X / 2 probabilities, the most likely correct score, expected total goals and the Over/Under 2.5 split.</li>
         </ol>
         <p><strong>KPI engine.</strong> Switch the <em>Data</em> toggle to <strong>KPI</strong> for an alternative, stats-weighted prediction. It builds a KPI Confidence Index from win rate, venue form, recent form, head-to-head dominance and average goals &mdash; see the README for the exact weights.</p>
-        <p><strong>AI consensus engine.</strong> Switch the <em>Data</em> toggle to <strong>AI</strong> for an ensemble that blends three signals &mdash; the Poisson model (40%), the KPI model (35%) and the live, de-margined market odds (25%) &mdash; into a single consensus probability. It also measures a <em>value edge</em> (the gap between the model&rsquo;s probability and the bookmaker&rsquo;s implied chance), highlights value picks with a &#9733; flag, grades an AI confidence level from the agreement between the two in-house models, and generates a short plain-English insight for each match. Everything is computed in your browser &mdash; there is no external AI service and no API key, so predictions stay fast, free and private.</p>
+        <p><strong>AI consensus engine.</strong> Compare the <strong>Poisson, KPI and AI</strong> lines in each match for an ensemble that blends three signals &mdash; the Poisson model (40%), the KPI model (35%) and the live, de-margined market odds (25%) &mdash; into a single consensus probability. It also measures a <em>value edge</em> (the gap between the model&rsquo;s probability and the bookmaker&rsquo;s implied chance), highlights value picks with a &#9733; flag, grades an AI confidence level from the agreement between the two in-house models, and generates a short plain-English insight for each match. Everything is computed in your browser &mdash; there is no external AI service and no API key, so predictions stay fast, free and private.</p>
         <p class="muted">Fixtures and results are supplied by API-Football after the updater runs. Probabilities and expected goals are estimates from this site’s own models, not official API-Football forecasts or measured xG. Predictions are for entertainment and study only — no gambling advice is implied.</p>
       </article>
     </section>
