@@ -16,9 +16,13 @@
     site is re-approved, and never on empty/loading views.
   -->
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=compare-recovery-20261123" />
 </head>
 <body>
+  <div id="matchLoadStatus" class="match-load-status" role="status" aria-live="polite">
+    <span id="matchLoadMessage">Loading match data. Please wait…</span>
+    <button type="button" id="retryMatchData" hidden>Retry match data</button>
+  </div>
   <header class="site-header">
     <div class="container header-inner">
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
@@ -415,9 +419,9 @@
     <button type="button" class="ad-close" id="anchorAdClose" aria-label="Close advertisement">×</button>
   </div>
 
-  <script src="data.js"></script>
-  <script src="ai-insights.js"></script>
-  <script src="app.js"></script>
-  <script src="ads.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="ai-insights.js"></script>
+  <script defer src="app.js?v=compare-recovery-20261123"></script>
+  <script defer src="ads.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
    Model estimates and market odds are not guarantees. No inline event handlers are used;
    everything is wired with addEventListener. */
 (function () {
+  function startGoalPre() {
   'use strict';
   var DATA = window.DATA || {};
   var AI_INSIGHTS = window.AI_INSIGHTS || {};  // LLM-written per-fixture previews (optional, server-generated)
@@ -1739,6 +1740,10 @@ function leagueCode(l) {
         });
         pb.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
         submenu.hidden = isOpen;
+        // A period heading also opens its match list, not just its submenu.
+        showView('predictions');
+        if (state.mode === 'selection') setMode('1x2');
+        setPeriod(pb.getAttribute('data-period'));
         return;
       }
       var cb = e.target.closest('.side-item[data-country]');
@@ -3031,4 +3036,59 @@ function leagueCode(l) {
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
+  }
+  var loading = false, started = false;
+  function feedReady() {
+    return !!(window.DATA && Array.isArray(window.DATA.fixtures));
+  }
+  function loadMessage(text, failed) {
+    var banner = document.getElementById('matchLoadStatus');
+    if (!banner) return;
+    banner.hidden = false;
+    banner.classList.toggle('load-failed', !!failed);
+    document.getElementById('matchLoadMessage').textContent = text;
+    document.getElementById('retryMatchData').hidden = !failed;
+  }
+  function launch() {
+    if (started) return;
+    try {
+      startGoalPre();
+      started = true;
+      var banner = document.getElementById('matchLoadStatus');
+      if (banner) banner.hidden = true;
+    } catch (err) {
+      console.error('GoalPre initialization failed', err);
+      loadMessage('The match page could not start. Please refresh the page. If this continues, report the browser error.', true);
+      var retry = document.getElementById('retryMatchData');
+      if (retry) { retry.textContent = 'Refresh page'; }
+    }
+  }
+  function retryData() {
+    if (loading) return;
+    loading = true;
+    loadMessage('Loading match data. This file is large and may take a moment on a slow connection…', false);
+    var script = document.createElement('script');
+    script.src = 'data.js?retry=' + Date.now();
+    script.onload = function () {
+      loading = false;
+      if (feedReady()) launch();
+      else loadMessage('The data file loaded but contains no usable fixture list. Please check the data update.', true);
+      script.remove();
+    };
+    script.onerror = function () {
+      loading = false;
+      loadMessage('Match data could not be downloaded. Check your connection and try again.', true);
+      script.remove();
+    };
+    document.head.appendChild(script);
+  }
+  function boot() {
+    var retry = document.getElementById('retryMatchData');
+    if (retry) retry.addEventListener('click', function () {
+      if (feedReady()) location.reload(); else retryData();
+    });
+    if (feedReady()) launch(); else retryData();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, {once: true});
+  else boot();
 })();
