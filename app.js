@@ -435,8 +435,8 @@
     var tag = conf >= 0.62 ? 'high' : conf >= 0.5 ? 'med' : 'low';
     var valueFlag = (market !== 'ou' && ai.hasMarket && ai.edge != null && ai.edge >= 0.05)
       ? '<span class="ai-value" title="Model probability exceeds the market implied chance">\u2605 Value</span>' : '';
-    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">AI ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
-      + '<details class="ai-insight"><summary>AI insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
+    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">AI score ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
+      + '<details class="ai-insight"><summary>AI score insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
   }
 
   function predict(home, away, league, f) {
@@ -672,14 +672,14 @@
     if (mode === '1x2') {
       return '<h2>Match Result (1 X 2) predictions — how to read them</h2>'
         + '<p>This section estimates the chance of each full-time outcome: a <strong>home win (1)</strong>, a <strong>draw (X)</strong>, or an <strong>away win (2)</strong>. The three underlying probabilities for each method add up to 100%; displayed percentages may differ slightly due to rounding. The highlighted figure is the model’s most likely result, and the <em>Tip</em> column repeats it as the suggested pick.</p>'
-        + '<p>All three methods appear together for each match. Read each method across its 1, X, 2, Tip, Score and Coef. figures. Filters and Your Selection continue to use the Poisson baseline. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
+        + '<p>All three methods appear together for each match. Read each method across its 1, X, 2, Tip, Score and Coef. figures. Filters and Your Selection continue to use the Poisson baseline. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI score Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
         + '<p class="pi-note">Draws are the hardest outcome to call, so even a leading draw probability rarely passes 40%. Treat a single-digit edge over the bookmaker’s implied chance as noise, not a signal.</p>';
     }
     if (mode === 'ou') {
       return '<h2>Over/Under 2.5 Goals — reading the goal line</h2>'
-        + '<p>Here the question is not who wins but how many goals are scored. <strong>Over 2.5</strong> needs three or more goals in the match; <strong>Under 2.5</strong> needs two or fewer. The <em>Exp. goals</em> column is the model’s projected match total — roughly the two teams’ attacking and defensive rates added together — and the two percentages beside it are the share of simulated results that finish above or below the line.</p>'
+        + '<p>Here the question is not who wins but how many goals are scored. <strong>Over 2.5</strong> needs three or more goals in the match; <strong>Under 2.5</strong> needs two or fewer. Each fixture shows <strong>Poisson, KPI and AI</strong> on three aligned lines. Read each line across its expected goals, Over/Under probabilities, tip and bookmaker odds. The <em>Exp. goals</em> column is the model’s projected match total — roughly the two teams’ attacking and defensive rates added together — and the two percentages beside it are each method’s estimated chances of finishing above or below the line.</p>'
         + '<p>The 2.5 line is the market standard because it splits a typical match almost in half. Across the fixtures in this dataset the average is about <strong>' + avg + ' goals</strong> per game, so an expected total meaningfully above or below that is what tilts a tip. High-tempo, open leagues drift Over; cagey, defensive leagues and low-stakes dead-rubber fixtures drift Under.</p>'
-        + '<p class="pi-note">Goal totals swing on team news — a missing striker or a rested defence can move a projection after it is published. Check the Stats tab for each side’s recent scoring before trusting a line.</p>';
+        + '<p class="pi-note">KPI and AI share the locally calculated Poisson expected-goals estimate, while the Poisson line may use the saved forecast. Their Over/Under probabilities are calculated separately. Filters and Your Selection use the Poisson baseline. Goal totals swing on team news — a missing striker or a rested defence can move a projection after it is published. Check the Stats tab for each side’s recent scoring before trusting a line.</p>';
     }
     if (mode === 'stats') {
       return '<h2>Stats explorer — the form behind the tips</h2>'
@@ -698,7 +698,8 @@
 
   function renderPredIntro(mode) {
     var el = $('#predIntro');
-    if (el) el.innerHTML = predIntroHtml(mode);
+    if (el) el.innerHTML = predIntroHtml(mode) + ((mode === '1x2' || mode === 'ou')
+      ? '<p class="confidence-legend"><strong>Model agreement:</strong> ★ Low — all three tips differ; ★★ Medium — two agree; ★★★ High — all three agree. These are agreement ratings, not calibrated win probabilities. Over/Under has only two outcomes, so three available methods always produce at least two matching tips.</p>' : '');
   }
 
   // Ad placeholders removed for AdSense re-approval. Kept as a no-op so any
@@ -912,6 +913,25 @@
       {name: 'AI', cls: 'ai', p: predictAi(f.home, f.away, f)}
     ];
   }
+  // Stars measure agreement of the three selected outcomes, not win probability.
+  function methodAgreement(keys) {
+    if (keys.length !== 3 || keys.some(function (k) { return k == null; })) return null;
+    var counts = {}, max = 0;
+    keys.forEach(function (k) { counts[k] = (counts[k] || 0) + 1; max = Math.max(max, counts[k]); });
+    return {stars: max, level: max === 3 ? 'High' : max === 2 ? 'Medium' : 'Low', keys: keys};
+  }
+  function agreementBadge(keys) {
+    var rating = methodAgreement(keys);
+    if (!rating) return '<span class="method-confidence confidence-unavailable">Agreement unavailable</span>';
+    var stars = new Array(rating.stars + 1).join('★');
+    var detail = 'Model agreement: ' + rating.level + '. Poisson: ' + keys[0] + '; KPI: ' + keys[1] + '; AI: ' + keys[2] + '. Stars indicate agreement, not a calibrated winning probability or guarantee.';
+    return '<span class="method-confidence confidence-' + rating.level.toLowerCase() + '" title="' + esc(detail) + '" aria-label="' + esc(detail) + '">'
+      + '<span class="confidence-stars" aria-hidden="true">' + stars + '</span>'
+      + '<span class="confidence-label">' + rating.level + ' · ' + rating.stars + '/3 agree</span></span>';
+  }
+  function comparisonConfidence(models, market) {
+    return agreementBadge(models.map(function (m) { return market === 'ou' ? (m.p.pOver >= 0.5 ? 'Over 2.5' : 'Under 2.5') : bestKey(m.p); }));
+  }
   function comparisonStack(models, cls, make) {
     return '<td class="cmp-col ' + cls + '"><div class="cmp-stack">' + models.map(function (m) {
       return '<div class="cmp-line cmp-' + m.cls + '" data-method="' + m.name + '">' + make(m.p, m) + '</div>';
@@ -924,7 +944,7 @@
       + '<td class="col-pick"><input type="checkbox" class="pick-cb" data-key="' + esc(k) + '"' + checked + ' aria-label="Add to selection"></td>'
       + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
       + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
-      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, models[2].p, '1x2') + '</td>'
+      + '<td class="col-match">' + matchCell(f) + comparisonConfidence(models, '1x2') + aiRowExtra(f, models[2].p, '1x2') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
       + comparisonStack(models, 'col-method', function (p, m) { return '<span class="method-label">' + m.name + '</span>'; })
       + comparisonStack(models, 'cmp-home', function (p) { return probCell(p.pHome, '1', bestKey(p)); })
@@ -938,20 +958,26 @@
         }) + '</tr>';
   }
   function rowOu(f, p) {
-    var over = p.pOver, under = 1 - over, k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
-    var tip = over >= 0.5 ? 'over' : 'under';
-    return '<tr>'
+    var k = fxKey(f), checked = state.selection[k] ? ' checked' : '';
+    var models = comparisonModels(f);
+    return '<tr class="comparison-row ou-comparison-row">'
       + '<td class="col-pick"><input type="checkbox" class="pick-cb" data-key="' + esc(k) + '"' + checked + ' aria-label="Add to selection"></td>'
       + '<td class="col-date">' + fmtDate(f.date, f.kickoffUtc) + '</td>'
       + '<td class="col-league">' + renderLeagueBadge(f) + '</td>'
-      + '<td class="col-match">' + matchCell(f) + aiRowExtra(f, p, 'ou') + '</td>'
+      + '<td class="col-match">' + matchCell(f) + comparisonConfidence(models, 'ou') + aiRowExtra(f, models[2].p, 'ou') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
-      + '<td><span class="score">' + p.expTotal.toFixed(2) + '</span></td>'
-      + '<td><span class="ou over">' + pct(over) + '<span class="pct-sym">%</span></span></td>'
-      + '<td><span class="ou under">' + pct(under) + '<span class="pct-sym">%</span></span></td>'
-      + '<td><span class="ou ' + tip + '">' + (tip === 'over' ? 'Over 2.5' : 'Under 2.5') + '</span></td>'
-      + oddsCell(f, 'ou', tip)
-      + '</tr>';
+      + comparisonStack(models, 'col-method', function (p, m) { return '<span class="method-label">' + m.name + '</span>'; })
+      + comparisonStack(models, 'cmp-exp', function (p) { return '<span class="score" title="KPI and AI use the locally calculated Poisson expected-goals estimate; the saved Poisson forecast can differ.">' + p.expTotal.toFixed(2) + '</span>'; })
+      + comparisonStack(models, 'cmp-over', function (p) { return '<span class="ou over">' + pct(p.pOver) + '<span class="pct-sym">%</span></span>'; })
+      + comparisonStack(models, 'cmp-under', function (p) { return '<span class="ou under">' + pct(1 - p.pOver) + '<span class="pct-sym">%</span></span>'; })
+      + comparisonStack(models, 'cmp-outip', function (p) {
+          var tip = p.pOver >= 0.5 ? 'over' : 'under';
+          return '<span class="ou ' + tip + '">' + (tip === 'over' ? 'Over 2.5' : 'Under 2.5') + '</span>';
+        })
+      + comparisonStack(models, 'col-odds cmp-ouodds', function (p) {
+          var tip = p.pOver >= 0.5 ? 'over' : 'under', q = oddsQuote(f, 'ou', tip);
+          return q ? '<span class="odds-badge" title="' + esc(q.name + ': market odds for ' + tip + ' 2.5') + '">' + formatOddsVal(q.value) + '</span>' : '<span class="odds-missing" title="No recent pre-match odds available">—</span>';
+        }) + '</tr>';
   }
   function rowStats(f, p, idx) {
     return '<tr class="stats-row" data-idx="' + idx + '" tabindex="0" aria-expanded="false">'
@@ -1372,10 +1398,11 @@ function leagueCode(l) {
     syncPeriodUI();
     renderPredIntro(state.mode);
     if (state.mode === 'selection') { renderSelection(head, body, empty); return; }
-    head.innerHTML = state.mode === '1x2' ? HEADS['1x2'].replace('<th>1</th>', '<th class="col-method">Method</th><th>1</th>') : HEADS[state.mode];
+    head.innerHTML = state.mode === '1x2' ? HEADS['1x2'].replace('<th>1</th>', '<th class="col-method">Method</th><th>1</th>')
+      : state.mode === 'ou' ? HEADS['ou'].replace('<th>Exp. goals</th>', '<th class="col-method">Method</th><th>Exp. goals</th>') : HEADS[state.mode];
     comparisonCache = {};
     _rendered = [];
-    var rows = [], cols = state.mode === 'ou' ? 10 : (state.mode === 'stats' ? 8 : 12);
+    var rows = [], cols = state.mode === 'ou' ? 11 : (state.mode === 'stats' ? 8 : 12);
     FIXTURES.forEach(function (f) {
       var p = (state.engine === 'poisson' && f.prediction ? f.prediction : predict(f.home, f.away, f.league, f));
       if (!passesFilters(f, p)) return;
@@ -1388,7 +1415,7 @@ function leagueCode(l) {
     });
     body.innerHTML = rows.join('');
     var tbl = document.querySelector('#view-predictions .pred-table');
-    if (tbl) { tbl.classList.toggle('comparison-mode', state.mode === '1x2'); tbl.classList.toggle('ou-mode', state.mode === 'ou'); tbl.classList.toggle('stats-mode', state.mode === 'stats'); }
+    if (tbl) { tbl.classList.toggle('comparison-mode', state.mode === '1x2' || state.mode === 'ou'); tbl.classList.toggle('ou-mode', state.mode === 'ou'); tbl.classList.toggle('stats-mode', state.mode === 'stats'); }
     empty.hidden = rows.length > 0;
     bindRowEvents();
     updateSelBadges();
@@ -2024,7 +2051,6 @@ function leagueCode(l) {
     var po = market === '1x2' ? s.t1 : s.to;
     var kp = market === '1x2' ? s.k1 : s.ko;
     var ai = market === '1x2' ? s.a1 : s.ao;
-    var agree = po.key === kp.key && (!ai || ai.key === po.key);
     var when = tpWhen(f);
     var dateStr = tpDate(f);
     var hidden = (typeof idx === 'number' && idx >= 5) ? ' tp-hidden' : '';
@@ -2039,9 +2065,7 @@ function leagueCode(l) {
       +   '<span class="tp-meta">' + esc(dateStr) + (when ? ' &middot; ' + esc(when) : '') + ' &middot; ' + esc(f.league || '') + '</span>'
       + '</div>'
       + '<div class="tp-engines">' + tpEngine('Poisson', po, market) + tpEngine('KPI', kp, market) + (ai ? tpEngine('AI', ai, market) : '') + '</div>'
-      + (agree
-          ? '<span class="tp-flag tp-agree" title="All engines pick the same outcome">&#10003; agree</span>'
-          : '<span class="tp-flag tp-split" title="The engines differ">split</span>')
+      + agreementBadge([po.key, kp.key, ai ? ai.key : null])
       + '</a>';
   }
   // "More" button shown when a Best Choice list holds more than 5 tips.
