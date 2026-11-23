@@ -1336,7 +1336,7 @@ function leagueCode(l) {
       hh.length ? foot(hw, dw, aw, hh.length, [teamCode(f.home) + ' win', 'Draw', teamCode(f.away) + ' win'], ['sp-fw', 'sp-fl']) : '');
     h2hCard = h2hCard.replace('<div class="sp-card-h">', '<div class="sp-card-h sp-card-h2h">');
 
-    return '<div class="sp-panel"><div class="sp-tables">' + overall + split + '</div><div class="sp-grid">'
+    return '<div class="sp-panel"><div class="sp-tables">' + overall + split + '</div><p class="sp-table-hint">Scroll horizontally to see every statistic. The team column stays visible.</p><div class="sp-grid">'
       + h2hCard
       + formCard(f.home, hAll, 'Last 6 matches', 6)
       + formCard(f.away, aAll, 'Last 6 matches', 6)
@@ -1363,9 +1363,13 @@ function leagueCode(l) {
   }
   /* keep the panel as wide as the visible table area (the table itself may scroll sideways on phones) */
   function sizeDetail() {
-    var p = $('.sp-panel'), w = $('.table-wrap');
-    if (!p || !w) return;
-    p.style.width = Math.max(260, w.clientWidth - 2) + 'px';
+    var p = document.querySelector('#view-predictions .sp-panel');
+    if (!p) return;
+    // Use this panel's visible wrapper, never the hidden Top 20 table.
+    var w = p.closest('.table-wrap'), cell = p.parentElement;
+    if (!w || !cell) return;
+    var available = Math.min(w.clientWidth - 2, cell.clientWidth);
+    p.style.width = Math.max(0, available) + 'px';
   }
   window.addEventListener('resize', sizeDetail);
   /* ---------- filtering + render ---------- */
