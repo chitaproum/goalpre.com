@@ -435,8 +435,9 @@
     var tag = conf >= 0.62 ? 'high' : conf >= 0.5 ? 'med' : 'low';
     var valueFlag = (market !== 'ou' && ai.hasMarket && ai.edge != null && ai.edge >= 0.05)
       ? '<span class="ai-value" title="Model probability exceeds the market implied chance">\u2605 Model edge</span>' : '';
-    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">Confidence ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
-      + '<details class="ai-insight"><summary>Model insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
+    return '<div class="ai-badges"><details class="ai-insight"><summary>Model insight '
+      + '<span class="ai-conf ai-' + tag + '" title="Model confidence">' + pct(conf) + '%</span>' + valueFlag + '</summary>'
+      + '<p>' + esc(aiInsightText(f, p, market)) + '</p></details></div>';
   }
 
   function predict(home, away, league, f) {

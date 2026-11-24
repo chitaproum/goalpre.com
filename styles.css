@@ -1426,3 +1426,8 @@ tr.stats-row .ai-insight p,td.col-match .ai-insight p{max-width:100%}
 .static-picks li{padding:8px 0;border-bottom:1px solid rgba(128,128,128,.25)}
 .static-picks .sp-meta{font-size:.85em;opacity:.75}
 .sp-note{font-size:.85em;opacity:.8;margin:4px 0}
+
+/* Confidence % now lives inside the Model insight summary (one line) */
+.ai-badges .ai-insight{margin-top:0}
+.ai-insight>summary{flex-wrap:wrap}
+.ai-insight>summary .ai-conf{margin-left:2px}
