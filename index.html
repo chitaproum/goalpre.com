@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoalPre — Football Predictions &amp; Betting Tips</title>
+  <title>GoalPre — Football Predictions &amp; Match Statistics</title>
   <meta name="description" content="Mathematical football predictions: 1X2 win probabilities, correct score, over/under and average goals, computed with a Poisson statistical model and a KPI framework." />
   <meta name="theme-color" content="#0c7a4d" />
   <meta name="robots" content="index, follow" />
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="styles.css?v=stats-tables-20261123" />
 </head>
 <body>
-  <div id="matchLoadStatus" class="match-load-status" role="status" aria-live="polite">
+  <div id="matchLoadStatus" class="match-load-status" role="status" aria-live="polite" hidden>
     <span id="matchLoadMessage">Loading match data. Please wait…</span>
     <button type="button" id="retryMatchData" hidden>Retry match data</button>
   </div>
@@ -75,7 +75,7 @@
   <div class="container">
     <section class="hero" aria-label="Overview">
       <div class="hero-copy">
-        <span class="hero-eyebrow">Poisson &middot; KPI &middot; AI consensus</span>
+        <span class="hero-eyebrow">Poisson &middot; KPI &middot; Ensemble consensus</span>
         <h1>Smarter football predictions, backed by the numbers.</h1>
         <p>Win probabilities, correct scores and goal markets for every upcoming fixture. Statistical estimates, not guaranteed outcomes.</p>
       </div>
@@ -92,15 +92,11 @@
     <aside id="sidebar" class="sidebar" aria-label="Leagues and countries">
       <button class="side-toggle" id="sideToggle" aria-label="Toggle leagues menu">Leagues &amp; Countries <span class="side-caret">&#9662;</span></button></aside>
     <div class="content">
-    <!-- Ad: top leaderboard banner (728x90) -->
-    <div class="ad-slot ad-leaderboard" data-ad-placement="top" aria-label="Advertisement">
-      <span class="ad-body">Your banner here<span class="ad-size">Leaderboard 728×90</span></span>
-    </div>
     <!-- HOME VIEW -->
     <section id="view-home" class="view">
       <div class="home-wrap">
         <div class="home-intro">
-          <span class="home-eyebrow">Welcome to goalpre.com &mdash; machine-learning &amp; AI consensus models for smarter football predictions</span>
+          <span class="home-eyebrow">Welcome to goalpre.com &mdash; statistical models and an ensemble consensus for smarter football predictions</span>
           <div class="home-actions">
             <button type="button" class="home-cta primary" data-view="predictions">View today's predictions</button>
             <button type="button" class="home-cta" data-view="top">TOP 20 predictions</button>
@@ -111,17 +107,21 @@
           <section class="tp-panel">
             <div class="tp-panel-head">
               <h2>Today&rsquo;s Best Choice &middot; 1X2 model comparison</h2>
-              <p>Highest-probability match-winner tips for today, shown for Poisson, KPI and AI. Stars indicate agreement between the three methods.</p>
+              <p>Highest-probability match-winner tips for today, shown for Poisson, KPI and the ensemble. Stars indicate agreement between the three methods.</p>
             </div>
-            <div class="tp-list" id="tp1x2"><p class="tp-empty">Loading today&rsquo;s top tips&hellip;</p></div>
+            <div class="tp-list" id="tp1x2"><!--STATIC:TP1X2-->
+<p class="sp-note">Model estimates for fixtures on Monday 23 November 2026, from our Poisson model. Statistical opinion only, not betting advice. 18+.</p><ul class="static-picks"><li><strong>Monza vs Fiorentina</strong> <span class="sp-meta">Serie A &middot; 19:45 UTC</span><br><b>Home win 46%</b> <span class="sp-meta">(home 46% &middot; draw 20% &middot; away 35%)</span></li><li><strong>Brentford vs Everton</strong> <span class="sp-meta">Premier League &middot; 20:00 UTC</span><br><b>Home win 45%</b> <span class="sp-meta">(home 45% &middot; draw 26% &middot; away 29%)</span></li><li><strong>Levante vs Elche</strong> <span class="sp-meta">La Liga &middot; 20:00 UTC</span><br><b>Home win 45%</b> <span class="sp-meta">(home 45% &middot; draw 23% &middot; away 32%)</span></li></ul>
+<!--/STATIC:TP1X2--></div>
             <button type="button" class="share-btn" id="shareHome" title="Share this page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> Share</button>
           </section>
           <section class="tp-panel">
             <div class="tp-panel-head">
               <h2>Today&rsquo;s Best Choice &middot; Over/Under 2.5 model comparison</h2>
-              <p>Highest-probability goals-line tips for today, shown for Poisson, KPI and AI. Stars indicate agreement between the three methods.</p>
+              <p>Highest-probability goals-line tips for today, shown for Poisson, KPI and the ensemble. Stars indicate agreement between the three methods.</p>
             </div>
-            <div class="tp-list" id="tpou"><p class="tp-empty">Loading today&rsquo;s top tips&hellip;</p></div>
+            <div class="tp-list" id="tpou"><!--STATIC:TPOU-->
+<p class="sp-note">Model estimates for fixtures on Monday 23 November 2026, from our Poisson model. Statistical opinion only, not betting advice. 18+.</p><ul class="static-picks"><li><strong>Monza vs Fiorentina</strong> <span class="sp-meta">Serie A &middot; 19:45 UTC</span><br><b>Over 2.5 goals 81%</b> <span class="sp-meta">(expected total 4.4 goals)</span></li><li><strong>Levante vs Elche</strong> <span class="sp-meta">La Liga &middot; 20:00 UTC</span><br><b>Over 2.5 goals 61%</b> <span class="sp-meta">(expected total 3.2 goals)</span></li><li><strong>Brentford vs Everton</strong> <span class="sp-meta">Premier League &middot; 20:00 UTC</span><br><b>Under 2.5 goals 54%</b> <span class="sp-meta">(expected total 2.5 goals)</span></li></ul>
+<!--/STATIC:TPOU--></div>
             <button type="button" class="share-btn" id="shareHomeOu" title="Share this page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> Share</button>
           </section>
         </div>
@@ -130,8 +130,9 @@
             <h2>Top trend matches</h2>
             <p>Our models re-rank every upcoming fixture on each data update &mdash; the trending fixtures below refresh automatically with the latest form, odds and league table. <a href="match-analysis.html">Read the full previews</a>.</p>
           </div>
-          <div class="ha-grid" id="haGrid">
-            <p class="tp-empty">Loading today&rsquo;s trending fixtures&hellip;</p>
+          <div class="ha-grid" id="haGrid"><!--STATIC:HAGRID-->
+<ul class="static-picks"><li><strong>Monza vs Fiorentina</strong> <span class="sp-meta">Serie A &middot; 19:45 UTC</span><br><b>Home win 46%</b> <span class="sp-meta">(expected goals 2.3&ndash;2.0)</span></li><li><strong>Levante vs Elche</strong> <span class="sp-meta">La Liga &middot; 20:00 UTC</span><br><b>Home win 45%</b> <span class="sp-meta">(expected goals 1.7&ndash;1.4)</span></li><li><strong>Brentford vs Everton</strong> <span class="sp-meta">Premier League &middot; 20:00 UTC</span><br><b>Home win 45%</b> <span class="sp-meta">(expected goals 1.4&ndash;1.1)</span></li></ul>
+<!--/STATIC:HAGRID-->
           </div>
           <p class="ha-note">Previews are statistical opinion for information only, not betting advice. Figures reflect recent form and should be confirmed against live data before kick-off. 18+ &middot; please gamble responsibly.</p>
         </section>
@@ -194,7 +195,7 @@
         <div class="tp-page-head">
           <h1>TOP 20 predictions</h1>
           <p id="top20Range"></p>
-          <p>The 20 highest-confidence tips across the full week, shown for Poisson, KPI and AI. Stars indicate agreement between the three methods.</p>
+          <p>The 20 highest-confidence tips across the full week, shown for Poisson, KPI and the ensemble. Stars indicate agreement between the three methods.</p>
         </div>
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
           <button type="button" class="share-btn" id="shareTop20" title="Share this page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg> Share</button>
@@ -273,44 +274,6 @@
         <p class="odds-note">Coef. = decimal pre-match odds for the displayed tip. Expand “Market odds” for all outcomes. Best available compares only returned bookmakers; availability and prices can change. Low odds are not a sure bet. Predictions are model estimates.</p>
         <p id="emptyMsg" class="empty" hidden>No matches match your filters.</p>
       </div>
-
-      <!-- Ad: in-content leaderboard below the table -->
-      <div class="ad-slot ad-inline" data-ad-placement="below" aria-label="Advertisement">
-        <span class="ad-body">Your banner here<span class="ad-size">Leaderboard 728×90</span></span>
-      </div>
-
-      <!-- Affiliate bookmaker offers (primary monetization for tipster sites) -->
-      <!-- HIDDEN DURING ADSENSE REVIEW: demo/placeholder sponsored offers with
-           dead (#) links read as low-value commercial filler to reviewers.
-           Restore this block only after re-approval, and only with REAL,
-           disclosed affiliate links. -->
-      <section class="affiliate" aria-label="Sponsored bookmaker offers" style="display:none">
-        <h2>Top Bookmaker Offers — Sponsored</h2>
-        <div class="aff-grid">
-          <div class="aff-card">
-            <span class="aff-rank">#1</span>
-            <span class="aff-name">BetSlot</span>
-            <span class="aff-stars">★★★★★</span>
-            <span class="aff-offer">100% welcome bonus up to $100 on your first deposit.</span>
-            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
-          </div>
-          <div class="aff-card">
-            <span class="aff-rank">#2</span>
-            <span class="aff-name">GoalBet</span>
-            <span class="aff-stars">★★★★☆</span>
-            <span class="aff-offer">Bet $10 get $30 in free bets for new customers.</span>
-            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
-          </div>
-          <div class="aff-card">
-            <span class="aff-rank">#3</span>
-            <span class="aff-name">KickOdds</span>
-            <span class="aff-stars">★★★★☆</span>
-            <span class="aff-offer">Enhanced acca odds + $20 risk-free first bet.</span>
-            <a class="aff-cta" href="#" rel="nofollow sponsored noopener">Claim offer</a>
-          </div>
-        </div>
-        <p class="aff-disc">Sponsored placeholders. 18+ | T&amp;Cs apply | Please gamble responsibly. These are demo links, not real offers.</p>
-      </section>
     </section>
 
     <!-- League pages share this template; hash links work on GitHub Pages. -->
@@ -353,7 +316,7 @@
     <section id="view-how" class="view" hidden>
       <article class="prose">
         <section class="home-about">
-          <h1>Free football predictions &amp; betting tips, powered by statistics</h1>
+          <h1>Free football predictions &amp; match statistics, powered by data</h1>
           <p>GoalPre publishes free, mathematically-generated football predictions for
           dozens of leagues around the world. For every fixture we calculate the
           probability of a home win, draw or away win (the 1X2 market), the most
@@ -365,12 +328,12 @@
           turns each team&rsquo;s attacking and defensive strength into goal
           probabilities. The <strong>KPI confidence index</strong> weights recent form,
           home/away strength, head-to-head history and average goals. The
-          <strong>AI consensus engine</strong> blends both models with live market odds,
+          <strong>ensemble consensus engine</strong> blends both models with live market odds,
           flags possible value, and writes a short plain-English summary for every
           game.</p>
           <p>Want to understand what the numbers mean before you read them? Start with
           our <a href="predictions-guide.html">predictions guide</a> and the
-          <a href="glossary.html">glossary of betting terms</a>. To see how our
+          <a href="glossary.html">glossary of football and betting terms</a>. To see how our
           written match analysis is researched and edited by people, read
           <a href="how-we-write.html">how we write our analysis</a>. You can check how our
           tips have actually performed on the
@@ -391,37 +354,26 @@
           <li><strong>Score matrix.</strong> A Poisson distribution turns each λ into the probability of 0,1,2… goals. Multiplying home×away probabilities gives a full score grid (0–0, 1–0 …).</li>
           <li><strong>Outcomes.</strong> Summing the grid gives 1 / X / 2 probabilities, the most likely correct score, expected total goals and the Over/Under 2.5 split.</li>
         </ol>
-        <p><strong>KPI engine.</strong> Switch the <em>Data</em> toggle to <strong>KPI</strong> for an alternative, stats-weighted prediction. It builds a KPI Confidence Index from win rate, venue form, recent form, head-to-head dominance and average goals &mdash; see the README for the exact weights.</p>
-        <p><strong>AI consensus engine.</strong> Compare the <strong>Poisson, KPI and AI</strong> lines in each match for an ensemble that blends three signals &mdash; the Poisson model (40%), the KPI model (35%) and the live, de-margined market odds (25%) &mdash; into a single consensus probability. It also measures a <em>value edge</em> (the gap between the model&rsquo;s probability and the bookmaker&rsquo;s implied chance), highlights value picks with a &#9733; flag, grades an AI confidence level from the agreement between the two in-house models, and generates a short plain-English insight for each match. Everything is computed in your browser &mdash; there is no external AI service and no API key, so predictions stay fast, free and private.</p>
+        <p><strong>KPI engine.</strong> Switch the <em>Data</em> toggle to <strong>KPI</strong> for an alternative, stats-weighted prediction. It builds a KPI Confidence Index from win rate, venue form, recent form, head-to-head dominance and average goals. The exact weights are: overall win rate 10%, venue win rate 12.5%, last-six form 10%, venue last-six form 5.5%, head-to-head 3.5%, net goals 3.5%, average goals scored 11% (overall) and 13% (venue), average goals conceded 15% (overall) and 16% (venue). They sum to 100%.</p>
+        <p><strong>Ensemble consensus engine.</strong> Compare the <strong>Poisson, KPI and Ensemble</strong> lines in each match for an ensemble that blends three signals &mdash; the Poisson model (40%), the KPI model (35%) and the live, de-margined market odds (25%) &mdash; into a single consensus probability. It also measures a <em>value edge</em> (the gap between the model&rsquo;s probability and the bookmaker&rsquo;s implied chance), highlights value picks with a &#9733; flag, grades an AI confidence level from the agreement between the two in-house models, and generates a short plain-English insight for each match. Everything is computed in your browser &mdash; there is no external AI service and no API key, so predictions stay fast, free and private.</p>
         <p class="muted">Fixtures and results are supplied by API-Football after the updater runs. Probabilities and expected goals are estimates from this site’s own models, not official API-Football forecasts or measured xG. Predictions are for entertainment and study only — no gambling advice is implied.</p>
       </article>
     </section>
     </div><!-- /.content -->
   </main>
 
-  <div class="container">
-    <!-- Ad: footer banner -->
-    <div class="ad-slot ad-footer" data-ad-placement="footer" aria-label="Advertisement">
-      <span class="ad-body">Your banner here<span class="ad-size">Billboard 970×90</span></span>
-    </div>
-  </div>
-
   <footer class="site-footer">
     <div class="container">
-      <p>GoalPre &middot; Poisson-model &amp; KPI football predictions &middot; 18+ Please gamble responsibly.</p>
+      <p>GoalPre &middot; Poisson-model &amp; KPI football statistics &middot; 18+ Please gamble responsibly.</p>
       <p class="footer-links"><a href="about.html">About</a> &middot; <a href="insights.html">Insights</a> &middot; <a href="match-analysis.html">Top trend matches</a> &middot; <a href="predictions-guide.html">Predictions guide</a> &middot; <a href="glossary.html">Glossary</a> &middot; <a href="faq.html">FAQ</a> &middot; <a href="responsible-gambling.html">Responsible gambling</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="terms.html">Terms &amp; Conditions and Disclaimer</a> &middot; <a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
     </div>
   </footer>
-
-  <!-- Ad: sticky bottom anchor -->
-  <div id="anchorAd" class="ad-slot ad-anchor" data-ad-placement="anchor" aria-label="Advertisement">
-    <span class="ad-body">Your sticky banner here<span class="ad-size">Anchor 320×50</span></span>
-    <button type="button" class="ad-close" id="anchorAdClose" aria-label="Close advertisement">×</button>
-  </div>
 
   <script defer src="data.js"></script>
   <script defer src="ai-insights.js"></script>
   <script defer src="app.js?v=stats-tables-20261123"></script>
   <script defer src="ads.js"></script>
+  <script defer src="consent.js"></script>
+  <script>setTimeout(function(){var b=document.getElementById("matchLoadStatus");if(b&&!window.DATA){b.hidden=false;}},800);</script>
 </body>
 </html>

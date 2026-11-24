@@ -1420,3 +1420,9 @@ tr.stats-row .ai-insight p,td.col-match .ai-insight p{max-width:100%}
  .pred-table tbody tr.stats-row td.col-match{flex:1 1 100%;white-space:normal!important;min-width:0!important}
  .pred-table tbody tr.stats-row .sr-match{white-space:normal;overflow-wrap:anywhere}
 }
+
+/* Static (no-JS) prediction summaries; replaced by app.js on load */
+.static-picks{list-style:none;margin:8px 0;padding:0}
+.static-picks li{padding:8px 0;border-bottom:1px solid rgba(128,128,128,.25)}
+.static-picks .sp-meta{font-size:.85em;opacity:.75}
+.sp-note{font-size:.85em;opacity:.8;margin:4px 0}

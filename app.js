@@ -400,13 +400,13 @@
     if (market === 'ou') {
       var over = p.pOver >= 0.5;
       var ouProb = over ? p.pOver : 1 - p.pOver;
-      out.push('The AI consensus leans ' + (over ? 'Over 2.5 goals' : 'Under 2.5 goals') + ' at ' + pct(ouProb)
+      out.push('The ensemble consensus leans ' + (over ? 'Over 2.5 goals' : 'Under 2.5 goals') + ' at ' + pct(ouProb)
         + '%, from an expected ' + p.expTotal.toFixed(2) + ' total goals (' + home + ' ' + p.expH.toFixed(2) + ', ' + away + ' ' + p.expA.toFixed(2) + ').');
     } else {
       var k = ai.pickKey || bestKey(p);
       var pickLabel = k === '1' ? home + ' to win' : k === '2' ? away + ' to win' : 'a draw';
       var pp = k === '1' ? p.pHome : k === '2' ? p.pAway : p.pDraw;
-      out.push('AI consensus favours ' + pickLabel + ' at ' + pct(pp) + '%, blending the Poisson, KPI and market signals. Most likely score ' + p.scoreH + '\u2013' + p.scoreA + '.');
+      out.push('Ensemble consensus favours ' + pickLabel + ' at ' + pct(pp) + '%, blending the Poisson, KPI and market signals. Most likely score ' + p.scoreH + '\u2013' + p.scoreA + '.');
     }
     if (ai.agreement != null) {
       out.push(ai.agreement >= 0.8 ? 'Both in-house models strongly agree, which lifts confidence.'
@@ -910,7 +910,7 @@
     return comparisonCache[key] = [
       {name: 'Poisson', cls: 'poisson', p: f.prediction || predictPoisson(f.home, f.away)},
       {name: 'KPI', cls: 'kpi', p: predictKpi(f.home, f.away)},
-      {name: 'AI', cls: 'ai', p: predictAi(f.home, f.away, f)}
+      {name: 'Ensemble', cls: 'ai', p: predictAi(f.home, f.away, f)}
     ];
   }
   // Stars measure agreement of the three selected outcomes, not win probability.
@@ -924,7 +924,7 @@
     var rating = methodAgreement(keys);
     if (!rating) return '<span class="method-confidence confidence-unavailable">Agreement unavailable</span>';
     var stars = new Array(rating.stars + 1).join('★');
-    var detail = 'Model agreement: ' + rating.level + '. Poisson: ' + keys[0] + '; KPI: ' + keys[1] + '; AI: ' + keys[2] + '. Stars indicate agreement, not a calibrated winning probability or guarantee.';
+    var detail = 'Model agreement: ' + rating.level + '. Poisson: ' + keys[0] + '; KPI: ' + keys[1] + '; Ensemble: ' + keys[2] + '. Stars indicate agreement, not a calibrated winning probability or guarantee.';
     return '<span class="method-confidence confidence-' + rating.level.toLowerCase() + '" title="' + esc(detail) + '" aria-label="' + esc(detail) + '">'
       + '<span class="confidence-stars" aria-hidden="true">' + stars + '</span>'
       + '<span class="confidence-label">' + rating.level + ' · ' + rating.stars + '/3 agree</span></span>';
@@ -2068,7 +2068,7 @@ function leagueCode(l) {
       +   '</span>'
       +   '<span class="tp-meta">' + esc(dateStr) + (when ? ' &middot; ' + esc(when) : '') + ' &middot; ' + esc(f.league || '') + '</span>'
       + '</div>'
-      + '<div class="tp-engines">' + tpEngine('Poisson', po, market) + tpEngine('KPI', kp, market) + (ai ? tpEngine('AI', ai, market) : '') + '</div>'
+      + '<div class="tp-engines">' + tpEngine('Poisson', po, market) + tpEngine('KPI', kp, market) + (ai ? tpEngine('Ensemble', ai, market) : '') + '</div>'
       + agreementBadge([po.key, kp.key, ai ? ai.key : null])
       + '</a>';
   }
@@ -2273,7 +2273,7 @@ function leagueCode(l) {
     return '<tr' + (hidden ? ' class="hy-hidden"' : '') + '>'
       + '<td class="col-league">' + badge + '</td>'
       + '<td class="col-match">' + esc(f.home + ' v ' + f.away) + '</td>'
-      + '<td><span class="hy-mkt">' + tag + '</span> ' + esc(tip) + (aiNote ? ' <span class="hy-ai" title="AI agrees">AI</span>' : '') + '</td>'
+      + '<td><span class="hy-mkt">' + tag + '</span> ' + esc(tip) + (aiNote ? ' <span class="hy-ai" title="Ensemble agrees">ENS</span>' : '') + '</td>'
       + '<td><span class="score">' + ht + '</span></td>'
       + '<td><span class="score">' + f.fh + '-' + f.fa + '</span></td>'
       + '<td>' + flag + '</td>'

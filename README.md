@@ -1,4 +1,4 @@
-# PreBetTips — API-Football enabled
+# GoalPre — API-Football enabled
 
 Start with **API-SETUP.md** for secure setup and deployment.
 Advertising remains in ads.js; see ADS-README.md.

@@ -1,4 +1,4 @@
-/* PreBetTips advertising — edit only the CONFIG below.
+/* GoalPre advertising — edit only the CONFIG below.
  * Use only trusted provider code. Tracking/consent obligations are yours.
  * AdSense requires your approved publisher ID and real ad-unit slot IDs.
  */
@@ -13,7 +13,7 @@
     showPlaceholders: false, // false hides placements without a configured ad
     // Set false if ads must wait for consent; call PreBetAds.setConsent(true)
     // from your consent manager only after the required permission is granted.
-    consentGranted: true,
+    consentGranted: false, // ads wait for consent.js (or your CMP) to call PreBetAds.setConsent(true)
     adsenseClient: '', // e.g. ca-pub-YOUR_PUBLISHER_ID
     slots: {
       top:     { enabled: true, type: 'placeholder' },
