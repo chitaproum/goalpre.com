@@ -1,3 +1,5 @@
+> NOTE: outdated. The live weights are defined in app.js (KPI_WIN_WEIGHTS and KPI_OVER_WEIGHTS) and shown on the homepage.
+
 # KPI weights update
 
 Replace only app.js in your repository root, commit, and deploy your site using your existing GitHub Actions workflow. Hard-refresh after deployment. No API key, configuration, styles, data, or fetcher changes are required. Base: prebettips-league-pages-update.zip, app.js.
