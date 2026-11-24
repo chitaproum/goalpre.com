@@ -307,7 +307,7 @@
   /* ---------- AI Consensus engine ----------
      Blends the Poisson (Dixon-Coles) model, the KPI stats model and the live
      de-margined market odds into one consensus probability, measures the value
-     edge (model vs market) and writes a plain-English AI insight.
+     edge (model vs market) and writes a plain-English model insight.
      100% client-side — no API key, no backend, GitHub-Pages safe. */
   var AI_W = { poisson: 0.40, kpi: 0.35, market: 0.25 };
 
@@ -394,7 +394,7 @@
     if (llm && llm.text) {
       out.push(llm.text);
       var lconf = ai.confidence != null ? ai.confidence : 0.5;
-      out.push('AI confidence: ' + (lconf >= 0.62 ? 'High' : lconf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(lconf) + '%). Model estimate, not betting advice.');
+      out.push('Model confidence: ' + (lconf >= 0.62 ? 'High' : lconf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(lconf) + '%). Model estimate, not betting advice.');
       return out.join(' ');
     }
     if (market === 'ou') {
@@ -423,7 +423,7 @@
       out.push('No recent market odds to compare, so value cannot be measured for this pick.');
     }
     var conf = ai.confidence != null ? ai.confidence : 0.5;
-    out.push('AI confidence: ' + (conf >= 0.62 ? 'High' : conf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(conf) + '%).');
+    out.push('Model confidence: ' + (conf >= 0.62 ? 'High' : conf >= 0.5 ? 'Medium' : 'Low') + ' (' + pct(conf) + '%).');
     return out.join(' ');
   }
 
@@ -434,9 +434,9 @@
     var ai = p._ai, conf = ai.confidence != null ? ai.confidence : 0;
     var tag = conf >= 0.62 ? 'high' : conf >= 0.5 ? 'med' : 'low';
     var valueFlag = (market !== 'ou' && ai.hasMarket && ai.edge != null && ai.edge >= 0.05)
-      ? '<span class="ai-value" title="Model probability exceeds the market implied chance">\u2605 Value</span>' : '';
-    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">AI score ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
-      + '<details class="ai-insight"><summary>AI score insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
+      ? '<span class="ai-value" title="Model probability exceeds the market implied chance">\u2605 Model edge</span>' : '';
+    return '<div class="ai-badges"><span class="ai-conf ai-' + tag + '">Confidence ' + tag.toUpperCase() + ' \u00b7 ' + pct(conf) + '%</span>' + valueFlag + '</div>'
+      + '<details class="ai-insight"><summary>Model insight</summary><p>' + esc(aiInsightText(f, p, market)) + '</p></details>';
   }
 
   function predict(home, away, league, f) {
@@ -672,14 +672,14 @@
     if (mode === '1x2') {
       return '<h2>Match Result (1 X 2) predictions — how to read them</h2>'
         + '<p>This section estimates the chance of each full-time outcome: a <strong>home win (1)</strong>, a <strong>draw (X)</strong>, or an <strong>away win (2)</strong>. The three underlying probabilities for each method add up to 100%; displayed percentages may differ slightly due to rounding. The highlighted figure is the model’s most likely result, and the <em>Tip</em> column repeats it as the suggested pick.</p>'
-        + '<p>All three methods appear together for each match. Read each method across its 1, X, 2, Tip, Score and Coef. figures. Filters and Your Selection continue to use the Poisson baseline. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>AI score Consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
+        + '<p>All three methods appear together for each match. Read each method across its 1, X, 2, Tip, Score and Coef. figures. Filters and Your Selection continue to use the Poisson baseline. <strong>Poisson</strong> builds each team’s expected goals from scoring and conceding rates and converts them into win/draw/loss odds. <strong>KPI</strong> works from measured form — points per game, win rate, goals for and against, and recent head-to-head. <strong>Ensemble consensus</strong> blends both models with the live bookmaker price and flags a match as <em>value</em> only when the model rates a pick higher than the market does.</p>'
         + '<p class="pi-note">Draws are the hardest outcome to call, so even a leading draw probability rarely passes 40%. Treat a single-digit edge over the bookmaker’s implied chance as noise, not a signal.</p>';
     }
     if (mode === 'ou') {
       return '<h2>Over/Under 2.5 Goals — reading the goal line</h2>'
-        + '<p>Here the question is not who wins but how many goals are scored. <strong>Over 2.5</strong> needs three or more goals in the match; <strong>Under 2.5</strong> needs two or fewer. Each fixture shows <strong>Poisson, KPI and AI</strong> on three aligned lines. Read each line across its expected goals, Over/Under probabilities, tip and bookmaker odds. The <em>Exp. goals</em> column is the model’s projected match total — roughly the two teams’ attacking and defensive rates added together — and the two percentages beside it are each method’s estimated chances of finishing above or below the line.</p>'
+        + '<p>Here the question is not who wins but how many goals are scored. <strong>Over 2.5</strong> needs three or more goals in the match; <strong>Under 2.5</strong> needs two or fewer. Each fixture shows <strong>Poisson, KPI and Ensemble</strong> on three aligned lines. Read each line across its expected goals, Over/Under probabilities, tip and bookmaker odds. The <em>Exp. goals</em> column is the model’s projected match total — roughly the two teams’ attacking and defensive rates added together — and the two percentages beside it are each method’s estimated chances of finishing above or below the line.</p>'
         + '<p>The 2.5 line is the market standard because it splits a typical match almost in half. Across the fixtures in this dataset the average is about <strong>' + avg + ' goals</strong> per game, so an expected total meaningfully above or below that is what tilts a tip. High-tempo, open leagues drift Over; cagey, defensive leagues and low-stakes dead-rubber fixtures drift Under.</p>'
-        + '<p class="pi-note">KPI and AI share the locally calculated Poisson expected-goals estimate, while the Poisson line may use the saved forecast. Their Over/Under probabilities are calculated separately. Filters and Your Selection use the Poisson baseline. Goal totals swing on team news — a missing striker or a rested defence can move a projection after it is published. Check the Stats tab for each side’s recent scoring before trusting a line.</p>';
+        + '<p class="pi-note">KPI and the ensemble share the locally calculated Poisson expected-goals estimate, while the Poisson line may use the saved forecast. Their Over/Under probabilities are calculated separately. Filters and Your Selection use the Poisson baseline. Goal totals swing on team news — a missing striker or a rested defence can move a projection after it is published. Check the Stats tab for each side’s recent scoring before trusting a line.</p>';
     }
     if (mode === 'stats') {
       return '<h2>Stats explorer — the form behind the tips</h2>'
@@ -967,7 +967,7 @@
       + '<td class="col-match">' + matchCell(f) + comparisonConfidence(models, 'ou') + aiRowExtra(f, models[2].p, 'ou') + '</td>'
       + '<td class="col-live">' + resultLiveCell(f) + '</td>'
       + comparisonStack(models, 'col-method', function (p, m) { return '<span class="method-label">' + m.name + '</span>'; })
-      + comparisonStack(models, 'cmp-exp', function (p) { return '<span class="score" title="KPI and AI use the locally calculated Poisson expected-goals estimate; the saved Poisson forecast can differ.">' + p.expTotal.toFixed(2) + '</span>'; })
+      + comparisonStack(models, 'cmp-exp', function (p) { return '<span class="score" title="KPI and the ensemble use the locally calculated Poisson expected-goals estimate; the saved Poisson forecast can differ.">' + p.expTotal.toFixed(2) + '</span>'; })
       + comparisonStack(models, 'cmp-over', function (p) { return '<span class="ou over">' + pct(p.pOver) + '<span class="pct-sym">%</span></span>'; })
       + comparisonStack(models, 'cmp-under', function (p) { return '<span class="ou under">' + pct(1 - p.pOver) + '<span class="pct-sym">%</span></span>'; })
       + comparisonStack(models, 'cmp-outip', function (p) {
@@ -1555,7 +1555,7 @@ function leagueCode(l) {
   function downloadSelectionPdf() {
     var fx = selectedFixtures();
     if (!fx.length) return;
-    var engName = state.engine === 'ai' ? 'AI Consensus' : state.engine === 'random' ? 'KPI' : 'Poisson';
+    var engName = state.engine === 'ai' ? 'Ensemble' : state.engine === 'random' ? 'KPI' : 'Poisson';
     var w = window.open('', '_blank');
     if (!w) return;
     var rows = fx.map(function (f) {
