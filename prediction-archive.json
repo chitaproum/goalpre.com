@@ -291553,5 +291553,537 @@
       "expA": 1.4888205647428245,
       "expTotal": 2.760879094167888
     }
+  },
+  "1651664": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Europa Fc",
+    "away": "Rayo Vallecano",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5420488639945569,
+      "pDraw": 0.2195074821744523,
+      "pAway": 0.2384436538309909,
+      "pOver": 0.6162434549744217,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9555405747580177,
+      "expA": 1.230807003502293,
+      "expTotal": 3.186347578260311
+    }
+  },
+  "1651672": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Numancia",
+    "away": "Athletic Club",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2844405478866405,
+      "pDraw": 0.18393010689885156,
+      "pAway": 0.5316293452145079,
+      "pOver": 0.8319714322797608,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.9555405747580177,
+      "expA": 2.6599115070486876,
+      "expTotal": 4.615452081806705
+    }
+  },
+  "1651656": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Albacete",
+    "away": "Las Palmas",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5420488639945569,
+      "pDraw": 0.2195074821744523,
+      "pAway": 0.2384436538309909,
+      "pOver": 0.6162434549744217,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9555405747580177,
+      "expA": 1.230807003502293,
+      "expTotal": 3.186347578260311
+    }
+  },
+  "1651657": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Almeria",
+    "away": "Granada CF",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31631881196471767,
+      "pDraw": 0.2524209078626366,
+      "pAway": 0.4312602801726458,
+      "pOver": 0.5217617004236431,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.255702107100647,
+      "expA": 1.5085781559965719,
+      "expTotal": 2.764280263097219
+    }
+  },
+  "1651666": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Cultural Leonesa",
+    "away": "Castellón",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3561277954948235,
+      "pDraw": 0.24636588930198694,
+      "pAway": 0.3975063152031895,
+      "pOver": 0.5592795247461629,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.415428054027637,
+      "expA": 1.5085781559965719,
+      "expTotal": 2.924006210024209
+    }
+  },
+  "1651669": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Huesca",
+    "away": "Girona",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4955075071165928,
+      "pDraw": 0.21308150558037567,
+      "pAway": 0.2914109873030315,
+      "pOver": 0.695440006418202,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.054316773250038,
+      "expA": 1.5439255576674933,
+      "expTotal": 3.598242330917531
+    }
+  },
+  "1651683": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Zaragoza",
+    "away": "Burgos",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.539209137111294,
+      "pDraw": 0.19547541503899518,
+      "pAway": 0.26531544784971084,
+      "pOver": 0.7619347425623549,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.376576660482968,
+      "expA": 1.647470283759172,
+      "expTotal": 4.02404694424214
+    }
+  },
+  "1651671": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Mirandes",
+    "away": "Leganes",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3944517526384557,
+      "pDraw": 0.225283042772242,
+      "pAway": 0.3802652045893022,
+      "pOver": 0.6661957999634115,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7348648793960575,
+      "expA": 1.700470065006972,
+      "expTotal": 3.4353349444030297
+    }
+  },
+  "1651675": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Rayo Majadahonda",
+    "away": "Mallorca",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4584099369120803,
+      "pDraw": 0.24684227851464108,
+      "pAway": 0.29474778457327866,
+      "pOver": 0.5364870789521078,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5954712226726269,
+      "expA": 1.230807003502293,
+      "expTotal": 2.82627822617492
+    }
+  },
+  "1651673": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Ponferradina",
+    "away": "FC Andorra",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3209621403902141,
+      "pDraw": 0.23541321487583305,
+      "pAway": 0.44362464473395297,
+      "pOver": 0.6017653201296612,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.415428054027637,
+      "expA": 1.700470065006972,
+      "expTotal": 3.115898119034609
+    }
+  },
+  "1651668": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "FC Cartagena",
+    "away": "Elche",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.362810928261757,
+      "pDraw": 0.23023571136263393,
+      "pAway": 0.40695336037560903,
+      "pOver": 0.6391138342823781,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.5954712226726269,
+      "expA": 1.700470065006972,
+      "expTotal": 3.295941287679599
+    }
+  },
+  "1651681": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Gimnástica Torrelavega",
+    "away": "Alaves",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2845731593708269,
+      "pDraw": 0.20649503402594346,
+      "pAway": 0.5089318066032297,
+      "pOver": 0.7234306641438717,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.5954712226726269,
+      "expA": 2.170147896254772,
+      "expTotal": 3.7656191189273986
+    }
+  },
+  "1651670": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Real Jaén",
+    "away": "Valencia",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.28039251352452144,
+      "pDraw": 0.20650719366474654,
+      "pAway": 0.513100292810732,
+      "pOver": 0.7201003287044916,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.575154000954627,
+      "expA": 2.170147896254772,
+      "expTotal": 3.7453018972093988
+    }
+  },
+  "1651679": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Sant Andreu",
+    "away": "Eibar",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31631881196471767,
+      "pDraw": 0.2524209078626366,
+      "pAway": 0.4312602801726458,
+      "pOver": 0.5217617004236431,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.255702107100647,
+      "expA": 1.5085781559965719,
+      "expTotal": 2.764280263097219
+    }
+  },
+  "1651658": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Amorebieta",
+    "away": "Osasuna",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2836787371744622,
+      "pDraw": 0.22157009002124997,
+      "pAway": 0.4947511728042879,
+      "pOver": 0.647700829751668,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.415428054027637,
+      "expA": 1.9252545392843718,
+      "expTotal": 3.3406825933120086
+    }
+  },
+  "1651674": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Portugalete",
+    "away": "Deportivo La Coruna",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.31631881196471767,
+      "pDraw": 0.2524209078626366,
+      "pAway": 0.4312602801726458,
+      "pOver": 0.5217617004236431,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.255702107100647,
+      "expA": 1.5085781559965719,
+      "expTotal": 2.764280263097219
+    }
+  },
+  "1651680": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Sestao River",
+    "away": "Villarreal",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.2700913549602413,
+      "pDraw": 0.2025434915849068,
+      "pAway": 0.5273651534548519,
+      "pOver": 0.7312269597129228,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.575154000954627,
+      "expA": 2.2408148268225725,
+      "expTotal": 3.8159688277771995
+    }
+  },
+  "1651682": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Zamora",
+    "away": "Valladolid",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4533907693203922,
+      "pDraw": 0.2483504304874735,
+      "pAway": 0.2982588001921344,
+      "pOver": 0.5316871665750089,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.575154000954627,
+      "expA": 1.230807003502293,
+      "expTotal": 2.80596100445692
+    }
+  },
+  "1651678": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Sabadell",
+    "away": "Sporting Gijon",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4816927015383191,
+      "pDraw": 0.2189561548673304,
+      "pAway": 0.2993511435943505,
+      "pOver": 0.6713370188626743,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9555405747580177,
+      "expA": 1.5085781559965719,
+      "expTotal": 3.4641187307545893
+    }
+  },
+  "1651660": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Arosa",
+    "away": "Celta Vigo",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.34266691373932706,
+      "pDraw": 0.22679369701069607,
+      "pAway": 0.4305393892499769,
+      "pOver": 0.6520085465201435,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.575154000954627,
+      "expA": 1.786362411521772,
+      "expTotal": 3.3615164124763988
+    }
+  },
+  "1651667": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Eldense",
+    "away": "Tenerife",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3873644933719238,
+      "pDraw": 0.22087266360304358,
+      "pAway": 0.3917628430250327,
+      "pOver": 0.6893974225545719,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7755143913176172,
+      "expA": 1.786362411521772,
+      "expTotal": 3.5618768028393895
+    }
+  },
+  "1651676": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Real Ávila",
+    "away": "Getafe",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.39484371590082074,
+      "pDraw": 0.2391834720684557,
+      "pAway": 0.3659728120307236,
+      "pOver": 0.5948944064802512,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.575154000954627,
+      "expA": 1.5085781559965719,
+      "expTotal": 3.083732156951199
+    }
+  },
+  "1651659": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Antequera",
+    "away": "Levante",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5015010818596664,
+      "pDraw": 0.23326765713941222,
+      "pAway": 0.26523126100092137,
+      "pOver": 0.5776665478485948,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7755143913176172,
+      "expA": 1.230807003502293,
+      "expTotal": 3.0063213948199103
+    }
+  },
+  "1651661": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Atlético Paso",
+    "away": "Sevilla",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3944517526384557,
+      "pDraw": 0.225283042772242,
+      "pAway": 0.3802652045893022,
+      "pOver": 0.6661957999634115,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7348648793960575,
+      "expA": 1.700470065006972,
+      "expTotal": 3.4353349444030297
+    }
+  },
+  "1651662": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "CD Coria",
+    "away": "Malaga",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3209621403902141,
+      "pDraw": 0.23541321487583305,
+      "pAway": 0.44362464473395297,
+      "pOver": 0.6017653201296612,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.415428054027637,
+      "expA": 1.700470065006972,
+      "expTotal": 3.115898119034609
+    }
+  },
+  "1651665": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "AD Ceuta FC",
+    "away": "Cadiz",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4035345199520246,
+      "pDraw": 0.2237072487987865,
+      "pAway": 0.3727582312491889,
+      "pOver": 0.6737857395991397,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7755143913176172,
+      "expA": 1.700470065006972,
+      "expTotal": 3.475984456324589
+    }
+  },
+  "1651677": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Reddis",
+    "away": "Racing Santander",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3494101169310274,
+      "pDraw": 0.24442692601948532,
+      "pAway": 0.4061629570494872,
+      "pOver": 0.5673217129789809,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.415428054027637,
+      "expA": 1.5439255576674933,
+      "expTotal": 2.9593536116951302
+    }
+  },
+  "1651663": {
+    "savedAt": "2026-11-24T10:55:43.717075+00:00",
+    "kickoffUtc": "2026-12-02T20:00:00+00:00",
+    "home": "Extremadura 1924",
+    "away": "Real Betis",
+    "league": "Copa del Rey · Spain",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4437751440501992,
+      "pDraw": 0.21490043324327762,
+      "pAway": 0.3413244227065232,
+      "pOver": 0.7121232862688216,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.9758747816806073,
+      "expA": 1.7181519840700934,
+      "expTotal": 3.6940267657507007
+    }
   }
 }
