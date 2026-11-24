@@ -74,8 +74,10 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Prepare public website only
         run: |
+          # Write crawlable (no-JS) prediction summaries into index.html
+          python3 generate_static.py
           mkdir -p _site
-          cp *.html styles.css theme.js app.js ads.js data.js _site/
+          cp *.html styles.css theme.js app.js ads.js consent.js data.js _site/
           # AI insights file is optional; copy it only when present.
           if [ -f ai-insights.js ]; then cp ai-insights.js _site/; fi
           for folder in images assets; do
