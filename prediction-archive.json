@@ -295657,5 +295657,366 @@
       "expA": 1.19624304447,
       "expTotal": 2.4368748171637495
     }
+  },
+  "1553922": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-11-29T14:30:00+00:00",
+    "home": "Novi Pazar",
+    "away": "FK Crvena Zvezda",
+    "league": "Super Liga · Serbia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.11354592000071391,
+      "pDraw": 0.215688954078742,
+      "pAway": 0.670765125920544,
+      "pOver": 0.4315417129938236,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.5885145621259258,
+      "expA": 1.8185724325562898,
+      "expTotal": 2.4070869946822153
+    }
+  },
+  "1652063": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-11-29T21:00:00+00:00",
+    "home": "Cajabamba",
+    "away": "Viargoca",
+    "league": "Copa Perú · Peru",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4012520304605723,
+      "pDraw": 0.2677059984606176,
+      "pAway": 0.3310419710788101,
+      "pOver": 0.46207284141469795,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3357771415569542,
+      "expA": 1.18766009391638,
+      "expTotal": 2.523437235473334
+    }
+  },
+  "1652887": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-11-29T23:30:00+00:00",
+    "home": "Boca Juniors",
+    "away": "Gimnasia L.P.",
+    "league": "Liga Profesional Argentina · Argentina",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5799033516196315,
+      "pDraw": 0.23107875338263478,
+      "pAway": 0.18901789499773386,
+      "pOver": 0.5033563383133313,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.7823100432702386,
+      "expA": 0.907550112222425,
+      "expTotal": 2.6898601554926636
+    }
+  },
+  "1652074": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Huddersfield",
+    "away": "Newcastle United U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6512703067467668,
+      "pDraw": 0.17660662129187196,
+      "pAway": 0.17212307196136137,
+      "pOver": 0.7270322440605235,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.546152254696386,
+      "expA": 1.258216473847767,
+      "expTotal": 3.804368728544153
+    }
+  },
+  "1652082": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Wigan",
+    "away": "Doncaster",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.4719552663097799,
+      "pDraw": 0.2018216162734765,
+      "pAway": 0.32622311741674354,
+      "pOver": 0.772160691652539,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.239128453972586,
+      "expA": 1.852634525762055,
+      "expTotal": 4.091762979734641
+    }
+  },
+  "1652073": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Fleetwood Town",
+    "away": "Sheffield Wednesday",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5432575065147143,
+      "pDraw": 0.20824549489128205,
+      "pAway": 0.24849699859400365,
+      "pOver": 0.6818276862262478,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.130529704626363,
+      "expA": 1.3933947847263077,
+      "expTotal": 3.523924489352671
+    }
+  },
+  "1652078": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Oxford United",
+    "away": "Brentford U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6808526926786027,
+      "pDraw": 0.15878254244181758,
+      "pAway": 0.1603647648795797,
+      "pOver": 0.791668395070655,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.8985044795607977,
+      "expA": 1.3933947847263077,
+      "expTotal": 4.291899264287105
+    }
+  },
+  "1652070": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Bradford",
+    "away": "Nottingham Forest U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7020603110703284,
+      "pDraw": 0.15544055371223942,
+      "pAway": 0.14249913521743215,
+      "pOver": 0.7696261402876802,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.860979111185747,
+      "expA": 1.258216473847767,
+      "expTotal": 4.1191955850335145
+    }
+  },
+  "1652072": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Chesterfield",
+    "away": "Oldham",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5690538148987502,
+      "pDraw": 0.1656437106321268,
+      "pAway": 0.26530247446912314,
+      "pOver": 0.8889563107496515,
+      "scoreH": 3,
+      "scoreA": 2,
+      "expH": 3.2000540663052037,
+      "expA": 2.241895278790816,
+      "expTotal": 5.44194934509602
+    }
+  },
+  "1652076": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Milton Keynes Dons",
+    "away": "Chelsea U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6570956266114317,
+      "pDraw": 0.1638678053243802,
+      "pAway": 0.17903656806418808,
+      "pOver": 0.8018819588549234,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.8758529055099187,
+      "expA": 1.4959800487716526,
+      "expTotal": 4.3718329542815715
+    }
+  },
+  "1652079": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Plymouth",
+    "away": "Peterborough",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5327676556167649,
+      "pDraw": 0.188513861273856,
+      "pAway": 0.278718483109379,
+      "pOver": 0.8068093242804764,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.540703316755847,
+      "expA": 1.8363301377897963,
+      "expTotal": 4.377033454545643
+    }
+  },
+  "1652083": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Wycombe",
+    "away": "Arsenal U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6073041016660473,
+      "pDraw": 0.18155912561233906,
+      "pAway": 0.21113677272161363,
+      "pOver": 0.767316829296964,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.5781795706094384,
+      "expA": 1.4959800487716526,
+      "expTotal": 4.074159619381091
+    }
+  },
+  "1652075": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Luton",
+    "away": "Crystal Palace U21",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.7284613380052447,
+      "pDraw": 0.14391664239330487,
+      "pAway": 0.12762201960145042,
+      "pOver": 0.7900485617025895,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.044579482760611,
+      "expA": 1.258216473847767,
+      "expTotal": 4.302795956608378
+    }
+  },
+  "1652068": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Accrington ST",
+    "away": "Tranmere",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.458598800533938,
+      "pDraw": 0.2332093292723695,
+      "pAway": 0.30819187019369254,
+      "pOver": 0.6064442606182597,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7446027537911413,
+      "expA": 1.3933947847263077,
+      "expTotal": 3.137997538517449
+    }
+  },
+  "1652080": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Stevenage",
+    "away": "Gillingham",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.645971851284674,
+      "pDraw": 0.15601011493605157,
+      "pAway": 0.19801803377927435,
+      "pOver": 0.8624239257691131,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.2281798543354756,
+      "expA": 1.8363301377897963,
+      "expTotal": 5.064509992125272
+    }
+  },
+  "1652069": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Barnet",
+    "away": "Leicester",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.486629866993034,
+      "pDraw": 0.1961825334408344,
+      "pAway": 0.31718759956613163,
+      "pOver": 0.7953277260761159,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.3664772494869064,
+      "expA": 1.90630537584171,
+      "expTotal": 4.272782625328617
+    }
+  },
+  "1652071": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Cambridge United",
+    "away": "Exeter City",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.641419233969497,
+      "pDraw": 0.17060628701536037,
+      "pAway": 0.18797447901514278,
+      "pOver": 0.7849225861798942,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.748504109995598,
+      "expA": 1.471507112677485,
+      "expTotal": 4.220011222673083
+    }
+  },
+  "1652077": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Notts County",
+    "away": "Blackpool",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6693935761790811,
+      "pDraw": 0.1567605644170363,
+      "pAway": 0.1738458594038826,
+      "pOver": 0.8253571724438808,
+      "scoreH": 3,
+      "scoreA": 1,
+      "expH": 3.044579482760611,
+      "expA": 1.5659395577122441,
+      "expTotal": 4.610519040472855
+    }
+  },
+  "1652081": {
+    "savedAt": "2026-11-26T18:25:25.118864+00:00",
+    "kickoffUtc": "2026-12-08T14:00:00+00:00",
+    "home": "Stockport County",
+    "away": "Port Vale",
+    "league": "EFL Trophy · England",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.3773715027477723,
+      "pDraw": 0.2212469207894939,
+      "pAway": 0.4013815764627338,
+      "pOver": 0.6869704547738595,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.7446027537911413,
+      "expA": 1.8037201117963653,
+      "expTotal": 3.5483228655875063
+    }
   }
 }
