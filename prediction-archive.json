@@ -298013,5 +298013,157 @@
       "expA": 1.1378774836453123,
       "expTotal": 2.2118208212979455
     }
+  },
+  "1652889": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-05T19:30:00+00:00",
+    "home": "Universitario de Vinto",
+    "away": "Oriente Petrolero",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.25343099613292314,
+      "pDraw": 0.21704683950375622,
+      "pAway": 0.5295221643633207,
+      "pOver": 0.6437167531936075,
+      "scoreH": 1,
+      "scoreA": 1,
+      "expH": 1.3259090652889465,
+      "expA": 1.9955850140167202,
+      "expTotal": 3.3214940793056664
+    }
+  },
+  "1652888": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-05T19:30:00+00:00",
+    "home": "Real Oruro",
+    "away": "Real Tomayapo",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5555518307603126,
+      "pDraw": 0.210445766940269,
+      "pAway": 0.23400240229941843,
+      "pOver": 0.6547592523822531,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.0851974511814597,
+      "expA": 1.294070140109292,
+      "expTotal": 3.379267591290752
+    }
+  },
+  "1652890": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-06T20:00:00+00:00",
+    "home": "Always Ready",
+    "away": "Gualberto Villarroel SJ",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.8563753015691405,
+      "pDraw": 0.0963995257552764,
+      "pAway": 0.047225172675583,
+      "pOver": 0.7325880311341258,
+      "scoreH": 3,
+      "scoreA": 0,
+      "expH": 3.2403413984912883,
+      "expA": 0.6837818307426401,
+      "expTotal": 3.9241232292339285
+    }
+  },
+  "1652891": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-06T20:00:00+00:00",
+    "home": "Bolívar",
+    "away": "Aurora",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6396056513194118,
+      "pDraw": 0.1956083999456316,
+      "pAway": 0.16478594873495667,
+      "pOver": 0.6191462203661939,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.188626754615951,
+      "expA": 1.0160604962905602,
+      "expTotal": 3.204687250906511
+    }
+  },
+  "1652892": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-06T20:00:00+00:00",
+    "home": "Guabirá",
+    "away": "ABB",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5601536968092528,
+      "pDraw": 0.1830423469548702,
+      "pAway": 0.256803956235877,
+      "pOver": 0.8134038243212995,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.6479445995911215,
+      "expA": 1.7947792440704002,
+      "expTotal": 4.442723843661522
+    }
+  },
+  "1652893": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-07T23:00:00+00:00",
+    "home": "Blooming",
+    "away": "Real Potosí",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.27425948186613186,
+      "pDraw": 0.3157599139576804,
+      "pAway": 0.4099806041761877,
+      "pOver": 0.29309157083465115,
+      "scoreH": 0,
+      "scoreA": 1,
+      "expH": 0.8171467929560375,
+      "expA": 1.0711111449467523,
+      "expTotal": 1.88825793790279
+    }
+  },
+  "1652895": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-07T23:00:00+00:00",
+    "home": "Nacional Potosí",
+    "away": "San Antonio Bulo Bulo",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.6726895699966721,
+      "pDraw": 0.18076125259677753,
+      "pAway": 0.1465491774065505,
+      "pOver": 0.6521909365607835,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.361868268152302,
+      "expA": 1.0122306441225442,
+      "expTotal": 3.374098912274846
+    }
+  },
+  "1652894": {
+    "savedAt": "2026-11-27T08:25:35.396166+00:00",
+    "kickoffUtc": "2026-12-07T23:00:00+00:00",
+    "home": "Independiente Petrolero",
+    "away": "The Strongest",
+    "league": "Primera División · Bolivia",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.22073439305088968,
+      "pDraw": 0.21331245627531903,
+      "pAway": 0.5659531506737913,
+      "pOver": 0.6245809653078278,
+      "scoreH": 1,
+      "scoreA": 2,
+      "expH": 1.1967512119673964,
+      "expA": 2.0308365804384003,
+      "expTotal": 3.2275877924057967
+    }
   }
 }
