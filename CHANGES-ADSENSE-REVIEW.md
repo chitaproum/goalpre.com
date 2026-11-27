@@ -15,3 +15,7 @@ Still needs YOU (cannot be done honestly in code)
 - data.js is ~75 MB; slim it (e.g. only upcoming fixtures + recent history) to improve speed.
 - Check the repo is private or contains no secrets; consider removing model-comparison-internal.docx and internal notes from it.
 - Get organic traffic/indexing via Search Console, wait a few weeks, then request review.
+
+Bug fix (27 Nov 2026): "Yesterday's Best Choice result"
+- fetch_data.py stored the in-play score as the full-time score (fh/fa) for live matches, so a game caught mid-match (e.g. Plzen v Benfica at 1-0) showed as a final result until the next refresh. fh/fa are now set only for finished matches (FT/AET/PEN); live goals stay in currentHome/currentAway.
+- app.js: the table now lists only finished matches, and the half-time column reads the correct field (f.ht), so HT scores show.

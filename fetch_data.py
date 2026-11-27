@@ -117,7 +117,15 @@ def normalize(f, league, season, tz):
     fix = f['fixture']; goals = f.get('goals') or {}; score = f.get('score') or {}
     status = fix['status']['short']
     # Regulation-time models and stats must not include extra-time or shootout goals.
-    final = (score.get('fulltime') or {}) if status in {'AET','PEN'} else goals
+    # fh/fa are FINAL regulation scores only. While a match is in play (or not started)
+    # they stay None so a mid-game score can never be mistaken for a result; the live
+    # score is kept separately in currentHome/currentAway.
+    if status in {'AET','PEN'}:
+        final = score.get('fulltime') or {}
+    elif status == 'FT':
+        final = goals
+    else:
+        final = {}
     half = score.get('halftime') or {}
     row = {
         'id':fix['id'], 'homeId':f['teams']['home']['id'], 'awayId':f['teams']['away']['id'],

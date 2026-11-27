@@ -2243,21 +2243,24 @@ function leagueCode(l) {
     var a = market === '1x2' ? s.a1 : s.ao;
     return (a && a.key === po.key) ? a.key : null;
   }
+  function hyFinished(f) {
+    return !!f && (f.status === 'FT' || f.status === 'AET' || f.status === 'PEN') && f.fh != null && f.fa != null;
+  }
   function hy1x2Hit(f, key) {
-    if (f.fh == null || f.fa == null) return null;
+    if (!hyFinished(f)) return null;
     var real = f.fh > f.fa ? '1' : (f.fh < f.fa ? '2' : 'X');
     return real === key;
   }
   function hyOuHit(f, side) {
-    if (f.fh == null || f.fa == null) return null;
+    if (!hyFinished(f)) return null;
     var tot = f.fh + f.fa;
     return side === 'O' ? tot > 2.5 : tot < 2.5;
   }
   function hyRow(s, market, hidden) {
     var f = s.f;
-    if (f.fh == null || f.fa == null) return '';
+    if (!hyFinished(f)) return '';
     var badge = (typeof renderLeagueBadge === 'function') ? renderLeagueBadge(f) : esc(f.league || '');
-    var ht = (f.htH != null && f.htA != null) ? (f.htH + '-' + f.htA) : '&ndash;';
+    var ht = (f.ht && f.ht.length === 2 && f.ht[0] != null && f.ht[1] != null) ? (f.ht[0] + '-' + f.ht[1]) : '&ndash;';
     var tip, hit;
     if (market === '1x2') {
       var k = s.t1.key;
@@ -2286,7 +2289,7 @@ function leagueCode(l) {
     // The day we want: yesterday relative to the live clock, but fall back to
     // the most recent completed day in the data so the panel is never blank.
     var yDay = addDays(REF, -1);
-    var scored = FIXTURES.filter(function (f) { return f.fh != null && f.fa != null; });
+    var scored = FIXTURES.filter(hyFinished);
     var usedDay = yDay;
     var dayFixtures = scored.filter(function (f) { return dayOf(f) === yDay; });
     if (!dayFixtures.length) {
