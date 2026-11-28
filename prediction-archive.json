@@ -308121,5 +308121,62 @@
       "expA": 1.464523155637365,
       "expTotal": 3.8410623195017357
     }
+  },
+  "1637224": {
+    "savedAt": "2026-11-28T07:44:20.302554+00:00",
+    "kickoffUtc": "2026-12-05T13:00:00+00:00",
+    "home": "TS Galaxy W",
+    "away": "Diepkloof W",
+    "league": "Super League Women · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5893224157623587,
+      "pDraw": 0.22047674358824634,
+      "pAway": 0.19020084064939488,
+      "pOver": 0.5494834466635419,
+      "scoreH": 1,
+      "scoreA": 0,
+      "expH": 1.9036522844531996,
+      "expA": 0.9802180532537998,
+      "expTotal": 2.883870337706999
+    }
+  },
+  "1637259": {
+    "savedAt": "2026-11-28T07:44:20.302554+00:00",
+    "kickoffUtc": "2026-12-09T16:00:00+00:00",
+    "home": "Stellenbosch W",
+    "away": "Mamelodi Sundowns W",
+    "league": "Super League Women · South Africa",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.011380193805204688,
+      "pDraw": 0.045686561861689616,
+      "pAway": 0.9429332443331058,
+      "pOver": 0.7390808881919115,
+      "scoreH": 0,
+      "scoreA": 3,
+      "expH": 0.32919621664278237,
+      "expA": 3.7881266515476475,
+      "expTotal": 4.1173228681904295
+    }
+  },
+  "1605974": {
+    "savedAt": "2026-11-28T07:44:20.302554+00:00",
+    "kickoffUtc": "2026-12-12T15:00:00+00:00",
+    "home": "Real",
+    "away": "Portel",
+    "league": "Campeonato de Portugal Prio - Group D · Portugal",
+    "model": "poisson-v1",
+    "prediction": {
+      "pHome": 0.5787730241332935,
+      "pDraw": 0.2042618726462611,
+      "pAway": 0.21696510322044538,
+      "pOver": 0.6633145884207741,
+      "scoreH": 2,
+      "scoreA": 1,
+      "expH": 2.1635723435135223,
+      "expA": 1.2619239960405,
+      "expTotal": 3.425496339554022
+    }
   }
 }
